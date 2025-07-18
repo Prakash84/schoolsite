@@ -103,12 +103,12 @@ export default function pricing() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl text-center px-4">
         <h1
-          className={`text-4xl md:text-6xl font-bold text-white leading-tight ${playfair.variable} font-serif`}
+          className={`text-1xl md:text-3xl font-bold text-white leading-tight ${playfair.variable} font-serif`}
         >
          Discover Affordable Luxury. Explore Our Spa Service Prices Today!
         </h1>
         <p
-          className={`mt-6 text-lg md:text-2xl text-white/90 font-light ${montserrat.variable}`}
+          className={`mt-6 text-lg md:text-1xl text-white/90 font-light ${montserrat.variable}`}
         >
           Choose from flexible packages crafted for every need. No hidden fees. Just luxury and comfort, always within reach.
         </p>

@@ -185,12 +185,12 @@
         {/* Content */}
         <div className="relative z-10 max-w-4xl text-center px-4">
           <h4
-            className={`text-3xl md:text-6xl font-bold text-white leading-tight ${playfair.variable} font-serif`}
+            className={`text-1xl md:text-3xl font-bold text-white leading-tight ${playfair.variable} font-serif`}
           >
             Experience Luxury, Relaxation & Expert Spa Care
           </h4>
           <p
-            className={`mt-6 text-lg md:text-2xl text-white/90 font-light ${montserrat.variable}`}
+            className={`mt-6 text-lg md:text-1xl text-white/90 font-light ${montserrat.variable}`}
           >
             Indulge in world-class wellness treatments crafted to soothe your soul and rejuvenate your body.
           </p>

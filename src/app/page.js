@@ -339,94 +339,7 @@ export default function Home() {
 
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
           
-          {/* Left Image with Modern Frame & Parallax Effect */}
-              <motion.div
-                className="relative"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                viewport={{ once: true, margin: "-100px" }}
-              >
-                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl transform group w-full h-[500px]">
-                  {/* Glass frame effect */}
-                  {/* <div className="absolute inset-0 bg-white/20 backdrop-blur-lg border border-white/30 rounded-[2.5rem] z-20 pointer-events-none"></div> */}
-                  
-                  {/* Image container */}
-                  <div className="relative w-full h-full overflow-hidden rounded-[2.5rem]">
-                    {/* <div className="absolute inset-0 bg-gradient-to-br from-amber-900/15 via-amber-800/10 to-black/25 z-10"></div> */}
-                    {/* <div className="bg-gradient-to-tr from-amber-200 to-rose-100 w-full h-full animate-pulse"></div> */}
-                    {/* <Image
-                      src="/images/b2b_therapy.jpg"
-                      alt="Spa Interior"
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-[2.5rem] z-0"
-                    /> */}
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="absolute inset-0 w-full h-full object-cover rounded-[2.5rem] z-0"
-                      >
-                        <source src="/images/spavideo.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-
-                  </div>
-                  
-                  {/* Floating decorative elements */}
-                  {/* <motion.div
-                    className="absolute top-6 left-6 w-24 h-24 rounded-full bg-amber-500/10 blur-xl z-0"
-                    animate={{ 
-                      y: [0, -15, 0],
-                      scale: [1, 1.05, 1],
-                      rotate: [0, 5, 0]
-                    }}
-                    transition={{ 
-                      duration: 8, 
-                      repeat: Infinity, 
-                      ease: "easeInOut" 
-                    }}
-                  /> */}
-                  <motion.div
-                    className="absolute bottom-6 right-6 w-16 h-16 rounded-full bg-rose-300/20 blur-xl z-0"
-                    animate={{ 
-                      y: [0, 15, 0],
-                      scale: [1, 1.1, 1],
-                      rotate: [0, -5, 0]
-                    }}
-                    transition={{ 
-                      duration: 6, 
-                      repeat: Infinity, 
-                      ease: "easeInOut", 
-                      delay: 0.5 
-                    }}
-                  />
-                </div>
-                
-                {/* Floating testimonials */}
-                {/* <motion.div 
-                  className="absolute -bottom-6 right-10 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-4 w-64 border border-white/50"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5, duration: 0.6 }}
-                  viewport={{ once: true }}
-                >
-                  <div className="flex items-center mb-2">
-                    {[...Array(5)].map((_, i) => (
-                      <svg key={i} className="w-4 h-4 text-amber-500 fill-current" viewBox="0 0 24 24">
-                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
-                      </svg>
-                    ))}
-                  </div>
-                  <p className="text-gray-700 text-sm font-medium">"The most rejuvenating experience in Delhi. Truly exceptional therapists!"</p>
-                  <div className="mt-2 flex items-center">
-                    <div className="bg-gray-200 border-2 border-dashed rounded-xl w-8 h-8 mr-2" />
-                    <span className="text-xs font-medium text-amber-700">Priya Sharma</span>
-                  </div>
-                </motion.div> */}
-              </motion.div>
+          
 
           {/* Right Text Section with Enhanced Styling */}
           <motion.div
@@ -548,6 +461,94 @@ export default function Home() {
               </motion.a>
             </motion.div>
           </motion.div>
+          {/* Left Image with Modern Frame & Parallax Effect */}
+              <motion.div
+                className="relative"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true, margin: "-100px" }}
+              >
+                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl transform group w-full h-[500px]">
+                  {/* Glass frame effect */}
+                  {/* <div className="absolute inset-0 bg-white/20 backdrop-blur-lg border border-white/30 rounded-[2.5rem] z-20 pointer-events-none"></div> */}
+                  
+                  {/* Image container */}
+                  <div className="relative w-full h-full overflow-hidden rounded-[2.5rem]">
+                    {/* <div className="absolute inset-0 bg-gradient-to-br from-amber-900/15 via-amber-800/10 to-black/25 z-10"></div> */}
+                    {/* <div className="bg-gradient-to-tr from-amber-200 to-rose-100 w-full h-full animate-pulse"></div> */}
+                    {/* <Image
+                      src="/images/b2b_therapy.jpg"
+                      alt="Spa Interior"
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-[2.5rem] z-0"
+                    /> */}
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="absolute inset-0 w-full h-full object-cover rounded-[2.5rem] z-0"
+                      >
+                        <source src="/images/spavideo.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+
+                  </div>
+                  
+                  {/* Floating decorative elements */}
+                  {/* <motion.div
+                    className="absolute top-6 left-6 w-24 h-24 rounded-full bg-amber-500/10 blur-xl z-0"
+                    animate={{ 
+                      y: [0, -15, 0],
+                      scale: [1, 1.05, 1],
+                      rotate: [0, 5, 0]
+                    }}
+                    transition={{ 
+                      duration: 8, 
+                      repeat: Infinity, 
+                      ease: "easeInOut" 
+                    }}
+                  /> */}
+                  <motion.div
+                    className="absolute bottom-6 right-6 w-16 h-16 rounded-full bg-rose-300/20 blur-xl z-0"
+                    animate={{ 
+                      y: [0, 15, 0],
+                      scale: [1, 1.1, 1],
+                      rotate: [0, -5, 0]
+                    }}
+                    transition={{ 
+                      duration: 6, 
+                      repeat: Infinity, 
+                      ease: "easeInOut", 
+                      delay: 0.5 
+                    }}
+                  />
+                </div>
+                
+                {/* Floating testimonials */}
+                {/* <motion.div 
+                  className="absolute -bottom-6 right-10 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-4 w-64 border border-white/50"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5, duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="flex items-center mb-2">
+                    {[...Array(5)].map((_, i) => (
+                      <svg key={i} className="w-4 h-4 text-amber-500 fill-current" viewBox="0 0 24 24">
+                        <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="text-gray-700 text-sm font-medium">"The most rejuvenating experience in Delhi. Truly exceptional therapists!"</p>
+                  <div className="mt-2 flex items-center">
+                    <div className="bg-gray-200 border-2 border-dashed rounded-xl w-8 h-8 mr-2" />
+                    <span className="text-xs font-medium text-amber-700">Priya Sharma</span>
+                  </div>
+                </motion.div> */}
+              </motion.div>
         </div>
       </section>
       {/* Services Section */}
