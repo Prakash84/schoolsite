@@ -541,7 +541,7 @@ export default function Home() {
                     {/* <div className="bg-gradient-to-tr from-amber-200 to-rose-100 w-full h-full animate-pulse"></div> */}
                     <Image
                      loading="lazy"
-                      src="/images/ourPricingBanner.jpeg"
+                      src="/images/chatgptspa.png"
                       alt="Spa Interior"
                       layout="fill"
                       objectFit="cover"
