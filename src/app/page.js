@@ -477,14 +477,14 @@ export default function Home() {
                   <div className="relative w-full h-full overflow-hidden rounded-[2.5rem]">
                     {/* <div className="absolute inset-0 bg-gradient-to-br from-amber-900/15 via-amber-800/10 to-black/25 z-10"></div> */}
                     {/* <div className="bg-gradient-to-tr from-amber-200 to-rose-100 w-full h-full animate-pulse"></div> */}
-                    {/* <Image
+                    <Image
                       src="/images/b2b_therapy.jpg"
                       alt="Spa Interior"
                       layout="fill"
                       objectFit="cover"
                       className="rounded-[2.5rem] z-0"
-                    /> */}
-                    <video
+                    />
+                    {/* <video
                         autoPlay
                         loop
                         muted
@@ -493,7 +493,7 @@ export default function Home() {
                       >
                         <source src="/images/spavideo.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
-                      </video>
+                      </video> */}
 
                   </div>
                   
