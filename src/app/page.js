@@ -290,7 +290,7 @@ export default function Home() {
       </div>
 
       {/* Hero Slider */}
-      {/* <section className="relative w-full h-[45vh] sm:h-[60px] md:h-[70vh] lg:h-[85vh] xl:h-[80vh]">
+      <section className="relative w-full h-[45vh] sm:h-[60px] md:h-[70vh] lg:h-[85vh] xl:h-[80vh]">
         <Swiper
           loop
           autoplay={{ delay: 5000, disableOnInteraction: false }}
@@ -329,8 +329,8 @@ export default function Home() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </section> */}
-      <section className="relative w-full h-[45vh] sm:h-[60vh] md:h-[70vh] lg:h-[85vh] xl:h-[80vh] overflow-hidden">
+      </section>
+      {/* <section className="relative w-full h-[45vh] sm:h-[60vh] md:h-[70vh] lg:h-[85vh] xl:h-[80vh] overflow-hidden">
       <Swiper
         loop
         autoplay={{ delay: 4000, disableOnInteraction: false }}
@@ -341,21 +341,19 @@ export default function Home() {
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
             <div className="relative w-full h-full">
-              {/* Background Image */}
-              <Image
-                // loading="lazy"
+              <Image 
                 src={slide.image}
                 alt={`Slide ${i}`}
                 fill
                 className="object-cover"
-                priority={i === 0} // Load only the first image eagerly
+                priority={i === 0} 
                 loading={i === 0 ? "eager" : "lazy"}
               />
 
-              {/* Overlay */}
+             
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
 
-              {/* Content */}
+           
               <div className="absolute inset-0 flex flex-col justify-center items-center md:items-start text-center md:text-left px-4 sm:px-8 md:px-24 z-10">
                 <motion.h2
                   className="text-white text-2xl sm:text-4xl md:text-5xl font-extrabold max-w-2xl md:max-w-3xl leading-snug mb-4 font-serif"
@@ -392,7 +390,7 @@ export default function Home() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </section>
+    </section> */}
     
       {/* About Section */}
       <section className="py-24 px-4 md:px-8 bg-gradient-to-b from-[#fdf9f5] to-[#fefaf6] relative overflow-hidden">
