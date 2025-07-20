@@ -159,6 +159,7 @@ export default function Home() {
       title: "Book a Relaxing Spa Session at Lajpat Nagar. Rejuvenate Today!",
       link: "https://api.whatsapp.com/send?phone=918860788415",
       image: "/images/hb1.jpg"
+      
     },
     {
       title: "Luxury Rejuvenation Spa Experience at Delhi’s 5-Star Hotel Retreat",
@@ -289,7 +290,7 @@ export default function Home() {
       </div>
 
       {/* Hero Slider */}
-      <section className="relative w-full h-[45vh] sm:h-[60px] md:h-[70vh] lg:h-[85vh] xl:h-[80vh]">
+      {/* <section className="relative w-full h-[45vh] sm:h-[60px] md:h-[70vh] lg:h-[85vh] xl:h-[80vh]">
         <Swiper
           loop
           autoplay={{ delay: 5000, disableOnInteraction: false }}
@@ -328,7 +329,69 @@ export default function Home() {
             </SwiperSlide>
           ))}
         </Swiper>
-      </section>
+      </section> */}
+      <section className="relative w-full h-[45vh] sm:h-[60vh] md:h-[70vh] lg:h-[85vh] xl:h-[80vh] overflow-hidden">
+      <Swiper
+        loop
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        pagination={{ clickable: true, dynamicBullets: true }}
+        modules={[Autoplay, Pagination]}
+        className="w-full h-full"
+      >
+        {slides.map((slide, i) => (
+          <SwiperSlide key={i}>
+            <div className="relative w-full h-full">
+              {/* Background Image */}
+              <Image
+                src={slide.image}
+                alt={`Slide ${i}`}
+                fill
+                className="object-cover"
+                priority={i === 0} // Load only the first image eagerly
+                loading={i === 0 ? "eager" : "lazy"}
+              />
+
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent" />
+
+              {/* Content */}
+              <div className="absolute inset-0 flex flex-col justify-center items-center md:items-start text-center md:text-left px-4 sm:px-8 md:px-24 z-10">
+                <motion.h2
+                  className="text-white text-2xl sm:text-4xl md:text-5xl font-extrabold max-w-2xl md:max-w-3xl leading-snug mb-4 font-serif"
+                  initial={{ opacity: 0, x: -50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                >
+                  {slide.title}
+                </motion.h2>
+
+                <motion.div
+                  className="flex flex-col sm:flex-row gap-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                >
+                  <a
+                    href={slide.link}
+                    className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-sm sm:text-base transition duration-300 shadow-md"
+                  >
+                    Book a Spa Session Now
+                  </a>
+                  <a
+                    href="#services"
+                    className="bg-white/20 hover:bg-white/30 backdrop-blur-md text-white font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-sm sm:text-base border border-white transition duration-300"
+                  >
+                    Explore Our Spa Services
+                  </a>
+                </motion.div>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </section>
     
       {/* About Section */}
       <section className="py-24 px-4 md:px-8 bg-gradient-to-b from-[#fdf9f5] to-[#fefaf6] relative overflow-hidden">
@@ -478,6 +541,7 @@ export default function Home() {
                     {/* <div className="absolute inset-0 bg-gradient-to-br from-amber-900/15 via-amber-800/10 to-black/25 z-10"></div> */}
                     {/* <div className="bg-gradient-to-tr from-amber-200 to-rose-100 w-full h-full animate-pulse"></div> */}
                     <Image
+                     loading="lazy"
                       src="/images/b2b_therapy.jpg"
                       alt="Spa Interior"
                       layout="fill"
@@ -923,53 +987,50 @@ export default function Home() {
             </div>
           </div>
         </section>
-   
-
-
-{/* 18+ Section */}
-<section
-  className="relative py-24 px-6 sm:px-10 lg:px-24 text-center bg-cover bg-center bg-no-repeat"
-  style={{
-    backgroundImage: "url('/images/18+bodyspa.avif')",
-  }}
->
-  <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-[#4B2E18]/60 to-black/80 backdrop-blur-sm z-0" />
-  <div className="relative z-10 max-w-6xl mx-auto text-[#FFDFBD]">
-    <h2 className="text-4xl sm:text-5xl font-bold font-serif mb-4 text-[#FFBF66] drop-shadow">
-      24+ Exclusive Body Spa Outlets
-    </h2>
-    <p className="text-lg sm:text-xl max-w-3xl mx-auto text-[#FFDFBD] mb-10 leading-relaxed">
-      Indulge in luxury & wellness with our top-tier spa outlets across premium 5-star locations.
-    </p>
-    <ul className="flex flex-wrap justify-center gap-4">
-      {features.map((item, index) => (
-        <li
-          key={index}
-          className="flex items-center gap-2 px-5 py-3 rounded-full text-sm text-[#FFD8A9] border border-[#FFD8A9]/30 shadow-lg bg-[#2D1B0F]/30 hover:bg-[#3D2615]/40 backdrop-blur-lg transition"
-        >
-          <svg
-            aria-hidden="true"
-            className="w-4 h-4 text-[#FFD700]"
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
+          {/* 18+ Section */}
+          <section
+            className="relative py-24 px-6 sm:px-10 lg:px-24 text-center bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: "url('/images/18+bodyspa.avif')",
+            }}
           >
-            <path
-              fill="currentColor"
-              d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 
-                0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 
-                36.204 0L192 312.69 432.095 72.596c9.997-9.997 
-                26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 
-                9.997 26.206 0 36.204l-294.4 294.401c-9.998 
-                9.997-26.207 9.997-36.204-.001z"
-            />
-          </svg>
-          <span>{item}</span>
-        </li>
-      ))}
-    </ul>
-  </div>
-</section>
-{/* end 18+ section */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-[#4B2E18]/60 to-black/80 backdrop-blur-sm z-0" />
+            <div className="relative z-10 max-w-6xl mx-auto text-[#FFDFBD]">
+              <h2 className="text-4xl sm:text-5xl font-bold font-serif mb-4 text-[#FFBF66] drop-shadow">
+                24+ Exclusive Body Spa Outlets
+              </h2>
+              <p className="text-lg sm:text-xl max-w-3xl mx-auto text-[#FFDFBD] mb-10 leading-relaxed">
+                Indulge in luxury & wellness with our top-tier spa outlets across premium 5-star locations.
+              </p>
+              <ul className="flex flex-wrap justify-center gap-4">
+                {features.map((item, index) => (
+                  <li
+                    key={index}
+                    className="flex items-center gap-2 px-5 py-3 rounded-full text-sm text-[#FFD8A9] border border-[#FFD8A9]/30 shadow-lg bg-[#2D1B0F]/30 hover:bg-[#3D2615]/40 backdrop-blur-lg transition"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      className="w-4 h-4 text-[#FFD700]"
+                      viewBox="0 0 512 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 
+                          0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 
+                          36.204 0L192 312.69 432.095 72.596c9.997-9.997 
+                          26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 
+                          9.997 26.206 0 36.204l-294.4 294.401c-9.998 
+                          9.997-26.207 9.997-36.204-.001z"
+                      />
+                    </svg>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+          {/* end 18+ section */}
 {/* Our Therapy Experts */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -1074,125 +1135,123 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
-
-      
+      </section>     
       {/* F&Q Section */}
-<section className="py-16 bg-gradient-to-b from-amber-50 to-white">
-  <div className="max-w-5xl mx-auto px-4">
-    <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-      className="text-center mb-14"
-    >
-      <motion.div
-        className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-      >
-        <FaStar className="text-amber-500" />
-        Questions? We’re here to help
-      </motion.div>
-      <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4">
-        Frequently Asked <span className="text-amber-600">Questions</span>
-      </h2>
-      <p className="text-amber-800 max-w-2xl mx-auto text-lg">
-        Everything you need to know about our luxurious spa services and how to book them.
-      </p>
-      <div className="flex justify-center mt-6">
-        <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
-      </div>
-    </motion.div>
-
-    {/* FAQ Accordion */}
-    <div className="space-y-5">
-      {faqs.map((faq, index) => (
-        <motion.div
-          key={index}
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: index * 0.1 }}
-          viewport={{ once: true }}
-          className="bg-white rounded-2xl shadow-lg overflow-hidden border border-amber-100"
-        >
-          <button
-            onClick={() => toggleFAQ(index)}
-            className="w-full p-6 text-left flex items-center justify-between focus:outline-none group"
+      <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
+        <div className="max-w-5xl mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center mb-14"
           >
-            <div className="flex items-start space-x-4">
-              <div className="mt-1 p-2 bg-amber-50 rounded-lg">
-                {faq.icon}
-              </div>
-              <h3 className="text-lg md:text-xl font-medium text-amber-900 group-hover:text-amber-700 transition-colors">
-                {faq.question}
-              </h3>
+            <motion.div
+              className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <FaStar className="text-amber-500" />
+              Questions? We’re here to help
+            </motion.div>
+            <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4">
+              Frequently Asked <span className="text-amber-600">Questions</span>
+            </h2>
+            <p className="text-amber-800 max-w-2xl mx-auto text-lg">
+              Everything you need to know about our luxurious spa services and how to book them.
+            </p>
+            <div className="flex justify-center mt-6">
+              <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
             </div>
-            <div className="ml-4 flex-shrink-0">
-              <svg
-                className={`w-6 h-6 text-amber-500 transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </div>
-          </button>
+          </motion.div>
 
-          <AnimatePresence>
-            {activeIndex === index && (
+          {/* FAQ Accordion */}
+          <div className="space-y-5">
+            {faqs.map((faq, index) => (
               <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.3 }}
-                className="overflow-hidden"
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden border border-amber-100"
               >
-                <div className="px-6 pb-6 pt-2 border-t border-amber-50">
-                  <p className="text-amber-700">
-                    {faq.answer}
-                  </p>
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </motion.div>
-      ))}
-    </div>
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full p-6 text-left flex items-center justify-between focus:outline-none group"
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className="mt-1 p-2 bg-amber-50 rounded-lg">
+                      {faq.icon}
+                    </div>
+                    <h3 className="text-lg md:text-xl font-medium text-amber-900 group-hover:text-amber-700 transition-colors">
+                      {faq.question}
+                    </h3>
+                  </div>
+                  <div className="ml-4 flex-shrink-0">
+                    <svg
+                      className={`w-6 h-6 text-amber-500 transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                </button>
 
-    {/* CTA Box */}
-    {/* <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.4 }}
-      viewport={{ once: true }}
-      className="mt-14 bg-gradient-to-r from-amber-500 to-amber-600 rounded-2xl p-8 text-center text-white shadow-xl"
-    >
-      <h3 className="text-2xl font-bold mb-3">Still have questions?</h3>
-      <p className="mb-5 max-w-2xl mx-auto">
-        Our wellness team is here to assist you. Reach out and we’ll help you find the perfect treatment.
-      </p>
-      <div className="flex flex-col sm:flex-row justify-center gap-4">
-        <button className="px-6 py-3 bg-white text-amber-700 font-medium rounded-full shadow-md hover:bg-amber-100 transition-colors">
-          Contact Us
-        </button>
-        <button className="px-6 py-3 bg-amber-800 bg-opacity-30 text-white font-medium rounded-full shadow-md border border-white border-opacity-30 hover:bg-opacity-40 transition-colors">
-          Book Appointment
-        </button>
-      </div>
-    </motion.div> */}
-  </div>
-</section>
+                <AnimatePresence>
+                  {activeIndex === index && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-6 pb-6 pt-2 border-t border-amber-50">
+                        <p className="text-amber-700">
+                          {faq.answer}
+                        </p>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* CTA Box */}
+          {/* <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="mt-14 bg-gradient-to-r from-amber-500 to-amber-600 rounded-2xl p-8 text-center text-white shadow-xl"
+          >
+            <h3 className="text-2xl font-bold mb-3">Still have questions?</h3>
+            <p className="mb-5 max-w-2xl mx-auto">
+              Our wellness team is here to assist you. Reach out and we’ll help you find the perfect treatment.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <button className="px-6 py-3 bg-white text-amber-700 font-medium rounded-full shadow-md hover:bg-amber-100 transition-colors">
+                Contact Us
+              </button>
+              <button className="px-6 py-3 bg-amber-800 bg-opacity-30 text-white font-medium rounded-full shadow-md border border-white border-opacity-30 hover:bg-opacity-40 transition-colors">
+                Book Appointment
+              </button>
+            </div>
+          </motion.div> */}
+        </div>
+      </section>
     {/* End F&Q Section */}
-{/* CTA Section */}
+    {/* CTA Section */}
       <section className="py-24 px-6 md:px-16 relative">
         <div className="max-w-5xl mx-auto bg-gradient-to-r from-amber-700 to-amber-800 rounded-3xl shadow-2xl overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-amber-600/10 to-amber-800/30 backdrop-blur-sm"></div>
