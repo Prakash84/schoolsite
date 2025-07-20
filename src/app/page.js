@@ -343,6 +343,7 @@ export default function Home() {
             <div className="relative w-full h-full">
               {/* Background Image */}
               <Image
+                // loading="lazy"
                 src={slide.image}
                 alt={`Slide ${i}`}
                 fill
@@ -702,6 +703,7 @@ export default function Home() {
                  {/* Image */}
                  <div className="relative w-36 h-36 mx-auto mb-8 rounded-full overflow-hidden shadow-md">
                    <Image
+                   loading="lazy"
                      src={step.image}
                      alt={step.title}
                      layout="fill"
@@ -761,6 +763,7 @@ export default function Home() {
               {/* Location Image */}
               <div className="relative h-56 w-full">
                 <Image
+                loading="lazy"
                   src={location.image}
                   alt={location.name}
                   layout="fill"
@@ -956,6 +959,7 @@ export default function Home() {
                 >
                   <div className="relative">
                     <Image
+                    loading="lazy"
                       src={outlet.image}
                       alt={outlet.title}
                       width={600}
@@ -1051,6 +1055,7 @@ export default function Home() {
               >
                 <div className="relative h-96 overflow-hidden">
                   <Image
+                  loading="lazy"
                     src={member.image}
                     alt={member.name}
                     width={400}
