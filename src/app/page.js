@@ -11,6 +11,17 @@ import { FaSpa, FaHotTub, FaBath, FaLeaf, FaHandSparkles, FaHotel, FaCrown, FaCh
 import { FaWhatsapp } from 'react-icons/fa';
 import Image from 'next/image';
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import {  FaMapMarkerAlt } from 'react-icons/fa';
+
+const specialFeatures = [
+  "Private Room",
+  "Jacuzzi Bath",
+  "Steam Bath",
+  "Naturally Spa",
+  "5 Star Hotels",
+  "Female Therapist",
+  "Foreigner Therapist",
+];
 
 const teamMembers = [
   {
@@ -922,116 +933,246 @@ export default function Home() {
     </section>
     {/* End Pricing Section */}
     {/* outlate */}
-        <section className="py-10 px-4 sm:px-6 lg:px-16 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
-          <div className="max-w-7xl mx-auto">
-            {/* Section Title */}
-            <div className="text-center mb-16">
-              <motion.h2
-                className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-              >
-                Explore Our <span className="text-amber-600">Luxury Outlets</span>
-              </motion.h2>
-              <motion.p
-                className="text-gray-600 max-w-2xl mx-auto text-lg"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.1 }}
-                viewport={{ once: true }}
-              >
-                Located in premium 5-star properties across Delhi – enjoy serenity, comfort, and personalized spa experiences at every outlet.
-              </motion.p>
-            </div>
-
-            {/* Grid Layout - 2 per row */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-              {outlets.map((outlet, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="bg-white rounded-3xl shadow-xl overflow-hidden group"
-                >
-                  <div className="relative">
-                    <Image
-                    loading="lazy"
-                      src={outlet.image}
-                      alt={outlet.title}
-                      width={600}
-                      height={400}
-                      className="w-full h-[300px] object-cover transform group-hover:scale-105 transition duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent z-10"></div>
-                  </div>
-
-                  <div className="p-6 text-center">
-                    <h3 className="text-2xl font-bold text-amber-900 mb-2 font-serif">
-                      {outlet.title}
-                    </h3>
-                    <p className="text-gray-700 text-base mb-4">
-                      {outlet.description}
-                    </p>
-                    <a
-                      href={outlet.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-medium py-2 px-5 rounded-full text-base transition-all"
-                    >
-                      <FaWhatsapp className="text-lg" />
-                      Book on WhatsApp
-                    </a>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-          {/* 18+ Section */}
-          <section
-            className="relative py-24 px-6 sm:px-10 lg:px-24 text-center bg-cover bg-center bg-no-repeat"
+          <section className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-gradient-to-b from-[#FFF9F0] to-[#FFFAF5]">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <div className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-r from-amber-100/20 to-transparent rounded-full filter blur-[100px]"></div>
+        <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-l from-amber-200/20 to-transparent rounded-full filter blur-[100px]"></div>
+        
+        {/* Floating leaves */}
+        {[...Array(8)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute text-amber-300/30"
+            initial={{ y: 0, rotate: 0 }}
+            animate={{ 
+              y: [0, -20, 0],
+              rotate: [0, 5, 0]
+            }}
+            transition={{
+              duration: 8,
+              repeat: Infinity,
+              delay: i * 0.5,
+              ease: "easeInOut"
+            }}
             style={{
-              backgroundImage: "url('/images/18+bodyspa.avif')",
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              fontSize: `${Math.random() * 24 + 24}px`,
             }}
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-[#4B2E18]/60 to-black/80 backdrop-blur-sm z-0" />
-            <div className="relative z-10 max-w-6xl mx-auto text-[#FFDFBD]">
-              <h2 className="text-4xl sm:text-5xl font-bold font-serif mb-4 text-[#FFBF66] drop-shadow">
-                24+ Exclusive Body Spa Outlets
-              </h2>
-              <p className="text-lg sm:text-xl max-w-3xl mx-auto text-[#FFDFBD] mb-10 leading-relaxed">
-                Indulge in luxury & wellness with our top-tier spa outlets across premium 5-star locations.
-              </p>
-              <ul className="flex flex-wrap justify-center gap-4">
-                {features.map((item, index) => (
-                  <li
-                    key={index}
-                    className="flex items-center gap-2 px-5 py-3 rounded-full text-sm text-[#FFD8A9] border border-[#FFD8A9]/30 shadow-lg bg-[#2D1B0F]/30 hover:bg-[#3D2615]/40 backdrop-blur-lg transition"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      className="w-4 h-4 text-[#FFD700]"
-                      viewBox="0 0 512 512"
-                      xmlns="http://www.w3.org/2000/svg"
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+          </motion.div>
+        ))}
+      </div>
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        {/* Section Header */}
+        <motion.div 
+          className="text-center mb-20"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+            <span className="text-amber-700 font-medium tracking-wider">PREMIUM LOCATIONS</span>
+          </motion.div>
+          
+          <motion.h2
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+          >
+            Discover Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Luxury Outlets</span>
+          </motion.h2>
+          
+          <motion.p
+            className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+          >
+            Located in premium 5-star properties across Delhi – enjoy serenity, comfort, and personalized spa experiences at every outlet.
+          </motion.p>
+          
+          <motion.div
+            className="flex justify-center mt-10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+          </motion.div>
+        </motion.div>
+
+        {/* Outlets Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          {outlets.map((outlet, index) => (
+            <motion.div
+              key={outlet.id}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: index * 0.15 }}
+              viewport={{ once: true, margin: "-100px" }}
+              className="relative group"
+            >
+              {/* Card */}
+              <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden h-full flex flex-col transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2 border border-amber-100">
+                {/* Image section */}
+                <div className="relative h-80 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-r from-amber-900/10 to-transparent z-10"></div>
+                  
+                  {/* Rating badge */}
+                  <div className="absolute top-6 right-6 z-20">
+                    <div className="flex items-center gap-1 bg-gradient-to-r from-amber-600 to-amber-700 text-white px-3 py-1.5 rounded-full shadow-lg">
+                      <FaStar className="text-amber-200" />
+                      <span className="font-bold">{outlet.rating}</span>
+                    </div>
+                  </div>
+                  
+                  {/* Location */}
+                  <div className="absolute bottom-6 left-6 z-20">
+                    <div className="flex items-center text-white">
+                      <FaMapMarkerAlt className="mr-2 text-amber-300" />
+                      <span className="font-medium">{outlet.location}</span>
+                    </div>
+                  </div>
+                  
+                  {/* Decorative corner */}
+                  <div className="absolute top-0 left-0 w-16 h-16 border-t-4 border-l-4 border-amber-500 rounded-tl-3xl z-10"></div>
+                </div>
+
+                {/* Content section */}
+                <div className="p-8 flex-1 flex flex-col">
+                  <div className="flex-1">
+                    <h3 className="text-2xl md:text-3xl font-bold text-amber-900 mb-4 font-serif group-hover:text-amber-700 transition-colors">
+                      {outlet.title}
+                    </h3>
+                    <p className="text-amber-800/80 mb-8 leading-relaxed">
+                      {outlet.description}
+                    </p>
+                  </div>
+                  
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+                    <a
+                      href="#"
+                      className="flex-1 flex items-center justify-center gap-3 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-medium py-4 px-6 rounded-xl transition-all group-hover:shadow-lg group-hover:scale-[1.02]"
                     >
-                      <path
-                        fill="currentColor"
-                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 
-                          0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 
-                          36.204 0L192 312.69 432.095 72.596c9.997-9.997 
-                          26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 
-                          9.997 26.206 0 36.204l-294.4 294.401c-9.998 
-                          9.997-26.207 9.997-36.204-.001z"
-                      />
-                    </svg>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+                      <FaWhatsapp className="text-xl" />
+                      <span className="font-medium tracking-wide">Book on WhatsApp</span>
+                    </a>
+                    
+                    <div className="text-center sm:text-right">
+                      <div className="text-amber-700 text-sm font-medium">Starting from</div>
+                      <div className="text-amber-900 font-bold text-2xl">₹3,499</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Floating decorative element */}
+              <div className="absolute -top-4 -right-4 w-20 h-20 bg-amber-500/10 rounded-full z-0 group-hover:bg-amber-500/20 transition-colors"></div>
+            </motion.div>
+          ))}
+        </div>
+        
+        {/* View all button */}
+        <motion.div 
+          className="text-center mt-16"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <button className="relative inline-flex items-center gap-3 group">
+            <span className="text-amber-800 font-medium text-lg tracking-wider group-hover:text-amber-900 transition-colors">
+              VIEW ALL OUTLETS
+            </span>
+            <div className="relative h-0.5 bg-amber-800/30 overflow-hidden w-24">
+              <div className="absolute inset-0 w-0 bg-amber-800 group-hover:w-full transition-all duration-500"></div>
             </div>
-          </section>
+            <div className="text-amber-700 group-hover:text-amber-900 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14"/>
+                <path d="m12 5 7 7-7 7"/>
+              </svg>
+            </div>
+          </button>
+        </motion.div>
+      </div>
+    </section>
+          {/* 18+ Section */}
+          <section 
+  className="relative py-20 px-6 text-center bg-cover bg-center bg-no-repeat overflow-hidden"
+  style={{ backgroundImage: "url('/images/18+bodyspa.avif')" }}
+>
+  {/* Enhanced gradient overlay with subtle grain texture */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-[#3A2415]/80 to-black/90 z-0" />
+  <div className="absolute inset-0 bg-[url('/images/noise.png')] opacity-10 mix-blend-soft-light z-1" />
+
+  <div className="relative z-10 max-w-6xl mx-auto text-[#FAF3E9]">
+    {/* Elegant heading with decorative elements */}
+    <div className="flex flex-col items-center mb-12">
+      <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#D4A866] to-transparent mb-8" />
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-4 text-[#F9D9A9] tracking-wide">
+        <span className="block text-xl font-light tracking-widest text-[#D4A866] mb-2">
+          PREMIUM WELLNESS DESTINATIONS
+        </span>
+        24+ Exclusive Body Spa Outlets
+      </h2>
+      <div className="w-16 h-0.5 bg-[#D4A866] mt-6" />
+    </div>
+
+    {/* Refined description */}
+    <p className="text-lg sm:text-xl max-w-2xl mx-auto mb-16 font-light leading-relaxed font-raleway tracking-wide">
+      Indulge in unparalleled luxury & holistic wellness experiences across our premier 5-star locations worldwide.
+    </p>
+
+    {/* Sophisticated features grid */}
+    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
+      {specialFeatures.map((item, index) => (
+        <li key={index}>
+          <div className="flex items-start gap-3 p-5 rounded-xl border border-[#D4A866]/30 bg-gradient-to-b from-[#2D1B0F]/60 to-[#1A1109]/60 backdrop-blur-sm hover:border-[#D4A866]/60 transition-all duration-300 group hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-black/20">
+            <svg
+              className="flex-shrink-0 w-5 h-5 mt-0.5 text-[#D4A866] group-hover:scale-110 transition-transform"
+              fill="currentColor"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 
+                0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 
+                36.204 0L192 312.69 432.095 72.596c9.997-9.997 
+                26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 
+                9.997 26.206 0 36.204l-294.4 294.401c-9.998 
+                9.997-26.207 9.997-36.204-.001z"/>
+            </svg>
+            <span className="text-left font-light text-[#FAF3E9] group-hover:text-[#F9D9A9] transition-colors">
+              {item}
+            </span>
+          </div>
+        </li>
+      ))}
+    </ul>
+
+    {/* Decorative corner elements */}
+    <div className="absolute top-6 left-6 w-8 h-8 border-t border-l border-[#D4A866]/50" />
+    <div className="absolute top-6 right-6 w-8 h-8 border-t border-r border-[#D4A866]/50" />
+    <div className="absolute bottom-6 left-6 w-8 h-8 border-b border-l border-[#D4A866]/50" />
+    <div className="absolute bottom-6 right-6 w-8 h-8 border-b border-r border-[#D4A866]/50" />
+  </div>
+      </section>
           {/* end 18+ section */}
 {/* Our Therapy Experts */}
       <section className="py-16 px-4 bg-white">
