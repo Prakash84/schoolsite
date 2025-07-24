@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-16 px-6 md:px-16 relative">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-8 relative z-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 relative z-10">
         <div>
           <h3 className="text-2xl font-bold mb-6 text-amber-400 flex items-center">
             <span className="text-amber-500">Delhi</span> Body Spa
@@ -18,23 +18,6 @@ export default function Footer() {
               </a>
             ))}
           </div>
-        </div>
-
-        {/* Quick Links Section */}
-        <div>
-          <h4 className="text-lg font-semibold mb-6 text-amber-300">Quick Links</h4>
-          <ul className="space-y-4 text-gray-400">
-            {['FAQs', 'Blog', 'Reviews', 'Privacy Policy'].map((link, i) => (
-              <li key={i}>
-                <a
-                  href={`/${link.toLowerCase().replace(" ", "")}`}
-                  className="hover:text-amber-400 transition-colors"
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
-          </ul>
         </div>
 
         {/* Our Locations Section */}

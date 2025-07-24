@@ -299,7 +299,7 @@
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-light text-amber-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Signature Massage</h3>
+                <h3 className="text-2xl font-light text-amber-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Hotel Spa</h3>
                 <p className="text-amber-700 mb-6 leading-relaxed">
                   Our unique blend of techniques designed to melt away tension and restore balance to your body and mind.
                 </p>
@@ -324,7 +324,7 @@
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-light text-amber-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Facial Treatments</h3>
+                <h3 className="text-2xl font-light text-amber-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Home Spa</h3>
                 <p className="text-amber-700 mb-6 leading-relaxed">
                   Rejuvenating treatments using premium organic ingredients to reveal your most radiant complexion.
                 </p>
@@ -349,7 +349,7 @@
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 7l4-4m0 0l4 4m-4-4v18m0 0l-4-4m4 4l4-4"></path>
                   </svg>
                 </div>
-                <h3 className="text-2xl font-light text-amber-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Detox Therapy</h3>
+                <h3 className="text-2xl font-light text-amber-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Spa OutLet</h3>
                 <p className="text-amber-700 mb-6 leading-relaxed">
                   Purify and renew your body with our specialized detox treatments for complete rejuvenation.
                 </p>

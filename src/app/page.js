@@ -219,7 +219,7 @@ export default function Home() {
       title: "Spa Outlet",
       price: "₹1999/-",
       description: "Perfect for individual relaxation sessions",
-      features: ["Oil Massage", "Cream Massage", "Dry Massage", "30 min Consultation"],
+      features: ["Oil Massage", "Cream Massage", "Dry Massage", "60 min Consultation", "shower"],
       highlight: false,
       ctaLink: "http://wa.link/njldxn",
       icon: <FaSpa className="text-amber-500" />
@@ -237,7 +237,7 @@ export default function Home() {
       title: "5 Star Hotel Spa",
       price: "₹20000/-",
       description: "Comprehensive spa experience with added treatments",
-      features: ["Foreigner Therapist", "5 Start Property", "Private Sweets", "Aromatherapy", "Facial Session", "120 min Session"],
+      features: ["Foreigner Therapist", "5 Start Property", "Private Sweets", "Aromatherapy", "120 min Session"],
       highlight: false,
       ctaLink: "#",
       icon: <FaCrown className="text-amber-500" />
