@@ -64,13 +64,13 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo Section */}
           <motion.div
-              className="w-40 h-16 relative"
+              className="w-60 h-13 relative"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
             >
               <Image
-                src="/images/delhispalogo.png" // replace with your actual logo path
+                src="/images/spadelhilogo1.png" // replace with your actual logo path
                 alt="Delhi Body Spa Logo"
                 fill
                 className="object-contain"
