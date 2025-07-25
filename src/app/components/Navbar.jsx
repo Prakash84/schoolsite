@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
-
 import Image from "next/image";
 
 export default function Navbar() {
@@ -55,37 +54,42 @@ export default function Navbar() {
 
       {/* Main Navbar */}
       <motion.nav
-        className={`w-full py-4 px-6 md:px-16 z-50 sticky top-0 bg-white shadow-md backdrop-blur-md transition-all duration-300 ${isScrolled ? "shadow-lg" : ""}`}
+        className={`w-full py-4 px-6 md:px-16 z-50 sticky top-0 bg-white shadow-md backdrop-blur-md transition-all duration-300 ${
+          isScrolled ? "shadow-lg" : ""
+        }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          {/* Logo */}
+          {/* Logo Section */}
           <motion.div
-            className="text-2xl font-bold text-amber-700 flex items-center gap-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            {/* Logo Image */}
-            <Image
-              src="/Images/logo.png"     // public/logo.png path
-              alt="Logo"
-              width={150}
-              height={150}
-              className="rounded-full" // optional styling
-            />
-
-            {/* Text */}
-            {/* <span className="text-amber-500">Delhi</span> Body Spa */}
-          </motion.div>
+              className="w-40 h-16 relative"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+            >
+              <Image
+                src="/images/delhispalogo.png" // replace with your actual logo path
+                alt="Delhi Body Spa Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </motion.div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
-            {[{ name: "Home", href: "/" },{ name: "About", href: "/about" },{ name: "Services", href: "/Services" },{ name: "Pricing", href: "/pricing" },{ name: "Outlet", href: "/outlet" },{ name: "Contact", href: "/contact" }].map((item, i) => (
+            {[
+              { name: "Home", href: "/" },
+              { name: "About", href: "/about" },
+              { name: "Services", href: "/services" },
+              { name: "Pricing", href: "/pricing" },
+              { name: "Outlet", href: "/outlet" },
+              { name: "Contact", href: "/contact" },
+            ].map((item, i) => (
               <motion.a
-                key={i}
+                key={item.name}
                 href={item.href}
                 className="font-medium text-gray-800 hover:text-amber-600 transition-colors"
                 initial={{ opacity: 0, y: -10 }}
@@ -101,7 +105,7 @@ export default function Navbar() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-amber-600 focus:outline-none"
+              className="text-amber-600 focus:outline-none text-2xl"
             >
               ☰
             </button>
@@ -123,9 +127,16 @@ export default function Navbar() {
         {/* Mobile Dropdown Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 space-y-4">
-            {[{ name: "Home", href: "/" },{ name: "About", href: "/about" },{ name: "Services", href: "/Services" },{ name: "Pricing", href: "/pricing" },{ name: "Outlet", href: "/outlet" },{ name: "Contact", href: "/contact" }].map((item, i) => (
+            {[
+              { name: "Home", href: "/" },
+              { name: "About", href: "/about" },
+              { name: "Services", href: "/services" },
+              { name: "Pricing", href: "/pricing" },
+              { name: "Outlet", href: "/outlet" },
+              { name: "Contact", href: "/contact" },
+            ].map((item) => (
               <a
-                key={i}
+                key={item.name}
                 href={item.href}
                 className="block text-gray-800 hover:text-amber-600 text-base"
               >
