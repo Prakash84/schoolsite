@@ -415,7 +415,7 @@ export default function About() {
     <div className="absolute bottom-6 left-6 w-8 h-8 border-b border-l border-[#D4A866]/50" />
     <div className="absolute bottom-6 right-6 w-8 h-8 border-b border-r border-[#D4A866]/50" />
   </div>
-</section>
+      </section>
 
       {/* Our Therapy Experts */}
       <section className="py-16 px-4 bg-white">

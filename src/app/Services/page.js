@@ -173,36 +173,251 @@
     return (
       <div className="w-full">
         {/* Banner */}
-      <section
-        className="relative w-full h-[45vh] sm:h-[60px] md:h-[70vh] lg:h-[85vh] xl:h-[80vh] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
-        style={{
-          backgroundImage: "url('/images/PricingBanner.jpg')"
-        }}
-      >
-        {/* Gradient Overlay with soft blur */}
-        {/* <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div> */}
-
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl text-center px-4">
-          <h4
-            className={`text-1xl md:text-3xl font-bold text-white leading-tight ${playfair.variable} font-serif`}
-          >
-            Experience Luxury, Relaxation & Expert Spa Care
-          </h4>
-          <p
-            className={`mt-6 text-lg md:text-1xl text-white/90 font-light ${montserrat.variable}`}
-          >
-            Indulge in world-class wellness treatments crafted to soothe your soul and rejuvenate your body.
+       {/* <div className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50">
+            Floating decorative elements
+            <div className="absolute top-10 left-10 w-24 h-24 bg-indigo-100 rounded-full opacity-20 animate-float"></div>
+            <div className="absolute top-1/3 right-20 w-16 h-16 bg-blue-100 rounded-full opacity-30 animate-float animation-delay-2000"></div>
+            <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-teal-100 rounded-full opacity-25 animate-float animation-delay-4000"></div>
+            
+            Main content
+            <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              Text content - services focused
+              <div className="space-y-6 text-center lg:text-left">
+                <div className="inline-flex items-center space-x-2 mb-6">
+                  <div className="w-12 h-px bg-indigo-600"></div>
+                  <span className="text-indigo-600 font-light tracking-widest">OUR SERVICES</span>
+                  <div className="w-12 h-px bg-indigo-600"></div>
+                </div>
+                
+          <h1 className="text-4xl md:text-5xl font-light text-gray-800">
+            <span className="block font-serif text-5xl md:text-6xl mb-3 text-indigo-800">Harmony</span>
+            Tailored Experiences, 
+            <span className="block mt-2 font-medium">Journey to <span className="text-indigo-600">Tranquility</span></span>
+          </h1>
+          
+          <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            At LuxeSpa, we offer a sanctuary where each treatment is a journey. Our expert therapists craft personalized experiences using premium products and techniques that honor both tradition and innovation.
           </p>
-
-          <a
-            href="tel:+919211235800"
-            className="mt-10 inline-block px-8 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
-          >
-            Book Your Session Now
-          </a>
+          
+          <div className="grid grid-cols-2 gap-4 mt-8 max-w-md mx-auto lg:mx-0">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span className="text-sm text-gray-700">Guided Meditation</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+                </svg>
+              </div>
+              <span className="text-sm text-gray-700">Aromatherapy</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+              </div>
+              <span className="text-sm text-gray-700">Personal Consultations</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <span className="text-sm text-gray-700">Holistic Treatments</span>
+            </div>
+          </div>
+          
+          <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <button className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-indigo-800 text-white rounded-sm hover:opacity-90 transition-opacity duration-300 flex items-center space-x-2">
+              <span>View All Services</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+            <button className="px-6 py-3 bg-white text-indigo-800 rounded-sm border border-indigo-200 hover:bg-indigo-50 transition-colors duration-300 flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>Book Appointment</span>
+            </button>
+          </div>
         </div>
-      </section>
+
+        Image section - services focused
+        <div className="relative h-80 md:h-96 lg:h-[450px]">
+          <div className="absolute inset-0 border-4 border-white shadow-xl overflow-hidden rounded-lg">
+            <div className="relative w-full h-full">
+              Service image - replace with your actual image
+              <div className="absolute inset-0 border-4 border-white shadow-xl overflow-hidden">
+                <img
+                    src="/images/aboutusbanner.jpg" 
+                    alt="Spa Environment"
+                    className="w-full h-full object-cover"
+                  />
+              </div>
+              <div className="w-full h-full bg-gradient-to-br from-indigo-200 to-blue-300 flex items-center justify-center">
+                <div className="text-center p-6 max-w-xs">
+                  <div className="text-indigo-800 font-serif text-xl mb-2">Experience Our Signature Treatments</div>
+                  <div className="text-indigo-600 text-sm">Rejuvenate your senses with our curated wellness journeys</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          Floating leaf decoration
+          <div className="absolute -bottom-6 -right-6">
+            <svg className="w-24 h-24 text-indigo-600/30" viewBox="0 0 100 100">
+              <path
+                fill="currentColor"
+                d="M50,10 C70,10 90,30 90,50 C90,70 70,90 50,90 C30,90 10,70 10,50 C10,30 30,10 50,10 Z M50,25 C35,25 25,35 25,50 C25,65 35,75 50,75 C65,75 75,65 75,50 C75,35 65,25 50,25 Z"
+              />
+            </svg>
+          </div>
+
+          Minimalist stats
+          <div className="absolute -left-4 bottom-8 bg-white p-4 shadow-md">
+            <div className="text-center">
+              <div className="text-2xl font-serif text-indigo-800">50+</div>
+              <div className="text-xs text-gray-500 tracking-widest">TREATMENTS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      Minimal wave divider
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+        <svg viewBox="0 0 1200 120" className="relative block w-full h-12">
+          <path fill="white" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".5"></path>
+        </svg>
+      </div>
+    </div> */}
+
+    <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-rose-50">
+      {/* Floating decorative elements */}
+      <div className="absolute top-10 left-10 w-24 h-24 bg-rose-100 rounded-full opacity-20 animate-float"></div>
+      <div className="absolute top-1/3 right-20 w-16 h-16 bg-amber-100 rounded-full opacity-30 animate-float animation-delay-2000"></div>
+      <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-teal-100 rounded-full opacity-25 animate-float animation-delay-4000"></div>
+      
+      {/* Main content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        {/* Text content - more minimal */}
+        <div className="space-y-6 text-center lg:text-left">
+          <div className="inline-flex items-center space-x-2 mb-6">
+            <div className="w-12 h-px bg-amber-600"></div>
+            <span className="text-amber-600 font-light tracking-widest">OUR SERVICES</span>
+            <div className="w-12 h-px bg-amber-600"></div>
+          </div>
+          
+          <h1 className="text-4xl md:text-5xl font-light text-gray-800">
+            <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">Harmony</span>
+           Tailored Experiences,
+            <span className="block mt-2 font-medium">Journey to <span className="text-rose-600">Tranquility</span></span>
+          </h1>
+          
+          <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+           At LuxeSpa, we offer a sanctuary where each treatment is a journey. Our expert therapists craft personalized experiences using premium products and techniques that honor both tradition and innovation.
+          </p>
+          
+          <div className="grid grid-cols-2 gap-4 mt-8 max-w-md mx-auto lg:mx-0">
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <span className="text-sm text-gray-700">Guided Meditation</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+                </svg>
+              </div>
+              <span className="text-sm text-gray-700">Aromatherapy</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                </svg>
+              </div>
+              <span className="text-sm text-gray-700">Personal Consultations</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <span className="text-sm text-gray-700">Holistic Treatments</span>
+            </div>
+          </div>
+
+          <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <button className="px-6 py-3 bg-gradient-to-r from-amber-600 to-amber-800 text-white rounded-sm hover:opacity-90 transition-opacity duration-300 flex items-center space-x-2">
+              <span>View All Services</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+            <button className="px-6 py-3 bg-white text-amber-800 rounded-sm border border-amber-200 hover:bg-amber-50 transition-colors duration-300 flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+              </svg>
+              <span>Book Appointment</span>
+            </button>
+          </div>
+        </div>
+
+        {/* Image section - more elegant */}
+        <div className="relative h-80 md:h-96 lg:h-[450px]">
+  <div className="absolute inset-0 border-4 border-white shadow-xl overflow-hidden">
+    <div className="relative w-full h-full">
+      <img
+        src="/images/improvebloodflow.webp" // ✅ Yahan apna image path daal
+        alt="Spa Environment"
+        className="w-full h-full object-cover"
+      />
+    </div>
+  </div>
+
+  {/* Floating leaf decoration */}
+  <div className="absolute -bottom-6 -right-6">
+    <svg className="w-24 h-24 text-amber-600/30" viewBox="0 0 100 100">
+      <path
+        fill="currentColor"
+        d="M50,10 C70,10 90,30 90,50 C90,70 70,90 50,90 C30,90 10,70 10,50 C10,30 30,10 50,10 Z M50,25 C35,25 25,35 25,50 C25,65 35,75 50,75 C65,75 75,65 75,50 C75,35 65,25 50,25 Z"
+      />
+    </svg>
+  </div>
+
+  {/* Minimalist stats */}
+  <div className="absolute -left-4 bottom-8 bg-white p-4 shadow-md">
+    <div className="text-center">
+      <div className="text-2xl font-serif text-amber-800">12+</div>
+      <div className="text-xs text-gray-500 tracking-widest">YEARS</div>
+    </div>
+  </div>
+</div>
+
+      </div>
+      
+      {/* Minimal wave divider */}
+      <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+        <svg viewBox="0 0 1200 120" className="relative block w-full h-12">
+          <path fill="white" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".5"></path>
+        </svg>
+      </div>
+    </div>
       {/* End Banner */}
 
       {/* Services Section */}
