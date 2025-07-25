@@ -64,7 +64,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo Section */}
           <motion.div
-              className="w-40 h-13 relative"
+              className="w-40 h-10 relative"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
