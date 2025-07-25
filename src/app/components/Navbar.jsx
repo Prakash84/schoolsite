@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
+import Image from "next/image";
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -61,12 +63,22 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
           <motion.div
-            className="text-2xl font-bold text-amber-700 flex items-center"
+            className="text-2xl font-bold text-amber-700 flex items-center gap-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
           >
-            <span className="text-amber-500">Delhi</span> Body Spa
+            {/* Logo Image */}
+            <Image
+              src="/Images/logo.png"     // public/logo.png path
+              alt="Logo"
+              width={150}
+              height={150}
+              className="rounded-full" // optional styling
+            />
+
+            {/* Text */}
+            {/* <span className="text-amber-500">Delhi</span> Body Spa */}
           </motion.div>
 
           {/* Desktop Menu */}

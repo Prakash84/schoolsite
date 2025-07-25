@@ -128,15 +128,8 @@ const hotelOutlets = [
 
 export default function Outlet() {
   // Features for the 18+ section
-  const features = [
-    "Private Room",
-    "Jacuzzi Bath",
-    "Steam Bath",
-    "Naturally Spa",
-    "5 Star Hotels",
-    "Female Therapist",
-    "Foreigner Therapist",
-  ];
+  
+  
   return (
     <>
      {/* Banner */}
