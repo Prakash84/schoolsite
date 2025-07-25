@@ -70,7 +70,7 @@ export default function Navbar() {
               transition={{ delay: 0.2 }}
             >
               <Image
-                src="/images/spadelhilogo1.png" // replace with your actual logo path
+                src="/images/spadelhilogo22.png" // replace with your actual logo path
                 alt="Delhi Body Spa Logo"
                 fill
                 className="object-contain"
