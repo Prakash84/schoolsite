@@ -24,14 +24,10 @@ export default function Navbar() {
         className="hidden md:flex justify-between items-center text-sm text-white px-6 py-2 shadow-sm z-50"
         style={{ backgroundColor: "#c58940" }}
       >
-        <div>
-          <p className="font-medium">📞 +91-9220961427</p>
-        </div>
-        <div className="text-center">
-          <p className="font-semibold">
-            Book Your Appointment : Delhi | Noida | Gurgaon | Ghaziabad
-          </p>
-        </div>
+        <p className="font-medium">📞 +91-9220961427</p>
+        <p className="font-semibold">
+          Book Your Appointment: Delhi | Noida | Gurgaon | Ghaziabad
+        </p>
         <div className="flex items-center space-x-4">
           <a
             href="https://www.instagram.com/"
@@ -54,29 +50,29 @@ export default function Navbar() {
 
       {/* Main Navbar */}
       <motion.nav
-        className={`w-full py-4 px-6 md:px-16 z-50 sticky top-0 bg-white shadow-md backdrop-blur-md transition-all duration-300 ${
+        className={`w-full py-4 px-4 md:px-8 z-50 sticky top-0 bg-white shadow-md transition-all duration-300 ${
           isScrolled ? "shadow-lg" : ""
         }`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="w-full flex justify-between items-center">
           {/* Logo Section */}
           <motion.div
-              className="w-40 h-10 relative"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              <Image
-                src="/images/spadelhilogo22.png" // replace with your actual logo path
-                alt="Delhi Body Spa Logo"
-                fill
-                className="object-contain"
-                priority
-              />
-            </motion.div>
+            className="w-40 h-10 relative"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+          >
+            <Image
+              src="/images/spadelhilogo22.png"
+              alt="Delhi Body Spa Logo"
+              fill
+              className="object-contain"
+              priority
+            />
+          </motion.div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
@@ -101,7 +97,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Mobile Menu Toggle */}
+          {/* Mobile Toggle */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -111,7 +107,7 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Appointment Button */}
+          {/* Appointment Button (Desktop Only) */}
           <motion.a
             href="https://api.whatsapp.com/send?phone=918860788415"
             className="hidden md:inline-block bg-amber-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-amber-700 transition-all duration-300 shadow-md"
