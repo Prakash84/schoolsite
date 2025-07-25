@@ -79,7 +79,7 @@ export default function Navbar() {
             {[
               { name: "Home", href: "/" },
               { name: "About", href: "/about" },
-              { name: "Services", href: "/services" },
+              { name: "Services", href: "/Services" },
               { name: "Pricing", href: "/pricing" },
               { name: "Outlet", href: "/outlet" },
               { name: "Contact", href: "/contact" },
