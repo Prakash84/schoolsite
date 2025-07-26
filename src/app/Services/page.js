@@ -5,6 +5,7 @@
   import { Playfair_Display, Montserrat } from 'next/font/google';
   import Image from 'next/image';
   import { Check } from "lucide-react";
+  import WhatsappFloat from '../components/WhatsappFloat';
 
   const featuresData = [
   {
@@ -893,7 +894,7 @@
         <div className="absolute bottom-6 left-6 w-10 h-10 z-10 border-b border-l border-amber-400/50"></div>
         <div className="absolute bottom-6 right-6 w-10 h-10 z-10 border-b border-r border-amber-400/50"></div>
       </section>
-
+ <WhatsappFloat />
       </div>
     );
   }

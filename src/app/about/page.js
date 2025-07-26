@@ -5,6 +5,7 @@ import { Playfair_Display, Montserrat } from 'next/font/google';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Playfair_Display, Raleway } from 'next/font/google'
+import WhatsappFloat from '../components/WhatsappFloat';
 
 
 
@@ -644,7 +645,7 @@ export default function About() {
             </div>
           </section>
           {/* End Pricing Section */}
-       
+       <WhatsappFloat />
       
     </>
   );

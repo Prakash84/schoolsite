@@ -6,6 +6,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaWhatsapp } from 'react-icons/fa';
 import Image from 'next/image';
+import WhatsappFloat from '../components/WhatsappFloat';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -232,6 +233,7 @@ export default function ContactSection() {
           </form>
         </div>
       </section>
+       <WhatsappFloat />
     </>
   );
 }

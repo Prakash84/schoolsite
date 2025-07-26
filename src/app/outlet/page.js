@@ -5,6 +5,7 @@ import { Playfair_Display } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import WhatsappFloat from '../components/WhatsappFloat';
 
 
 const specialFeatures = [
@@ -569,7 +570,7 @@ export default function Outlet() {
     </motion.div>
   </div>
 </section>
-
+ <WhatsappFloat />
     </>
     
   )
