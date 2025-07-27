@@ -19,7 +19,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Timeout for delayed close
   let servicesTimeout, outletTimeout;
 
   const handleServicesEnter = () => {
@@ -28,7 +27,7 @@ export default function Navbar() {
   };
 
   const handleServicesLeave = () => {
-    servicesTimeout = setTimeout(() => setIsServicesOpen(false), 300);
+    servicesTimeout = setTimeout(() => setIsServicesOpen(false), 500);
   };
 
   const handleOutletEnter = () => {
@@ -37,7 +36,7 @@ export default function Navbar() {
   };
 
   const handleOutletLeave = () => {
-    outletTimeout = setTimeout(() => setIsOutletOpen(false), 300);
+    outletTimeout = setTimeout(() => setIsOutletOpen(false), 500);
   };
 
   const servicesDropdown = [
@@ -58,7 +57,6 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Top Contact Bar */}
       <div className="hidden md:flex justify-between items-center text-sm text-white px-6 py-2 shadow-sm z-50" style={{ backgroundColor: "#c58940" }}>
         <p className="font-medium">📞 +91-9220961427</p>
         <p className="font-semibold">Book Your Appointment : Delhi | Noida | Gurgaon | Ghaziabad</p>
@@ -68,7 +66,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Navbar */}
       <motion.nav
         className={`w-full py-4 px-6 md:px-16 sticky top-0 z-50 bg-white transition-all duration-300 ${
           isScrolled ? "shadow-lg" : ""
@@ -78,33 +75,20 @@ export default function Navbar() {
         transition={{ duration: 0.5 }}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          {/* Logo */}
           <div className="w-32 h-10 relative">
             <Image src="/images/spadelhilogo22.png" alt="Delhi Body Spa Logo" fill className="object-contain" />
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8 items-center">
             <a href="/" className="font-medium text-gray-800 hover:text-amber-600 transition">Home</a>
             <a href="/about" className="font-medium text-gray-800 hover:text-amber-600 transition">About</a>
 
-            {/* Services */}
-            <div
-              className="relative"
-              onMouseEnter={handleServicesEnter}
-              onMouseLeave={handleServicesLeave}
-            >
-              <button className="font-medium text-gray-800 hover:text-amber-600 transition">
-                Services
-              </button>
+            <div className="relative" onMouseEnter={handleServicesEnter} onMouseLeave={handleServicesLeave}>
+              <button className="font-medium text-gray-800 hover:text-amber-600 transition">Services</button>
               {isServicesOpen && (
                 <div className="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-xl z-50 py-2">
                   {servicesDropdown.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="block px-5 py-2 text-[15px] font-medium text-gray-800 hover:bg-amber-100 transition"
-                    >
+                    <a key={item.name} href={item.href} className="block px-5 py-2 text-[15px] font-medium text-gray-800 hover:bg-amber-100 transition">
                       {item.name}
                     </a>
                   ))}
@@ -114,23 +98,12 @@ export default function Navbar() {
 
             <a href="/pricing" className="font-medium text-gray-800 hover:text-amber-600 transition">Pricing</a>
 
-            {/* Outlet */}
-            <div
-              className="relative"
-              onMouseEnter={handleOutletEnter}
-              onMouseLeave={handleOutletLeave}
-            >
-              <button className="font-medium text-gray-800 hover:text-amber-600 transition">
-                Outlet
-              </button>
+            <div className="relative" onMouseEnter={handleOutletEnter} onMouseLeave={handleOutletLeave}>
+              <button className="font-medium text-gray-800 hover:text-amber-600 transition">Outlet</button>
               {isOutletOpen && (
                 <div className="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-xl z-50 py-2">
                   {outletDropdown.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="block px-5 py-2 text-[15px] font-medium text-gray-800 hover:bg-amber-100 transition"
-                    >
+                    <a key={item.name} href={item.href} className="block px-5 py-2 text-[15px] font-medium text-gray-800 hover:bg-amber-100 transition">
                       {item.name}
                     </a>
                   ))}
@@ -140,50 +113,33 @@ export default function Navbar() {
 
             <a href="/blog" className="font-medium text-gray-800 hover:text-amber-600 transition">Blog</a>
             <a href="/gallery" className="font-medium text-gray-800 hover:text-amber-600 transition">Gallery</a>
-
             <a href="/contact" className="font-medium text-gray-800 hover:text-amber-600 transition">Contact</a>
 
-            <a
-              href="https://api.whatsapp.com/send?phone=919211059033"
-              className="bg-amber-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md"
-            >
+            <a href="https://api.whatsapp.com/send?phone=919211059033" className="bg-amber-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md">
               Book Appointment
             </a>
           </div>
 
-          {/* Mobile Toggle */}
           <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-amber-600 focus:outline-none text-2xl"
-            >
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-amber-600 focus:outline-none text-2xl">
               ☰
             </button>
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 space-y-4">
             <a href="/" className="block text-gray-800 hover:text-amber-600">Home</a>
             <a href="/about" className="block text-gray-800 hover:text-amber-600">About</a>
 
-            {/* Mobile Services */}
-            <div>
-              <button
-                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
-                className="font-medium text-gray-800 flex justify-between w-full"
-              >
+            <div className="border-t pt-2">
+              <button onClick={() => setMobileServicesOpen(!mobileServicesOpen)} className="w-full flex justify-between items-center text-gray-800 font-medium">
                 Services <span>{mobileServicesOpen ? "▲" : "▼"}</span>
               </button>
               {mobileServicesOpen && (
-                <div className="ml-4 mt-1 space-y-1">
+                <div className="ml-4 mt-2 space-y-1">
                   {servicesDropdown.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="block text-sm text-[15px] font-medium text-gray-800 hover:text-amber-600"
-                    >
+                    <a key={item.name} href={item.href} className="block text-sm font-medium text-gray-700 hover:text-amber-600">
                       {item.name}
                     </a>
                   ))}
@@ -193,22 +149,14 @@ export default function Navbar() {
 
             <a href="/pricing" className="block text-gray-800 hover:text-amber-600">Pricing</a>
 
-            {/* Mobile Outlet */}
-            <div>
-              <button
-                onClick={() => setMobileOutletOpen(!mobileOutletOpen)}
-                className="font-medium text-gray-800 flex justify-between w-full"
-              >
+            <div className="border-t pt-2">
+              <button onClick={() => setMobileOutletOpen(!mobileOutletOpen)} className="w-full flex justify-between items-center text-gray-800 font-medium">
                 Outlet <span>{mobileOutletOpen ? "▲" : "▼"}</span>
               </button>
               {mobileOutletOpen && (
-                <div className="ml-4 mt-1 space-y-1">
+                <div className="ml-4 mt-2 space-y-1">
                   {outletDropdown.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="block text-sm text-[15px] font-medium text-gray-800 hover:text-amber-600"
-                    >
+                    <a key={item.name} href={item.href} className="block text-sm font-medium text-gray-700 hover:text-amber-600">
                       {item.name}
                     </a>
                   ))}
@@ -216,12 +164,11 @@ export default function Navbar() {
               )}
             </div>
 
+            <a href="/blog" className="block text-gray-800 hover:text-amber-600">Blog</a>
+            <a href="/gallery" className="block text-gray-800 hover:text-amber-600">Gallery</a>
             <a href="/contact" className="block text-gray-800 hover:text-amber-600">Contact</a>
 
-            <a
-              href="https://api.whatsapp.com/send?phone=919211059033"
-              className="block text-center bg-amber-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md"
-            >
+            <a href="https://api.whatsapp.com/send?phone=919211059033" className="block text-center bg-amber-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md">
               Book Appointment
             </a>
           </div>
