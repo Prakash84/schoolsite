@@ -8,53 +8,69 @@ import Image from "next/image";
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isOutletOpen, setIsOutletOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [mobileOutletOpen, setMobileOutletOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Timeout for delayed close
+  let servicesTimeout, outletTimeout;
+
+  const handleServicesEnter = () => {
+    clearTimeout(servicesTimeout);
+    setIsServicesOpen(true);
+  };
+
+  const handleServicesLeave = () => {
+    servicesTimeout = setTimeout(() => setIsServicesOpen(false), 300);
+  };
+
+  const handleOutletEnter = () => {
+    clearTimeout(outletTimeout);
+    setIsOutletOpen(true);
+  };
+
+  const handleOutletLeave = () => {
+    outletTimeout = setTimeout(() => setIsOutletOpen(false), 300);
+  };
+
+  const servicesDropdown = [
+    { name: "Sandwich Massage", href: "/services/sandwich-massage" },
+    { name: "Couple Massage", href: "/services/couple-massage" },
+    { name: "B2B Massage", href: "/services/b2b-massage" },
+    { name: "Full Body Massage", href: "/services/full-body-massage" },
+    { name: "Hot Stone Massage", href: "/services/hot-stone-massage" },
+  ];
+
+  const outletDropdown = [
+    { name: "Aerocity", href: "/outlet/aerocity" },
+    { name: "Connaught Place", href: "/outlet/cp" },
+    { name: "Lajpat Nagar", href: "/outlet/lajpat-nagar" },
+    { name: "Paschim Vihar", href: "/outlet/paschim-vihar" },
+    { name: "Noida", href: "/outlet/noida" },
+  ];
+
   return (
     <>
       {/* Top Contact Bar */}
-      <div
-        className="hidden md:flex justify-between items-center text-sm text-white px-6 py-2 shadow-sm z-50"
-        style={{ backgroundColor: "#c58940" }}
-      >
-        <div>
-          <p className="font-medium">📞 +91-9220961427</p>
-        </div>
-        <div className="text-center">
-          <p className="font-semibold">
-            Book Your Appointment : Delhi | Noida | Gurgaon | Ghaziabad
-          </p>
-        </div>
+      <div className="hidden md:flex justify-between items-center text-sm text-white px-6 py-2 shadow-sm z-50" style={{ backgroundColor: "#c58940" }}>
+        <p className="font-medium">📞 +91-9220961427</p>
+        <p className="font-semibold">Book Your Appointment : Delhi | Noida | Gurgaon | Ghaziabad</p>
         <div className="flex items-center space-x-4">
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-pink-200 transition"
-          >
-            <FaInstagram size={20} />
-          </a>
-          <a
-            href="http://wa.link/gt55qd"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white hover:text-green-300 transition"
-          >
-            <FaWhatsapp size={20} />
-          </a>
+          <a href="https://www.instagram.com/" target="_blank"><FaInstagram size={20} /></a>
+          <a href="http://wa.link/gt55qd" target="_blank"><FaWhatsapp size={20} /></a>
         </div>
       </div>
 
-      {/* Main Navbar */}
+      {/* Navbar */}
       <motion.nav
-        className={`w-full py-4 px-6 md:px-16 z-50 sticky top-0 bg-white shadow-md backdrop-blur-md transition-all duration-300 ${
+        className={`w-full py-4 px-6 md:px-16 sticky top-0 z-50 bg-white transition-all duration-300 ${
           isScrolled ? "shadow-lg" : ""
         }`}
         initial={{ y: -100 }}
@@ -62,47 +78,77 @@ export default function Navbar() {
         transition={{ duration: 0.5 }}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          {/* Logo Section */}
-          <motion.div
-            className="w-30 h-10 relative" // Increased width from w-40 to w-60
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            <Image
-              src="/images/spadelhilogo22.png"
-              alt="Delhi Body Spa Logo"
-              fill
-              className="object-contain"
-              priority
-            />
-          </motion.div>
-
-
-          {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
-            {[
-              { name: "Home", href: "/" },
-              { name: "About", href: "/about" },
-              { name: "Services", href: "/Services" },
-              { name: "Pricing", href: "/pricing" },
-              { name: "Outlet", href: "/outlet" },
-              { name: "Contact", href: "/contact" },
-            ].map((item, i) => (
-              <motion.a
-                key={item.name}
-                href={item.href}
-                className="font-medium text-gray-800 hover:text-amber-600 transition-colors"
-                initial={{ opacity: 0, y: -10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 + i * 0.1 }}
-              >
-                {item.name}
-              </motion.a>
-            ))}
+          {/* Logo */}
+          <div className="w-32 h-10 relative">
+            <Image src="/images/spadelhilogo22.png" alt="Delhi Body Spa Logo" fill className="object-contain" />
           </div>
 
-          {/* Mobile Menu Toggle */}
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-8 items-center">
+            <a href="/" className="font-medium text-gray-800 hover:text-amber-600 transition">Home</a>
+            <a href="/about" className="font-medium text-gray-800 hover:text-amber-600 transition">About</a>
+
+            {/* Services */}
+            <div
+              className="relative"
+              onMouseEnter={handleServicesEnter}
+              onMouseLeave={handleServicesLeave}
+            >
+              <button className="font-medium text-gray-800 hover:text-amber-600 transition">
+                Services
+              </button>
+              {isServicesOpen && (
+                <div className="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-xl z-50 py-2">
+                  {servicesDropdown.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="block px-5 py-2 text-[15px] font-medium text-gray-800 hover:bg-amber-100 transition"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <a href="/pricing" className="font-medium text-gray-800 hover:text-amber-600 transition">Pricing</a>
+
+            {/* Outlet */}
+            <div
+              className="relative"
+              onMouseEnter={handleOutletEnter}
+              onMouseLeave={handleOutletLeave}
+            >
+              <button className="font-medium text-gray-800 hover:text-amber-600 transition">
+                Outlet
+              </button>
+              {isOutletOpen && (
+                <div className="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-xl z-50 py-2">
+                  {outletDropdown.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="block px-5 py-2 text-[15px] font-medium text-gray-800 hover:bg-amber-100 transition"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <a href="/contact" className="font-medium text-gray-800 hover:text-amber-600 transition">Contact</a>
+
+            <a
+              href="https://api.whatsapp.com/send?phone=919211059033"
+              className="bg-amber-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md"
+            >
+              Book Appointment
+            </a>
+          </div>
+
+          {/* Mobile Toggle */}
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -111,42 +157,67 @@ export default function Navbar() {
               ☰
             </button>
           </div>
-
-          {/* Appointment Button */}
-          <motion.a
-            href="https://api.whatsapp.com/send?phone=918860788415"
-            className="hidden md:inline-block bg-amber-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-amber-700 transition-all duration-300 shadow-md"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5 }}
-            whileHover={{ scale: 1.05 }}
-          >
-            Book Appointment
-          </motion.a>
         </div>
 
-        {/* Mobile Dropdown Menu */}
+        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 space-y-4">
-            {[
-              { name: "Home", href: "/" },
-              { name: "About", href: "/about" },
-              { name: "Services", href: "/services" },
-              { name: "Pricing", href: "/pricing" },
-              { name: "Outlet", href: "/outlet" },
-              { name: "Contact", href: "/contact" },
-            ].map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="block text-gray-800 hover:text-amber-600 text-base"
+            <a href="/" className="block text-gray-800 hover:text-amber-600">Home</a>
+            <a href="/about" className="block text-gray-800 hover:text-amber-600">About</a>
+
+            {/* Mobile Services */}
+            <div>
+              <button
+                onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                className="font-medium text-gray-800 flex justify-between w-full"
               >
-                {item.name}
-              </a>
-            ))}
+                Services <span>{mobileServicesOpen ? "▲" : "▼"}</span>
+              </button>
+              {mobileServicesOpen && (
+                <div className="ml-4 mt-1 space-y-1">
+                  {servicesDropdown.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="block text-sm text-[15px] font-medium text-gray-800 hover:text-amber-600"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <a href="/pricing" className="block text-gray-800 hover:text-amber-600">Pricing</a>
+
+            {/* Mobile Outlet */}
+            <div>
+              <button
+                onClick={() => setMobileOutletOpen(!mobileOutletOpen)}
+                className="font-medium text-gray-800 flex justify-between w-full"
+              >
+                Outlet <span>{mobileOutletOpen ? "▲" : "▼"}</span>
+              </button>
+              {mobileOutletOpen && (
+                <div className="ml-4 mt-1 space-y-1">
+                  {outletDropdown.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      className="block text-sm text-[15px] font-medium text-gray-800 hover:text-amber-600"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <a href="/contact" className="block text-gray-800 hover:text-amber-600">Contact</a>
+
             <a
-              href="https://api.whatsapp.com/send?phone=918860788415"
-              className="block w-full text-center bg-amber-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-amber-700 transition-all duration-300 shadow-md"
+              href="https://api.whatsapp.com/send?phone=919211059033"
+              className="block text-center bg-amber-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md"
             >
               Book Appointment
             </a>
