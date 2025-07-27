@@ -41,18 +41,18 @@ export default function Navbar() {
   };
 
   const servicesDropdown = [
-    { name: "Sandwich Massage", href: "/services/sandwich-massage" },
-    { name: "Couple Massage", href: "/services/couple-massage" },
-    { name: "B2B Massage", href: "/services/b2b-massage" },
-    { name: "Full Body Massage", href: "/services/full-body-massage" },
-    { name: "Hot Stone Massage", href: "/services/hot-stone-massage" },
+    { name: "Sandwich Massage", href: "/Services/sandwichmassage" },
+    { name: "Couple Massage", href: "/Services/couplemassage" },
+    { name: "B2B Massage", href: "/Services/b2bmassage" },
+    { name: "Full Body Massage", href: "/Services/fullbodymassage" },
+    { name: "Hot Stone Massage", href: "/Services/hotstonemassage" },
   ];
 
   const outletDropdown = [
     { name: "Aerocity", href: "/outlet/aerocity" },
     { name: "Connaught Place", href: "/outlet/cp" },
-    { name: "Lajpat Nagar", href: "/outlet/lajpat-nagar" },
-    { name: "Paschim Vihar", href: "/outlet/paschim-vihar" },
+    { name: "Lajpat Nagar", href: "/outlet/lajpatnagar" },
+    { name: "Paschim Vihar", href: "/outlet/paschimvihar" },
     { name: "Noida", href: "/outlet/noida" },
   ];
 

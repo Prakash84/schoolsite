@@ -5,7 +5,9 @@
   import { Playfair_Display, Montserrat } from 'next/font/google';
   import Image from 'next/image';
   import { Check } from "lucide-react";
-  import WhatsappFloat from '../components/WhatsappFloat';
+  // import WhatsappFloat from '../components/WhatsappFloat';
+  import WhatsappFloat from '../../components/WhatsappFloat';
+
 
   const featuresData = [
   {
@@ -142,7 +144,7 @@
 ];
 {/* End Our Process */}
 
-  export default function Services() {
+  export default function sandwichmassage() {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -898,3 +900,5 @@
       </div>
     );
   }
+
+

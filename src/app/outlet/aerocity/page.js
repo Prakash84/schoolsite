@@ -5,7 +5,8 @@ import { Playfair_Display } from "next/font/google";
 import { Montserrat } from "next/font/google";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import WhatsappFloat from '../components/WhatsappFloat';
+// import WhatsappFloat from '../components/WhatsappFloat';
+  import WhatsappFloat from '../../components/WhatsappFloat';
 
 
 const specialFeatures = [
@@ -127,7 +128,7 @@ const hotelOutlets = [
     variable: '--font-montserrat'
   });
 
-export default function Outlet() {
+export default function aerocity() {
   // Features for the 18+ section
   
   
