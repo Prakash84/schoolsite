@@ -138,6 +138,9 @@ export default function Navbar() {
               )}
             </div>
 
+            <a href="/blog" className="font-medium text-gray-800 hover:text-amber-600 transition">Blog</a>
+            <a href="/gallery" className="font-medium text-gray-800 hover:text-amber-600 transition">Gallery</a>
+
             <a href="/contact" className="font-medium text-gray-800 hover:text-amber-600 transition">Contact</a>
 
             <a
