@@ -87,7 +87,7 @@ export default function Navbar() {
 
             {/* Services Dropdown */}
             <div className="relative" onMouseEnter={handleServicesEnter} onMouseLeave={handleServicesLeave}>
-              <a href="/Services"><button className="font-medium text-gray-800 hover:text-amber-600 transition">Services</button></a>
+              <button className="font-medium text-gray-800 hover:text-amber-600 transition"><a href="/Services">Services</a></button>
               {isServicesOpen && (
                 <div className="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-xl z-50 py-2">
                   {servicesDropdown.map((item) => (
@@ -139,20 +139,31 @@ export default function Navbar() {
             <a href="/about" className="block text-gray-800 font-semibold hover:text-amber-600">About</a>
 
             {/* Mobile Services */}
-            <div>
-              <button onClick={() => setMobileServicesOpen(!mobileServicesOpen)} className="w-full flex justify-between items-center text-gray-800 font-semibold hover:text-amber-600 py-2">
-                Services <span>{mobileServicesOpen ? "▲" : "▼"}</span>
-              </button>
-              {mobileServicesOpen && (
-                <div className="mt-2 ml-4 space-y-2 border-l-2 border-amber-600 pl-4">
-                  {servicesDropdown.map((item) => (
-                    <a key={item.name} href={item.href} className="block text-sm text-gray-700 font-medium hover:text-amber-600">
-                      {item.name}
-                    </a>
-                  ))}
+            <div className="flex justify-between items-center text-gray-800 font-semibold py-2">
+                  <a href="/Services" className="hover:text-amber-600 w-full">Services</a>
+                  <button
+                    onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                    className="text-amber-600 ml-2 focus:outline-none"
+                    aria-label="Toggle Services Dropdown"
+                  >
+                    {mobileServicesOpen ? "▲" : "▼"}
+                  </button>
                 </div>
-              )}
-            </div>
+
+                {mobileServicesOpen && (
+                  <div className="mt-2 ml-4 space-y-2 border-l-2 border-amber-600 pl-4">
+                    {servicesDropdown.map((item) => (
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        className="block text-sm text-gray-700 font-medium hover:text-amber-600"
+                      >
+                        {item.name}
+                      </a>
+                    ))}
+                  </div>
+                )}
+
 
             <a href="/pricing" className="block text-gray-800 font-semibold hover:text-amber-600">Pricing</a>
 
