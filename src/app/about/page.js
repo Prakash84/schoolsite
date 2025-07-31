@@ -357,6 +357,333 @@ export default function About() {
         </div>
       </section>
 
+      {/* content */}
+      {/* demo 1 */}
+      <section className="relative bg-gradient-to-br from-indigo-50 to-rose-50 py-20 px-4 overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-rose-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+      <div className="absolute top-0 right-0 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+      <div className="absolute bottom-0 left-1/4 w-72 h-72 bg-amber-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+      
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+            Our <span className="text-rose-500">Sanctuary</span> Story
+          </h1>
+          <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="space-y-8">
+            <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                Journey to Wellness
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Serenity Body Spa was born from a simple vision: to create an urban oasis where modern wellness meets ancient healing traditions. Founded in 2010 by renowned holistic therapist Elena Rodriguez, our spa began as a single-treatment room with a passionate mission. Today, we've grown into an award-winning sanctuary serving over 5,000 clients annually, yet we've maintained our core commitment to personalized care.
+              </p>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Our journey mirrors the transformations we facilitate - starting small, nurturing growth, and evolving while staying true to our essence. Each expansion was guided by client feedback and emerging wellness research, resulting in our unique blend of evidence-based therapies and intuitive body wisdom.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                Our Healing Philosophy
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                We believe true wellness emerges from harmony between physical, mental, and energetic dimensions. Unlike conventional spas, our approach integrates three core principles:
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                {[
+                  {title: 'Mindful Presence', desc: 'Therapists trained in meditation techniques to create truly present healing experiences'},
+                  {title: 'Biome Intelligence', desc: 'Therapies designed to activate your body\'s innate healing capabilities'},
+                  {title: 'Energy Alignment', desc: 'Space designed with sacred geometry to enhance therapeutic benefits'}
+                ].map((item, index) => (
+                  <div key={index} className="bg-indigo-50 p-4 rounded-xl">
+                    <h3 className="font-bold text-indigo-700 mb-2">{item.title}</h3>
+                    <p className="text-sm text-gray-600">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-gray-600 leading-relaxed">
+                This holistic framework allows us to create treatments that don't just relax temporarily but catalyze lasting change. Our clients report benefits ranging from improved sleep patterns to reduced chronic pain months after their visits.
+              </p>
+            </div>
+          </div>
+
+          <div className="space-y-8">
+            <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                Masterful Hands, Compassionate Hearts
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Our team of 23 therapists represents the pinnacle of spa craftsmanship. Each practitioner undergoes 500+ hours of training in our proprietary modalities before touching clients. We source talent globally, with specialists in:
+              </p>
+              <ul className="grid grid-cols-2 gap-3 mb-6">
+                {[
+                  'Thai Herbal Compress', 'Shiatsu', 'Lymphatic Drainage', 
+                  'Ayurvedic Abhyanga', 'Hot Stone Therapy', 'Aromatherapy',
+                  'Deep Tissue Sculpting', 'Craniosacral'
+                ].map((item, index) => (
+                  <li key={index} className="flex items-center">
+                    <div className="w-2 h-2 bg-rose-400 rounded-full mr-3"></div>
+                    <span className="text-gray-600">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-gray-600 leading-relaxed">
+                Beyond technical excellence, we select therapists for their intuitive healing abilities. Monthly training includes emotional intelligence development and energy work certification. This investment shows in our 98% client retention rate and numerous industry awards.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
+              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+                Sustainable Wellness
+              </h2>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Our commitment extends beyond individual wellness to planetary health. We're proud to be the first Carbon Neutral spa in our region, with initiatives including:
+              </p>
+              <div className="flex flex-wrap gap-4 mb-6">
+                {[
+                  {icon: '♻️', text: 'Zero-Waste Policy'},
+                  {icon: '🌱', text: 'Organic Linens'},
+                  {icon: '💧', text: 'Water Recycling'},
+                  {icon: '🌎', text: 'Carbon Offsetting'},
+                  {icon: '🏺', text: 'Handcrafted Products'}
+                ].map((item, index) => (
+                  <span key={index} className="bg-emerald-50 text-emerald-700 px-4 py-2 rounded-full flex items-center">
+                    <span className="mr-2 text-xl">{item.icon}</span>
+                    {item.text}
+                  </span>
+                ))}
+              </div>
+              <p className="text-gray-600 leading-relaxed">
+                Our product line features sustainably harvested ingredients from ethical cooperatives. We've partnered with local environmental initiatives, donating 5% of profits to wetland conservation. When you indulge at Serenity, you're supporting a healthier ecosystem.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-20 bg-gradient-to-r from-indigo-500 to-rose-500 rounded-3xl p-10 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">Your Transformation Awaits</h2>
+          <p className="text-indigo-100 max-w-3xl mx-auto mb-8 text-lg">
+            We invite you to experience the difference that intention, expertise, and genuine care can make. Whether seeking relief from chronic stress, post-injury recovery, or simply sacred "me time," our doors open to welcome you home to yourself.
+          </p>
+          <button className="bg-amber-400 hover:bg-amber-300 text-gray-900 font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+            Book Your Journey
+          </button>
+        </div>
+      </div>
+    </section>
+      {/* end demo 1 */}
+      {/* demo 2 */}
+      <section className="bg-gradient-to-b from-[#f9f6f2] to-[#f0eae3] py-20 px-4 overflow-hidden">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
+        <div className="text-center mb-16 relative">
+          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-[#c5a491]"></div>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-[#3a2d28] mb-4">
+            Our <span className="text-[#9d7c6c]">Sanctuary</span> Story
+          </h1>
+          <p className="text-[#6d5d54] max-w-2xl mx-auto text-lg">
+            Discover the journey, philosophy, and passion that created your urban oasis
+          </p>
+        </div>
+
+        {/* Content Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          {/* Left Column */}
+          <div className="space-y-12">
+            {/* Journey Card */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
+              <div className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="bg-[#f0eae3] p-3 rounded-lg mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#9d7c6c]" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-[#3a2d28]">Our Journey</h2>
+                </div>
+                <p className="text-[#6d5d54] mb-4 leading-relaxed">
+                  Serenity Springs was born from a simple vision: to create an urban oasis where modern wellness meets ancient healing traditions. Founded in 2010 by renowned holistic therapist Elena Rodriguez, our spa began as a single-treatment room with a passionate mission. Today, we've grown into an award-winning sanctuary serving over 5,000 clients annually, yet we've maintained our core commitment to personalized care.
+                </p>
+                <p className="text-[#6d5d54] leading-relaxed">
+                  Our journey mirrors the transformations we facilitate - starting small, nurturing growth, and evolving while staying true to our essence. Each expansion was guided by client feedback and emerging wellness research, resulting in our unique blend of evidence-based therapies and intuitive body wisdom.
+                </p>
+              </div>
+              <div className="bg-[#f8f5f2] p-6 border-t border-[#e8e0d9]">
+                <div className="flex flex-wrap gap-4 justify-center">
+                  {[2010, 2014, 2018, 2022, 2024].map((year, index) => (
+                    <div key={index} className="text-center">
+                      <div className="text-2xl font-bold text-[#9d7c6c]">{year}</div>
+                      <div className="text-sm text-[#6d5d54]">{index === 0 ? 'Founded' : index === 4 ? 'Today' : 'Expansion'}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Philosophy Card */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
+              <div className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="bg-[#f0eae3] p-3 rounded-lg mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#9d7c6c]" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-[#3a2d28]">Healing Philosophy</h2>
+                </div>
+                <p className="text-[#6d5d54] mb-6 leading-relaxed">
+                  We believe true wellness emerges from harmony between physical, mental, and energetic dimensions. Unlike conventional spas, our approach integrates three core principles:
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                  {[
+                    {title: 'Mindful Presence', desc: 'Therapists trained in meditation to create truly present healing experiences'},
+                    {title: 'Biome Intelligence', desc: 'Therapies designed to activate your body\'s innate healing capabilities'},
+                    {title: 'Energy Alignment', desc: 'Space designed with sacred geometry to enhance therapeutic benefits'}
+                  ].map((item, index) => (
+                    <div key={index} className="bg-[#f8f5f2] p-5 rounded-xl border border-[#e8e0d9]">
+                      <h3 className="font-bold text-lg text-[#3a2d28] mb-2">{item.title}</h3>
+                      <p className="text-sm text-[#6d5d54]">{item.desc}</p>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-[#6d5d54] leading-relaxed">
+                  This holistic framework allows us to create treatments that don't just relax temporarily but catalyze lasting change. Our clients report benefits ranging from improved sleep patterns to reduced chronic pain months after their visits.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column */}
+          <div className="space-y-12">
+            {/* Therapists Card */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
+              <div className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="bg-[#f0eae3] p-3 rounded-lg mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#9d7c6c]" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-[#3a2d28]">Our Healers</h2>
+                </div>
+                <p className="text-[#6d5d54] mb-6 leading-relaxed">
+                  Our team of 23 therapists represents the pinnacle of spa craftsmanship. Each practitioner undergoes 500+ hours of training in our proprietary modalities before touching clients. We source talent globally, with specialists in diverse healing traditions:
+                </p>
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  {[
+                    'Thai Herbal Compress', 'Shiatsu', 'Lymphatic Drainage', 
+                    'Ayurvedic Abhyanga', 'Hot Stone Therapy', 'Aromatherapy',
+                    'Deep Tissue Sculpting', 'Craniosacral Therapy',
+                    'Reflexology', 'Prenatal Massage', 'Cupping', 'Reiki'
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start">
+                      <div className="w-2 h-2 bg-[#9d7c6c] rounded-full mt-2 mr-3"></div>
+                      <span className="text-[#6d5d54]">{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-[#6d5d54] leading-relaxed">
+                  Beyond technical excellence, we select therapists for their intuitive healing abilities. Monthly training includes emotional intelligence development and energy work certification. This investment shows in our 98% client retention rate and numerous industry awards.
+                </p>
+              </div>
+            </div>
+
+            {/* Sustainability Card */}
+            <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
+              <div className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="bg-[#f0eae3] p-3 rounded-lg mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[#9d7c6c]" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-[#3a2d28]">Sustainable Wellness</h2>
+                </div>
+                <p className="text-[#6d5d54] mb-6 leading-relaxed">
+                  Our commitment extends beyond individual wellness to planetary health. We're proud to be the first Carbon Neutral spa in our region, with initiatives including:
+                </p>
+                <div className="flex flex-wrap gap-3 mb-6">
+                  {[
+                    {icon: '♻️', text: 'Zero-Waste Policy'},
+                    {icon: '🌱', text: 'Organic Linens'},
+                    {icon: '💧', text: 'Water Recycling'},
+                    {icon: '🌎', text: 'Carbon Offsetting'},
+                    {icon: '🏺', text: 'Handcrafted Products'},
+                    {icon: '🚫', text: 'Cruelty-Free'}
+                  ].map((item, index) => (
+                    <span key={index} className="bg-[#f0eae3] text-[#6d5d54] px-4 py-2 rounded-full flex items-center">
+                      <span className="mr-2">{item.icon}</span>
+                      {item.text}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-[#6d5d54] leading-relaxed">
+                  Our product line features sustainably harvested ingredients from ethical cooperatives. We've partnered with local environmental initiatives, donating 5% of profits to wetland conservation. When you indulge at Serenity Springs, you're supporting a healthier ecosystem.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Testimonial Section */}
+        <div className="mt-20 bg-gradient-to-r from-[#9d7c6c] to-[#c5a491] rounded-2xl p-8 md:p-12 text-white overflow-hidden">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-playfair font-bold mb-6 text-center">Voices of Transformation</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                {name: 'Sarah K.', text: "Serenity Springs changed my relationship with my body. After years of chronic pain, their therapists helped me find relief I thought impossible."},
+                {name: 'Michael T.', text: "The attention to detail here is extraordinary. From the moment you enter, you feel transported to a sacred healing space."},
+                {name: 'Priya M.', text: "More than a spa - it's a wellness education. I've incorporated techniques learned here into my daily routine with remarkable results."}
+              ].map((testimonial, index) => (
+                <div key={index} className="bg-white/20 p-6 rounded-xl backdrop-blur-sm">
+                  <div className="flex items-center mb-4">
+                    <div className="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16" />
+                    <div className="ml-4">
+                      <div className="font-bold">{testimonial.name}</div>
+                      <div className="flex">
+                        {[...Array(5)].map((_, i) => (
+                          <svg key={i} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-amber-300" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                          </svg>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <p className="italic">"{testimonial.text}"</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="mt-20 text-center">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-[#3a2d28] mb-6">
+            Begin Your Wellness Journey
+          </h2>
+          <p className="text-[#6d5d54] max-w-2xl mx-auto mb-8 text-lg">
+            We invite you to experience the difference that intention, expertise, and genuine care can make. Whether seeking relief from chronic stress, post-injury recovery, or simply sacred "me time," our doors open to welcome you home to yourself.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <button className="bg-[#9d7c6c] hover:bg-[#8a6a5a] text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+              Book Your Sanctuary Experience
+            </button>
+            <button className="bg-white hover:bg-[#f8f5f2] border border-[#9d7c6c] text-[#9d7c6c] font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+              Explore Our Treatments
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+      {/* end demo 2 */}
+      {/* end content */}
+
+
       {/* 18+ Exclusive Section */}
       <section 
   className="relative py-20 px-6 text-center bg-cover bg-center bg-no-repeat overflow-hidden"

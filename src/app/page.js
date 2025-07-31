@@ -73,49 +73,71 @@ const outlets = [
   {
     title: 'Aerocity',
     description: 'Experience comfort at Novotel Aerocity, just minutes from the airport, perfect for business stays and spa relaxation nearby.',
-    image: '/images/hotel1.jpeg',
+    image: '/images/NovotelNewDelhiAerocity.jpeg',
+
     link: 'https://api.whatsapp.com/send?phone=919211059033',
   },
   {
     title: 'New Friends Colony (NFC)',
     description: 'Experience luxury at The Suryaa New Delhi (NFC), a serene escape offering premium spa and wellness services in style.',
-    image: '/images/hotel2.jpg',
+    image: '/images/TheSuryaaNewDelhi(NFC).jpg',
     link: 'https://api.whatsapp.com/send?phone=919211059033',
   },
   {
     title: 'Connaught Place',
     description: 'Experience luxury at The Park New Delhi, Connaught Place. Relax, rejuvenate, and unwind with premium spa treatments in style.',
-    image: '/images/NovotelNewDelhiAerocity.jpeg',
+    image: '/images/TheParkConnaughtPlace.jpg',
     link: 'https://api.whatsapp.com/send?phone=919211059033',
   },
   {
     title: 'Grand Vasant Kunj',
     description: 'Experience luxury at The Roseate Aerocity, and indulge in relaxing spa therapies with expert care and serene ambiance.',
-    image: '/images/IBISNewDelhiAerocity.jpg',
+    image: '/images/TheGrandNewDelhi.jpg',
     link: 'https://api.whatsapp.com/send?phone=919211059033',
   },
 ];
  {/* Our Process */}
-  const processSteps = [
+const ProcessSteps = [
   {
-    number: '01',
-    title: 'Meeting',
-    description: 'Our spa meeting process ensures a seamless and soothing experience, from scheduling to consultation and relaxation.',
-    image: '/images/mmeeting.webp',
+    number: "01",
+    title: "Consultation & Assessment",
+    description: "Your journey begins with a personalized consultation where our expert therapists listen to your needs, assess your body condition, and understand your wellness goals. We'll discuss your medical history, stress points, and preferences to create a tailored treatment plan that addresses your unique requirements.",
+    image: "/images/mmeeting.webp"
   },
   {
-    number: '02',
-    title: 'Treatment',
-    description: 'Relaxing spa treatment begins with consultation, followed by cleansing, massage, and rejuvenation steps.',
-    image: '/images/spa-treatments.jpg',
+    number: "02",
+    title: "Treatment Experience",
+    description: "Step into our serene sanctuary where skilled therapists perform your customized treatment using premium organic products and specialized techniques. Experience deep relaxation as tension melts away, muscles unwind, and your senses are awakened through aromatherapy, therapeutic touch, and a calming ambiance designed for complete tranquility.",
+    image: "/images/spa-treatments.jpg"
   },
   {
-    number: '03',
-    title: 'Finalizing',
-    description: 'Confirm your appointment, choose your therapy, and relax, your spa journey is now set.',
-    image: '/images/finalizing.avif',
-  },
+    number: "03",
+    title: "Aftercare & Maintenance",
+    description: "Your wellness journey continues after your treatment with personalized aftercare recommendations. We'll provide guidance on stretching routines, self-care techniques, and lifestyle adjustments to prolong the benefits of your therapy. Schedule follow-up sessions and join our wellness community for ongoing support.",
+    image: "/images/finalizing.avif"
+  }
 ];
+
+//   const ProcessSteps = [
+//   {
+//     number: '01',
+//     title: 'Meeting',
+//     description: 'Our spa meeting process ensures a seamless and soothing experience, from scheduling to consultation and relaxation.',
+//     image: '/images/mmeeting.webp',
+//   },
+//   {
+//     number: '02',
+//     title: 'Treatment',
+//     description: 'Relaxing spa treatment begins with consultation, followed by cleansing, massage, and rejuvenation steps.',
+//     image: '/images/spa-treatments.jpg',
+//   },
+//   {
+//     number: '03',
+//     title: 'Finalizing',
+//     description: 'Confirm your appointment, choose your therapy, and relax, your spa journey is now set.',
+//     image: '/images/finalizing.avif',
+//   },
+// ];
 {/* End Our Process */}
 
 
@@ -1008,57 +1030,176 @@ const features2 = [
     </section>
 {/* ENd icon section */}
        {/* Our Process */}
-        <section className="w-full py-10 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
-         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           {/* Heading */}
-           <motion.h2
-             className="text-4xl md:text-5xl font-serif font-bold text-center text-amber-900 mb-12"
-             initial={{ opacity: 0, y: 30 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             viewport={{ once: true }}
-             transition={{ duration: 0.6 }}
-           >
-             Our Process
-           </motion.h2>
-       
-           {/* Process Steps */}
-           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-             {processSteps.map((step, index) => (
-               <motion.div
-                 key={index}
-                 className="relative bg-white shadow-lg rounded-2xl px-6 pt-24 pb-10 text-center hover:shadow-xl transition-shadow duration-300"
-                 initial={{ opacity: 0, y: 40 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 viewport={{ once: true }}
-                 transition={{ duration: 0.5, delay: index * 0.2 }}
-               >
-                 {/* Step Number */}
-                 <div className="absolute top-4 left-4 text-3xl font-bold text-amber-300 opacity-30 z-0">
-                   {step.number}
-                 </div>
-       
-                 {/* Image */}
-                 <div className="relative w-48 h-48 mx-auto mb-10 rounded-full overflow-hidden shadow-md">
+         <section className="w-full py-16 md:py-24 bg-gradient-to-br from-[#FFF9F0] via-[#fcf5e9] to-[#f9f1e2] relative overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-full opacity-10">
+        <div className="absolute top-10 left-10 w-40 h-40 bg-amber-300 rounded-full"></div>
+        <div className="absolute bottom-20 right-10 w-60 h-60 bg-amber-200 rounded-full"></div>
+        <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-amber-100 rounded-full"></div>
+      </div>
+      
+      {/* Leaf pattern overlay */}
+      <div className="absolute inset-0 opacity-5">
+        <svg viewBox="0 0 100 100" className="w-full h-full">
+          <path 
+            d="M20,30 Q40,15 60,30 T100,30 Q85,50 100,70 T80,90 Q50,85 30,90 T0,70 Q15,50 0,30 T20,30" 
+            fill="none" 
+            stroke="#d97706" 
+            strokeWidth="0.5"
+          />
+          <path 
+            d="M40,10 Q60,0 80,10 T100,40 Q85,30 100,50 T80,80 Q60,90 40,80 T20,50 Q30,30 20,10 T40,10" 
+            fill="none" 
+            stroke="#d97706" 
+            strokeWidth="0.5"
+          />
+        </svg>
+      </div>
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Heading */}
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+        >
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-amber-900 mb-4">
+            Our Transformative Process
+          </h2>
+          <div className="w-32 h-1 bg-gradient-to-r from-amber-300 to-amber-500 mx-auto rounded-full"></div>
+          <p className="mt-6 text-lg text-amber-800 max-w-2xl mx-auto">
+            Experience our carefully crafted journey to complete relaxation and rejuvenation
+          </p>
+        </motion.div>
+        
+        {/* Process Steps - Desktop */}
+        <div className="hidden md:grid grid-cols-3 gap-8 relative">
+          {/* Connecting line */}
+          <div className="absolute top-24 left-1/2 transform -translate-x-1/2 w-4/5 h-0.5 bg-gradient-to-r from-amber-200 via-amber-300 to-amber-200 z-0">
+            <div className="absolute -top-1.5 left-1/3 w-4 h-4 rounded-full bg-amber-500 transform -translate-x-1/2"></div>
+            <div className="absolute -top-1.5 left-2/3 w-4 h-4 rounded-full bg-amber-500 transform -translate-x-1/2"></div>
+          </div>
+          
+          {ProcessSteps.map((step, index) => (
+            <motion.div
+              key={index}
+              className="relative z-10"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+            >
+              {/* Step Number */}
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-white text-xl font-bold shadow-lg">
+                {step.number}
+              </div>
+              
+              {/* Card */}
+              <div className="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl h-full flex flex-col">
+                {/* Image */}
+                <div className="relative h-56 overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-t from-amber-900/20 to-transparent z-10"></div>
+                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" />
                   <Image
-                    loading="lazy"
+                      src={step.image}
+                      alt={step.title}
+                      fill
+                      className="object-cover"
+                      priority
+                    />
+
+                </div>
+                
+                {/* Content */}
+                <div className="p-6 flex-1 flex flex-col">
+                  <h3 className="text-xl md:text-2xl font-serif font-bold text-amber-800 mb-3">
+                    {step.title}
+                  </h3>
+                  <p className="text-amber-700/90 leading-relaxed flex-1">
+                    {step.description}
+                  </p>
+                  
+                  {/* Decorative element */}
+                  <div className="mt-6 flex justify-center">
+                    <div className="w-12 h-1 bg-amber-400 rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        
+        {/* Process Steps - Mobile */}
+        <div className="md:hidden space-y-12">
+          {ProcessSteps.map((step, index) => (
+            <motion.div
+              key={index}
+              className="relative bg-white rounded-2xl shadow-xl overflow-hidden"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+            >
+              {/* Step Number */}
+              <div className="absolute top-0 left-0 w-16 h-16 rounded-br-2xl bg-gradient-to-br from-amber-400 to-amber-600 flex items-center justify-center text-white text-xl font-bold">
+                {step.number}
+              </div>
+              
+              {/* Image */}
+              <div className="relative h-48 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-t from-amber-900/20 to-transparent z-10"></div>
+                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" />
+                <Image
                     src={step.image}
                     alt={step.title}
-                    layout="fill"
-                    objectFit="cover"
+                    fill
+                    className="object-cover"
+                    priority
                   />
-                </div>       
-                 {/* Title */}
-                 <h4 className="text-2xl font-semibold text-amber-800 mb-4 font-serif">
-                   {step.title}
-                 </h4>
-       
-                 {/* Description */}
-                 <p className="text-gray-600 leading-relaxed text-base">{step.description}</p>
-               </motion.div>
-             ))}
-           </div>
-         </div>
-        </section>
+
+              </div>
+              
+              {/* Content */}
+              <div className="p-6">
+                <h3 className="text-xl font-serif font-bold text-amber-800 mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-amber-700/90 leading-relaxed">
+                  {step.description}
+                </p>
+                
+                {/* Decorative element */}
+                <div className="mt-6 flex justify-center">
+                  <div className="w-12 h-1 bg-amber-400 rounded-full"></div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+        
+        {/* CTA */}
+        <motion.div
+          className="mt-20 text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+        >
+          <motion.button
+            className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:from-amber-600 hover:to-amber-700"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Begin Your Wellness Journey
+          </motion.button>
+          <p className="mt-4 text-amber-700">
+            Experience the difference of our transformative process
+          </p>
+        </motion.div>
+      </div>
+    </section>
       {/* End Our Process */}
     
        {/* outlate */}
@@ -1160,7 +1301,7 @@ const features2 = [
               <div className="relative bg-white rounded-3xl shadow-2xl overflow-hidden h-full flex flex-col transition-all duration-500 group-hover:shadow-2xl group-hover:-translate-y-2 border border-amber-100">
                 {/* Image section */}
                 <div className="relative h-80 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10"></div>
+                  {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent z-10"></div> */}
                   <div className="absolute inset-0 bg-gradient-to-r from-amber-900/10 to-transparent z-10"></div>
                    <Image
                         src={outlet.image} // example: "/images/lajpat-nagar.jpg"
@@ -1698,7 +1839,7 @@ const features2 = [
           </section>
           {/* end content section */}
 {/* Our Therapy Experts */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-gradient-to-br from-[#FFF9F0] via-[#fcf5e9] to-[#f9f1e2]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-yellow-700 font-serif">
@@ -1806,7 +1947,7 @@ const features2 = [
       {/* end */}
 
 
-      <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-gray-50 to-gray-100">
+      <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-[#FFF9F0] via-[#fcf5e9] to-[#f9f1e2]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <motion.p

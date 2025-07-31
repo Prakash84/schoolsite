@@ -175,252 +175,125 @@
 
     return (
       <div className="w-full">
-        {/* Banner */}
-       {/* <div className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-indigo-50">
-            Floating decorative elements
-            <div className="absolute top-10 left-10 w-24 h-24 bg-indigo-100 rounded-full opacity-20 animate-float"></div>
-            <div className="absolute top-1/3 right-20 w-16 h-16 bg-blue-100 rounded-full opacity-30 animate-float animation-delay-2000"></div>
-            <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-teal-100 rounded-full opacity-25 animate-float animation-delay-4000"></div>
+        {/* Banner */}       
+      <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-rose-50">
+        {/* Floating decorative elements */}
+        <div className="absolute top-10 left-10 w-24 h-24 bg-rose-100 rounded-full opacity-20 animate-float"></div>
+        <div className="absolute top-1/3 right-20 w-16 h-16 bg-amber-100 rounded-full opacity-30 animate-float animation-delay-2000"></div>
+        <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-teal-100 rounded-full opacity-25 animate-float animation-delay-4000"></div>
+        
+        {/* Main content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Text content - more minimal */}
+          <div className="space-y-6 text-center lg:text-left">
+            <div className="inline-flex items-center space-x-2 mb-6">
+              <div className="w-12 h-px bg-amber-600"></div>
+              <span className="text-amber-600 font-light tracking-widest">OUR SERVICES</span>
+              <div className="w-12 h-px bg-amber-600"></div>
+            </div>
             
-            Main content
-            <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              Text content - services focused
-              <div className="space-y-6 text-center lg:text-left">
-                <div className="inline-flex items-center space-x-2 mb-6">
-                  <div className="w-12 h-px bg-indigo-600"></div>
-                  <span className="text-indigo-600 font-light tracking-widest">OUR SERVICES</span>
-                  <div className="w-12 h-px bg-indigo-600"></div>
-                </div>
-                
-          <h1 className="text-4xl md:text-5xl font-light text-gray-800">
-            <span className="block font-serif text-5xl md:text-6xl mb-3 text-indigo-800">Harmony</span>
-            Tailored Experiences, 
-            <span className="block mt-2 font-medium">Journey to <span className="text-indigo-600">Tranquility</span></span>
-          </h1>
-          
-          <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+            <h1 className="text-4xl md:text-5xl font-light text-gray-800">
+              <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">Harmony</span>
+            Tailored Experiences,
+              <span className="block mt-2 font-medium">Journey to <span className="text-rose-600">Tranquility</span></span>
+            </h1>
+            
+            <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
             At LuxeSpa, we offer a sanctuary where each treatment is a journey. Our expert therapists craft personalized experiences using premium products and techniques that honor both tradition and innovation.
-          </p>
-          
-          <div className="grid grid-cols-2 gap-4 mt-8 max-w-md mx-auto lg:mx-0">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <span className="text-sm text-gray-700">Guided Meditation</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
-                </svg>
-              </div>
-              <span className="text-sm text-gray-700">Aromatherapy</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                </svg>
-              </div>
-              <span className="text-sm text-gray-700">Personal Consultations</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              <span className="text-sm text-gray-700">Holistic Treatments</span>
-            </div>
-          </div>
-          
-          <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <button className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-indigo-800 text-white rounded-sm hover:opacity-90 transition-opacity duration-300 flex items-center space-x-2">
-              <span>View All Services</span>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </button>
-            <button className="px-6 py-3 bg-white text-indigo-800 rounded-sm border border-indigo-200 hover:bg-indigo-50 transition-colors duration-300 flex items-center space-x-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-              <span>Book Appointment</span>
-            </button>
-          </div>
-        </div>
-
-        Image section - services focused
-        <div className="relative h-80 md:h-96 lg:h-[450px]">
-          <div className="absolute inset-0 border-4 border-white shadow-xl overflow-hidden rounded-lg">
-            <div className="relative w-full h-full">
-              Service image - replace with your actual image
-              <div className="absolute inset-0 border-4 border-white shadow-xl overflow-hidden">
-                <img
-                    src="/images/aboutusbanner.jpg" 
-                    alt="Spa Environment"
-                    className="w-full h-full object-cover"
-                  />
-              </div>
-              <div className="w-full h-full bg-gradient-to-br from-indigo-200 to-blue-300 flex items-center justify-center">
-                <div className="text-center p-6 max-w-xs">
-                  <div className="text-indigo-800 font-serif text-xl mb-2">Experience Our Signature Treatments</div>
-                  <div className="text-indigo-600 text-sm">Rejuvenate your senses with our curated wellness journeys</div>
+            </p>
+            
+            <div className="grid grid-cols-2 gap-4 mt-8 max-w-md mx-auto lg:mx-0">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
                 </div>
+                <span className="text-sm text-gray-700">Guided Meditation</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+                  </svg>
+                </div>
+                <span className="text-sm text-gray-700">Aromatherapy</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+                  </svg>
+                </div>
+                <span className="text-sm text-gray-700">Personal Consultations</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </div>
+                <span className="text-sm text-gray-700">Holistic Treatments</span>
               </div>
             </div>
-          </div>
 
-          Floating leaf decoration
-          <div className="absolute -bottom-6 -right-6">
-            <svg className="w-24 h-24 text-indigo-600/30" viewBox="0 0 100 100">
-              <path
-                fill="currentColor"
-                d="M50,10 C70,10 90,30 90,50 C90,70 70,90 50,90 C30,90 10,70 10,50 C10,30 30,10 50,10 Z M50,25 C35,25 25,35 25,50 C25,65 35,75 50,75 C65,75 75,65 75,50 C75,35 65,25 50,25 Z"
-              />
-            </svg>
-          </div>
-
-          Minimalist stats
-          <div className="absolute -left-4 bottom-8 bg-white p-4 shadow-md">
-            <div className="text-center">
-              <div className="text-2xl font-serif text-indigo-800">50+</div>
-              <div className="text-xs text-gray-500 tracking-widest">TREATMENTS</div>
+            <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <button className="px-6 py-3 bg-gradient-to-r from-amber-600 to-amber-800 text-white rounded-sm hover:opacity-90 transition-opacity duration-300 flex items-center space-x-2">
+                <span>View All Services</span>
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </button>
+              <button className="px-6 py-3 bg-white text-amber-800 rounded-sm border border-amber-200 hover:bg-amber-50 transition-colors duration-300 flex items-center space-x-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span>Book Appointment</span>
+              </button>
             </div>
           </div>
+
+          {/* Image section - more elegant */}
+          <div className="relative h-80 md:h-96 lg:h-[450px]">
+    <div className="absolute inset-0 border-4 border-white shadow-xl overflow-hidden">
+      <div className="relative w-full h-full">
+        <img
+          src="/images/improvebloodflow.webp" // ✅ Yahan apna image path daal
+          alt="Spa Environment"
+          className="w-full h-full object-cover"
+        />
+      </div>
+    </div>
+
+    {/* Floating leaf decoration */}
+    <div className="absolute -bottom-6 -right-6">
+      <svg className="w-24 h-24 text-amber-600/30" viewBox="0 0 100 100">
+        <path
+          fill="currentColor"
+          d="M50,10 C70,10 90,30 90,50 C90,70 70,90 50,90 C30,90 10,70 10,50 C10,30 30,10 50,10 Z M50,25 C35,25 25,35 25,50 C25,65 35,75 50,75 C65,75 75,65 75,50 C75,35 65,25 50,25 Z"
+        />
+      </svg>
+    </div>
+
+    {/* Minimalist stats */}
+    <div className="absolute -left-4 bottom-8 bg-white p-4 shadow-md">
+      <div className="text-center">
+        <div className="text-2xl font-serif text-amber-800">12+</div>
+        <div className="text-xs text-gray-500 tracking-widest">YEARS</div>
+      </div>
+    </div>
+  </div>
+
+        </div>
+        
+        {/* Minimal wave divider */}
+        <div className="absolute bottom-0 left-0 w-full overflow-hidden">
+          <svg viewBox="0 0 1200 120" className="relative block w-full h-12">
+            <path fill="white" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".5"></path>
+          </svg>
         </div>
       </div>
-      
-      Minimal wave divider
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden">
-        <svg viewBox="0 0 1200 120" className="relative block w-full h-12">
-          <path fill="white" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".5"></path>
-        </svg>
-      </div>
-    </div> */}
-
-    <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-rose-50">
-      {/* Floating decorative elements */}
-      <div className="absolute top-10 left-10 w-24 h-24 bg-rose-100 rounded-full opacity-20 animate-float"></div>
-      <div className="absolute top-1/3 right-20 w-16 h-16 bg-amber-100 rounded-full opacity-30 animate-float animation-delay-2000"></div>
-      <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-teal-100 rounded-full opacity-25 animate-float animation-delay-4000"></div>
-      
-      {/* Main content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 py-16 md:py-24 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-        {/* Text content - more minimal */}
-        <div className="space-y-6 text-center lg:text-left">
-          <div className="inline-flex items-center space-x-2 mb-6">
-            <div className="w-12 h-px bg-amber-600"></div>
-            <span className="text-amber-600 font-light tracking-widest">OUR SERVICES</span>
-            <div className="w-12 h-px bg-amber-600"></div>
-          </div>
-          
-          <h1 className="text-4xl md:text-5xl font-light text-gray-800">
-            <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">Harmony</span>
-           Tailored Experiences,
-            <span className="block mt-2 font-medium">Journey to <span className="text-rose-600">Tranquility</span></span>
-          </h1>
-          
-          <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-           At LuxeSpa, we offer a sanctuary where each treatment is a journey. Our expert therapists craft personalized experiences using premium products and techniques that honor both tradition and innovation.
-          </p>
-          
-          <div className="grid grid-cols-2 gap-4 mt-8 max-w-md mx-auto lg:mx-0">
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <span className="text-sm text-gray-700">Guided Meditation</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
-                </svg>
-              </div>
-              <span className="text-sm text-gray-700">Aromatherapy</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
-                </svg>
-              </div>
-              <span className="text-sm text-gray-700">Personal Consultations</span>
-            </div>
-            <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                </svg>
-              </div>
-              <span className="text-sm text-gray-700">Holistic Treatments</span>
-            </div>
-          </div>
-
-          <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <button className="px-6 py-3 bg-gradient-to-r from-amber-600 to-amber-800 text-white rounded-sm hover:opacity-90 transition-opacity duration-300 flex items-center space-x-2">
-              <span>View All Services</span>
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </button>
-            <button className="px-6 py-3 bg-white text-amber-800 rounded-sm border border-amber-200 hover:bg-amber-50 transition-colors duration-300 flex items-center space-x-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-              <span>Book Appointment</span>
-            </button>
-          </div>
-        </div>
-
-        {/* Image section - more elegant */}
-        <div className="relative h-80 md:h-96 lg:h-[450px]">
-  <div className="absolute inset-0 border-4 border-white shadow-xl overflow-hidden">
-    <div className="relative w-full h-full">
-      <img
-        src="/images/improvebloodflow.webp" // ✅ Yahan apna image path daal
-        alt="Spa Environment"
-        className="w-full h-full object-cover"
-      />
-    </div>
-  </div>
-
-  {/* Floating leaf decoration */}
-  <div className="absolute -bottom-6 -right-6">
-    <svg className="w-24 h-24 text-amber-600/30" viewBox="0 0 100 100">
-      <path
-        fill="currentColor"
-        d="M50,10 C70,10 90,30 90,50 C90,70 70,90 50,90 C30,90 10,70 10,50 C10,30 30,10 50,10 Z M50,25 C35,25 25,35 25,50 C25,65 35,75 50,75 C65,75 75,65 75,50 C75,35 65,25 50,25 Z"
-      />
-    </svg>
-  </div>
-
-  {/* Minimalist stats */}
-  <div className="absolute -left-4 bottom-8 bg-white p-4 shadow-md">
-    <div className="text-center">
-      <div className="text-2xl font-serif text-amber-800">12+</div>
-      <div className="text-xs text-gray-500 tracking-widest">YEARS</div>
-    </div>
-  </div>
-</div>
-
-      </div>
-      
-      {/* Minimal wave divider */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden">
-        <svg viewBox="0 0 1200 120" className="relative block w-full h-12">
-          <path fill="white" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".5"></path>
-        </svg>
-      </div>
-    </div>
       {/* End Banner */}
 
       {/* Services Section */}
@@ -739,216 +612,216 @@
 
                     {/* content section */}
                      <section className="bg-gradient-to-b from-[#fcf7f4] to-[#f8f0eb] py-20 px-6 md:px-16">
-      <div className="max-w-6xl mx-auto">
-        {/* Section Header */}
-        <motion.div 
-          className="text-center mb-16"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          <span className="text-lg font-medium text-amber-700 tracking-widest">OUR SIGNATURE OFFERINGS</span>
-          <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-6">Premium Spa Experiences</h1>
-          <div className="w-24 h-1 bg-amber-600 mx-auto rounded-full"></div>
-        </motion.div>
+                        <div className="max-w-6xl mx-auto">
+                          {/* Section Header */}
+                          <motion.div 
+                            className="text-center mb-16"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                          >
+                            <span className="text-lg font-medium text-amber-700 tracking-widest">OUR SIGNATURE OFFERINGS</span>
+                            <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-6">Premium Spa Experiences</h1>
+                            <div className="w-24 h-1 bg-amber-600 mx-auto rounded-full"></div>
+                          </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Left Column */}
-          <div>
-            {/* Massage Therapy */}
-            <motion.div 
-              className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#e8d5c9]"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="bg-amber-100 p-3 rounded-xl">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-                  </svg>
-                </div>
-                <h2 className="text-2xl font-bold text-[#3a2e2a]">Massage Therapy</h2>
-              </div>
-              <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                Our therapeutic massage treatments are designed to melt away tension and restore balance. Using a blend of Swedish, deep tissue, and aromatherapy techniques, our certified therapists customize each session to address your specific needs. Experience relief from muscle soreness, improved circulation, and profound relaxation as our expert hands work to release accumulated stress.
-              </p>
-              <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                Choose from our signature offerings: the 90-minute Royal Indulgence massage featuring warm Himalayan salt stones, or the Tropical Escape combining coconut oil massage with exotic frangipani aromas. Each treatment includes a complimentary consultation to ensure optimal results.
-              </p>
-              <div className="mt-6">
-                <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-120 min | From ₹2,500</span>
-              </div>
-            </motion.div>
+                          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            {/* Left Column */}
+                            <div>
+                              {/* Massage Therapy */}
+                              <motion.div 
+                                className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#e8d5c9]"
+                                initial={{ opacity: 0, x: -30 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.7 }}
+                              >
+                                <div className="flex items-center gap-4 mb-6">
+                                  <div className="bg-amber-100 p-3 rounded-xl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                                    </svg>
+                                  </div>
+                                  <h2 className="text-2xl font-bold text-[#3a2e2a]">Massage Therapy</h2>
+                                </div>
+                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
+                                  Our therapeutic massage treatments are designed to melt away tension and restore balance. Using a blend of Swedish, deep tissue, and aromatherapy techniques, our certified therapists customize each session to address your specific needs. Experience relief from muscle soreness, improved circulation, and profound relaxation as our expert hands work to release accumulated stress.
+                                </p>
+                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
+                                  Choose from our signature offerings: the 90-minute Royal Indulgence massage featuring warm Himalayan salt stones, or the Tropical Escape combining coconut oil massage with exotic frangipani aromas. Each treatment includes a complimentary consultation to ensure optimal results.
+                                </p>
+                                <div className="mt-6">
+                                  <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-120 min | From ₹2,500</span>
+                                </div>
+                              </motion.div>
 
-            {/* Body Treatments */}
-            <motion.div 
-              className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-[#e8d5c9]"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="bg-amber-100 p-3 rounded-xl">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                  </svg>
-                </div>
-                <h2 className="text-2xl font-bold text-[#3a2e2a]">Body Scrubs & Wraps</h2>
-              </div>
-              <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                Revitalize your skin with our luxurious exfoliation and hydration treatments. Our signature Himalayan Salt Glow uses mineral-rich salts from the Punjab region combined with nourishing essential oils to buff away dead skin cells and stimulate circulation. Follow with our Ayurvedic Herbal Wrap featuring 15 medicinal herbs grown in our organic garden to detoxify and replenish your skin.
-              </p>
-              <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                For the ultimate indulgence, try our Chocolate Espresso Wrap - a decadent blend of antioxidant-rich cocoa and energizing coffee that leaves skin incredibly smooth and radiant. All body treatments include access to our steam room and relaxation lounge to extend your rejuvenation experience.
-              </p>
-              <div className="mt-6">
-                <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">75-90 min | From ₹3,200</span>
-              </div>
-            </motion.div>
-          </div>
+                              {/* Body Treatments */}
+                              <motion.div 
+                                className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-[#e8d5c9]"
+                                initial={{ opacity: 0, x: -30 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.7, delay: 0.1 }}
+                              >
+                                <div className="flex items-center gap-4 mb-6">
+                                  <div className="bg-amber-100 p-3 rounded-xl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    </svg>
+                                  </div>
+                                  <h2 className="text-2xl font-bold text-[#3a2e2a]">Body Scrubs & Wraps</h2>
+                                </div>
+                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
+                                  Revitalize your skin with our luxurious exfoliation and hydration treatments. Our signature Himalayan Salt Glow uses mineral-rich salts from the Punjab region combined with nourishing essential oils to buff away dead skin cells and stimulate circulation. Follow with our Ayurvedic Herbal Wrap featuring 15 medicinal herbs grown in our organic garden to detoxify and replenish your skin.
+                                </p>
+                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
+                                  For the ultimate indulgence, try our Chocolate Espresso Wrap - a decadent blend of antioxidant-rich cocoa and energizing coffee that leaves skin incredibly smooth and radiant. All body treatments include access to our steam room and relaxation lounge to extend your rejuvenation experience.
+                                </p>
+                                <div className="mt-6">
+                                  <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">75-90 min | From ₹3,200</span>
+                                </div>
+                              </motion.div>
+                            </div>
 
-          {/* Right Column */}
-          <div>
-            {/* Facial Treatments */}
-            <motion.div 
-              className="bg-white bg-optage-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#e8d5c9]"
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="bg-amber-100 p-3 rounded-xl">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                  </svg>
-                </div>
-                <h2 className="text-2xl font-bold text-[#3a2e2a]">Facial Treatments</h2>
-              </div>
-              <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                Experience transformative skin care with our customized facials. Using organic products from local Indian botanicals, our estheticians analyze your skin type and concerns to create a personalized treatment. The Golden Radiance Facial features 24-karat gold leaf to brighten and firm, while our Monsoon Hydration Treatment combats Delhi's dry climate with hyaluronic acid and aloe vera.
-              </p>
-              <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                Our signature Kashmiri Saffron & Rose Facial utilizes precious saffron threads from Pampore to reduce pigmentation and revive dull skin. Each facial includes décolletage massage, lymphatic drainage, and a customized mask. We finish with an SPF application to protect your new glow.
-              </p>
-              <div className="mt-6">
-                <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-90 min | From ₹2,800</span>
-              </div>
-            </motion.div>
+                            {/* Right Column */}
+                            <div>
+                              {/* Facial Treatments */}
+                              <motion.div 
+                                className="bg-white bg-optage-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#e8d5c9]"
+                                initial={{ opacity: 0, x: 30 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.7 }}
+                              >
+                                <div className="flex items-center gap-4 mb-6">
+                                  <div className="bg-amber-100 p-3 rounded-xl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                  </div>
+                                  <h2 className="text-2xl font-bold text-[#3a2e2a]">Facial Treatments</h2>
+                                </div>
+                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
+                                  Experience transformative skin care with our customized facials. Using organic products from local Indian botanicals, our estheticians analyze your skin type and concerns to create a personalized treatment. The Golden Radiance Facial features 24-karat gold leaf to brighten and firm, while our Monsoon Hydration Treatment combats Delhi's dry climate with hyaluronic acid and aloe vera.
+                                </p>
+                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
+                                  Our signature Kashmiri Saffron & Rose Facial utilizes precious saffron threads from Pampore to reduce pigmentation and revive dull skin. Each facial includes décolletage massage, lymphatic drainage, and a customized mask. We finish with an SPF application to protect your new glow.
+                                </p>
+                                <div className="mt-6">
+                                  <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-90 min | From ₹2,800</span>
+                                </div>
+                              </motion.div>
 
-            {/* Wellness Packages */}
-            <motion.div 
-              className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-[#e8d5c9]"
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-            >
-              <div className="flex items-center gap-4 mb-6">
-                <div className="bg-amber-100 p-3 rounded-xl">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                </div>
-                <h2 className="text-2xl font-bold text-[#3a2e2a]">Wellness Packages</h2>
-              </div>
-              <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                Our thoughtfully curated packages provide complete rejuvenation for body, mind and spirit. The Royal Retreat is our most popular offering - a full day experience including a Himalayan salt scrub, ayurvedic massage, gold facial, gourmet lunch, and access to our hydrotherapy facilities. Perfect for special occasions or when you need comprehensive renewal.
-              </p>
-              <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                The Urban Escape package combines a deep tissue massage with our detox body wrap in just 3 hours - ideal for busy professionals. New parents love our Postpartum Revival with specialized abdominal massage and nutrient-rich facial. All packages include herbal tea service, plush robe and slippers, and private changing facilities.
-              </p>
-              <div className="mt-6">
-                <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">3-6 hours | From ₹8,500</span>
-              </div>
-            </motion.div>
-          </div>
-        </div>
+                              {/* Wellness Packages */}
+                              <motion.div 
+                                className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-[#e8d5c9]"
+                                initial={{ opacity: 0, x: 30 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.7, delay: 0.1 }}
+                              >
+                                <div className="flex items-center gap-4 mb-6">
+                                  <div className="bg-amber-100 p-3 rounded-xl">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                  </div>
+                                  <h2 className="text-2xl font-bold text-[#3a2e2a]">Wellness Packages</h2>
+                                </div>
+                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
+                                  Our thoughtfully curated packages provide complete rejuvenation for body, mind and spirit. The Royal Retreat is our most popular offering - a full day experience including a Himalayan salt scrub, ayurvedic massage, gold facial, gourmet lunch, and access to our hydrotherapy facilities. Perfect for special occasions or when you need comprehensive renewal.
+                                </p>
+                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
+                                  The Urban Escape package combines a deep tissue massage with our detox body wrap in just 3 hours - ideal for busy professionals. New parents love our Postpartum Revival with specialized abdominal massage and nutrient-rich facial. All packages include herbal tea service, plush robe and slippers, and private changing facilities.
+                                </p>
+                                <div className="mt-6">
+                                  <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">3-6 hours | From ₹8,500</span>
+                                </div>
+                              </motion.div>
+                            </div>
+                          </div>
 
-        {/* Additional Information */}
-        <motion.div 
-          className="mt-16 bg-gradient-to-r from-amber-700 to-amber-600 rounded-2xl p-8 text-white shadow-xl"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.7 }}
-        >
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">Personalized Spa Journeys</h3>
-              <p className="mb-4 opacity-90">
-                Every visit begins with a confidential wellness consultation where our specialists listen to your concerns and goals. We consider your lifestyle, stress levels, and any physical discomfort to create a truly personalized treatment plan.
-              </p>
-              <p className="opacity-90">
-                Our exclusive loyalty program offers priority booking, complimentary upgrades, and special members-only events. Corporate wellness packages are available for businesses looking to invest in their team's wellbeing.
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <button className="bg-white text-amber-700 px-8 py-3.5 rounded-full font-bold hover:bg-amber-50 transition-all shadow-lg">
-                Book Your Consultation
-              </button>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-    </section>
+                          {/* Additional Information */}
+                          <motion.div 
+                            className="mt-16 bg-gradient-to-r from-amber-700 to-amber-600 rounded-2xl p-8 text-white shadow-xl"
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.7 }}
+                          >
+                            <div className="grid md:grid-cols-2 gap-8 items-center">
+                              <div>
+                                <h3 className="text-2xl font-bold mb-4">Personalized Spa Journeys</h3>
+                                <p className="mb-4 opacity-90">
+                                  Every visit begins with a confidential wellness consultation where our specialists listen to your concerns and goals. We consider your lifestyle, stress levels, and any physical discomfort to create a truly personalized treatment plan.
+                                </p>
+                                <p className="opacity-90">
+                                  Our exclusive loyalty program offers priority booking, complimentary upgrades, and special members-only events. Corporate wellness packages are available for businesses looking to invest in their team's wellbeing.
+                                </p>
+                              </div>
+                              <div className="flex justify-center">
+                                <button className="bg-white text-amber-700 px-8 py-3.5 rounded-full font-bold hover:bg-amber-50 transition-all shadow-lg">
+                                  Book Your Consultation
+                                </button>
+                              </div>
+                            </div>
+                          </motion.div>
+                        </div>
+                      </section>
                     {/* end */}
 
                 {/* Our Process */}
                 <section className="w-full py-10 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    {/* Heading */}
-    <motion.h2
-      className="text-4xl md:text-5xl font-serif font-bold text-center text-amber-900 mb-12"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-    >
-      Our Process
-    </motion.h2>
+                  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    {/* Heading */}
+                    <motion.h2
+                      className="text-4xl md:text-5xl font-serif font-bold text-center text-amber-900 mb-12"
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6 }}
+                    >
+                      Our Process
+                    </motion.h2>
 
-    {/* Process Steps */}
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-      {processSteps.map((step, index) => (
-        <motion.div
-          key={index}
-          className="relative bg-white shadow-lg rounded-2xl px-6 pt-24 pb-10 text-center hover:shadow-xl transition-shadow duration-300"
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: index * 0.2 }}
-        >
-          {/* Step Number */}
-          <div className="absolute top-4 left-4 text-3xl font-bold text-amber-300 opacity-30 z-0">
-            {step.number}
-          </div>
+                    {/* Process Steps */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                      {processSteps.map((step, index) => (
+                        <motion.div
+                          key={index}
+                          className="relative bg-white shadow-lg rounded-2xl px-6 pt-24 pb-10 text-center hover:shadow-xl transition-shadow duration-300"
+                          initial={{ opacity: 0, y: 40 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                          transition={{ duration: 0.5, delay: index * 0.2 }}
+                        >
+                          {/* Step Number */}
+                          <div className="absolute top-4 left-4 text-3xl font-bold text-amber-300 opacity-30 z-0">
+                            {step.number}
+                          </div>
 
-          {/* Image */}
-          <div className="relative w-36 h-36 mx-auto mb-8 rounded-full overflow-hidden shadow-md">
-            <Image
-              src={step.image}
-              alt={step.title}
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
+                          {/* Image */}
+                          <div className="relative w-36 h-36 mx-auto mb-8 rounded-full overflow-hidden shadow-md">
+                            <Image
+                              src={step.image}
+                              alt={step.title}
+                              layout="fill"
+                              objectFit="cover"
+                            />
+                          </div>
 
-          {/* Title */}
-          <h4 className="text-2xl font-semibold text-amber-800 mb-4 font-serif">
-            {step.title}
-          </h4>
+                          {/* Title */}
+                          <h4 className="text-2xl font-semibold text-amber-800 mb-4 font-serif">
+                            {step.title}
+                          </h4>
 
-          {/* Description */}
-          <p className="text-gray-600 leading-relaxed text-base">{step.description}</p>
-        </motion.div>
-      ))}
-    </div>
-  </div>
+                          {/* Description */}
+                          <p className="text-gray-600 leading-relaxed text-base">{step.description}</p>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
                 </section>
                 {/* End Our Process */}
 
