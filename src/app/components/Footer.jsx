@@ -24,7 +24,7 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-6 text-amber-300">Our Locations</h4>
           <ul className="space-y-4 text-gray-400">
-            {['Lajpat Nagar', 'Aerocity', 'NFC', 'Connaught Place', '5-Star Hotel Retreat'].map((loc, i) => (
+            {['Aerocity', 'Connaught Place', 'Noida', 'Gurugram',  'Paschim Vihar'].map((loc, i) => (
               <li key={i} className="flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-3 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -40,7 +40,7 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-6 text-amber-300">5-Star Hotels</h4>
           <ul className="space-y-4 text-gray-400">
-            {['Taj Mahal Hotel', 'The Oberoi', 'The Imperial', 'ITC Maurya'].map((hotel, i) => (
+            {['Roseate House', 'The Imperial', 'Radisson Blu MBD', 'The Oberoi', 'Radisson Blu Hotel'].map((hotel, i) => (
               <li key={i}>
                 <a
                   href={`/hotels/${hotel.toLowerCase().replace(" ", "")}`}

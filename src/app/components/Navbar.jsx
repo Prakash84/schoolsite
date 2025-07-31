@@ -99,7 +99,7 @@ export default function Navbar() {
             <a href="/pricing" className="font-medium text-gray-800 hover:text-amber-600 transition">Pricing</a>
 
             <div className="relative" onMouseEnter={handleOutletEnter} onMouseLeave={handleOutletLeave}>
-              <button className="font-medium text-gray-800 hover:text-amber-600 transition"><a href="/outlet">Outlet</a></button>
+              <button className="font-medium text-gray-800 hover:text-amber-600 transition"><a href="/outlets">Outlet</a></button>
               {isOutletOpen && (
                 <div className="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-xl z-50 py-2">
                   {outletDropdown.map((item) => (

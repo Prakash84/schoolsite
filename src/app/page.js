@@ -13,6 +13,7 @@ import Image from 'next/image';
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import {  FaMapMarkerAlt } from 'react-icons/fa';
 import WhatsappFloat from './components/WhatsappFloat';
+// import womanImage from '/images/spaExpert4.jpg';
 
 
 const specialFeatures = [
@@ -334,7 +335,28 @@ const testimonials = [
     link: "https://wa.me/9211059033"
   }
 ];
-
+const features2 = [
+  { 
+    title: 'Skin Nourishment', 
+    icon: '/images/Group-42-1.png',
+    description: 'Premium organic ingredients for radiant, healthy skin'
+  },
+  { 
+    title: 'Relax Body & Mind', 
+    icon: '/images/Group-48-1.png',
+    description: 'Holistic treatments to melt away stress and tension'
+  },
+  { 
+    title: 'Body Treatment', 
+    icon: '/images/Group-47-1.png',
+    description: 'Signature therapies tailored to your unique needs'
+  },
+  { 
+    title: 'Refreshing Environment', 
+    icon: '/images/Group-45-1.png',
+    description: 'Tranquil oasis designed for complete serenity'
+  },
+];
   return (
      <div className="font-sans overflow-hidden">
       {/* Floating Decorative Elements */}
@@ -446,7 +468,7 @@ const testimonials = [
         ))}
       </Swiper>
     </section> */}
-    
+      {/* ENd Hero Slider */}
       {/* About Section */}
       <section className="py-24 px-4 md:px-8 bg-gradient-to-b from-[#fdf9f5] to-[#fefaf6] relative overflow-hidden">
         {/* Decorative Elements */}
@@ -846,6 +868,145 @@ const testimonials = [
 </section> */}
 {/* end democontant part */}
 {/* end khsd */}
+
+{/* icon section */}
+<section className="relative bg-gradient-to-br from-[#fcf7f4] to-[#f8f0eb] py-24 px-6 lg:px-16 overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-0 right-0 w-64 h-64 bg-[#f5e4d7] rounded-full mix-blend-multiply filter blur-3xl opacity-30 transform translate-x-1/2 -translate-y-1/2"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#e8d1c5] rounded-full mix-blend-multiply filter blur-3xl opacity-20 transform -translate-x-1/2 translate-y-1/2"></div>
+      
+      <div className="max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-16 items-center">
+          {/* Left: Text and Features */}
+          <div className="relative z-10">
+            <div className="mb-10">
+              <motion.span 
+                className="text-lg font-medium text-amber-800 tracking-widest"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+              >
+                EXPERIENCE THE DIFFERENCE
+              </motion.span>
+              
+              <motion.h2 
+                className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-2 mb-6 leading-tight"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                Why Choose <span className="text-amber-700">Luxury Spa</span>
+              </motion.h2>
+              
+              <motion.p 
+                className="text-lg text-[#5c4a42] max-w-xl mb-8"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+              >
+                Immerse yourself in an oasis of tranquility and rejuvenation. Our expert therapists and premium organic products create an unparalleled wellness experience.
+              </motion.p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
+              {features2.map((item, index) => (
+                <motion.div 
+                  key={index}
+                  className="bg-white bg-opacity-70 backdrop-blur-sm rounded-2xl p-5 border border-[#e8d5c9] shadow-sm hover:shadow-md transition-all"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 + (index * 0.1) }}
+                  whileHover={{ y: -5, boxShadow: "0 10px 25px -5px rgba(0,0,0,0.1)" }}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="bg-amber-50 p-3 rounded-xl">
+                      <Image 
+                        src={item.icon} 
+                        alt={item.title} 
+                        width={36} 
+                        height={36} 
+                        className="object-contain"
+                      />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-[#3a2e2a] mb-1">{item.title}</h3>
+                      <p className="text-sm text-[#7d6b62]">{item.description}</p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div 
+              className="flex flex-wrap gap-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+            >
+              <motion.button 
+                className="bg-gradient-to-r from-amber-700 to-amber-600 text-white px-8 py-3.5 rounded-full font-medium hover:shadow-lg transition-all"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Book Your Session
+              </motion.button>
+              <motion.button 
+                className="border-2 border-amber-700 text-amber-700 px-8 py-3.5 rounded-full font-medium hover:bg-amber-50 transition-all"
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                View Treatments
+              </motion.button>
+            </motion.div>
+          </div>
+
+          {/* Right: Image */}
+          <motion.div 
+            className="relative"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+          >
+            <div className="relative aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-2xl">
+              <Image 
+                src="/images/spaExpert4.jpg"
+                alt="Luxury Spa Treatment"
+                fill
+                className="object-cover"
+              />
+            </div>
+            
+            {/* Decorative frame */}
+            <div className="absolute inset-0 border-8 border-white border-opacity-30 rounded-[2.5rem] pointer-events-none"></div>
+            
+            {/* Floating badge */}
+            <motion.div 
+              className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-amber-700 to-amber-600 text-white py-4 px-8 rounded-full shadow-lg"
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ 
+                delay: 0.8,
+                duration: 0.8,
+                type: "spring",
+                stiffness: 100
+              }}
+            >
+              <div className="flex items-center gap-2">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <svg key={i} className="w-5 h-5 text-amber-200" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                    </svg>
+                  ))}
+                </div>
+                <span className="font-semibold">500+ 5-Star Reviews</span>
+              </div>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+{/* ENd icon section */}
        {/* Our Process */}
         <section className="w-full py-10 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
