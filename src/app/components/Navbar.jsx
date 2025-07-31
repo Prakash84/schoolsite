@@ -87,7 +87,7 @@ export default function Navbar() {
 
             {/* Services Dropdown */}
             <div className="relative" onMouseEnter={handleServicesEnter} onMouseLeave={handleServicesLeave}>
-              <button className="font-medium text-gray-800 hover:text-amber-600 transition"><a href="/Services">Services</a></button>
+              <a href="/Services"><button className="font-medium text-gray-800 hover:text-amber-600 transition">Services</button></a>
               {isServicesOpen && (
                 <div className="absolute left-0 mt-2 w-56 bg-white shadow-xl rounded-xl z-50 py-2">
                   {servicesDropdown.map((item) => (
