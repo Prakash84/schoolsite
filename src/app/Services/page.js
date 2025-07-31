@@ -175,7 +175,9 @@
 
     return (
       <div className="w-full">
-        {/* Banner */}       
+        {/* Banner */} 
+        
+              
       <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-rose-50">
         {/* Floating decorative elements */}
         <div className="absolute top-10 left-10 w-24 h-24 bg-rose-100 rounded-full opacity-20 animate-float"></div>
