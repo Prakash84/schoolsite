@@ -57,32 +57,35 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Top Strip */}
       <div className="hidden md:flex justify-between items-center text-sm text-white px-6 py-2 shadow-sm z-50" style={{ backgroundColor: "#c58940" }}>
         <p className="font-medium">📞 +91-9220961427</p>
         <p className="font-semibold">Book Your Appointment : Delhi | Noida | Gurgaon | Ghaziabad</p>
         <div className="flex items-center space-x-4">
-          <a href="https://www.instagram.com/" target="_blank"><FaInstagram size={20} /></a>
-          <a href="http://wa.link/gt55qd" target="_blank"><FaWhatsapp size={20} /></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><FaInstagram size={20} /></a>
+          <a href="http://wa.link/gt55qd" target="_blank" rel="noopener noreferrer"><FaWhatsapp size={20} /></a>
         </div>
       </div>
 
+      {/* Main Navbar */}
       <motion.nav
-        className={`w-full py-4 px-6 md:px-16 sticky top-0 z-50 bg-white transition-all duration-300 ${
-          isScrolled ? "shadow-lg" : ""
-        }`}
+        className={`w-full py-4 px-6 md:px-16 sticky top-0 z-50 bg-white transition-all duration-300 ${isScrolled ? "shadow-lg" : ""}`}
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
+          {/* Logo */}
           <div className="w-32 h-10 relative">
             <Image src="/images/spadelhilogo22.png" alt="Delhi Body Spa Logo" fill className="object-contain" />
           </div>
 
+          {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8 items-center">
             <a href="/" className="font-medium text-gray-800 hover:text-amber-600 transition">Home</a>
             <a href="/about" className="font-medium text-gray-800 hover:text-amber-600 transition">About</a>
 
+            {/* Services Dropdown */}
             <div className="relative" onMouseEnter={handleServicesEnter} onMouseLeave={handleServicesLeave}>
               <button className="font-medium text-gray-800 hover:text-amber-600 transition"><a href="/Services">Services</a></button>
               {isServicesOpen && (
@@ -98,6 +101,7 @@ export default function Navbar() {
 
             <a href="/pricing" className="font-medium text-gray-800 hover:text-amber-600 transition">Pricing</a>
 
+            {/* Outlet Dropdown */}
             <div className="relative" onMouseEnter={handleOutletEnter} onMouseLeave={handleOutletLeave}>
               <button className="font-medium text-gray-800 hover:text-amber-600 transition"><a href="/outlets">Outlet</a></button>
               {isOutletOpen && (
@@ -120,6 +124,7 @@ export default function Navbar() {
             </a>
           </div>
 
+          {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-amber-600 focus:outline-none text-2xl">
               ☰
@@ -127,19 +132,21 @@ export default function Navbar() {
           </div>
         </div>
 
+        {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden mt-4 space-y-4">
-            <a href="/" className="block text-gray-800 hover:text-amber-600">Home</a>
-            <a href="/about" className="block text-gray-800 hover:text-amber-600">About</a>
+          <div className="md:hidden mt-4 px-4 space-y-4 bg-white shadow-md py-4 rounded-b-xl">
+            <a href="/" className="block text-gray-800 font-semibold hover:text-amber-600">Home</a>
+            <a href="/about" className="block text-gray-800 font-semibold hover:text-amber-600">About</a>
 
-            <div className="border-t pt-2">
-              <button onClick={() => setMobileServicesOpen(!mobileServicesOpen)} className="w-full flex justify-between items-center text-gray-800 font-medium">
+            {/* Mobile Services */}
+            <div>
+              <button onClick={() => setMobileServicesOpen(!mobileServicesOpen)} className="w-full flex justify-between items-center text-gray-800 font-semibold hover:text-amber-600 py-2">
                 Services <span>{mobileServicesOpen ? "▲" : "▼"}</span>
               </button>
               {mobileServicesOpen && (
-                <div className="ml-4 mt-2 space-y-1">
+                <div className="mt-2 ml-4 space-y-2 border-l-2 border-amber-600 pl-4">
                   {servicesDropdown.map((item) => (
-                    <a key={item.name} href={item.href} className="block text-sm font-medium text-gray-700 hover:text-amber-600">
+                    <a key={item.name} href={item.href} className="block text-sm text-gray-700 font-medium hover:text-amber-600">
                       {item.name}
                     </a>
                   ))}
@@ -147,16 +154,17 @@ export default function Navbar() {
               )}
             </div>
 
-            <a href="/pricing" className="block text-gray-800 hover:text-amber-600">Pricing</a>
+            <a href="/pricing" className="block text-gray-800 font-semibold hover:text-amber-600">Pricing</a>
 
-            <div className="border-t pt-2">
-              <button onClick={() => setMobileOutletOpen(!mobileOutletOpen)} className="w-full flex justify-between items-center text-gray-800 font-medium">
+            {/* Mobile Outlet */}
+            <div>
+              <button onClick={() => setMobileOutletOpen(!mobileOutletOpen)} className="w-full flex justify-between items-center text-gray-800 font-semibold hover:text-amber-600 py-2">
                 Outlet <span>{mobileOutletOpen ? "▲" : "▼"}</span>
               </button>
               {mobileOutletOpen && (
-                <div className="ml-4 mt-2 space-y-1">
+                <div className="mt-2 ml-4 space-y-2 border-l-2 border-amber-600 pl-4">
                   {outletDropdown.map((item) => (
-                    <a key={item.name} href={item.href} className="block text-sm font-medium text-gray-700 hover:text-amber-600">
+                    <a key={item.name} href={item.href} className="block text-sm text-gray-700 font-medium hover:text-amber-600">
                       {item.name}
                     </a>
                   ))}
@@ -164,11 +172,11 @@ export default function Navbar() {
               )}
             </div>
 
-            <a href="/blog" className="block text-gray-800 hover:text-amber-600">Blog</a>
-            <a href="/gallery" className="block text-gray-800 hover:text-amber-600">Gallery</a>
-            <a href="/contact" className="block text-gray-800 hover:text-amber-600">Contact</a>
+            <a href="/blog" className="block text-gray-800 font-semibold hover:text-amber-600">Blog</a>
+            <a href="/gallery" className="block text-gray-800 font-semibold hover:text-amber-600">Gallery</a>
+            <a href="/contact" className="block text-gray-800 font-semibold hover:text-amber-600">Contact</a>
 
-            <a href="https://api.whatsapp.com/send?phone=919211059033" className="block text-center bg-amber-600 text-white px-6 py-2 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md">
+            <a href="https://api.whatsapp.com/send?phone=919211059033" className="block text-center bg-amber-600 text-white px-6 py-2 rounded-full font-semibold text-sm hover:bg-amber-700 transition shadow-md">
               Book Appointment
             </a>
           </div>
