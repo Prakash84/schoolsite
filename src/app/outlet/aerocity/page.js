@@ -28,27 +28,27 @@ export default function aerocity() {
         {[
           {
             name: 'JW Marriott Hotel New Delhi Aerocity',
-            image: '/images/hotels/jw-marriott.jpg',
+            image: '/images/jwmarriott.jpeg',
             desc: 'A symbol of elegance and comfort, JW Marriott offers world-class hospitality with our spa providing the ultimate relaxation experience.'
           },
           {
             name: 'Andaz Delhi – a concept by Hyatt',
-            image: '/images/hotels/andaz.jpg',
+            image: '/images/Andazhat.jpg',
             desc: 'This lifestyle hotel features creative spaces, and our spa outlet here complements it with healing therapies and signature treatments.'
           },
           {
             name: 'Roseate House New Delhi',
-            image: '/images/hotels/roseate.jpg',
+            image: '/images/RoseateHouse.jpg',
             desc: 'Known for its design and luxury, the spa at Roseate House promises a serene atmosphere and rejuvenating therapies.'
           },
           {
             name: 'Pullman New Delhi Aerocity',
-            image: '/images/hotels/pullman.jpg',
+            image: '/images/pullman.jpg',
             desc: 'Pullman is all about modern luxury. Our spa inside Pullman ensures relaxation meets sophistication.'
           },
           {
             name: 'Novotel New Delhi Aerocity',
-            image: '/images/hotels/novotel.jpg',
+            image: '/images/NovotelNewDelhiAerocity.jpeg',
             desc: 'Ideal for travelers, Novotel is practical yet luxurious, and our spa delivers the perfect wellness break during your stay.'
           },
           {

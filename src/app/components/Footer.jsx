@@ -40,7 +40,7 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-6 text-amber-300">5-Star Hotels</h4>
           <ul className="space-y-4 text-gray-400">
-            {['Roseate House', 'The Imperial', 'Radisson Blu MBD', 'The Oberoi', 'Radisson Blu Hotel'].map((hotel, i) => (
+            {['Roseate House', 'The Park', 'Radisson Blu MBD', 'The Oberoi', 'Radisson Blu Hotel'].map((hotel, i) => (
               <li key={i}>
                 <a
                   href={`/hotels/${hotel.toLowerCase().replace(" ", "")}`}
