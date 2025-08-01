@@ -7,14 +7,12 @@
   import { Check } from "lucide-react";
   // import WhatsappFloat from '../components/WhatsappFloat';
   import WhatsappFloat from '../../components/WhatsappFloat';
-
-
-
-
- 
-
- 
-
+  import { Spa, SpaOutlined, SelfImprovement, HealthAndSafety, Air } from '@mui/icons-material';
+  import { ArrowRight } from 'lucide-react';
+import { FaCrown } from 'react-icons/fa';
+import { FaSpa, FaHotel, FaStar, FaCheckCircle } from "react-icons/fa";
+import luxuryhotelpartners from '../../components/LuxuryHotelPartners';
+import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
 
   const playfair = Playfair_Display({
     subsets: ['latin'],
@@ -28,9 +26,88 @@
     variable: '--font-montserrat'
   });
 
+ 
+
 {/* End Our Process */}
 
   export default function sandwichmassage() {
+
+    const [activeHotel, setActiveHotel] = useState(1);
+
+  const hotels = [
+    {
+      id: 1,
+      name: "The Serenity Resort",
+      location: "Bali, Indonesia",
+      rating: 4.9,
+      description: "A luxurious beachfront retreat with panoramic ocean views and our signature spa treatments.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 text-amber-600">
+          <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+          <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
+        </svg>
+      )
+    },
+    {
+      id: 2,
+      name: "Azure Heights",
+      location: "Santorini, Greece",
+      rating: 4.8,
+      description: "Stunning cliffside villas with infinity pools and exclusive access to our premium spa services.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 text-amber-600">
+          <path fillRule="evenodd" d="M10.5 3.798v5.02a3 3 0 01-.879 2.121l-2.377 2.377a9.845 9.845 0 015.091 1.013 8.315 8.315 0 005.713.636l.285-.071-3.954-3.955a3 3 0 01-.879-2.121v-5.02a23.614 23.614 0 00-3 0zm4.5.138a.75.75 0 00.093-1.495A24.837 24.837 0 0012 2.25a25.048 25.048 0 00-3.093.191A.75.75 0 009 3.936v4.882a1.5 1.5 0 01-.44 1.06l-6.293 6.294c-1.62 1.621-.903 4.475 1.471 4.88 2.686.46 5.447.698 8.262.698 2.816 0 5.576-.239 8.262-.697 2.373-.406 3.092-3.26 1.47-4.881L15.44 9.879A1.5 1.5 0 0115 8.818V4.064z" clipRule="evenodd" />
+        </svg>
+      )
+    },
+    {
+      id: 3,
+      name: "Emerald Bay Resort",
+      location: "Phuket, Thailand",
+      rating: 4.7,
+      description: "Tropical paradise with private villas surrounded by lush gardens and our award-winning spa.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 text-amber-600">
+          <path d="M19.006 3.705a.75.75 0 00-.512-1.41L6 6.838V3a.75.75 0 00-.75-.75h-1.5A.75.75 0 003 3v4.93l-1.006.365a.75.75 0 00.512 1.41l16.5-6z" />
+          <path fillRule="evenodd" d="M3.019 11.115L18 5.667V9.09l4.006 1.456a.75.75 0 11-.512 1.41l-.494-.18v8.475h.75a.75.75 0 010 1.5H2.25a.75.75 0 010-1.5H3v-9.129l.019-.006zM18 20.25v-9.565l1.5.545v9.02H18zm-9-6a.75.75 0 00-.75.75v4.5c0 .414.336.75.75.75h3a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75H9z" clipRule="evenodd" />
+        </svg>
+      )
+    },
+    {
+      id: 4,
+      name: "Alpine Sanctuary",
+      location: "Swiss Alps, Switzerland",
+      rating: 4.9,
+      description: "Mountain chalet retreat offering panoramic alpine views and our exclusive wellness programs.",
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-10 h-10 text-amber-600">
+          <path fillRule="evenodd" d="M4.5 7.5a3 3 0 013-3h9a3 3 0 013 3v9a3 3 0 01-3 3h-9a3 3 0 01-3-3v-9z" clipRule="evenodd" />
+        </svg>
+      )
+    }
+  ];
+     const highlights = [
+    {
+      icon: <Spa className="text-amber-600" />,
+      title: "Traditional Technique",
+      description: "Authentic Swedish methods using long gliding strokes"
+    },
+    {
+      icon: <SelfImprovement className="text-amber-600" />,
+      title: "Deep Relaxation",
+      description: "Reduces stress hormones by up to 30% in a single session"
+    },
+    {
+      icon: <HealthAndSafety className="text-amber-600" />,
+      title: "Muscle Tension Relief",
+      description: "Targets muscle knots and improves flexibility"
+    },
+    {
+      icon: <Air className="text-amber-600" />,
+      title: "Improved Circulation",
+      description: "Enhances blood flow and oxygen delivery to tissues"
+    }
+  ];
 const [isMenuOpen, setIsMenuOpen] = useState(false);
     const sections = [
       {
@@ -41,14 +118,14 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           "Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being.",
         image: "/images/SpecializedTreatments.jpg",
       },
-      {
-        title: "Ayurvedic Massage",
-        description1:
-          "Ayurvedic oil massage, also known as Abhyanga, uses herbal oils that balance the body's doshas—Vata, Pitta, and Kapha. The warm oil is massaged into the skin to energize vital points, improve blood circulation, and promote internal healing. This therapy not only revitalizes the skin but also clears toxins stored in deeper tissues.",
-        description2:
-          "Perfect for individuals suffering from stress, muscle pain, or hormonal imbalance, this massage harmonizes body rhythms and enhances immunity. The continuous motion and warm oil offer a meditative experience, calming the nervous system and stimulating marma points for rejuvenation and internal balance.",
-        image: "/images/SpecializedTreatments.jpg",
-      },
+      // {
+      //   title: "Ayurvedic Massage",
+      //   description1:
+      //     "Ayurvedic oil massage, also known as Abhyanga, uses herbal oils that balance the body's doshas—Vata, Pitta, and Kapha. The warm oil is massaged into the skin to energize vital points, improve blood circulation, and promote internal healing. This therapy not only revitalizes the skin but also clears toxins stored in deeper tissues.",
+      //   description2:
+      //     "Perfect for individuals suffering from stress, muscle pain, or hormonal imbalance, this massage harmonizes body rhythms and enhances immunity. The continuous motion and warm oil offer a meditative experience, calming the nervous system and stimulating marma points for rejuvenation and internal balance.",
+      //   image: "/images/SpecializedTreatments.jpg",
+      // },
       {
         title: "Full Body Relief",
         description1:
@@ -58,6 +135,35 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
         image: "/images/SpecializedTreatments.jpg",
       },
     ];
+     const pricingPlans = [
+        {
+          title: "Spa Outlet",
+          price: "₹1999/-",
+          description: "Perfect for individual relaxation sessions",
+          features: ["Oil Massage", "Cream Massage", "Dry Massage", "60 min Consultation", "shower"],
+          highlight: false,
+          ctaLink: "http://wa.link/njldxn",
+          icon: <FaSpa className="text-amber-500" />
+        },
+        {
+          title: "Hotel Outlet",
+          price: "₹15000/-",
+          description: "Premium experience with luxury amenities",
+          features: ["Oil Massage", "Cream Massage", "Dry Massage", "Private Suite", "Complimentary Refreshments", "90 min Session"],
+          highlight: true,
+          ctaLink: "http://wa.link/u061wi",
+          icon: <FaHotel className="text-amber-500" />
+        },
+        {
+          title: "5 Star Hotel Spa",
+          price: "₹20000/-",
+          description: "Comprehensive spa experience with added treatments",
+          features: ["Foreigner Therapist", "5 Start Property", "Private Sweets", "Aromatherapy", "120 min Session"],
+          highlight: false,
+          ctaLink: "#",
+          icon: <FaCrown className="text-amber-500" />
+        }
+      ];
 
 
     return (
@@ -178,12 +284,173 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
       <path fill="white" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".5"></path>
     </svg>
   </div>
-</div>
-
-      {/* End Banner */}
-
-      {/* Services Section */}
+    </div>
+      {/* End Banner */}    
+      {/* highlights */}
+      <section className="py-16 px-4 bg-gradient-to-b from-amber-50 to-white">
+  <div className="max-w-7xl mx-auto">
+    <div className="text-center mb-14">
       
+                  <motion.h2
+                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    Swedish <span className="text-amber-600">Massage Benefits</span>
+                  </motion.h2>
+                  <motion.p
+                    className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
+                  >
+                    We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
+                  </motion.p>
+      <div className="w-24 h-1 bg-amber-500 mx-auto"></div>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-[100%] mx-auto">
+      {highlights.map((item, index) => (
+        <div 
+          key={index}
+          className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-amber-100"
+        >
+          <div className="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mb-5 text-amber-800 text-2xl">
+            {item.icon}
+          </div>
+          <h3 className="text-xl font-semibold text-amber-800 mb-3">{item.title}</h3>
+          <p className="text-gray-700 leading-relaxed text-base">{item.description}</p>
+        </div>
+      ))}
+    </div>
+
+    <div className="mt-16 text-center">
+      <button className="bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+        Book Your Session
+      </button>
+    </div>
+  </div>
+        </section>
+        {/* end highlights */}
+        <luxuryhotelpartners />
+
+      {/* Benefits Section */}
+        <section className="py-20 bg-amber-50">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-16">
+              <motion.h2
+                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    Transformative <span className="text-amber-600">Benefits</span>
+                  </motion.h2>
+                  <motion.p
+                    className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
+                  >
+                     Our signature oil therapy massage offers a holistic approach to wellness that addresses both physical and mental needs.
+                  </motion.p>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                { 
+                  title: "Muscle Relief", 
+                  description: "Deep tissue manipulation combined with therapeutic oils helps relieve muscle tension and soreness effectively.",
+                  icon: "💆‍♀️"
+                },
+                { 
+                  title: "Stress Reduction", 
+                  description: "Aromatherapy oils calm the nervous system, reducing anxiety and promoting mental clarity.",
+                  icon: "🧘‍♂️"
+                },
+                { 
+                  title: "Improved Circulation", 
+                  description: "Massage techniques stimulate blood flow, enhancing oxygen delivery to tissues and organs.",
+                  icon: "❤️"
+                },
+                { 
+                  title: "Skin Rejuvenation", 
+                  description: "Natural oils nourish and hydrate the skin, leaving it soft, supple, and radiant.",
+                  icon: "✨"
+                },
+                { 
+                  title: "Detoxification", 
+                  description: "Stimulates the lymphatic system to flush toxins and boost natural immunity.",
+                  icon: "🌿"
+                },
+                { 
+                  title: "Better Sleep", 
+                  description: "Promotes relaxation that leads to deeper, more restorative sleep patterns.",
+                  icon: "😴"
+                }
+              ].map((benefit, index) => (
+                <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+                  <div className="text-4xl mb-4">{benefit.icon}</div>
+                  <h3 className="text-xl font-semibold text-amber-800 mb-3">{benefit.title}</h3>
+                  <p className="text-gray-700">{benefit.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      {/* Services Section */}
+
+      {/* call to action */}
+       <section className="relative py-24 px-4 overflow-hidden">
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-amber-50/80 to-rose-50/50 z-0"></div>
+      <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-amber-200/30 z-0"></div>
+      <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-amber-100/40 z-0"></div>
+      
+      {/* Content */}
+      <div className="max-w-4xl mx-auto relative z-10 text-center">
+        
+        <motion.h2
+                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    Experience <span className="text-amber-600">Ultimate Relaxation</span>
+                  </motion.h2>
+        <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-10 leading-relaxed">
+          Treat yourself to our premium Swedish massage - a journey to complete physical and mental rejuvenation. 
+          Book now and receive a complimentary aromatherapy session.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <button className="bg-gradient-to-r from-amber-600 to-amber-800 text-white font-medium py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group">
+            Book Your Session
+            <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+          </button>
+          
+          <button className="bg-white text-amber-800 font-medium py-4 px-8 rounded-full border-2 border-amber-800 shadow-sm hover:shadow-md transition-all duration-300">
+            View Packages
+          </button>
+        </div>
+        
+        <div className="mt-12 flex flex-wrap justify-center gap-6">
+          {[...Array(3)].map((_, i) => (
+            <div key={i} className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full bg-amber-600 animate-pulse"></div>
+              <span className="text-gray-700 font-medium">No commitment required</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+      {/* End call to action */}
 
         {/* About Oil Therapy Section */}
         {sections.map((section, index) => (
@@ -254,71 +521,35 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
       </div>
     </div>
   </section>
-))}
+         ))}
 
 
-        {/* Benefits Section */}
-        <section className="py-20 bg-amber-50">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-amber-800 mb-4">Transformative Benefits</h2>
-              <p className="text-gray-700 max-w-2xl mx-auto">
-                Our signature oil therapy massage offers a holistic approach to wellness that addresses both physical and mental needs.
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                { 
-                  title: "Muscle Relief", 
-                  description: "Deep tissue manipulation combined with therapeutic oils helps relieve muscle tension and soreness effectively.",
-                  icon: "💆‍♀️"
-                },
-                { 
-                  title: "Stress Reduction", 
-                  description: "Aromatherapy oils calm the nervous system, reducing anxiety and promoting mental clarity.",
-                  icon: "🧘‍♂️"
-                },
-                { 
-                  title: "Improved Circulation", 
-                  description: "Massage techniques stimulate blood flow, enhancing oxygen delivery to tissues and organs.",
-                  icon: "❤️"
-                },
-                { 
-                  title: "Skin Rejuvenation", 
-                  description: "Natural oils nourish and hydrate the skin, leaving it soft, supple, and radiant.",
-                  icon: "✨"
-                },
-                { 
-                  title: "Detoxification", 
-                  description: "Stimulates the lymphatic system to flush toxins and boost natural immunity.",
-                  icon: "🌿"
-                },
-                { 
-                  title: "Better Sleep", 
-                  description: "Promotes relaxation that leads to deeper, more restorative sleep patterns.",
-                  icon: "😴"
-                }
-              ].map((benefit, index) => (
-                <div key={index} className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
-                  <div className="text-4xl mb-4">{benefit.icon}</div>
-                  <h3 className="text-xl font-semibold text-amber-800 mb-3">{benefit.title}</h3>
-                  <p className="text-gray-700">{benefit.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
+        
         {/* Why Choose Us Section */}
         <section className="py-20 relative">
           <div className="absolute inset-0 bg-amber-800 opacity-5"></div>
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-amber-800 mb-4">Why Choose Our Spa in Delhi?</h2>
-              <p className="text-gray-700 max-w-2xl mx-auto">
-                We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
-              </p>
+              {/* <h2 className="text-3xl md:text-4xl font-serif font-semibold text-amber-800 mb-4">Why Choose Our Spa in Delhi?</h2> */}
+              <motion.h2
+                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    Why Choose <span className="text-amber-600">Our Spa in Delhi?</span>
+                  </motion.h2>
+                  <motion.p
+                    className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
+                  >
+                    We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
+                  </motion.p>
+              
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -353,15 +584,273 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
             </div>
           </div>
         </section>
+        {/* Pricing Section */}
+              <section id= "Pricing" className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
+              {/* Decorative elements */}
+              <div className="absolute top-10 left-0 w-24 h-24 rounded-full bg-amber-100 opacity-20 blur-3xl"></div>
+              <div className="absolute bottom-20 right-0 w-32 h-32 rounded-full bg-amber-200 opacity-15 blur-3xl"></div>
+              
+              <div className="max-w-7xl mx-auto relative z-10">
+                {/* Heading */}
+                <div className="text-center mb-16">
+                  <motion.div
+                    className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                  >
+                    <FaStar className="text-amber-500" />
+                    Affordable Luxury
+                  </motion.div>
+                  <motion.h2
+                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    Our <span className="text-amber-600">Pricing Packages</span>
+                  </motion.h2>
+                  <motion.p
+                    className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
+                  >
+                    Tailored spa experiences starting from just ₹1999. Choose from our exclusive massage options, designed for your total relaxation and rejuvenation.
+                  </motion.p>
+                </div>
+        
+                {/* Pricing Cards */}
+                <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
+                  {pricingPlans.map((plan, index) => (
+                    <motion.div
+                      key={index}
+                      className={`relative rounded-3xl overflow-hidden ${plan.highlight ? "transform lg:-translate-y-4" : ""}`}
+                      initial={{ opacity: 0, y: 50 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.5, delay: index * 0.1 }}
+                      whileHover={{ y: -10 }}
+                    >
+                      {/* Featured badge */}
+                      {plan.highlight && (
+                        <div className="absolute top-6 right-6 bg-gradient-to-r from-amber-500 to-amber-600 text-white px-4 py-1 rounded-full text-sm font-bold z-20 rotate-12 shadow-lg">
+                          MOST POPULAR
+                        </div>
+                      )}
+                      
+                      <div className={`h-full flex flex-col border ${plan.highlight ? "border-amber-500 shadow-xl" : "border-amber-100 shadow-lg"} rounded-3xl overflow-hidden bg-white`}>
+                        <div className={`p-8 pb-6 ${plan.highlight ? "bg-gradient-to-r from-amber-600 to-amber-700" : "bg-amber-800"}`}>
+                          <div className="flex items-center gap-4 mb-4">
+                            <div className="text-3xl">
+                              {plan.icon}
+                            </div>
+                            <h3 className={`text-2xl font-bold font-serif ${plan.highlight ? "text-white" : "text-amber-100"}`}>
+                              {plan.title}
+                            </h3>
+                          </div>
+                          <p className={`text-lg ${plan.highlight ? "text-amber-100" : "text-amber-200"}`}>
+                            {plan.description}
+                          </p>
+                        </div>
+                        
+                        <div className="p-8 pt-12 pb-10 -mt-6 relative">
+                          {/* Price circle */}
+                          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 flex items-center justify-center shadow-lg">
+                            <span className="text-white text-xl font-bold">
+                              {plan.price}
+                            </span>
+                          </div>
+                          
+                          <ul className="space-y-4 mb-8">
+                            {plan.features.map((feature, i) => (
+                              <li key={i} className="flex items-start gap-3">
+                                <FaCheckCircle className="text-amber-500 mt-1 flex-shrink-0" />
+                                <span className="text-amber-800">{feature}</span>
+                              </li>
+                            ))}
+                          </ul>
+                          
+                          <a
+                            href={plan.ctaLink}
+                            className={`mt-auto block text-center py-3 px-6 rounded-full font-bold transition-all duration-300 ${
+                              plan.highlight 
+                                ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:shadow-xl hover:from-amber-600 hover:to-amber-700"
+                                : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                            }`}
+                          >
+                            Book Now
+                          </a>
+                        </div>
+                      </div>
+                    </motion.div>
+                  ))}
+                </div>
+        
+                {/* Additional information */}
+                {/* <motion.div 
+                  className="mt-16 bg-gradient-to-r from-amber-50 to-amber-100 border border-amber-200 rounded-2xl p-6 md:p-8 text-center"
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+                    <div className="bg-amber-200 w-16 h-16 rounded-full flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-amber-900 mb-2">Flexible Booking Options</h3>
+                      <p className="text-amber-800 max-w-2xl">
+                        All packages include free rescheduling up to 24 hours before your appointment. 
+                        <span className="font-semibold"> Group discounts available for 3+ bookings!</span>
+                      </p>
+                    </div>
+                  </div>
+                </motion.div> */}
+              </div>
+            </section>
+            {/* End Pricing Section */}
+            <LuxuryHotelShowcase />
+             {/* hotel section */}
+      <section className="py-16 px-4 bg-gradient-to-b from-white to-amber-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-14">
+          <span className="text-amber-600 font-semibold tracking-wider uppercase">Exclusive Partnerships</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-amber-800 mt-4 mb-6">
+            Luxury Hotel Partners
+          </h2>
+          <p className="text-xl text-gray-700 max-w-2xl mx-auto">
+            Experience our premium spa services at these exquisite partner locations around the world
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+          {/* Hotel Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {hotels.map((hotel) => (
+              <div 
+                key={hotel.id}
+                className={`bg-white rounded-2xl shadow-lg p-6 transition-all duration-300 border-2 cursor-pointer ${
+                  activeHotel === hotel.id 
+                    ? 'border-amber-500 shadow-xl transform -translate-y-1' 
+                    : 'border-white'
+                }`}
+                onClick={() => setActiveHotel(hotel.id)}
+              >
+                <div className="flex items-start gap-4">
+                  <div className="bg-amber-100 p-3 rounded-xl">
+                    {hotel.icon}
+                  </div>
+                  <div>
+                    <div className="flex justify-between items-start">
+                      <h3 className="text-xl font-bold text-gray-800">{hotel.name}</h3>
+                      <span className="flex items-center bg-amber-100 text-amber-800 px-2 py-1 rounded text-sm font-medium">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 mr-1">
+                          <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
+                        </svg>
+                        {hotel.rating}
+                      </span>
+                    </div>
+                    <p className="text-gray-600 text-sm mt-1">{hotel.location}</p>
+                    <p className="text-gray-700 mt-3 line-clamp-2">{hotel.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          {/* Featured Hotel Showcase */}
+          <div className="bg-gradient-to-br from-amber-700 to-amber-900 rounded-3xl overflow-hidden shadow-2xl">
+            <div className="h-full flex flex-col">
+              <div className="p-8 flex-1">
+                <div className="flex justify-between items-start">
+                  <div>
+                    <span className="text-amber-300 text-sm font-medium">Featured Location</span>
+                    <h3 className="text-3xl font-bold text-white mt-1">
+                      {hotels.find(h => h.id === activeHotel)?.name}
+                    </h3>
+                    <p className="text-amber-200 mt-2">
+                      {hotels.find(h => h.id === activeHotel)?.location}
+                    </p>
+                  </div>
+                  <div className="bg-amber-600 text-white px-4 py-2 rounded-full text-xl font-bold">
+                    {hotels.find(h => h.id === activeHotel)?.rating}
+                  </div>
+                </div>
+                
+                <div className="mt-6 bg-amber-800/30 backdrop-blur-sm rounded-xl p-5">
+                  <p className="text-amber-100">
+                    {hotels.find(h => h.id === activeHotel)?.description}
+                  </p>
+                  
+                  <div className="mt-6 grid grid-cols-2 gap-4">
+                    {[
+                      { name: "Spa Packages", value: "12+" },
+                      { name: "Treatment Rooms", value: "15" },
+                      { name: "Swimming Pools", value: "3" },
+                      { name: "Exclusive Offers", value: "Yes" }
+                    ].map((item, idx) => (
+                      <div key={idx} className="text-center">
+                        <div className="text-amber-300 text-2xl font-bold">{item.value}</div>
+                        <div className="text-amber-100 text-sm">{item.name}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              
+              <div className="p-8 bg-amber-900/30">
+                <button className="w-full bg-gradient-to-r from-amber-500 to-amber-700 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02]">
+                  Book Spa Experience
+                </button>
+                <div className="mt-4 flex justify-center">
+                  <span className="text-amber-300 text-sm flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 mr-2">
+                      <path fillRule="evenodd" d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clipRule="evenodd" />
+                    </svg>
+                    Complimentary access for hotel guests
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="mt-16 text-center">
+          <button className="px-8 py-3 bg-white border-2 border-amber-700 text-amber-700 font-bold rounded-full hover:bg-amber-700 hover:text-white transition-all duration-300">
+            View All Partner Hotels
+          </button>
+        </div>
+      </div>
+    </section>
 
         {/* Testimonials */}
         <section className="py-20 bg-amber-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-serif font-semibold text-amber-800 mb-4">Client Experiences</h2>
-              <p className="text-gray-700 max-w-2xl mx-auto">
-                Hear from those who have experienced the transformative power of our oil therapy massage.
-              </p>
+                            <motion.h2
+                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    Client <span className="text-amber-600">Experiences</span>
+                  </motion.h2>
+                  <motion.p
+                    className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
+                  >
+                     Hear from those who have experienced the transformative power of our oil therapy massage.
+                  </motion.p>
+              
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -388,7 +877,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
               ))}
             </div>
           </div>
-        </section>
+        </section>        
 
         {/* CTA Section */}
         <section className="py-20 bg-gradient-to-r from-amber-700 to-amber-800 text-white">
@@ -412,5 +901,3 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
       </div>
     );
   }
-
-
