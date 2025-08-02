@@ -100,19 +100,19 @@ const outlets = [
   const processSteps = [
   {
     number: '01',
-    title: 'Meeting',
+    title: 'Select Hotel And Spa Outlet',
     description: 'Our spa meeting process ensures a seamless and soothing experience, from scheduling to consultation and relaxation.',
     image: '/images/mmeeting.webp',
   },
   {
     number: '02',
-    title: 'Treatment',
+    title: 'Appointment',
     description: 'Relaxing spa treatment begins with consultation, followed by cleansing, massage, and rejuvenation steps.',
     image: '/images/spa-treatments.jpg',
   },
   {
     number: '03',
-    title: 'Finalizing',
+    title: 'Visit',
     description: 'Confirm your appointment, choose your therapy, and relax, your spa journey is now set.',
     image: '/images/finalizing.avif',
   },
@@ -158,35 +158,50 @@ const [isVisible, setIsVisible] = useState(false);
 
   const faqs = [
     {
-      question: "What is a Female to Male Spa Treatment?",
-      answer: "A **female to male spa treatment** is a personalized massage and wellness experience provided by skilled therapists, specifically designed for individuals seeking comfort, relaxation, and therapeutic benefits. It includes techniques tailored to your preferences, helping you unwind and feel rejuvenated.",
+      question: "What types of massage therapies do you offer?",
+      answer: "We offer Couple Massage, Sandwich Massage, B2B Therapy, Full Body Massage, and Female-to-Male treatments.",
       icon: <FaSpa className="text-teal-600" />
     },
     {
-      question: "Are your spa services available in **Aerocity** and **Greater Kailash**?",
-      answer: "Yes, our **luxury spa services** are available at prime locations in **Aerocity** and **Greater Kailash**, offering a variety of services such as **full body massage**, **couple massage**, and **deep tissue massage**. We provide top-quality relaxation in a serene, peaceful environment, ideal for unwinding.",
+      question: "Where are your spa outlets located in Delhi and Noida?",
+      answer: "Our outlets are located in Rajouri Garden, Rohini, Pitampura, Noida, Aerocity, Dwarka, Connaught Place, and Lajpat Nagar.",
       icon: <FaLeaf className="text-teal-600" />
     },
     {
-      question: "How can I book a spa session?",
-      answer: "Booking is easy! Simply click the 'Book Now' button on our website or contact us via WhatsApp for immediate reservations at your preferred outlet. You can choose from a range of treatments to suit your relaxation needs.",
+      question: "What is your first-visit special offer?",
+      answer: "Our first-visit special is ₹1999, offering a luxurious experience at an affordable price.",
       icon: <FaHotTub className="text-teal-600" />
     },
     {
-      question: "Do you offer home spa services?",
-      answer: "Yes, we offer **home spa services** in select locations, bringing the relaxation and wellness of our **body spa** directly to your doorstep. Whether you're looking for a **full body massage** or a **deep tissue massage**, we ensure the same luxurious experience at home.",
+      question: "Do you have therapists from different countries?",
+      answer: "Yes, we have skilled therapists from Russia, Thailand, Afghanistan, India, and other countries.",
       icon: <FaLeaf className="text-teal-600" />
     },
     {
-      question: "What are your hygiene and safety standards?",
-      answer: "We maintain the highest standards of hygiene and safety. All equipment is sterilized after each use, therapists wear masks and gloves, and treatment rooms are thoroughly sanitized between clients. We follow all health authority guidelines to ensure your wellbeing.",
+      question: "Can I book a Couple Massage session?",
+      answer: "Yes, we offer Couple Massage sessions for a relaxing and intimate experience.",
       icon: <FaSpa className="text-teal-600" />
     },
     {
-      question: "Do you offer gift certificates?",
-      answer: "Absolutely! Our spa gift certificates are the perfect present for any occasion. They can be purchased for any amount and redeemed for any of our services. Treat your loved ones to the gift of relaxation and rejuvenation.",
+      question: "What is the cost of a Full Body Massage?",
+      answer: "The cost varies based on the treatment, with a special ₹1999 offer for first-time visitors.",
       icon: <FaHandSparkles className="text-teal-600" />
-    }
+    },
+    {
+      question: "Do you offer treatments for both men and women?",
+      answer: "Yes, we offer specialized treatments for both men and women, including Female-to-Male therapy.",
+      icon: <FaHandSparkles className="text-teal-600" />
+    },
+    {
+      question: "Are your spa services available at 5-star hotels?",
+      answer: "Yes, we have outlets in top 5-star hotels like Andaz, JW Marriott, The Lalit, and more.",
+      icon: <FaLeaf className="text-teal-600" />
+    },
+    {
+      question: "How can I book a spa appointment online?",
+      answer: "You can easily book an appointment through our website or contact us via phone.",
+      icon: <FaSpa className="text-teal-600" />
+    },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -379,7 +394,75 @@ const features2 = [
     icon: '/images/Group-45-1.png',
     description: 'Tranquil oasis designed for complete serenity'
   },
+
 ];
+ // Physical Benefits Data
+  const physicalBenefits = [
+    { 
+      id: 1, 
+      title: "Pain Relief", 
+      description: "Reduce muscle tension and chronic pain with specialized therapies",
+      icon: "💆"
+    },
+    { 
+      id: 2, 
+      title: "Improved Circulation", 
+      description: "Enhance blood flow for better oxygenation and nutrient delivery",
+      icon: "❤️"
+    },
+    { 
+      id: 3, 
+      title: "Skin Rejuvenation", 
+      description: "Detoxify and revitalize your skin for a radiant glow",
+      icon: "✨"
+    },
+    { 
+      id: 4, 
+      title: "Enhanced Flexibility", 
+      description: "Increase joint mobility and range of motion",
+      icon: "🧘"
+    },
+    { 
+      id: 5, 
+      title: "Boosted Immunity", 
+      description: "Stimulate lymphatic system to strengthen your defenses",
+      icon: "🛡️"
+    }
+  ];
+
+  // Spiritual Benefits Data
+  const spiritualBenefits = [
+    { 
+      id: 1, 
+      title: "Stress Reduction", 
+      description: "Achieve deep relaxation and release daily tensions",
+      icon: "🧘‍♀️"
+    },
+    { 
+      id: 2, 
+      title: "Emotional Balance", 
+      description: "Restore harmony to your emotional wellbeing",
+      icon: "⚖️"
+    },
+    { 
+      id: 3, 
+      title: "Mental Clarity", 
+      description: "Clear your mind and enhance focus and awareness",
+      icon: "💡"
+    },
+    { 
+      id: 4, 
+      title: "Inner Peace", 
+      description: "Connect with your inner self for profound tranquility",
+      icon: "🕊️"
+    },
+    { 
+      id: 5, 
+      title: "Energy Alignment", 
+      description: "Balance your chakras and restore vital energy flow",
+      icon: "🌀"
+    }
+  ];
   return (
      <div className="font-sans overflow-hidden">
       {/* Floating Decorative Elements */}
@@ -492,6 +575,7 @@ const features2 = [
       </Swiper>
     </section> */}
       {/* ENd Hero Slider */}
+      
       {/* About Section */}
       <section className="py-24 px-4 md:px-8 bg-gradient-to-b from-[#fdf9f5] to-[#fefaf6] relative overflow-hidden">
         {/* Decorative Elements */}
@@ -1096,14 +1180,16 @@ const features2 = [
                         </div>
               
                         {/* Image */}
-                        <div className="relative w-36 h-36 mx-auto mb-8 rounded-full overflow-hidden shadow-md">
+                        <div className="relative w-44 h-44 mx-auto mb-8 rounded-full overflow-hidden shadow-xl border-4 border-gradient-to-tr from-rose-200 via-amber-100 to-rose-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
                           <Image
                             src={step.image}
                             alt={step.title}
                             layout="fill"
                             objectFit="cover"
+                            className="rounded-full"
                           />
                         </div>
+
               
                         {/* Title */}
                         <h4 className="text-2xl font-semibold text-amber-800 mb-4 font-serif">
@@ -1758,14 +1844,37 @@ const features2 = [
 {/* Our Therapy Experts */}
       <section className="py-16 px-4 bg-gradient-to-br from-[#FFF9F0] via-[#fcf5e9] to-[#f9f1e2]">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-yellow-700 font-serif">
-              Our Therapy Experts
-            </h2>
-            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-              Meet our certified spa professionals dedicated to your relaxation and rejuvenation.
-            </p>
-          </div>
+          
+          <div className="text-center mb-16">
+          <motion.p
+            className="text-amber-300 uppercase font-semibold tracking-wider mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Experts Therapy
+          </motion.p>
+          
+          <motion.h2
+            className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            Our <span className="text-amber-600"> Therapy Experts</span>
+          </motion.h2>
+          
+          <motion.p
+            className="text-gray-600 max-w-2xl mx-auto text-lg"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+             Meet our certified spa professionals dedicated to your relaxation and rejuvenation.
+          </motion.p>
+        </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, idx) => (
               <motion.div
@@ -1800,6 +1909,133 @@ const features2 = [
         </div>
       </section>
        {/* End Our Therapy Experts */}
+       {/* Benefits section */}
+       <div className="bg-gradient-to-br from-amber-50 to-amber-100 py-20 px-4">
+      <div className="max-w-7xl mx-auto">
+        {/* Section Heading */}
+        <div className="text-center mb-16">
+          <motion.p
+            className="text-amber-300 uppercase font-semibold tracking-wider mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Holistic Wellbeing
+          </motion.p>
+          
+          <motion.h2
+            className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            Transformative <span className="text-amber-600">Body & Soul</span> Benefits
+          </motion.h2>
+          
+          <motion.p
+            className="text-gray-600 max-w-2xl mx-auto text-lg"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            Experience profound improvements in both physical vitality and spiritual harmony through our specialized treatments.
+          </motion.p>
+        </div>
+
+        {/* Benefits Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Physical Benefits */}
+          <motion.div 
+            className="bg-white rounded-2xl shadow-xl p-8 border border-amber-100"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center mb-8">
+              <div className="bg-amber-100 p-4 rounded-xl mr-4">
+                <div className="text-3xl text-amber-600">🏃‍♂️</div>
+              </div>
+              <h3 className="text-3xl font-bold text-amber-900">Physical Benefits</h3>
+            </div>
+            
+            <div className="space-y-6">
+              {physicalBenefits.map((benefit) => (
+                <motion.div 
+                  key={benefit.id}
+                  className="flex items-start"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: benefit.id * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="bg-amber-50 p-3 rounded-lg mr-4 mt-1">
+                    <span className="text-2xl">{benefit.icon}</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-amber-800">{benefit.title}</h4>
+                    <p className="text-gray-600 mt-1">{benefit.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+          
+          {/* Spiritual Benefits */}
+          <motion.div 
+            className="bg-white rounded-2xl shadow-xl p-8 border border-amber-100"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center mb-8">
+              <div className="bg-amber-100 p-4 rounded-xl mr-4">
+                <div className="text-3xl text-amber-600">🧘</div>
+              </div>
+              <h3 className="text-3xl font-bold text-amber-900">Spiritual Benefits</h3>
+            </div>
+            
+            <div className="space-y-6">
+              {spiritualBenefits.map((benefit) => (
+                <motion.div 
+                  key={benefit.id}
+                  className="flex items-start"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: benefit.id * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="bg-amber-50 p-3 rounded-lg mr-4 mt-1">
+                    <span className="text-2xl">{benefit.icon}</span>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold text-amber-800">{benefit.title}</h4>
+                    <p className="text-gray-600 mt-1">{benefit.description}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+        
+        {/* CTA Button */}
+        <motion.div 
+          className="text-center mt-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <button className="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+            Discover Our Treatments
+          </button>
+        </motion.div>
+      </div>
+    </div>
+       {/* end Benefits section */}
 
       {/* Testimonials */}
       {/* <section className="py-24 px-6 md:px-16 bg-gradient-to-br from-amber-800 to-amber-600 relative overflow-hidden">

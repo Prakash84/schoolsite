@@ -269,15 +269,35 @@ export default function About() {
       {/* About Us Section */}
       <section className="w-full py-16 bg-gradient-to-b from-white to-yellow-50">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
+          
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="space-y-6"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-amber-900 font-serif">
-              Welcome to Delhi Body Spa
-            </h2>
+            <motion.div
+                          className="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full mb-6 font-medium"
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.2 }}
+                          viewport={{ once: true }}
+                        >
+                          <span className="mr-2">✦</span> About Our Luxury Spa
+                        </motion.div>
+            
+                        <motion.h2
+                          className="text-4xl md:text-5xl lg:text-4xl font-bold text-gray-800 leading-tight mb-8"
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.3 }}
+                          viewport={{ once: true }}
+                        >
+                          Welcome to <span className="relative">
+                            <span className="text-amber-600 z-10 relative">Delhi Body Spa</span>
+                            <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
+                          </span>
+                        </motion.h2>
             <p className="text-gray-700 text-lg">
               At Luxury Body Spa, we are dedicated to creating a haven of peace, wellness, and rejuvenation in the heart of Delhi. With a blend of ancient healing traditions and modern techniques, our expert therapists restore balance and vitality.
             </p>
@@ -309,22 +329,51 @@ export default function About() {
       <section className="w-full py-16 bg-yellow-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-yellow-100/50 backdrop-blur-sm -z-10" />
         <div className="max-w-7xl mx-auto px-6">
-          <motion.h2
-            className="text-4xl md:text-5xl font-bold text-center text-amber-900 font-serif mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            Why Choose DelhiBodySpa for Body Spa
-          </motion.h2>
-          <motion.p
-            className="text-center text-gray-700 max-w-3xl mx-auto mb-14 text-lg"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            Choose expert therapists, serene ambiance, and premium wellness services. Customized treatments with top hygiene standards in the heart of Delhi.
-          </motion.p>
+          <motion.div 
+                    className="text-center mb-20"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.8 }}
+                  >
+                    <motion.div
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.2, duration: 0.5 }}
+                    >
+                      <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+                      <span className="text-amber-700 font-medium tracking-wider">PREMIUM LOCATIONS</span>
+                    </motion.div>
+                    
+                    <motion.h2
+                      className="text-4xl md:text-5xl lg:text-5xl font-bold text-amber-900 mb-6 font-serif"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.3, duration: 0.6 }}
+                    >
+                      Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">DelhiBodySpa for Body Spa</span>
+                    </motion.h2>
+                    
+                    <motion.p
+                      className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.4, duration: 0.5 }}
+                    >
+                      Choose expert therapists, serene ambiance, and premium wellness services. Customized treatments with top hygiene standards in the heart of Delhi.
+                    </motion.p>
+                    
+                    <motion.div
+                      className="flex justify-center mt-10"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.5, duration: 0.5 }}
+                    >
+                      <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                    </motion.div>
+                  </motion.div>
+          
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {featuresData.map((item, index) => (
@@ -359,7 +408,8 @@ export default function About() {
 
       {/* content */}
       {/* demo 1 */}
-      <section className="relative bg-gradient-to-br from-indigo-50 to-rose-50 py-20 px-4 overflow-hidden">
+      <section className="w-full py-16 bg-yellow-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-yellow-100/50 backdrop-blur-sm -z-10" />
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-rose-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
       <div className="absolute top-0 right-0 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
@@ -367,16 +417,34 @@ export default function About() {
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+          <motion.div
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.2, duration: 0.5 }}
+                    >
+                      <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+                      <span className="text-amber-700 font-medium tracking-wider">PREMIUM LOCATIONS</span>
+                    </motion.div>
+                    
+                    <motion.h2
+                      className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.3, duration: 0.6 }}
+                    >
+                      Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Sanctuary</span>
+                    </motion.h2>
+          {/* <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
             Our <span className="text-rose-500">Sanctuary</span> Story
-          </h1>
+          </h1> */}
           <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              <h2 className="text-3xl  font-bold text-amber-800 mb-6">
                 Journey to Wellness
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -388,7 +456,7 @@ export default function About() {
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              <h2 className="text-3xl font-bold text-amber-800 mb-6">
                 Our Healing Philosophy
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -401,7 +469,7 @@ export default function About() {
                   {title: 'Energy Alignment', desc: 'Space designed with sacred geometry to enhance therapeutic benefits'}
                 ].map((item, index) => (
                   <div key={index} className="bg-indigo-50 p-4 rounded-xl">
-                    <h3 className="font-bold text-indigo-700 mb-2">{item.title}</h3>
+                    <h3 className="font-bold text-amber-800 mb-2">{item.title}</h3>
                     <p className="text-sm text-gray-600">{item.desc}</p>
                   </div>
                 ))}
@@ -414,7 +482,7 @@ export default function About() {
 
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              <h2 className="text-3xl font-bold text-amber-800 mb-6">
                 Masterful Hands, Compassionate Hearts
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -427,7 +495,7 @@ export default function About() {
                   'Deep Tissue Sculpting', 'Craniosacral'
                 ].map((item, index) => (
                   <li key={index} className="flex items-center">
-                    <div className="w-2 h-2 bg-rose-400 rounded-full mr-3"></div>
+                    <div className="w-2 h-2 bg-amber-800 rounded-full mr-3"></div>
                     <span className="text-gray-600">{item}</span>
                   </li>
                 ))}
@@ -438,7 +506,7 @@ export default function About() {
             </div>
 
             <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
-              <h2 className="text-3xl font-bold text-gray-800 mb-6">
+              <h2 className="text-3xl font-bold text-amber-800 mb-6">
                 Sustainable Wellness
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
@@ -452,7 +520,7 @@ export default function About() {
                   {icon: '🌎', text: 'Carbon Offsetting'},
                   {icon: '🏺', text: 'Handcrafted Products'}
                 ].map((item, index) => (
-                  <span key={index} className="bg-emerald-50 text-emerald-700 px-4 py-2 rounded-full flex items-center">
+                  <span key={index} className="bg-[#f0eae3] text-amber-800 px-4 py-2 rounded-full flex items-center">
                     <span className="mr-2 text-xl">{item.icon}</span>
                     {item.text}
                   </span>
@@ -475,6 +543,7 @@ export default function About() {
           </button>
         </div>
       </div>
+      
     </section>
       {/* end demo 1 */}
       {/* demo 2 */}
@@ -482,13 +551,52 @@ export default function About() {
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16 relative">
-          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-[#c5a491]"></div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-playfair font-bold text-[#3a2d28] mb-4">
-            Our <span className="text-[#9d7c6c]">Sanctuary</span> Story
-          </h1>
-          <p className="text-[#6d5d54] max-w-2xl mx-auto text-lg">
-            Discover the journey, philosophy, and passion that created your urban oasis
-          </p>
+          {/* <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-40 h-1 bg-[#c5a491]"></div> */}
+
+          <motion.div 
+          className="text-center mb-20"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+            <span className="text-amber-700 font-medium tracking-wider">Sanctuary Story</span>
+          </motion.div>
+          
+          <motion.h2
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+          >
+           Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Sanctuary Story</span>
+          </motion.h2>
+          
+          <motion.p
+            className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+          >
+           Discover the journey, philosophy, and passion that created your urban oasis
+          </motion.p>
+          
+          <motion.div
+            className="flex justify-center mt-10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+          </motion.div>
+        </motion.div>
         </div>
 
         {/* Content Grid */}
@@ -504,7 +612,7 @@ export default function About() {
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-[#3a2d28]">Our Journey</h2>
+                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-amber-800">Our Journey</h2>
                 </div>
                 <p className="text-[#6d5d54] mb-4 leading-relaxed">
                   Serenity Springs was born from a simple vision: to create an urban oasis where modern wellness meets ancient healing traditions. Founded in 2010 by renowned holistic therapist Elena Rodriguez, our spa began as a single-treatment room with a passionate mission. Today, we've grown into an award-winning sanctuary serving over 5,000 clients annually, yet we've maintained our core commitment to personalized care.
@@ -514,10 +622,10 @@ export default function About() {
                 </p>
               </div>
               <div className="bg-[#f8f5f2] p-6 border-t border-[#e8e0d9]">
-                <div className="flex flex-wrap gap-4 justify-center">
+                <div className="flex flex-wrap gap-4 justify-center ">
                   {[2010, 2014, 2018, 2022, 2024].map((year, index) => (
                     <div key={index} className="text-center">
-                      <div className="text-2xl font-bold text-[#9d7c6c]">{year}</div>
+                      <div className="text-2xl font-bold text-amber-800">{year}</div>
                       <div className="text-sm text-[#6d5d54]">{index === 0 ? 'Founded' : index === 4 ? 'Today' : 'Expansion'}</div>
                     </div>
                   ))}
@@ -534,7 +642,7 @@ export default function About() {
                       <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-[#3a2d28]">Healing Philosophy</h2>
+                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-amber-800">Healing Philosophy</h2>
                 </div>
                 <p className="text-[#6d5d54] mb-6 leading-relaxed">
                   We believe true wellness emerges from harmony between physical, mental, and energetic dimensions. Unlike conventional spas, our approach integrates three core principles:
@@ -545,8 +653,8 @@ export default function About() {
                     {title: 'Biome Intelligence', desc: 'Therapies designed to activate your body\'s innate healing capabilities'},
                     {title: 'Energy Alignment', desc: 'Space designed with sacred geometry to enhance therapeutic benefits'}
                   ].map((item, index) => (
-                    <div key={index} className="bg-[#f8f5f2] p-5 rounded-xl border border-[#e8e0d9]">
-                      <h3 className="font-bold text-lg text-[#3a2d28] mb-2">{item.title}</h3>
+                    <div key={index} className="bg-indigo-50 p-5 rounded-xl border border-[#e8e0d9]">
+                      <h3 className="font-bold text-lg text-amber-800 mb-2">{item.title}</h3>
                       <p className="text-sm text-[#6d5d54]">{item.desc}</p>
                     </div>
                   ))}
@@ -569,7 +677,7 @@ export default function About() {
                       <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-[#3a2d28]">Our Healers</h2>
+                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-amber-800">Our Healers</h2>
                 </div>
                 <p className="text-[#6d5d54] mb-6 leading-relaxed">
                   Our team of 23 therapists represents the pinnacle of spa craftsmanship. Each practitioner undergoes 500+ hours of training in our proprietary modalities before touching clients. We source talent globally, with specialists in diverse healing traditions:
@@ -582,7 +690,7 @@ export default function About() {
                     'Reflexology', 'Prenatal Massage', 'Cupping', 'Reiki'
                   ].map((item, index) => (
                     <div key={index} className="flex items-start">
-                      <div className="w-2 h-2 bg-[#9d7c6c] rounded-full mt-2 mr-3"></div>
+                      <div className="w-2 h-2 bg-amber-800 rounded-full mt-2 mr-3"></div>
                       <span className="text-[#6d5d54]">{item}</span>
                     </div>
                   ))}
@@ -602,7 +710,7 @@ export default function About() {
                       <path fillRule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4zm1 14a1 1 0 100-2 1 1 0 000 2zm5-1.757l4.9-4.9a2 2 0 000-2.828L13.485 5.1a2 2 0 00-2.828 0L10 5.757v8.486zM16 18H9.071l6-6H16a2 2 0 012 2v2a2 2 0 01-2 2z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-[#3a2d28]">Sustainable Wellness</h2>
+                  <h2 className="text-2xl md:text-3xl font-playfair font-bold text-amber-800">Sustainable Wellness</h2>
                 </div>
                 <p className="text-[#6d5d54] mb-6 leading-relaxed">
                   Our commitment extends beyond individual wellness to planetary health. We're proud to be the first Carbon Neutral spa in our region, with initiatives including:
@@ -616,8 +724,8 @@ export default function About() {
                     {icon: '🏺', text: 'Handcrafted Products'},
                     {icon: '🚫', text: 'Cruelty-Free'}
                   ].map((item, index) => (
-                    <span key={index} className="bg-[#f0eae3] text-[#6d5d54] px-4 py-2 rounded-full flex items-center">
-                      <span className="mr-2">{item.icon}</span>
+                    <span key={index} className="bg-[#f0eae3] text-amber-800 px-4 py-2 rounded-full flex items-center">
+                      <span className="mr-2 ">{item.icon}</span>
                       {item.text}
                     </span>
                   ))}
@@ -631,9 +739,9 @@ export default function About() {
         </div>
 
         {/* Testimonial Section */}
-        <div className="mt-20 bg-gradient-to-r from-[#9d7c6c] to-[#c5a491] rounded-2xl p-8 md:p-12 text-white overflow-hidden">
+        <div className="mt-20 bg-gradient-to-r from-amber-700 to-amber-600 rounded-2xl p-8 text-white shadow-xl">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-playfair font-bold mb-6 text-center">Voices of Transformation</h2>
+            <h2 className="text-2xl md:text-3xl font-playfair font-bold mb-6 text-center ">Voices of Transformation</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
                 {name: 'Sarah K.', text: "Serenity Springs changed my relationship with my body. After years of chronic pain, their therapists helped me find relief I thought impossible."},
@@ -663,17 +771,17 @@ export default function About() {
 
         {/* CTA Section */}
         <div className="mt-20 text-center">
-          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-[#3a2d28] mb-6">
+          <h2 className="text-3xl md:text-4xl font-playfair font-bold text-amber-800 mb-6">
             Begin Your Wellness Journey
           </h2>
           <p className="text-[#6d5d54] max-w-2xl mx-auto mb-8 text-lg">
             We invite you to experience the difference that intention, expertise, and genuine care can make. Whether seeking relief from chronic stress, post-injury recovery, or simply sacred "me time," our doors open to welcome you home to yourself.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-[#9d7c6c] hover:bg-[#8a6a5a] text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <button className="bg-gradient-to-r from-amber-600 to-amber-700 text-white font-bold py-4 px-8 rounded-full hover:from-amber-700 hover:to-amber-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Book Your Sanctuary Experience
             </button>
-            <button className="bg-white hover:bg-[#f8f5f2] border border-[#9d7c6c] text-[#9d7c6c] font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+            <button className="bg-white border-2 border-amber-500 text-amber-600 font-bold py-4 px-8 rounded-full transition-all duration-300 hover:bg-amber-50 transition-all duration-300 shadow hover:shadow-md">
               Explore Our Treatments
             </button>
           </div>
@@ -748,14 +856,43 @@ export default function About() {
       {/* Our Therapy Experts */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-yellow-700 font-serif">
-              Our Therapy Experts
-            </h2>
-            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-              Meet our certified spa professionals dedicated to your relaxation and rejuvenation.
-            </p>
-          </div>
+          <div className="text-center mb-16">
+                <motion.div
+                  className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
+                  <FaStar className="text-amber-500" />
+                  Staff
+                </motion.div>
+                <motion.h2
+                  className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                >
+                  Our <span className="text-amber-600">Therapy Experts</span>
+                </motion.h2>
+                <motion.p
+                  className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                >
+                  Meet our certified spa professionals dedicated to your relaxation and rejuvenation.
+                </motion.p>
+                <motion.div
+                   className="flex justify-center mt-10"
+                   initial={{ opacity: 0, y: 20 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ delay: 0.5, duration: 0.5 }}
+                 >
+                   <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                 </motion.div>
+              </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, idx) => (
               <motion.div
@@ -789,59 +926,96 @@ export default function About() {
         </div>
       </section>
        {/* End Our Therapy Experts */}
-       {/* Our Process */}
-        <section className="w-full py-10 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
-         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-           {/* Heading */}
-           <motion.h2
-             className="text-4xl md:text-5xl font-serif font-bold text-center text-amber-900 mb-12"
-             initial={{ opacity: 0, y: 30 }}
-             whileInView={{ opacity: 1, y: 0 }}
-             viewport={{ once: true }}
-             transition={{ duration: 0.6 }}
-           >
-             Our Process
-           </motion.h2>
-       
-           {/* Process Steps */}
-           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-             {processSteps.map((step, index) => (
-               <motion.div
-                 key={index}
-                 className="relative bg-white shadow-lg rounded-2xl px-6 pt-24 pb-10 text-center hover:shadow-xl transition-shadow duration-300"
-                 initial={{ opacity: 0, y: 40 }}
+        {/* Our Process */}
+                      <section className="w-full py-10 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
+                       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                         {/* Section Header */}
+               <motion.div 
+                 className="text-center mb-20"
+                 initial={{ opacity: 0, y: 20 }}
                  whileInView={{ opacity: 1, y: 0 }}
-                 viewport={{ once: true }}
-                 transition={{ duration: 0.5, delay: index * 0.2 }}
+                 viewport={{ once: true, margin: "-100px" }}
+                 transition={{ duration: 0.8 }}
                >
-                 {/* Step Number */}
-                 <div className="absolute top-4 left-4 text-3xl font-bold text-amber-300 opacity-30 z-0">
-                   {step.number}
-                 </div>
-       
-                 {/* Image */}
-                 <div className="relative w-36 h-36 mx-auto mb-8 rounded-full overflow-hidden shadow-md">
-                   <Image
-                     src={step.image}
-                     alt={step.title}
-                     layout="fill"
-                     objectFit="cover"
-                   />
-                 </div>
-       
-                 {/* Title */}
-                 <h4 className="text-2xl font-semibold text-amber-800 mb-4 font-serif">
-                   {step.title}
-                 </h4>
-       
-                 {/* Description */}
-                 <p className="text-gray-600 leading-relaxed text-base">{step.description}</p>
+                 <motion.div
+                   className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+                   initial={{ opacity: 0, scale: 0.9 }}
+                   whileInView={{ opacity: 1, scale: 1 }}
+                   transition={{ delay: 0.2, duration: 0.5 }}
+                 >
+                   <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+                   <span className="text-amber-700 font-medium tracking-wider">Process</span>
+                 </motion.div>
+                 
+                 <motion.h2
+                   className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+                   initial={{ opacity: 0, y: 20 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ delay: 0.3, duration: 0.6 }}
+                 >
+                   Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Process</span>
+                 </motion.h2>
+                 
+                 {/* <motion.p
+                   className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+                   initial={{ opacity: 0, y: 20 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ delay: 0.4, duration: 0.5 }}
+                 >
+                   Located in premium 5-star properties across Delhi – enjoy serenity, comfort, and personalized spa experiences at every outlet.
+                 </motion.p> */}
+                 
+                 <motion.div
+                   className="flex justify-center mt-10"
+                   initial={{ opacity: 0, y: 20 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ delay: 0.5, duration: 0.5 }}
+                 >
+                   <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                 </motion.div>
                </motion.div>
-             ))}
-           </div>
-         </div>
-        </section>
-      {/* End Our Process */}
+                     
+                         {/* Process Steps */}
+                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                           {processSteps.map((step, index) => (
+                             <motion.div
+                               key={index}
+                               className="relative bg-white shadow-lg rounded-2xl px-6 pt-24 pb-10 text-center hover:shadow-xl transition-shadow duration-300"
+                               initial={{ opacity: 0, y: 40 }}
+                               whileInView={{ opacity: 1, y: 0 }}
+                               viewport={{ once: true }}
+                               transition={{ duration: 0.5, delay: index * 0.2 }}
+                             >
+                               {/* Step Number */}
+                               <div className="absolute top-4 left-4 text-3xl font-bold text-amber-300 opacity-30 z-0">
+                                 {step.number}
+                               </div>
+                     
+                               {/* Image */}
+                               <div className="relative w-44 h-44 mx-auto mb-8 rounded-full overflow-hidden shadow-xl border-4 border-gradient-to-tr from-rose-200 via-amber-100 to-rose-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                                 <Image
+                                   src={step.image}
+                                   alt={step.title}
+                                   layout="fill"
+                                   objectFit="cover"
+                                   className="rounded-full"
+                                 />
+                               </div>
+       
+                     
+                               {/* Title */}
+                               <h4 className="text-2xl font-semibold text-amber-800 mb-4 font-serif">
+                                 {step.title}
+                               </h4>
+                     
+                               {/* Description */}
+                               <p className="text-gray-600 leading-relaxed text-base">{step.description}</p>
+                             </motion.div>
+                           ))}
+                         </div>
+                       </div>
+                      </section>
+                    {/* End Our Process */}
       {/* Pricing Section */}
             <section id= "Pricing" className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
             {/* Decorative elements */}
@@ -878,6 +1052,14 @@ export default function About() {
                 >
                   Tailored spa experiences starting from just ₹1999. Choose from our exclusive massage options, designed for your total relaxation and rejuvenation.
                 </motion.p>
+                <motion.div
+                   className="flex justify-center mt-10"
+                   initial={{ opacity: 0, y: 20 }}
+                   whileInView={{ opacity: 1, y: 0 }}
+                   transition={{ delay: 0.5, duration: 0.5 }}
+                 >
+                   <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                 </motion.div>
               </div>
       
               {/* Pricing Cards */}
