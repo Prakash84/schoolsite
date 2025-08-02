@@ -562,55 +562,86 @@
               {/* End Our Signature Treatments */}
               {/* Why Choose */}
                     <section className="w-full py-16 bg-yellow-50 relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-yellow-100/50 backdrop-blur-sm -z-10" />
-                      <div className="max-w-7xl mx-auto px-6">
-                        <motion.h2
-                          className="text-4xl md:text-5xl font-bold text-center text-amber-900 font-serif mb-6"
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.6 }}
-                        >
-                          Why Choose DelhiBodySpa for Body Spa
-                        </motion.h2>
-                        <motion.p
-                          className="text-center text-gray-700 max-w-3xl mx-auto mb-14 text-lg"
-                          initial={{ opacity: 0 }}
-                          whileInView={{ opacity: 1 }}
-                          transition={{ duration: 0.6, delay: 0.2 }}
-                        >
-                          Choose expert therapists, serene ambiance, and premium wellness services. Customized treatments with top hygiene standards in the heart of Delhi.
-                        </motion.p>
-              
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-                          {featuresData.map((item, index) => (
-                            <motion.div
-                              key={index}
-                              initial={{ opacity: 0, y: 30 }}
-                              whileInView={{ opacity: 1, y: 0 }}
-                              transition={{ duration: 0.5, delay: index * 0.2 }}
-                              className="bg-white rounded-xl shadow-xl overflow-hidden"
-                            >
-                              <div className="relative h-60 w-full">
-                                <Image
-                                  src={item.image}
-                                  alt={item.title}
-                                  fill
-                                  className="object-cover"
-                                />
+                            <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-yellow-100/50 backdrop-blur-sm -z-10" />
+                            <div className="max-w-7xl mx-auto px-6">
+                              <motion.div 
+                                        className="text-center mb-20"
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true, margin: "-100px" }}
+                                        transition={{ duration: 0.8 }}
+                                      >
+                                        <motion.div
+                                          className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+                                          initial={{ opacity: 0, scale: 0.9 }}
+                                          whileInView={{ opacity: 1, scale: 1 }}
+                                          transition={{ delay: 0.2, duration: 0.5 }}
+                                        >
+                                          <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+                                          <span className="text-amber-700 font-medium tracking-wider">PREMIUM LOCATIONS</span>
+                                        </motion.div>
+                                        
+                                        <motion.h2
+                                           className="text-5xl md:text-6xl font-light text-center text-amber-900 mb-6"
+                                              initial={{ opacity: 0, y: 30 }}
+                                              animate={isVisible ? { opacity: 1, y: 0 } : {}}
+                                              transition={{ duration: 0.8 }}
+                                              style={{ fontFamily: "'Playfair Display', serif" }}
+                                        >
+                                          Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">DelhiBodySpa for Body Spa</span>
+                                        </motion.h2>
+                                        {/* Divider */}
+                                          <motion.div
+                                            className="mt-4 w-32 h-1 mx-auto bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"
+                                            initial={{ scaleX: 0 }}
+                                            animate={isVisible ? { scaleX: 1 } : {}}
+                                            transition={{ duration: 0.8, delay: 0.3 }}
+                                            style={{ transformOrigin: 'center' }}
+                                          ></motion.div>
+                                        <motion.p
+                                         className="mt-10 text-center text-xl md:text-2xl text-amber-800 font-light leading-relaxed max-w-3xl mx-auto"
+                                          initial={{ opacity: 0, y: 30 }}
+                                          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+                                          transition={{ duration: 0.8, delay: 0.5 }}
+                                          style={{ fontFamily: "'Montserrat', sans-serif" }}
+                                        >
+                                          Choose expert therapists, serene ambiance, and premium wellness services. Customized treatments with top hygiene standards in the heart of Delhi.
+                                        </motion.p>
+                                        
+                                        
+                                      </motion.div>
+                              
+                    
+                              <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                                {featuresData.map((item, index) => (
+                                  <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: index * 0.2 }}
+                                    className="bg-white rounded-xl shadow-xl overflow-hidden"
+                                  >
+                                    <div className="relative h-60 w-full">
+                                      <Image
+                                        src={item.image}
+                                        alt={item.title}
+                                        fill
+                                        className="object-cover"
+                                      />
+                                    </div>
+                                    <div className="p-6">
+                                      <h3 className="text-xl font-semibold text-amber-800 font-serif mb-3">
+                                        {item.title}
+                                      </h3>
+                                      <p className="text-gray-600 text-sm leading-relaxed">
+                                        {item.description}
+                                      </p>
+                                    </div>
+                                  </motion.div>
+                                ))}
                               </div>
-                              <div className="p-6">
-                                <h3 className="text-xl font-semibold text-amber-800 font-serif mb-3">
-                                  {item.title}
-                                </h3>
-                                <p className="text-gray-600 text-sm leading-relaxed">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </motion.div>
-                          ))}
-                        </div>
-                      </div>
-                    </section>
+                            </div>
+                          </section>
 
                     {/* content section */}
                      <section className="bg-gradient-to-b from-[#fcf7f4] to-[#f8f0eb] py-20 px-6 md:px-16">
@@ -775,56 +806,93 @@
 
                 {/* Our Process */}
                 <section className="w-full py-10 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
-                  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    {/* Heading */}
-                    <motion.h2
-                      className="text-4xl md:text-5xl font-serif font-bold text-center text-amber-900 mb-12"
-                      initial={{ opacity: 0, y: 30 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.6 }}
-                    >
-                      Our Process
-                    </motion.h2>
-
-                    {/* Process Steps */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-                      {processSteps.map((step, index) => (
-                        <motion.div
-                          key={index}
-                          className="relative bg-white shadow-lg rounded-2xl px-6 pt-24 pb-10 text-center hover:shadow-xl transition-shadow duration-300"
-                          initial={{ opacity: 0, y: 40 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 0.5, delay: index * 0.2 }}
-                        >
-                          {/* Step Number */}
-                          <div className="absolute top-4 left-4 text-3xl font-bold text-amber-300 opacity-30 z-0">
-                            {step.number}
-                          </div>
-
-                          {/* Image */}
-                          <div className="relative w-36 h-36 mx-auto mb-8 rounded-full overflow-hidden shadow-md">
-                            <Image
-                              src={step.image}
-                              alt={step.title}
-                              layout="fill"
-                              objectFit="cover"
-                            />
-                          </div>
-
-                          {/* Title */}
-                          <h4 className="text-2xl font-semibold text-amber-800 mb-4 font-serif">
-                            {step.title}
-                          </h4>
-
-                          {/* Description */}
-                          <p className="text-gray-600 leading-relaxed text-base">{step.description}</p>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </div>
-                </section>
+                                       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                                         {/* Section Header */}
+                               <motion.div 
+                                 className="text-center mb-20"
+                                 initial={{ opacity: 0, y: 20 }}
+                                 whileInView={{ opacity: 1, y: 0 }}
+                                 viewport={{ once: true, margin: "-100px" }}
+                                 transition={{ duration: 0.8 }}
+                               >
+                                 <motion.div
+                                   className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+                                   initial={{ opacity: 0, scale: 0.9 }}
+                                   whileInView={{ opacity: 1, scale: 1 }}
+                                   transition={{ delay: 0.2, duration: 0.5 }}
+                                 >
+                                   <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+                                   <span className="text-amber-700 font-medium tracking-wider">Process</span>
+                                 </motion.div>
+                                 
+                                 <motion.h2
+                                   className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+                                   initial={{ opacity: 0, y: 20 }}
+                                   whileInView={{ opacity: 1, y: 0 }}
+                                   transition={{ delay: 0.3, duration: 0.6 }}
+                                 >
+                                   Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Process</span>
+                                 </motion.h2>
+                                 
+                                 {/* <motion.p
+                                   className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+                                   initial={{ opacity: 0, y: 20 }}
+                                   whileInView={{ opacity: 1, y: 0 }}
+                                   transition={{ delay: 0.4, duration: 0.5 }}
+                                 >
+                                   Located in premium 5-star properties across Delhi – enjoy serenity, comfort, and personalized spa experiences at every outlet.
+                                 </motion.p> */}
+                                 
+                                 <motion.div
+                                   className="flex justify-center mt-10"
+                                   initial={{ opacity: 0, y: 20 }}
+                                   whileInView={{ opacity: 1, y: 0 }}
+                                   transition={{ delay: 0.5, duration: 0.5 }}
+                                 >
+                                   <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                                 </motion.div>
+                               </motion.div>
+                                     
+                                         {/* Process Steps */}
+                                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                                           {processSteps.map((step, index) => (
+                                             <motion.div
+                                               key={index}
+                                               className="relative bg-white shadow-lg rounded-2xl px-6 pt-24 pb-10 text-center hover:shadow-xl transition-shadow duration-300"
+                                               initial={{ opacity: 0, y: 40 }}
+                                               whileInView={{ opacity: 1, y: 0 }}
+                                               viewport={{ once: true }}
+                                               transition={{ duration: 0.5, delay: index * 0.2 }}
+                                             >
+                                               {/* Step Number */}
+                                               <div className="absolute top-4 left-4 text-3xl font-bold text-amber-300 opacity-30 z-0">
+                                                 {step.number}
+                                               </div>
+                                     
+                                               {/* Image */}
+                                               <div className="relative w-44 h-44 mx-auto mb-8 rounded-full overflow-hidden shadow-xl border-4 border-gradient-to-tr from-rose-200 via-amber-100 to-rose-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                                                 <Image
+                                                   src={step.image}
+                                                   alt={step.title}
+                                                   layout="fill"
+                                                   objectFit="cover"
+                                                   className="rounded-full"
+                                                 />
+                                               </div>
+                       
+                                     
+                                               {/* Title */}
+                                               <h4 className="text-2xl font-semibold text-amber-800 mb-4 font-serif">
+                                                 {step.title}
+                                               </h4>
+                                     
+                                               {/* Description */}
+                                               <p className="text-gray-600 leading-relaxed text-base">{step.description}</p>
+                                             </motion.div>
+                                           ))}
+                                         </div>
+                                       </div>
+                                      </section>
                 {/* End Our Process */}
 
 
@@ -906,7 +974,9 @@
                     ))}
                   </ul>
 
-                  <Button className="px-10 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-full text-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-amber-500/30" href="tel:+919211235800">Book an Appointment</Button>
+                  <a href="https://api.whatsapp.com/send?phone=919211059033" className="bg-amber-600 text-white px-8 py-4 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md">
+              Book an Appointment
+            </a>
                 </div>
               </section>
 
