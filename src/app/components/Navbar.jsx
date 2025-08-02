@@ -44,7 +44,7 @@ export default function Navbar() {
     { name: "Couple Massage", href: "/Services/couplemassage" },
     { name: "B2B Massage", href: "/Services/b2bmassage" },
     { name: "Full Body Massage", href: "/Services/fullbodymassage" },
-    { name: "Hot Stone Massage", href: "/Services/hotstonemassage" },
+    { name: "We Are Hiring", href: "/Services/hotstonemassage" },
   ];
 
   const outletDropdown = [
