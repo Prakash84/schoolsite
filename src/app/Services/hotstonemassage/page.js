@@ -60,9 +60,9 @@
       </h1>
 
       <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-        Welcome to our luxury spa brand, operating across more than 24 high-end outlets in Delhi, Noida, and Gurgaon — including inside top 5-star hotels like JW Marriott, Novotel, The Lalit, The Park, Lemon Tree, and more. We specialize in premium massage therapies like Couple Massage, Sandwich Massage, B2B Therapy, Full Body Massage, and Female-to-Male services, delivered by a skilled team of Indian and international therapists.
+       Are you passionate about wellness and luxury? Do you have a knack for providing top-notch spa experiences? If so, we want you to be a part of our growing team!
       </p>
-      <p>We’re looking for passionate and professional spa therapists to join our growing team. If you’re ready to work in a luxury environment, earn great incentives, and offer top-tier relaxation experiences to our elite clientele — this is your chance!</p>
+      <p>We are currently hiring professional Therapists for our luxury spa and hotel outlets across Delhi NCR, including renowned hotels like Lemon Tree, Novotel, Roseate House, and Radisson. This is an exciting opportunity for both part-time and full-time positions!</p>
 
       <div className="grid grid-cols-2 gap-4 mt-8 max-w-md mx-auto lg:mx-0">
         <div className="flex items-center space-x-3">

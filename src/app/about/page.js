@@ -435,9 +435,6 @@ export default function About() {
                     >
                       Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Sanctuary</span>
                     </motion.h2>
-          {/* <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-            Our <span className="text-rose-500">Sanctuary</span> Story
-          </h1> */}
           <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
         </div>
 

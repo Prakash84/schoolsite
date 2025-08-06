@@ -195,7 +195,7 @@ export default function lajpatnagar() {
             <div className="absolute inset-0 border-4 border-white shadow-xl overflow-hidden">
               <div className="relative w-full h-full">
                 <img
-                  src="/images/RoseateHouse.jpg" // ✅ Yahan apna image path daal
+                  src="/images/lajpatnagahotel.avif" // ✅ Yahan apna image path daal
                   alt="Spa Environment"
                   className="w-full h-full object-cover"
                 />

@@ -28,8 +28,8 @@ export default function aerocity() {
       "Modern upscale airport hotel with sleek rooms, rooftop pool, spa, and Aerocity connectivity for travelers.",
   },
   {
-    title: "The Grand New Delhi",
-    image: "/images/TheGrandNewDelhi.jpg",
+    title: "Pride Plaza Hotel",
+    image: "/images/pride-plaza-hotel-aerocity1-2.jpg",
     description:
       "Elegant urban retreat offering luxurious rooms, dining, fitness center, event spaces, and personalized hospitality.",
   },
@@ -40,14 +40,14 @@ export default function aerocity() {
       "Rejuvenate at Ibis Aerocity’s spa with expert therapists, luxurious treatments, and serene ambience.",
   },
   {
-    title: "The Park Connaught Place",
-    image: "/images/TheParkConnaughtPlace.jpg",
+    title: "Pullman Aerocity",
+    image: "/images/pullmanAerocity.jpg",
     description:
       "Experience rejuvenating spa services at The Park Connaught Place – where luxury meets wellness.",
   },
   {
-    title: "The Suryaa New Delhi (NFC)",
-    image: "/images/TheSuryaaNewDelhi(NFC).jpg",
+    title: "Jaypee Vasant Aerocity",
+    image: "/images/jaypeeVasantAerocity.png",
     description:
       "Indulge at The Suryaa with massages, therapies, serene ambiance, and personalized wellness.",
   },
