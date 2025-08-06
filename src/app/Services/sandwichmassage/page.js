@@ -145,30 +145,35 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
       <div className="grid grid-cols-2 gap-4 mt-8 max-w-md mx-auto lg:mx-0">
         <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+            <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+              {/* Hotel Icon */}
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21V3h18v18M9 21v-6h6v6" />
+              </svg>
+            </div>
+            <span className="text-sm text-gray-700">Luxury Hotel Spa</span>
           </div>
-          <span className="text-sm text-gray-700">Dual Therapist Touch</span>
-        </div>
-        <div className="flex items-center space-x-3">
+
+       <div className="flex items-center space-x-3">
           <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
+            {/* Oil / Spa Icon */}
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C10.8954 2 10 2.89543 10 4V6H8C6.89543 6 6 6.89543 6 8V20C6 21.1046 6.89543 22 8 22H16C17.1046 22 18 21.1046 18 20V8C18 6.89543 17.1046 6 16 6H14V4C14 2.89543 13.1046 2 12 2ZM12 9C13.1046 9 14 9.89543 14 11C14 12.1046 13.1046 13 12 13C10.8954 13 10 12.1046 10 11C10 9.89543 10.8954 9 12 9Z" />
             </svg>
           </div>
           <span className="text-sm text-gray-700">Warm Herbal Oils</span>
         </div>
+
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+            {/* Muscle Relief / Healing Hand Icon */}
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16c0-1.1.9-2 2-2h2v-5a2 2 0 114 0v5h2a2 2 0 110 4h-1l-1 3-1-3H6a2 2 0 01-2-2z" />
             </svg>
           </div>
           <span className="text-sm text-gray-700">Deep Muscle Relief</span>
         </div>
+
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -351,53 +356,56 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           </div>
         </section>
       {/* Services Section */}
+       {/* Call to Action Section */}
+<section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  {/* Decorative Elements */}
+  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-amber-50/80 to-rose-50/50 z-0"></div>
+  <div className="absolute -bottom-32 -right-32 w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-amber-200/30 z-0"></div>
+  <div className="absolute -top-32 -left-32 w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-amber-100/40 z-0"></div>
 
-      {/* call to action */}
-       <section className="relative py-24 px-4 overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-amber-50/80 to-rose-50/50 z-0"></div>
-      <div className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-amber-200/30 z-0"></div>
-      <div className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-amber-100/40 z-0"></div>
-      
-      {/* Content */}
-      <div className="max-w-4xl mx-auto relative z-10 text-center">
-        
-        <motion.h2
-                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.1 }}
-                  >
-                    Experience <span className="text-amber-600">Ultimate Relaxation</span>
-                  </motion.h2>
-        <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Treat yourself to our premium Swedish massage - a journey to complete physical and mental rejuvenation. 
-          Book now and receive a complimentary aromatherapy session.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href='https://api.whatsapp.com/send?phone=919211059033'><button className="bg-gradient-to-r from-amber-600 to-amber-800 text-white font-medium py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group">
-            Book Your Session
-            <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-          </button></a>
-          
-          <a href='#Pricing'><button className="bg-white text-amber-800 font-medium py-4 px-8 rounded-full border-2 border-amber-800 shadow-sm hover:shadow-md transition-all duration-300">
-            View Packages
-          </button></a>
+  {/* Content */}
+  <div className="relative z-10 max-w-4xl mx-auto text-center">
+    <motion.h2
+      className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4 leading-tight"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.1 }}
+    >
+      Experience <span className="text-amber-600">Ultimate Relaxation</span>
+    </motion.h2>
+
+    <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed">
+      Treat yourself to our premium Swedish massage – a journey to complete physical and mental rejuvenation. 
+      Book now and receive a complimentary aromatherapy session.
+    </p>
+
+    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="https://api.whatsapp.com/send?phone=918826482370">
+        <button className="bg-gradient-to-r from-amber-600 to-amber-800 text-white font-medium py-3 px-6 sm:py-4 sm:px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group">
+          Book Your Session
+          <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+        </button>
+      </a>
+
+      <a href="#Pricing">
+        <button className="bg-white text-amber-800 font-medium py-3 px-6 sm:py-4 sm:px-8 rounded-full border-2 border-amber-800 shadow-sm hover:shadow-md transition-all duration-300">
+          View Packages
+        </button>
+      </a>
+    </div>
+
+    <div className="mt-10 sm:mt-12 flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6">
+      {[...Array(3)].map((_, i) => (
+        <div key={i} className="flex items-center gap-2">
+          <div className="w-3 h-3 rounded-full bg-amber-600 animate-pulse"></div>
+          <span className="text-gray-700 text-sm sm:text-base font-medium">No commitment required</span>
         </div>
-        
-        <div className="mt-12 flex flex-wrap justify-center gap-6">
-          {[...Array(3)].map((_, i) => (
-            <div key={i} className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full bg-amber-600 animate-pulse"></div>
-              <span className="text-gray-700 font-medium">No commitment required</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-      {/* End call to action */}
+      ))}
+    </div>
+  </div>
+</section>
+{/* End Call to Action Section */}
 
         {/* About Oil Therapy Section */}
         {sections.map((section, index) => (
@@ -721,7 +729,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
               Book your oil therapy massage today and embark on a journey to complete relaxation and rejuvenation.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href='https://api.whatsapp.com/send?phone=919211059033'><button className="bg-white text-amber-800 hover:bg-amber-100 px-8 py-3 rounded-full text-lg font-medium transition-colors">
+              <a href='https://api.whatsapp.com/send?phone=918826482370'><button className="bg-white text-amber-800 hover:bg-amber-100 px-8 py-3 rounded-full text-lg font-medium transition-colors">
                 Book Your Session
               </button></a>
               <button className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-full text-lg font-medium transition-colors">

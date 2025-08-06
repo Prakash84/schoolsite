@@ -14,6 +14,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import {  FaMapMarkerAlt } from 'react-icons/fa';
 import WhatsappFloat from './components/WhatsappFloat';
 // import womanImage from '/images/spaExpert4.jpg';
+import { FaTelegram } from 'react-icons/fa';
 
 
 const specialFeatures = [
@@ -75,25 +76,25 @@ const outlets = [
     description: 'Experience comfort at Novotel Aerocity, just minutes from the airport, perfect for business stays and spa relaxation nearby.',
     image: '/images/NovotelNewDelhiAerocity.jpeg',
 
-    link: 'https://api.whatsapp.com/send?phone=919211059033',
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'New Friends Colony (NFC)',
     description: 'Experience luxury at The Suryaa New Delhi (NFC), a serene escape offering premium spa and wellness services in style.',
     image: '/images/TheSuryaaNewDelhi(NFC).jpg',
-    link: 'https://api.whatsapp.com/send?phone=919211059033',
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'Connaught Place',
     description: 'Experience luxury at The Park New Delhi, Connaught Place. Relax, rejuvenate, and unwind with premium spa treatments in style.',
     image: '/images/TheParkConnaughtPlace.jpg',
-    link: 'https://api.whatsapp.com/send?phone=919211059033',
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'Grand Vasant Kunj',
     description: 'Experience luxury at The Roseate Aerocity, and indulge in relaxing spa therapies with expert care and serene ambiance.',
     image: '/images/TheGrandNewDelhi.jpg',
-    link: 'https://api.whatsapp.com/send?phone=919211059033',
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
 ];
 {/* Our Process */}
@@ -217,18 +218,18 @@ const [isVisible, setIsVisible] = useState(false);
   const slides = [
     {
       title: "Book a Relaxing Spa Session at Lajpat Nagar. Rejuvenate Today!",
-      link: "https://api.whatsapp.com/send?phone=919211059033",
+      link: "https://api.whatsapp.com/send?phone=918826482370",
       image: "/images/hb1.jpg"
       
     },
     {
       title: "Luxury Rejuvenation Spa Experience at Delhi’s 5-Star Hotel Retreat",
-      link: "https://api.whatsapp.com/send?phone=919211059033",
+      link: "https://api.whatsapp.com/send?phone=918826482370",
       image: "/images/hb2.jpg"
     },
     {
       title: "Relaxing Spa Services in Aerocity, NFC & Connaught Place",
-      link: "https://api.whatsapp.com/send?phone=919211059033",
+      link: "https://api.whatsapp.com/send?phone=918826482370",
       image: "/images/hb3.jpg"
     },
   ];
@@ -352,25 +353,25 @@ const testimonials = [
     name: "Lajpat Nagar",
     image: "/images/TheSuryaaNewDelhi(NFC).jpg", // Replace with actual image URL
     description: "Discover the tranquility of our luxurious spa at Lajpat Nagar.",
-    link: "https://wa.me/9211059033"
+    link: "https://wa.me/8826482370"
   },
   {
     name: "Aerocity",
     image: "/images/NovotelNewDelhiAerocity.jpeg",
     description: "Relax and unwind with our premium services at Aerocity.",
-    link: "https://wa.me/9211059033"
+    link: "https://wa.me/8826482370"
   },
   {
     name: "Paschim Vihar",
     image: "/images/TheParkConnaughtPlace.jpg",
     description: "Experience rejuvenation at our elegant Paschim Vihar location.",
-    link: "https://wa.me/9211059033"
+    link: "https://wa.me/8826482370"
   },
   {
     name: "Rohini",
     image: "/images/TheGrandNewDelhi.jpg",
     description: "Escape to serenity at our luxurious spa in Rohini.",
-    link: "https://wa.me/9211059033"
+    link: "https://wa.me/8826482370"
   }
 ];
 const features2 = [
@@ -500,12 +501,24 @@ const features2 = [
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.5 }}
                   >
-                    <a href={slide.link} className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-sm sm:text-base transition duration-300 shadow-lg hover:shadow-xl">
+                    <a 
+                        href="https://t.me/Tanuspa" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                      >
+                        <FaTelegram className="text-xl mr-3" />
+                        Join Telegram Channel
+                      </a>
+
+                     {/* <a href={slide.link} className="bg-amber-500 hover:bg-amber-600 text-white font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-sm sm:text-base transition duration-300 shadow-lg hover:shadow-xl">
                       Book a Spa Session Now
-                    </a>
+                    </a>  */}
                     <a href="#services" className="bg-white/20 hover:bg-white/30 backdrop-blur-lg text-white font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-sm sm:text-base transition duration-300 border border-white">
                       Explore Our Spa Services
                     </a>
+                    
+                    
                   </motion.div>
                 </div>
               </div>
@@ -964,7 +977,7 @@ const features2 = [
 
       <div className="text-center md:text-left">
         <a
-          href="https://api.whatsapp.com/send?phone=919211059033"
+          href="https://api.whatsapp.com/send?phone=918826482370"
           className="inline-block bg-amber-600 text-white px-6 py-3 rounded-full text-lg hover:bg-amber-700 transition shadow-lg"
         >
           Book Your Spa Session
@@ -1792,7 +1805,7 @@ const features2 = [
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://api.whatsapp.com/send?phone=919211059033"
+                  href="https://api.whatsapp.com/send?phone=918826482370"
                   className="flex-1 inline-flex items-center justify-center bg-gradient-to-r from-amber-600 to-amber-700 text-white px-6 py-4 rounded-full text-lg font-medium hover:from-amber-700 hover:to-amber-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 >
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -2347,7 +2360,7 @@ const features2 = [
               Book your appointment today and receive a complimentary aromatherapy session
             </motion.p>
             <motion.a
-              href="https://api.whatsapp.com/send?phone=919211059033
+              href="https://api.whatsapp.com/send?phone=918826482370
 "
               className="inline-block bg-white text-amber-700 px-10 py-5 rounded-full font-bold text-lg hover:bg-amber-50 transition-all duration-300 shadow-xl hover:shadow-2xl"
               initial={{ opacity: 0, y: 20 }}

@@ -377,7 +377,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <a href='https://api.whatsapp.com/send?phone=919211059033'><button className="bg-gradient-to-r from-amber-600 to-amber-800 text-white font-medium py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group">
+          <a href='https://api.whatsapp.com/send?phone=918826482370'><button className="bg-gradient-to-r from-amber-600 to-amber-800 text-white font-medium py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group">
             Book Your Session
             <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </button></a>
@@ -721,7 +721,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
               Book your oil therapy massage today and embark on a journey to complete relaxation and rejuvenation.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href='https://api.whatsapp.com/send?phone=919211059033'><button className="bg-white text-amber-800 hover:bg-amber-100 px-8 py-3 rounded-full text-lg font-medium transition-colors">
+              <a href='https://api.whatsapp.com/send?phone=918826482370'><button className="bg-white text-amber-800 hover:bg-amber-100 px-8 py-3 rounded-full text-lg font-medium transition-colors">
                 Book Your Session
               </button></a>
               <button className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-full text-lg font-medium transition-colors">

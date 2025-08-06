@@ -972,7 +972,7 @@
                     ))}
                   </ul>
 
-                  <a href="https://api.whatsapp.com/send?phone=919211059033" className="bg-amber-600 text-white px-8 py-4 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md">
+                  <a href="https://api.whatsapp.com/send?phone=918826482370" className="bg-amber-600 text-white px-8 py-4 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md">
               Book an Appointment
             </a>
                 </div>

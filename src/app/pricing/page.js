@@ -66,25 +66,25 @@ export default function pricing() {
     title: 'Aerocity',
     description: 'Experience comfort at Novotel Aerocity, just minutes from the airport, perfect for business stays and spa relaxation nearby.',
     image: '/images/hotel1.jpeg',
-    link: 'https://api.whatsapp.com/send?phone=919211059033',
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'New Friends Colony (NFC)',
     description: 'Experience luxury at The Suryaa New Delhi (NFC), a serene escape offering premium spa and wellness services in style.',
     image: '/images/hotel2.jpg',
-    link: 'https://api.whatsapp.com/send?phone=919211059033',
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'Connaught Place',
     description: 'Experience luxury at The Park New Delhi, Connaught Place. Relax, rejuvenate, and unwind with premium spa treatments in style.',
     image: '/images/hotel3.webp',
-    link: 'https://api.whatsapp.com/send?phone=919211059033',
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'Grand Vasant Kunj',
     description: 'Experience luxury at The Roseate Aerocity, and indulge in relaxing spa therapies with expert care and serene ambiance.',
     image: '/images/hotel4.jpg',
-    link: 'https://api.whatsapp.com/send?phone=919211059033',
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
 ];
 
