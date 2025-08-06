@@ -6,6 +6,9 @@
   import Image from 'next/image';
   import { Check } from "lucide-react";
   import WhatsappFloat from '../components/WhatsappFloat';
+  import { FaHotel, FaHome, FaMapMarkerAlt   } from "react-icons/fa";
+  import { FaTelegram } from "react-icons/fa";
+
 //   import WhatsappFloat from '../../components/WhatsappFloat';
 
 
@@ -386,9 +389,10 @@
             >
               <div className="p-8">
                 <div className="w-16 h-16 rounded-full bg-amber-50 flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
-                  </svg>
+                  <div className="w-16 h-16 rounded-full bg-amber-50 flex items-center justify-center mb-6">
+                    <FaHotel className="text-3xl text-amber-600" />
+                  </div>
+
                 </div>
                 <h3 className="text-2xl font-light text-amber-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Hotel Spa</h3>
                 <p className="text-amber-700 mb-6 leading-relaxed">
@@ -411,9 +415,9 @@
             >
               <div className="p-8">
                 <div className="w-16 h-16 rounded-full bg-amber-50 flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
+                  <div className="w-16 h-16 rounded-full bg-amber-50 flex items-center justify-center mb-6">
+                    <FaHome className="text-3xl text-amber-600" />
+                  </div>
                 </div>
                 <h3 className="text-2xl font-light text-amber-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Home Spa</h3>
                 <p className="text-amber-700 mb-6 leading-relaxed">
@@ -436,9 +440,9 @@
             >
               <div className="p-8">
                 <div className="w-16 h-16 rounded-full bg-amber-50 flex items-center justify-center mb-6">
-                  <svg className="w-8 h-8 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 7l4-4m0 0l4 4m-4-4v18m0 0l-4-4m4 4l4-4"></path>
-                  </svg>
+                  <div className="w-16 h-16 rounded-full bg-amber-50 flex items-center justify-center mb-6">
+                    <FaMapMarkerAlt className="text-3xl text-amber-600" />
+                  </div>
                 </div>
                 <h3 className="text-2xl font-light text-amber-900 mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>Spa OutLet</h3>
                 <p className="text-amber-700 mb-6 leading-relaxed">
@@ -558,6 +562,228 @@
         </div>
               </section>
               {/* End Our Signature Treatments */}
+              {/* About Section */}
+                    <section className="py-24 px-4 md:px-8 bg-gradient-to-b from-[#fdf9f5] to-[#fefaf6] relative overflow-hidden">
+                      {/* Decorative Elements */}
+                      <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-amber-50 to-transparent opacity-70"></div>
+                      <div className="absolute top-20 right-10 w-80 h-80 rounded-full bg-amber-200/30 blur-3xl"></div>
+                      <div className="absolute bottom-20 left-10 w-60 h-60 rounded-full bg-amber-100/40 blur-3xl"></div>
+              
+                      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
+                        
+                        
+              
+                        {/* Right Text Section with Enhanced Styling */}
+                        <motion.div
+                          className="flex flex-col justify-between h-full"
+                          initial={{ opacity: 0, x: 50 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.8 }}
+                          viewport={{ once: true }}
+                        >
+                          <motion.div
+                            className="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full mb-6 font-medium"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2 }}
+                            viewport={{ once: true }}
+                          >
+                            <span className="mr-2">✦</span> About Our Luxury Spa
+                          </motion.div>
+              
+                          <motion.h2
+                            className="text-4xl md:text-5xl lg:text-5xl font-bold text-gray-800 leading-tight mb-8"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.3 }}
+                            viewport={{ once: true }}
+                          >
+                            Experience the <span className="relative">
+                              <span className="text-amber-600 z-10 relative">Art of Relaxation</span>
+                              <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
+                            </span>
+                          </motion.h2>
+              
+                          <motion.div
+                            className="space-y-6 mb-8"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4 }}
+                            viewport={{ once: true }}
+                          >
+                            <p className="text-gray-600 text-lg leading-relaxed">
+                              Welcome to <strong className="text-amber-600 font-medium">Delhi Body Spa</strong>, where we offer a range of <strong className="text-amber-600 font-medium">luxury spa</strong> treatments including <strong className="text-amber-600 font-medium">female to male spa</strong>, <strong className="text-amber-600 font-medium">couple massages</strong>, and much more. Escape the hustle of Delhi and immerse yourself in rejuvenating treatments tailored to your needs.
+                              Our expert therapists combine traditional healing methods with modern wellness practices to create custom treatments that will leave you feeling refreshed, balanced, and revitalized.
+                            </p>
+                            {/* <p className="text-gray-600 text-lg leading-relaxed">
+                              Our expert therapists combine traditional healing methods with modern wellness practices to create custom treatments that will leave you feeling refreshed, balanced, and revitalized.
+                            </p> */}
+                          </motion.div>
+              
+                          {/* Feature Grid with Hover Effects */}
+                        <motion.div
+                            className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.5 }}
+                            viewport={{ once: true }}
+                          >
+                            {[ 
+                              { title: "Foreigner Therapist", icon: "🌏" },
+                              { title: "Female To Male Massage", icon: "💆‍♂️" },
+                              { title: "Best Body To Body Spa", icon: "✨" },
+                              { title: "Couple Massage", icon: "👩‍❤️‍👨" }
+                            ].map((feature, index) => (
+                              <motion.div
+                                key={index}
+                                className="flex items-start p-3 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-amber-50 hover:border-amber-100 group"
+                                whileHover={{ y: -5 }}
+                                transition={{ duration: 0.3 }}
+                              >
+                                <div className="bg-amber-100 text-amber-700 p-2.5 rounded-xl text-lg mr-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+                                  {feature.icon}
+                                </div>
+                                <div>
+                                  <h4 className="font-bold text-gray-800 text-base mb-1 group-hover:text-amber-600 transition-colors">
+                                    {feature.title}
+                                  </h4>
+                                  <p className="text-gray-600 text-xs">Luxurious and personalized treatments</p>
+                                </div>
+                              </motion.div>
+                            ))}
+                        </motion.div>
+              
+                          {/* Action Buttons with Animation */}
+                          <motion.div
+                            className="flex flex-wrap gap-4"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.6 }}
+                            viewport={{ once: true }}
+                          >
+                            <motion.a
+                              href="/about"
+                              className="relative overflow-hidden px-8 py-4 rounded-full font-medium text-white group"
+                              whileHover={{ scale: 1.05 }}
+                              whileTap={{ scale: 0.95 }}
+                            >
+                              <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-amber-600 group-hover:from-amber-600 group-hover:to-amber-700 transition-all"></div>
+                              <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-amber-700 opacity-0 group-hover:opacity-100 transition-all"></div>
+                              <span className="relative z-10 flex items-center gap-2">
+                                Learn More About Us
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 animate-pulse" viewBox="0 0 20 20" fill="currentColor">
+                                  <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                                </svg>
+                              </span>
+                            </motion.a>
+              
+                            <motion.a
+                              href="#"
+                              className="px-8 py-4 rounded-full font-medium border-2 border-amber-500 text-amber-600 hover:bg-amber-50 transition-colors relative overflow-hidden group"
+                              whileHover={{ scale: 1.05 }}
+                              whileTap={{ scale: 0.95 }}
+                            >
+                              <a href="#Pricing" className="relative z-10 flex items-center gap-2 cursor-pointer">
+                                View Pricing
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                  <path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
+                                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 000-1.676.62C6.602" />
+                                </svg>
+                              </a>
+                            </motion.a>
+                          </motion.div>
+                        </motion.div>
+                        {/* Left Image with Modern Frame & Parallax Effect */}
+                            <motion.div
+                              className="relative"
+                              initial={{ opacity: 0, y: 50 }}
+                              whileInView={{ opacity: 1, y: 0 }}
+                              transition={{ duration: 0.8, ease: "easeOut" }}
+                              viewport={{ once: true, margin: "-100px" }}
+                            >
+                              <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl transform group w-full h-[500px]">
+                                {/* Glass frame effect */}
+                                {/* <div className="absolute inset-0 bg-white/20 backdrop-blur-lg border border-white/30 rounded-[2.5rem] z-20 pointer-events-none"></div> */}
+                                
+                                {/* Image container */}
+                                <div className="relative w-full h-full overflow-hidden rounded-[2.5rem]">
+                                  {/* <div className="absolute inset-0 bg-gradient-to-br from-amber-900/15 via-amber-800/10 to-black/25 z-10"></div> */}
+                                  {/* <div className="bg-gradient-to-tr from-amber-200 to-rose-100 w-full h-full animate-pulse"></div> */}
+                                  <Image
+                                   loading="lazy"
+                                    src="/images/chatgptspa.png"
+                                    alt="Spa Interior"
+                                    layout="fill"
+                                    objectFit="cover"
+                                    className="rounded-[2.5rem] z-0"
+                                  />
+                                  {/* <video
+                                      autoPlay
+                                      loop
+                                      muted
+                                      playsInline
+                                      className="absolute inset-0 w-full h-full object-cover rounded-[2.5rem] z-0"
+                                    >
+                                      <source src="/images/spavideo.mp4" type="video/mp4" />
+                                      Your browser does not support the video tag.
+                                    </video> */}
+              
+                                </div>
+                                
+                                {/* Floating decorative elements */}
+                                {/* <motion.div
+                                  className="absolute top-6 left-6 w-24 h-24 rounded-full bg-amber-500/10 blur-xl z-0"
+                                  animate={{ 
+                                    y: [0, -15, 0],
+                                    scale: [1, 1.05, 1],
+                                    rotate: [0, 5, 0]
+                                  }}
+                                  transition={{ 
+                                    duration: 8, 
+                                    repeat: Infinity, 
+                                    ease: "easeInOut" 
+                                  }}
+                                /> */}
+                                <motion.div
+                                  className="absolute bottom-6 right-6 w-16 h-16 rounded-full bg-rose-300/20 blur-xl z-0"
+                                  animate={{ 
+                                    y: [0, 15, 0],
+                                    scale: [1, 1.1, 1],
+                                    rotate: [0, -5, 0]
+                                  }}
+                                  transition={{ 
+                                    duration: 6, 
+                                    repeat: Infinity, 
+                                    ease: "easeInOut", 
+                                    delay: 0.5 
+                                  }}
+                                />
+                              </div>
+                              
+                              {/* Floating testimonials */}
+                              {/* <motion.div 
+                                className="absolute -bottom-6 right-10 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-4 w-64 border border-white/50"
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.5, duration: 0.6 }}
+                                viewport={{ once: true }}
+                              >
+                                <div className="flex items-center mb-2">
+                                  {[...Array(5)].map((_, i) => (
+                                    <svg key={i} className="w-4 h-4 text-amber-500 fill-current" viewBox="0 0 24 24">
+                                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                                    </svg>
+                                  ))}
+                                </div>
+                                <p className="text-gray-700 text-sm font-medium">"The most rejuvenating experience in Delhi. Truly exceptional therapists!"</p>
+                                <div className="mt-2 flex items-center">
+                                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-8 h-8 mr-2" />
+                                  <span className="text-xs font-medium text-amber-700">Priya Sharma</span>
+                                </div>
+                              </motion.div> */}
+                            </motion.div>
+                      </div>
+                    </section>
               {/* Why Choose */}
                     <section className="w-full py-16 bg-yellow-50 relative overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-yellow-100/50 backdrop-blur-sm -z-10" />
@@ -792,9 +1018,15 @@
                                 </p>
                               </div>
                               <div className="flex justify-center">
-                                <button className="bg-white text-amber-700 px-8 py-3.5 rounded-full font-bold hover:bg-amber-50 transition-all shadow-lg">
-                                  Book Your Consultation
-                                </button>
+                                <a 
+                                    href="https://t.me/Tanuspa" 
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                  >
+                                    <FaTelegram className="text-xl mr-3" />
+                                    Join Telegram Channel
+                                  </a>
                               </div>
                             </div>
                           </motion.div>

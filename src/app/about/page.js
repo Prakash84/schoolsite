@@ -127,7 +127,7 @@ const specialFeatures = [
   "Private Room",
   "Jacuzzi Bath",
   "Steam Bath",
-  "Naturally Spa",
+
   "5 Star Hotels",
   "Female Therapist",
   "Foreigner Therapist",
