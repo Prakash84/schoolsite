@@ -2,10 +2,13 @@
 'use client';
 import React from 'react';
 import { Playfair_Display, Montserrat } from 'next/font/google';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import { Playfair_Display, Raleway } from 'next/font/google'
 import WhatsappFloat from '../components/WhatsappFloat';
+import { FaHandSparkles, FaLeaf } from 'react-icons/fa';
+import { useState, useEffect } from "react";
+import { FaHotTub } from 'react-icons/fa';
 
 
 
@@ -28,7 +31,40 @@ import {
   FaHotel,
   FaCrown
 } from 'react-icons/fa';
-
+  const faqs = [
+    
+    {
+      question: "What types of massage therapies are offered at your spa?",
+      answer: "We offer a range of therapies, including Couple Massage, Sandwich Massage, Full Body Massage, B2B Therapy, and Female-to-Male Spa treatments to cater to all your relaxation needs.",
+      icon: <FaSpa className="text-teal-600" />
+    },
+    {
+      question: "Where are your spa locations in Delhi, Noida, and Gurgaon?",
+      answer: "We have over 24 outlets located in premium areas such as Rajouri Garden, Rohini, Pitampura, Noida, Aerocity, Connaught Place, and Lajpat Nagar, with top 5-star hotels like Andaz, JW Marriott, and Novotel.",
+      icon: <FaHandSparkles className="text-teal-600" />
+    },
+    
+    {
+      question: "What makes your spa different from others in Delhi and Gurgaon?",
+      answer: "Our spa stands out by offering luxury experiences with a variety of massages, skilled therapists from around the world, and prime locations in major hotels, providing you with top-quality service at affordable prices.",
+      icon: <FaLeaf className="text-teal-600" />
+    },
+    {
+      question: "Do you offer any special deals or discounts for first-time visitors?",
+      answer: "Yes, we offer an exclusive first-visit special at just ₹1999, allowing you to enjoy a premium spa experience at an affordable price",
+      icon: <FaSpa className="text-teal-600" />
+    },
+    {
+          question: "What types of therapists work at your spa?",
+          answer: "Our team consists of skilled Russian, Thai, Afghan, Indian, and foreign therapists, each trained in various massage techniques to ensure a personalized and effective treatment for every client.",
+          icon: <FaHotTub className="text-teal-600" />
+        },
+        {
+              question: "What are the benefits of getting a massage at your spa?",
+              answer: "Our massages help reduce stress, improve circulation, promote relaxation, and rejuvenate your body, mind, and soul, making it the perfect escape from your busy lifestyle.",
+              icon: <FaSpa className="text-teal-600" />
+            },
+  ];
   const pricingPlans = [
     {
       title: "Spa Outlet",
@@ -160,6 +196,16 @@ const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfa
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' });
 
 export default function About() {
+  const [isVisible, setIsVisible] = useState(false);
+  
+    useEffect(() => {
+      setIsVisible(true);
+    }, []);
+  
+  const [activeIndex, setActiveIndex] = useState(null);
+    const toggleFAQ = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
   return (
     <>
       {/* Banner */}
@@ -1151,6 +1197,120 @@ export default function About() {
             </div>
           </section>
           {/* End Pricing Section */}
+          {/* F&Q Section */}
+                <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
+                  <div className="max-w-5xl mx-auto px-4">
+                    <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6 }}
+                      viewport={{ once: true }}
+                      className="text-center mb-14"
+                    >
+                      <motion.div
+                        className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                      >
+                        <FaStar className="text-amber-500" />
+                        Questions? We’re here to help
+                      </motion.div>
+                      <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4">
+                        Frequently Asked <span className="text-amber-600">Questions</span>
+                      </h2>
+                      <p className="text-amber-800 max-w-2xl mx-auto text-lg">
+                        Everything you need to know about our luxurious spa services and how to book them.
+                      </p>
+                      <div className="flex justify-center mt-6">
+                        <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                      </div>
+                    </motion.div>
+          
+                    {/* FAQ Accordion */}
+                    <div className="space-y-5">
+                      {faqs.map((faq, index) => (
+                        <motion.div
+                          key={index}
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.4, delay: index * 0.1 }}
+                          viewport={{ once: true }}
+                          className="bg-white rounded-2xl shadow-lg overflow-hidden border border-amber-100"
+                        >
+                          <button
+                            onClick={() => toggleFAQ(index)}
+                            className="w-full p-6 text-left flex items-center justify-between focus:outline-none group"
+                          >
+                            <div className="flex items-start space-x-4">
+                              <div className="mt-1 p-2 bg-amber-50 rounded-lg">
+                                {faq.icon}
+                              </div>
+                              <h3 className="text-lg md:text-xl font-medium text-amber-900 group-hover:text-amber-700 transition-colors">
+                                {faq.question}
+                              </h3>
+                            </div>
+                            <div className="ml-4 flex-shrink-0">
+                              <svg
+                                className={`w-6 h-6 text-amber-500 transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M19 9l-7 7-7-7"
+                                />
+                              </svg>
+                            </div>
+                          </button>
+          
+                          <AnimatePresence>
+                            {activeIndex === index && (
+                              <motion.div
+                                initial={{ height: 0, opacity: 0 }}
+                                animate={{ height: 'auto', opacity: 1 }}
+                                exit={{ height: 0, opacity: 0 }}
+                                transition={{ duration: 0.3 }}
+                                className="overflow-hidden"
+                              >
+                                <div className="px-6 pb-6 pt-2 border-t border-amber-50">
+                                  <p className="text-amber-700">
+                                    {faq.answer}
+                                  </p>
+                                </div>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                        </motion.div>
+                      ))}
+                    </div>
+          
+                    {/* CTA Box */}
+                    {/* <motion.div
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.6, delay: 0.4 }}
+                      viewport={{ once: true }}
+                      className="mt-14 bg-gradient-to-r from-amber-500 to-amber-600 rounded-2xl p-8 text-center text-white shadow-xl"
+                    >
+                      <h3 className="text-2xl font-bold mb-3">Still have questions?</h3>
+                      <p className="mb-5 max-w-2xl mx-auto">
+                        Our wellness team is here to assist you. Reach out and we’ll help you find the perfect treatment.
+                      </p>
+                      <div className="flex flex-col sm:flex-row justify-center gap-4">
+                        <button className="px-6 py-3 bg-white text-amber-700 font-medium rounded-full shadow-md hover:bg-amber-100 transition-colors">
+                          Contact Us
+                        </button>
+                        <button className="px-6 py-3 bg-amber-800 bg-opacity-30 text-white font-medium rounded-full shadow-md border border-white border-opacity-30 hover:bg-opacity-40 transition-colors">
+                          Book Appointment
+                        </button>
+                      </div>
+                    </motion.div> */}
+                  </div>
+                </section>
        <WhatsappFloat />
       
     </>

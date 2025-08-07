@@ -517,11 +517,18 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
               </div>
               
               <div className="relative">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px]" />
+                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px] flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/images/spaExpert4.jpg"
+                    alt="Client Testimonial"
+                    className="object-cover w-full h-full rounded-xl"
+                  />
+                </div>
                 <div className="absolute -top-6 -right-6 bg-amber-100 p-6 rounded-full">
                   <span className="text-amber-800 text-xl font-serif">"</span>
                 </div>
               </div>
+
               
               <div className="bg-white p-8 rounded-2xl shadow-sm">
                 <h3 className="text-xl font-semibold text-amber-800 mb-4">Premium Oils</h3>

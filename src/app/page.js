@@ -187,22 +187,7 @@ const [isVisible, setIsVisible] = useState(false);
       question: "What is the cost of a Full Body Massage?",
       answer: "The cost varies based on the treatment, with a special ₹1999 offer for first-time visitors.",
       icon: <FaHandSparkles className="text-teal-600" />
-    },
-    {
-      question: "Do you offer treatments for both men and women?",
-      answer: "Yes, we offer specialized treatments for both men and women, including Female-to-Male therapy.",
-      icon: <FaHandSparkles className="text-teal-600" />
-    },
-    {
-      question: "Are your spa services available at 5-star hotels?",
-      answer: "Yes, we have outlets in top 5-star hotels like Andaz, JW Marriott, The Lalit, and more.",
-      icon: <FaLeaf className="text-teal-600" />
-    },
-    {
-      question: "How can I book a spa appointment online?",
-      answer: "You can easily book an appointment through our website or contact us via phone.",
-      icon: <FaSpa className="text-teal-600" />
-    },
+    },   
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
