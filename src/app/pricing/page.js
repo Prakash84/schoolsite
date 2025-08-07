@@ -467,7 +467,7 @@ export default function pricing() {
      
     </div>
      {/* F&Q Section */}
-                          <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
+      <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
                             <div className="max-w-5xl mx-auto px-4">
                               <motion.div
                                 initial={{ opacity: 0, y: 20 }}
@@ -579,7 +579,7 @@ export default function pricing() {
                                 </div>
                               </motion.div> */}
                             </div>
-                          </section>
+      </section>
     <WhatsappFloat />
     </>
   );

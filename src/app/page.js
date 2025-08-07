@@ -689,7 +689,7 @@ const features2 = [
                 </span>
               </motion.a>
 
-              <motion.a
+              {/* <motion.a
                 href="#"
                 className="px-8 py-4 rounded-full font-medium border-2 border-amber-500 text-amber-600 hover:bg-amber-50 transition-colors relative overflow-hidden group"
                 whileHover={{ scale: 1.05 }}
@@ -702,7 +702,16 @@ const features2 = [
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 000-1.676.62C6.602" />
                   </svg>
                 </a>
-              </motion.a>
+              </motion.a> */}
+              <a 
+                        href="https://t.me/Tanuspa" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                      >
+                        <FaTelegram className="text-xl mr-3" />
+                        Stay Updated on Telegram
+                      </a>
             </motion.div>
           </motion.div>
           {/* Left Image with Modern Frame & Parallax Effect */}
