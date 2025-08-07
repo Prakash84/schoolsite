@@ -1062,14 +1062,23 @@ const features2 = [
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Book Your Session
+                 <a
+          href="https://api.whatsapp.com/send?phone=918826482370"
+          
+        >
+          Book Your Spa Session
+        </a>
+               
               </motion.button>
               <motion.button 
                 className="border-2 border-amber-700 text-amber-700 px-8 py-3.5 rounded-full font-medium hover:bg-amber-50 transition-all"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >
-                View Treatments
+                <a href="/Services" className="flex items-center gap-2">
+                   View Treatments
+                </a>
+                
               </motion.button>
             </motion.div>
           </div>
@@ -1353,13 +1362,22 @@ const features2 = [
                   </div>
                   
                   <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
-                    <a
+                    {/* <a
                       href="#"
                       className="flex-1 flex items-center justify-center gap-3 bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white font-medium py-4 px-6 rounded-xl transition-all group-hover:shadow-lg group-hover:scale-[1.02]"
                     >
                       <FaWhatsapp className="text-xl" />
                       <span className="font-medium tracking-wide">Book on WhatsApp</span>
-                    </a>
+                    </a> */}
+                    <a 
+                        href="https://t.me/Tanuspa" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                      >
+                        <FaTelegram className="text-xl mr-3" />
+                       Book On Telegram 
+                      </a>
                     
                     <div className="text-center sm:text-right">
                       <div className="text-amber-700 text-sm font-medium">Starting from</div>
@@ -1582,7 +1600,7 @@ const features2 = [
               <div className="p-6 text-center">
                 <h3 className="text-2xl font-bold text-amber-900 mb-2 font-serif">{location.name}</h3>
                 <p className="text-gray-700 text-base mb-4">{location.description}</p>
-                <a
+                {/* <a
                   href={location.link}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1590,7 +1608,16 @@ const features2 = [
                 >
                   <FaWhatsapp className="text-lg" />
                   Book on WhatsApp
-                </a>
+                </a> */}
+                <a 
+                        href="https://t.me/Tanuspa" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                      >
+                        <FaTelegram className="text-xl mr-3" />
+                        Book On Telegram
+                      </a>
               </div>
             </motion.div>
           ))}
@@ -1809,12 +1836,13 @@ const features2 = [
                 </a>
                 
                 <a
-                  href="/contact"
+                  href="/pricing"
                   className="flex-1 inline-flex items-center justify-center bg-white border-2 border-amber-500 text-amber-600 px-6 py-4 rounded-full text-lg font-medium hover:bg-amber-50 transition-all duration-300 shadow hover:shadow-md"
                 >
                   <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-10H8v2h2v2h2v-2h2v-2h-2V8h-2v2zm7 5h-7v-2h7v2z"/>
                   </svg>
+                  
                   View Packages
                 </a>
               </div>
