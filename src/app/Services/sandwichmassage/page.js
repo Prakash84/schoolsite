@@ -504,6 +504,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                 >
                   <div className="max-w-lg">
                     <p className="text-lg text-stone-600 mb-6 leading-relaxed">
+                      
                       Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
                       Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
                       of calm in the heart of Delhi.We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
