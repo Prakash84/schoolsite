@@ -13,6 +13,8 @@ import { FaCrown } from 'react-icons/fa';
 import { FaSpa, FaHotel, FaStar, FaCheckCircle } from "react-icons/fa";
 import luxuryhotelpartners from '../../components/LuxuryHotelPartners';
 import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
+  import { FaTelegram } from 'react-icons/fa';
+
 
   const playfair = Playfair_Display({
     subsets: ['latin'],
@@ -406,6 +408,138 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
   </div>
 </section>
 {/* End Call to Action Section */}
+{/* Content */}
+{/* content */}
+            <section className="bg-gradient-to-br from-amber-50 to-stone-100 py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden">
+            {/* Decorative elements */}
+            <div className="absolute top-10 left-10 opacity-10">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <path d="M50,15 C65,15 80,25 85,40 C90,55 85,70 70,85 C55,90 40,85 25,70 C15,55 15,40 25,25 C30,20 40,15 50,15 Z" fill="none" stroke="#4a5a5a" strokeWidth="1" />
+              </svg>
+            </div>
+            
+            <div className="absolute bottom-20 right-10 opacity-10 rotate-45">
+              <svg width="80" height="80" viewBox="0 0 80 80">
+                <path d="M40,10 C50,10 60,15 65,25 C70,35 65,45 55,55 C45,60 35,65 25,55 C15,45 15,35 25,25 C30,20 35,15 40,10 Z" fill="none" stroke="#4a5a5a" strokeWidth="1" />
+              </svg>
+            </div>
+            
+            <div className="max-w-[95%] mx-auto">
+              {/* Section header */}
+              <div className="text-center mb-16">
+                <motion.div
+                            className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ delay: 0.2, duration: 0.5 }}
+                          >
+                            <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+                            <span className="text-amber-700 font-medium tracking-wider">PREMIUM EXPERIENCE</span>
+                          </motion.div>
+                          
+                          <motion.h2
+                            className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.3, duration: 0.6 }}
+                          >
+                            Top Luxury Spa <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Outlets in Aerocity Delhi</span>
+                          </motion.h2>
+                <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
+              </div>
+              
+      
+              <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+                {/* Left Image & Content */}
+                
+                <motion.div 
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.7 }}
+                  className="w-full lg:w-1/2 relative"
+                >
+                  <div className="relative overflow-hidden rounded-2xl shadow-xl z-10">
+                    <div className="bg-gradient-to-br from-stone-50 to-amber-50 p-1 rounded-2xl">
+                      <div className="bg-white p-6 rounded-2xl shadow-sm">
+                        <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
+                          <img
+                              src="/images/hb3.jpg" // Change path accordingly
+                              alt="Premium Body Spa"
+                              className="w-full h-full object-cover rounded-xl"
+                            />
+                          <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" />
+                          <div className="absolute top-4 right-4 bg-amber-700 text-white text-sm px-3 py-1 rounded-full">
+                            Most Popular
+                          </div>
+                        </div>
+                        
+                        <div className="mt-6">
+                          
+                          
+                          <a 
+                        href="https://t.me/Tanuspa" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                      >
+                        <FaTelegram className="text-xl mr-3" />
+                        Join Telegram Channel
+                      </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  {/* Decorative elements */}
+                  <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-amber-100 rounded-full z-0"></div>
+                  <div className="absolute -top-6 -right-6 w-16 h-16 bg-stone-200 rounded-full z-0"></div>
+                </motion.div>
+      
+                {/* Right Text Content */}
+                <motion.div 
+                  initial={{ opacity: 0, x: 30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.7 }}
+                  className="w-full lg:w-1/2"
+                >
+                  <div className="max-w-lg">
+                    <p className="text-lg text-stone-600 mb-6 leading-relaxed">
+                      Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
+                      Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
+                      of calm in the heart of Delhi.We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
+                      <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
+                      and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
+                      designed private sanctuaries.
+                    </p>
+                    
+                    
+                    
+                    <p className="text-stone-600 mb-6 leading-relaxed">
+                      We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
+                      <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
+                      and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
+                      designed private sanctuaries.Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
+                      Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
+                      of calm in the heart of Delhi.
+                    </p>
+                    
+                    
+                    
+                    <div className="flex flex-col sm:flex-row gap-4">
+                      <button className="flex-1 bg-gradient-to-r from-stone-800 to-stone-900 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                        View Treatments
+                      </button>
+                      <button className="flex-1 bg-gradient-to-r from-amber-500 to-amber-700 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                        Book Appointment
+                      </button>
+                    </div>
+                  
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+          </section>
+            {/* end content */}
 
         {/* About Oil Therapy Section */}
         {sections.map((section, index) => (
