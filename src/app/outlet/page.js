@@ -853,6 +853,88 @@ export default function Outlet() {
     </motion.div>
   </div>
 </section>
+{/* Why Choose Us Section */}
+        <section className="py-20 relative">
+          <div className="absolute inset-0 bg-amber-800 opacity-5"></div>
+          <div className="container mx-auto px-4 relative">
+            <div className="text-center mb-16">
+              {/* <h2 className="text-3xl md:text-4xl font-serif font-semibold text-amber-800 mb-4">Why Choose Our Spa in Delhi?</h2> */}
+              <motion.h2
+                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    Why Choose <span className="text-amber-600">Our Spa in Delhi?</span>
+                  </motion.h2>
+                  <motion.p
+                    className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
+                  >
+                    We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
+                  </motion.p>
+              
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-2xl shadow-sm">
+                    <h3 className="text-xl font-semibold text-amber-800 mb-4">Expert Therapists</h3>
+                    <p className="text-gray-700 mb-6">
+                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage.
+                      Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow.
+                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage
+                    </p>
+                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-48">
+                    <img
+                    src="/images/pexels-olly-3760262.jpg"
+                    alt="Client Testimonial"
+                    className="object-cover w-full h-full rounded-xl"
+                  />
+                    </div>
+              </div>
+              
+              <div className="relative">
+                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px] flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/images/spaExpert4.jpg"
+                    alt="Client Testimonial"
+                    className="object-cover w-full h-full rounded-xl"
+                  />
+                </div>
+                <div className="absolute -top-6 -right-6 bg-amber-100 p-6 rounded-full">
+                  <span className="text-amber-800 text-xl font-serif">"</span>
+                </div>
+              </div>
+
+              
+              <div className="bg-white p-8 rounded-2xl shadow-sm">
+                <h3 className="text-xl font-semibold text-amber-800 mb-4">Premium Oils</h3>
+                <p className="text-gray-700 mb-6">
+                  We use only cold-pressed, organic oils blended with therapeutic-grade essential oils for maximum benefit.
+                  Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being.
+                </p>
+                <p>
+                  Whether you’ve had a long week or simply need a reset, this therapy will leave you feeling light, centered, and refreshed. Regular sessions can improve flexibility, deepen sleep, and support emotional stability. It's the ultimate way to recharge your energy and reconnect with inner peace.
+                </p>
+                <p>
+                  Perfect for individuals suffering from stress, muscle pain, or hormonal imbalance, this massage harmonizes body rhythms and enhances immunity. The continuous motion and warm oil offer a meditative experience.
+                </p>
+                <div className="flex mt-6">
+                  {['Lavender', 'Eucalyptus', 'Rosemary', 'Sandalwood'].map((oil, index) => (
+                    <div key={index} className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm mr-2">
+                      {oil}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
 
 {/* F&Q Section */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
