@@ -602,7 +602,7 @@ const faqs = [
                     <div>
                       <a 
                         href="tel:+919211235800" 
-                        className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-full font-medium transition-all duration-300 hover:gap-3 hover:shadow-lg"
+                        className="inline-flex items-center bg-gradient-to-r text-white rounded-full font-medium transition-all duration-300 hover:gap-3 hover:shadow-lg"
                       >
                         <a 
                                         href="https://t.me/Tanuspa" 
