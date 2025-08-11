@@ -320,89 +320,7 @@ export default function About() {
         </svg>
       </div>
     </div>
-    {/* Why Choose Us Section */}
-        <section className="py-20 relative">
-          <div className="absolute inset-0 bg-amber-800 opacity-5"></div>
-          <div className="container mx-auto px-4 relative">
-            <div className="text-center mb-16">
-              {/* <h2 className="text-3xl md:text-4xl font-serif font-semibold text-amber-800 mb-4">Why Choose Our Spa in Delhi?</h2> */}
-              <motion.h2
-                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.1 }}
-                  >
-                    Our Very <span className="text-amber-600">Memorable Journey</span>
-                  </motion.h2>
-                  <motion.p
-                    className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
-                  >
-                    We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
-                  </motion.p>
-              
-            </div>
-            
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-2xl shadow-sm">
-                    <h3 className="text-xl font-semibold text-amber-800 mb-4">Expert Therapists</h3>
-                    <p className="text-gray-700 mb-6">
-                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage.
-                      Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow.
-                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage
-                    </p>
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-48">
-                    <img
-                    src="/images/pexels-olly-3760262.jpg"
-                    alt="Client Testimonial"
-                    className="object-cover w-full h-full rounded-xl"
-                  />
-                    </div>
-              </div>
-              
-              <div className="relative">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px] flex items-center justify-center overflow-hidden">
-                  <img
-                    src="/images/spaExpert4.jpg"
-                    alt="Client Testimonial"
-                    className="object-cover w-full h-full rounded-xl"
-                  />
-                </div>
-                <div className="absolute -top-6 -right-6 bg-amber-100 p-6 rounded-full">
-                  <span className="text-amber-800 text-xl font-serif">"</span>
-                </div>
-              </div>
-
-              
-              <div className="bg-white p-8 rounded-2xl shadow-sm">
-                <h3 className="text-xl font-semibold text-amber-800 mb-4">Premium Oils</h3>
-                <p className="text-gray-700 mb-6">
-                  We use only cold-pressed, organic oils blended with therapeutic-grade essential oils for maximum benefit.
-                  Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being.
-                </p>
-                <p>
-                  Whether you’ve had a long week or simply need a reset, this therapy will leave you feeling light, centered, and refreshed. Regular sessions can improve flexibility, deepen sleep, and support emotional stability. It's the ultimate way to recharge your energy and reconnect with inner peace.
-                </p>
-                <p>
-                  Perfect for individuals suffering from stress, muscle pain, or hormonal imbalance, this massage harmonizes body rhythms and enhances immunity. The continuous motion and warm oil offer a meditative experience.
-                </p>
-                <div className="flex mt-6">
-                  {['Lavender', 'Eucalyptus', 'Rosemary', 'Sandalwood'].map((oil, index) => (
-                    <div key={index} className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm mr-2">
-                      {oil}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-      {/* About Us Section */}
+    
       <section className="w-full py-16 bg-gradient-to-b from-white to-yellow-50">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
           
@@ -642,7 +560,89 @@ export default function About() {
             </div>
           </section>
             {/* end content */}
+{/* Why Choose Us Section */}
+        <section className="py-20 relative">
+          <div className="absolute inset-0 bg-amber-800 opacity-5"></div>
+          <div className="container mx-auto px-4 relative">
+            <div className="text-center mb-16">
+              {/* <h2 className="text-3xl md:text-4xl font-serif font-semibold text-amber-800 mb-4">Why Choose Our Spa in Delhi?</h2> */}
+              <motion.h2
+                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    Our Very <span className="text-amber-600">Memorable Journey</span>
+                  </motion.h2>
+                  <motion.p
+                    className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
+                  >
+                    We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
+                  </motion.p>
+              
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-2xl shadow-sm">
+                    <h3 className="text-xl font-semibold text-amber-800 mb-4">Expert Therapists</h3>
+                    <p className="text-gray-700 mb-6">
+                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage.
+                      Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow.
+                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage
+                    </p>
+                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-48">
+                    <img
+                    src="/images/pexels-olly-3760262.jpg"
+                    alt="Client Testimonial"
+                    className="object-cover w-full h-full rounded-xl"
+                  />
+                    </div>
+              </div>
+              
+              <div className="relative">
+                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px] flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/images/spaExpert4.jpg"
+                    alt="Client Testimonial"
+                    className="object-cover w-full h-full rounded-xl"
+                  />
+                </div>
+                <div className="absolute -top-6 -right-6 bg-amber-100 p-6 rounded-full">
+                  <span className="text-amber-800 text-xl font-serif">"</span>
+                </div>
+              </div>
 
+              
+              <div className="bg-white p-8 rounded-2xl shadow-sm">
+                <h3 className="text-xl font-semibold text-amber-800 mb-4">Premium Oils</h3>
+                <p className="text-gray-700 mb-6">
+                  We use only cold-pressed, organic oils blended with therapeutic-grade essential oils for maximum benefit.
+                  Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being.
+                </p>
+                <p>
+                  Whether you’ve had a long week or simply need a reset, this therapy will leave you feeling light, centered, and refreshed. Regular sessions can improve flexibility, deepen sleep, and support emotional stability. It's the ultimate way to recharge your energy and reconnect with inner peace.
+                </p>
+                <p>
+                  Perfect for individuals suffering from stress, muscle pain, or hormonal imbalance, this massage harmonizes body rhythms and enhances immunity. The continuous motion and warm oil offer a meditative experience.
+                </p>
+                <div className="flex mt-6">
+                  {['Lavender', 'Eucalyptus', 'Rosemary', 'Sandalwood'].map((oil, index) => (
+                    <div key={index} className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm mr-2">
+                      {oil}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      {/* About Us Section */}
       {/* Why Choose */}
       <section className="w-full py-16 bg-yellow-50 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-yellow-100/50 backdrop-blur-sm -z-10" />
@@ -865,66 +865,7 @@ export default function About() {
       {/* end content */}
 
 
-      {/* 18+ Exclusive Section */}
-      <section 
-  className="relative py-20 px-6 text-center bg-cover bg-center bg-no-repeat overflow-hidden"
-  style={{ backgroundImage: "url('/images/18+bodyspa.avif')" }}
->
-  {/* Enhanced gradient overlay with subtle grain texture */}
-  <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-[#3A2415]/80 to-black/90 z-0" />
-  <div className="absolute inset-0 bg-[url('/images/noise.png')] opacity-10 mix-blend-soft-light z-1" />
-
-  <div className="relative z-10 max-w-6xl mx-auto text-[#FAF3E9]">
-    {/* Elegant heading with decorative elements */}
-    <div className="flex flex-col items-center mb-12">
-      <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#D4A866] to-transparent mb-8" />
-      <h2 className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-4 text-[#F9D9A9] tracking-wide">
-        <span className="block text-xl font-light tracking-widest text-[#D4A866] mb-2">
-          PREMIUM WELLNESS DESTINATIONS
-        </span>
-        24+ Exclusive Body Spa Outlets
-      </h2>
-      <div className="w-16 h-0.5 bg-[#D4A866] mt-6" />
-    </div>
-
-    {/* Refined description */}
-    <p className="text-lg sm:text-xl max-w-2xl mx-auto mb-16 font-light leading-relaxed font-raleway tracking-wide">
-      Indulge in unparalleled luxury & holistic wellness experiences across our premier 5-star locations worldwide.
-    </p>
-
-    {/* Sophisticated features grid */}
-    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
-      {specialFeatures.map((item, index) => (
-        <li key={index}>
-          <div className="flex items-start gap-3 p-5 rounded-xl border border-[#D4A866]/30 bg-gradient-to-b from-[#2D1B0F]/60 to-[#1A1109]/60 backdrop-blur-sm hover:border-[#D4A866]/60 transition-all duration-300 group hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-black/20">
-            <svg
-              className="flex-shrink-0 w-5 h-5 mt-0.5 text-[#D4A866] group-hover:scale-110 transition-transform"
-              fill="currentColor"
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 
-                0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 
-                36.204 0L192 312.69 432.095 72.596c9.997-9.997 
-                26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 
-                9.997 26.206 0 36.204l-294.4 294.401c-9.998 
-                9.997-26.207 9.997-36.204-.001z"/>
-            </svg>
-            <span className="text-left font-light text-[#FAF3E9] group-hover:text-[#F9D9A9] transition-colors">
-              {item}
-            </span>
-          </div>
-        </li>
-      ))}
-    </ul>
-
-    {/* Decorative corner elements */}
-    <div className="absolute top-6 left-6 w-8 h-8 border-t border-l border-[#D4A866]/50" />
-    <div className="absolute top-6 right-6 w-8 h-8 border-t border-r border-[#D4A866]/50" />
-    <div className="absolute bottom-6 left-6 w-8 h-8 border-b border-l border-[#D4A866]/50" />
-    <div className="absolute bottom-6 right-6 w-8 h-8 border-b border-r border-[#D4A866]/50" />
-  </div>
-      </section>
+      
 
       {/* Our Therapy Experts */}
       <section className="py-16 px-4 bg-white">
@@ -999,6 +940,7 @@ export default function About() {
         </div>
       </section>
        {/* End Our Therapy Experts */}
+       
         {/* Our Process */}
                       <section className="w-full py-10 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
                        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1089,6 +1031,66 @@ export default function About() {
                        </div>
                       </section>
                     {/* End Our Process */}
+                    {/* 18+ Exclusive Section */}
+      <section 
+  className="relative py-20 px-6 text-center bg-cover bg-center bg-no-repeat overflow-hidden"
+  style={{ backgroundImage: "url('/images/18+bodyspa.avif')" }}
+>
+  {/* Enhanced gradient overlay with subtle grain texture */}
+  <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-[#3A2415]/80 to-black/90 z-0" />
+  <div className="absolute inset-0 bg-[url('/images/noise.png')] opacity-10 mix-blend-soft-light z-1" />
+
+  <div className="relative z-10 max-w-6xl mx-auto text-[#FAF3E9]">
+    {/* Elegant heading with decorative elements */}
+    <div className="flex flex-col items-center mb-12">
+      <div className="w-24 h-0.5 bg-gradient-to-r from-transparent via-[#D4A866] to-transparent mb-8" />
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-playfair font-bold mb-4 text-[#F9D9A9] tracking-wide">
+        <span className="block text-xl font-light tracking-widest text-[#D4A866] mb-2">
+          PREMIUM WELLNESS DESTINATIONS
+        </span>
+        24+ Exclusive Body Spa Outlets
+      </h2>
+      <div className="w-16 h-0.5 bg-[#D4A866] mt-6" />
+    </div>
+
+    {/* Refined description */}
+    <p className="text-lg sm:text-xl max-w-2xl mx-auto mb-16 font-light leading-relaxed font-raleway tracking-wide">
+      Indulge in unparalleled luxury & holistic wellness experiences across our premier 5-star locations worldwide.
+    </p>
+
+    {/* Sophisticated features grid */}
+    <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto">
+      {specialFeatures.map((item, index) => (
+        <li key={index}>
+          <div className="flex items-start gap-3 p-5 rounded-xl border border-[#D4A866]/30 bg-gradient-to-b from-[#2D1B0F]/60 to-[#1A1109]/60 backdrop-blur-sm hover:border-[#D4A866]/60 transition-all duration-300 group hover:-translate-y-1 shadow-lg hover:shadow-xl shadow-black/20">
+            <svg
+              className="flex-shrink-0 w-5 h-5 mt-0.5 text-[#D4A866] group-hover:scale-110 transition-transform"
+              fill="currentColor"
+              viewBox="0 0 512 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 
+                0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 
+                36.204 0L192 312.69 432.095 72.596c9.997-9.997 
+                26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 
+                9.997 26.206 0 36.204l-294.4 294.401c-9.998 
+                9.997-26.207 9.997-36.204-.001z"/>
+            </svg>
+            <span className="text-left font-light text-[#FAF3E9] group-hover:text-[#F9D9A9] transition-colors">
+              {item}
+            </span>
+          </div>
+        </li>
+      ))}
+    </ul>
+
+    {/* Decorative corner elements */}
+    <div className="absolute top-6 left-6 w-8 h-8 border-t border-l border-[#D4A866]/50" />
+    <div className="absolute top-6 right-6 w-8 h-8 border-t border-r border-[#D4A866]/50" />
+    <div className="absolute bottom-6 left-6 w-8 h-8 border-b border-l border-[#D4A866]/50" />
+    <div className="absolute bottom-6 right-6 w-8 h-8 border-b border-r border-[#D4A866]/50" />
+  </div>
+      </section>
       {/* Pricing Section */}
             <section id= "Pricing" className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
             {/* Decorative elements */}

@@ -12,6 +12,7 @@ import { FaHandSparkles, FaLeaf } from 'react-icons/fa';
   import { FaStar } from "react-icons/fa";
   import { AnimatePresence } from "framer-motion";
   import { FaTelegram } from "react-icons/fa";
+  import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 
 const specialFeatures = [
@@ -168,7 +169,48 @@ const locations = [
     link: "https://wa.me/8826482370"
   }
 ];
-
+const teamMembers = [
+  {
+    name: "Chelsea Foster",
+    designation: "Spa Therapist",
+    image: "/images/spamodel.jpg",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+  {
+    name: "Lane Parsons",
+    designation: "Spa Therapist",
+    image: "/images/spaExper2.webp",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+  {
+    name: "Haven West",
+    designation: "Spa Therapist",
+    image: "/images/spamodel2.jpg",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+  {
+    name: "Avery Grace",
+    designation: "Spa Therapist",
+    image: "/images/spaExpert4.jpg",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+];
 
   const playfair = Playfair_Display({
     subsets: ['latin'],
@@ -570,66 +612,7 @@ export default function Outlet() {
 
 {/* Massage center */}
 <div className="min-h-screen bg-gradient-to-b from-[#f8f5f2] to-[#faf9f7]">
-      {/* Hero Section */}
-      <section className="relative py-16 md:py-24 px-4 overflow-hidden bg-gradient-to-br from-[#f8f5f2] to-[#f0ede8]">
-        <div className="absolute inset-0 bg-[url('/texture.png')] opacity-5 z-0"></div>
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="max-w-4xl mx-auto text-center px-4">
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-[#2a3b47] leading-tight"
-            >
-              Premium <span className="font-medium text-[#5d7a68]">Massage Therapy</span> Centers
-            </motion.h1>
-            
-            <motion.div 
-              initial={{ width: 0 }}
-              animate={{ width: "120px" }}
-              transition={{ duration: 0.8, delay: 0.3 }}
-              className="h-[2px] bg-gradient-to-r from-[#5d7a68]/30 via-[#5d7a68] to-[#5d7a68]/30 mx-auto my-8 rounded-full"
-            />
-            
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              className="text-lg md:text-xl text-[#4a5a65] max-w-2xl mx-auto leading-relaxed"
-            >
-              Experience transformative therapy in our serene spaces, where expert therapists blend ancient techniques with modern wellness science.
-            </motion.p>
-            
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.7 }}
-              className="mt-12"
-            >
-              <div className="flex flex-wrap justify-center gap-4">
-                <button className="px-8 py-3.5 bg-[#5d7a68] hover:bg-[#4a6455] text-white font-medium rounded-full transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
-                  Book Consultation
-                </button>
-                <button className="px-8 py-3.5 border border-[#5d7a68] text-[#5d7a68] hover:bg-[#5d7a68]/5 font-medium rounded-full transition-all duration-300">
-                  View Services
-                </button>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-        
-        {/* Floating Elements */}
-        <motion.div 
-          animate={{ y: [0, -15, 0] }}
-          transition={{ repeat: Infinity, duration: 4 }}
-          className="absolute top-1/4 left-[10%] w-8 h-8 rounded-full bg-[#5d7a68]/10"
-        ></motion.div>
-        <motion.div 
-          animate={{ y: [0, -20, 0] }}
-          transition={{ repeat: Infinity, duration: 5, delay: 0.5 }}
-          className="absolute top-1/3 right-[12%] w-12 h-12 rounded-full bg-[#5d7a68]/10"
-        ></motion.div>
-      </section>
+      
       
       {/* Locations Section */}
           <section className="py-16 px-6 md:px-16 bg-gradient-to-b from-white to-amber-50 relative">
@@ -935,7 +918,135 @@ export default function Outlet() {
             </div>
           </div>
         </section>
-
+        {/* Our Therapy Experts */}
+      <section className="py-16 px-4 bg-gradient-to-br from-[#FFF9F0] via-[#fcf5e9] to-[#f9f1e2]">
+        <div className="max-w-7xl mx-auto">
+          
+          <div className="text-center mb-16">
+          <motion.p
+            className="text-amber-300 uppercase font-semibold tracking-wider mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+          >
+            Experts Therapy
+          </motion.p>
+          
+          <motion.h2
+            className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            Our <span className="text-amber-600"> Therapy Experts</span>
+          </motion.h2>
+          
+          <motion.p
+            className="text-gray-600 max-w-2xl mx-auto text-lg"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+             Meet our certified spa professionals dedicated to your relaxation and rejuvenation.
+          </motion.p>
+        </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            {teamMembers.map((member, idx) => (
+              <motion.div
+                key={idx}
+                whileHover={{ scale: 1.05 }}
+                className="bg-white rounded-2xl shadow-md overflow-hidden text-center relative group"
+              >
+                <div className="relative h-96 overflow-hidden">
+                  <Image
+                  loading="lazy"
+                    src={member.image}
+                    alt={member.name}
+                    width={400}
+                    height={400}
+                    className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+                    <h3 className="text-white text-xl font-semibold">
+                      {member.name}
+                    </h3>
+                    <p className="text-yellow-300">{member.designation}</p>
+                  </div>
+                </div>
+                <div className="flex justify-center gap-4 mt-4 pb-4">
+                  <a href={member.socials.facebook} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-700 text-xl"><FaFacebookF /></a>
+                  <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-700 text-xl"><FaInstagram /></a>
+                  <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-700 text-xl"><FaTwitter /></a>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+       {/* End Our Therapy Experts */}
+{/* Hero Section */}
+      <section className="relative py-16 md:py-24 px-4 overflow-hidden bg-gradient-to-br from-[#f8f5f2] to-[#f0ede8]">
+        <div className="absolute inset-0 bg-[url('/texture.png')] opacity-5 z-0"></div>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="max-w-4xl mx-auto text-center px-4">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-[#2a3b47] leading-tight"
+            >
+              Premium <span className="font-medium text-[#5d7a68]">Massage Therapy</span> Centers
+            </motion.h1>
+            
+            <motion.div 
+              initial={{ width: 0 }}
+              animate={{ width: "120px" }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="h-[2px] bg-gradient-to-r from-[#5d7a68]/30 via-[#5d7a68] to-[#5d7a68]/30 mx-auto my-8 rounded-full"
+            />
+            
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.5 }}
+              className="text-lg md:text-xl text-[#4a5a65] max-w-2xl mx-auto leading-relaxed"
+            >
+              Experience transformative therapy in our serene spaces, where expert therapists blend ancient techniques with modern wellness science.
+            </motion.p>
+            
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              className="mt-12"
+            >
+              <div className="flex flex-wrap justify-center gap-4">
+                <button className="px-8 py-3.5 bg-[#5d7a68] hover:bg-[#4a6455] text-white font-medium rounded-full transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                  Book Consultation
+                </button>
+                <button className="px-8 py-3.5 border border-[#5d7a68] text-[#5d7a68] hover:bg-[#5d7a68]/5 font-medium rounded-full transition-all duration-300">
+                  View Services
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+        
+        {/* Floating Elements */}
+        <motion.div 
+          animate={{ y: [0, -15, 0] }}
+          transition={{ repeat: Infinity, duration: 4 }}
+          className="absolute top-1/4 left-[10%] w-8 h-8 rounded-full bg-[#5d7a68]/10"
+        ></motion.div>
+        <motion.div 
+          animate={{ y: [0, -20, 0] }}
+          transition={{ repeat: Infinity, duration: 5, delay: 0.5 }}
+          className="absolute top-1/3 right-[12%] w-12 h-12 rounded-full bg-[#5d7a68]/10"
+        ></motion.div>
+      </section>
+      
 {/* F&Q Section */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
                             <div className="max-w-5xl mx-auto px-4">

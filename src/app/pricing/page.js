@@ -10,7 +10,7 @@ import WhatsappFloat from '../components/WhatsappFloat';
   import { FaHandSparkles, FaLeaf } from 'react-icons/fa';
   import { AnimatePresence } from "framer-motion";
   import { FaTelegram } from 'react-icons/fa';
-  
+  import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 
 // ✅ Load Google Fonts
@@ -133,6 +133,70 @@ export default function pricing() {
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
 ];
+const teamMembers = [
+  {
+    name: "Chelsea Foster",
+    designation: "Spa Therapist",
+    image: "/images/spamodel.jpg",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+  {
+    name: "Lane Parsons",
+    designation: "Spa Therapist",
+    image: "/images/spaExper2.webp",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+  {
+    name: "Haven West",
+    designation: "Spa Therapist",
+    image: "/images/spamodel2.jpg",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+  {
+    name: "Avery Grace",
+    designation: "Spa Therapist",
+    image: "/images/spaExpert4.jpg",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+];
+{/* Our Process */}
+  const processSteps = [
+  {
+    number: '01',
+    title: 'Select Hotel And Spa Outlet',
+    description: 'Our spa meeting process ensures a seamless and soothing experience, from scheduling to consultation and relaxation.',
+    image: '/images/mmeeting.webp',
+  },
+  {
+    number: '02',
+    title: 'Appointment',
+    description: 'Relaxing spa treatment begins with consultation, followed by cleansing, massage, and rejuvenation steps.',
+    image: '/images/spa-treatments.jpg',
+  },
+  {
+    number: '03',
+    title: 'Visit',
+    description: 'Confirm your appointment, choose your therapy, and relax, your spa journey is now set.',
+    image: '/images/finalizing.avif',
+  },
+];
+{/* End Our Process */}
 
   return (
     
@@ -648,6 +712,96 @@ export default function pricing() {
                 </motion.div>
               </div>
             </section>
+            {/* Our Process */}
+               <section className="w-full py-10 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                  {/* Section Header */}
+        <motion.div 
+          className="text-center mb-20"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+            <span className="text-amber-700 font-medium tracking-wider">Process</span>
+          </motion.div>
+          
+          <motion.h2
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+          >
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Process</span>
+          </motion.h2>
+          
+          {/* <motion.p
+            className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+          >
+            Located in premium 5-star properties across Delhi – enjoy serenity, comfort, and personalized spa experiences at every outlet.
+          </motion.p> */}
+          
+          <motion.div
+            className="flex justify-center mt-10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+          </motion.div>
+        </motion.div>
+              
+                  {/* Process Steps */}
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    {processSteps.map((step, index) => (
+                      <motion.div
+                        key={index}
+                        className="relative bg-white shadow-lg rounded-2xl px-6 pt-24 pb-10 text-center hover:shadow-xl transition-shadow duration-300"
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: index * 0.2 }}
+                      >
+                        {/* Step Number */}
+                        <div className="absolute top-4 left-4 text-3xl font-bold text-amber-300 opacity-30 z-0">
+                          {step.number}
+                        </div>
+              
+                        {/* Image */}
+                        <div className="relative w-44 h-44 mx-auto mb-8 rounded-full overflow-hidden shadow-xl border-4 border-gradient-to-tr from-rose-200 via-amber-100 to-rose-100 transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+                          <Image
+                            src={step.image}
+                            alt={step.title}
+                            layout="fill"
+                            objectFit="cover"
+                            className="rounded-full"
+                          />
+                        </div>
+
+              
+                        {/* Title */}
+                        <h4 className="text-2xl font-semibold text-amber-800 mb-4 font-serif">
+                          {step.title}
+                        </h4>
+              
+                        {/* Description */}
+                        <p className="text-gray-600 leading-relaxed text-base">{step.description}</p>
+                      </motion.div>
+                    ))}
+                  </div>
+                </div>
+               </section>
+             {/* End Our Process */}
             {/* outlate */}
             <section className="py-10 px-4 sm:px-6 lg:px-16 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
               <div className="max-w-7xl mx-auto">
@@ -716,6 +870,74 @@ export default function pricing() {
               </div>
             </section>
             {/* End outlate */}
+            {/* Our Therapy Experts */}
+                  <section className="py-16 px-4 bg-gradient-to-br from-[#FFF9F0] via-[#fcf5e9] to-[#f9f1e2]">
+                    <div className="max-w-7xl mx-auto">
+                      
+                      <div className="text-center mb-16">
+                      <motion.p
+                        className="text-amber-300 uppercase font-semibold tracking-wider mb-4"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        viewport={{ once: true }}
+                      >
+                        Experts Therapy
+                      </motion.p>
+                      
+                      <motion.h2
+                        className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                      >
+                        Our <span className="text-amber-600"> Therapy Experts</span>
+                      </motion.h2>
+                      
+                      <motion.p
+                        className="text-gray-600 max-w-2xl mx-auto text-lg"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.1 }}
+                        viewport={{ once: true }}
+                      >
+                         Meet our certified spa professionals dedicated to your relaxation and rejuvenation.
+                      </motion.p>
+                    </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                        {teamMembers.map((member, idx) => (
+                          <motion.div
+                            key={idx}
+                            whileHover={{ scale: 1.05 }}
+                            className="bg-white rounded-2xl shadow-md overflow-hidden text-center relative group"
+                          >
+                            <div className="relative h-96 overflow-hidden">
+                              <Image
+                              loading="lazy"
+                                src={member.image}
+                                alt={member.name}
+                                width={400}
+                                height={400}
+                                className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                              />
+                              <div className="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+                                <h3 className="text-white text-xl font-semibold">
+                                  {member.name}
+                                </h3>
+                                <p className="text-yellow-300">{member.designation}</p>
+                              </div>
+                            </div>
+                            <div className="flex justify-center gap-4 mt-4 pb-4">
+                              <a href={member.socials.facebook} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-700 text-xl"><FaFacebookF /></a>
+                              <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-700 text-xl"><FaInstagram /></a>
+                              <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-700 text-xl"><FaTwitter /></a>
+                            </div>
+                          </motion.div>
+                        ))}
+                      </div>
+                    </div>
+                  </section>
+                   {/* End Our Therapy Experts */}
      {/* F&Q Section */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
                             <div className="max-w-5xl mx-auto px-4">

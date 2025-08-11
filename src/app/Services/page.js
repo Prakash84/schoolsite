@@ -12,12 +12,55 @@
   import { FaSpa, FaHotTub } from 'react-icons/fa';
   import { FaStar } from "react-icons/fa";
   import { AnimatePresence } from "framer-motion";
+  import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 
 
 
 //   import WhatsappFloat from '../../components/WhatsappFloat';
 
+const teamMembers = [
+  {
+    name: "Chelsea Foster",
+    designation: "Spa Therapist",
+    image: "/images/spamodel.jpg",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+  {
+    name: "Lane Parsons",
+    designation: "Spa Therapist",
+    image: "/images/spaExper2.webp",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+  {
+    name: "Haven West",
+    designation: "Spa Therapist",
+    image: "/images/spamodel2.jpg",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+  {
+    name: "Avery Grace",
+    designation: "Spa Therapist",
+    image: "/images/spaExpert4.jpg",
+    socials: {
+      facebook: "https://facebook.com",
+      instagram: "https://instagram.com",
+      twitter: "https://twitter.com",
+    },
+  },
+];
 
   const featuresData = [
   {
@@ -1362,7 +1405,106 @@ const faqs = [
                 {/* End Our Process */}
 
 
-               {/* Testimonials */}
+              
+              {/* Our Therapy Experts */}
+                    <section className="py-16 px-4 bg-gradient-to-br from-[#FFF9F0] via-[#fcf5e9] to-[#f9f1e2]">
+                      <div className="max-w-7xl mx-auto">
+                        
+                        <div className="text-center mb-16">
+                        <motion.p
+                          className="text-amber-300 uppercase font-semibold tracking-wider mb-4"
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ duration: 0.5 }}
+                          viewport={{ once: true }}
+                        >
+                          Experts Therapy
+                        </motion.p>
+                        
+                        <motion.h2
+                          className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          viewport={{ once: true }}
+                        >
+                          Our <span className="text-amber-600"> Therapy Experts</span>
+                        </motion.h2>
+                        
+                        <motion.p
+                          className="text-gray-600 max-w-2xl mx-auto text-lg"
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.1 }}
+                          viewport={{ once: true }}
+                        >
+                           Meet our certified spa professionals dedicated to your relaxation and rejuvenation.
+                        </motion.p>
+                      </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                          {teamMembers.map((member, idx) => (
+                            <motion.div
+                              key={idx}
+                              whileHover={{ scale: 1.05 }}
+                              className="bg-white rounded-2xl shadow-md overflow-hidden text-center relative group"
+                            >
+                              <div className="relative h-96 overflow-hidden">
+                                <Image
+                                loading="lazy"
+                                  src={member.image}
+                                  alt={member.name}
+                                  width={400}
+                                  height={400}
+                                  className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-500"
+                                />
+                                <div className="absolute bottom-0 left-0 right-0 bg-black/60 p-4">
+                                  <h3 className="text-white text-xl font-semibold">
+                                    {member.name}
+                                  </h3>
+                                  <p className="text-yellow-300">{member.designation}</p>
+                                </div>
+                              </div>
+                              <div className="flex justify-center gap-4 mt-4 pb-4">
+                                <a href={member.socials.facebook} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-700 text-xl"><FaFacebookF /></a>
+                                <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-700 text-xl"><FaInstagram /></a>
+                                <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-yellow-700 text-xl"><FaTwitter /></a>
+                              </div>
+                            </motion.div>
+                          ))}
+                        </div>
+                      </div>
+                    </section>
+                     {/* End Our Therapy Experts */}
+              {/* end Testimonials */}
+              <section className="relative bg-white py-16 px-4 sm:px-10 md:px-16 lg:px-32 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-100 to-pink-100 opacity-20 rounded-xl" />
+
+                <div className="relative z-10 text-center max-w-4xl mx-auto">
+                  <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 animate-fade-in">
+                    Enjoy 1st Visit Offer at Just ₹1999
+                  </h2>
+
+                  <p className="text-gray-600 text-base sm:text-lg mb-3">
+                    Take advantage of our exclusive first visit offer for only ₹1999! Experience our luxurious treatments and discover ultimate relaxation at an unbeatable price.
+                  </p>
+
+                  <p className="text-gray-600 text-base sm:text-lg mb-8">
+                    Relax and rejuvenate with our tailored spa experiences at the finest 4, 5, and 7-star hotels across Delhi NCR. Indulge in world-class treatments designed to revitalize your mind, body, and soul.
+                  </p>
+
+                  <ul className="flex justify-center gap-6 flex-wrap text-gray-800 font-medium text-base mb-10">
+                    {["4 Star Hotels", "5 Star Hotels", "7 Star Hotels"].map((item, index) => (
+                      <li key={index} className="flex items-center gap-2">
+                        <Check className="text-green-500 w-5 h-5" /> {item}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <a href="https://api.whatsapp.com/send?phone=918826482370" className="bg-amber-600 text-white px-8 py-4 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md">
+              Book an Appointment
+            </a>
+                </div>
+              </section>
+ {/* Testimonials */}
               <section className="mt-20 py-18 px-16 md:px-16 bg-gradient-to-br from-amber-900 to-amber-700 relative overflow-hidden rounded-3xl shadow-xl">
           {/* Decorative Pattern Background */}
           <div className="absolute inset-0 opacity-5">
@@ -1415,37 +1557,6 @@ const faqs = [
             </div>
           </div>
               </section>
-              {/* end Testimonials */}
-              <section className="relative bg-white py-16 px-4 sm:px-10 md:px-16 lg:px-32 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-100 to-pink-100 opacity-20 rounded-xl" />
-
-                <div className="relative z-10 text-center max-w-4xl mx-auto">
-                  <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 animate-fade-in">
-                    Enjoy 1st Visit Offer at Just ₹1999
-                  </h2>
-
-                  <p className="text-gray-600 text-base sm:text-lg mb-3">
-                    Take advantage of our exclusive first visit offer for only ₹1999! Experience our luxurious treatments and discover ultimate relaxation at an unbeatable price.
-                  </p>
-
-                  <p className="text-gray-600 text-base sm:text-lg mb-8">
-                    Relax and rejuvenate with our tailored spa experiences at the finest 4, 5, and 7-star hotels across Delhi NCR. Indulge in world-class treatments designed to revitalize your mind, body, and soul.
-                  </p>
-
-                  <ul className="flex justify-center gap-6 flex-wrap text-gray-800 font-medium text-base mb-10">
-                    {["4 Star Hotels", "5 Star Hotels", "7 Star Hotels"].map((item, index) => (
-                      <li key={index} className="flex items-center gap-2">
-                        <Check className="text-green-500 w-5 h-5" /> {item}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <a href="https://api.whatsapp.com/send?phone=918826482370" className="bg-amber-600 text-white px-8 py-4 rounded-full font-medium text-sm hover:bg-amber-700 transition shadow-md">
-              Book an Appointment
-            </a>
-                </div>
-              </section>
-
           {/* Call to Action */}
           {/* <motion.div 
             className="text-center mt-16"
