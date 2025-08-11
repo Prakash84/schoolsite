@@ -1019,6 +1019,8 @@ const features2 = [
                 transition={{ duration: 0.5, delay: 0.3 }}
               >
                 Immerse yourself in an oasis of tranquility and rejuvenation. Our expert therapists and premium organic products create an unparalleled wellness experience.
+                Our expert therapists combine traditional healing methods with modern wellness practices to create custom treatments that will leave you feeling refreshed, balanced, and revitalized. Our body spa is designed to take you on a journey of tranquility, where every therapy is crafted to calm your senses and heal your body.
+                Our approach is rooted in Ayurvedic philosophy combined with Western spa trends to deliver holistic wellness experiences. We use 100% organic oils, aromatic herbs, and soothing music to create the perfect environment for letting go of tension and recharging your soul. 
               </motion.p>
             </div>
 
@@ -1809,17 +1811,19 @@ const features2 = [
                     At SPA DELHI, we believe that true wellness begins with deep relaxation and inner harmony. 
                     Our body spa is designed to take you on a journey of tranquility, where every therapy is crafted 
                     to calm your senses and heal your body.
-                  </p>
-                  <p className="text-gray-700 mb-4">
-                    Located in the heart of Delhi and spread across our premium outlets in Noida, Gurgaon, and Ghaziabad, 
+                     Located in the heart of Delhi and spread across our premium outlets in Noida, Gurgaon, and Ghaziabad, 
                     SPA DELHI brings a mix of traditional wellness and modern techniques. Our services include full-body 
                     massage, deep tissue therapy, hot stone massage, foot reflexology, aromatherapy, and more — all 
                     provided in a calm, hygienic, and private setting.
                   </p>
+                  
                   <p className="text-gray-700">
                     Our approach is rooted in Ayurvedic philosophy combined with Western spa trends to deliver holistic 
                     wellness experiences. We use 100% organic oils, aromatic herbs, and soothing music to create the 
                     perfect environment for letting go of tension and recharging your soul.
+                    At SPA DELHI, we believe that true wellness begins with deep relaxation and inner harmony. 
+                    Our body spa is designed to take you on a journey of tranquility, where every therapy is crafted 
+                    to calm your senses and heal your body.
                   </p>
                 </div>
               </div>
