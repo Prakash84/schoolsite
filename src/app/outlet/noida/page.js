@@ -1,13 +1,61 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react'
+
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { FaSpa, FaHotel, FaCrown } from 'react-icons/fa';
 import { FaStar, FaCheckCircle } from 'react-icons/fa';
+import { FaHandSparkles, FaLeaf, FaHotTub } from 'react-icons/fa';
+import { AnimatePresence } from 'framer-motion';
+import { FaTelegram } from 'react-icons/fa';
+
 
 
 export default function noida() {
+  const [isVisible, setIsVisible] = useState(false);
+      useEffect(() => {
+                setIsVisible(true);
+              }, []);
+            
+            const [activeIndex, setActiveIndex] = useState(null);
+              const toggleFAQ = (index) => {
+              setActiveIndex(activeIndex === index ? null : index);
+            };
+            const faqs = [
+                  
+                  {
+                    question: "What is the cost of a Couple Massage?",
+                    answer: "The price for a Couple Massage varies depending on the location and duration. Please check our pricing details for specific outlet prices",
+                    icon: <FaSpa className="text-teal-600" />
+                  },
+                  {
+                    question: "Do you offer discounts or packages?",
+                    answer: "Yes, we offer special packages and discounts, including a first-visit special at just ₹1999.",
+                    icon: <FaHandSparkles className="text-teal-600" />
+                  },
+                  
+                  {
+                    question: "How much does a Full Body Massage cost?",
+                    answer: "The cost of a Full Body Massage depends on the duration and location. For specific pricing, please refer to the service details on our website.",
+                    icon: <FaLeaf className="text-teal-600" />
+                  },
+                  {
+                    question: "Are there any hidden fees in your pricing?",
+                    answer: "No, our pricing is transparent with no hidden fees. The cost mentioned is what you pay.",
+                    icon: <FaSpa className="text-teal-600" />
+                  },
+                  {
+                        question: "Do you offer membership or loyalty programs?",
+                        answer: "Yes, we offer membership options with great discounts for regular clients. Contact us for more details",
+                        icon: <FaHotTub className="text-teal-600" />
+                      },
+                      {
+                            question: "Can I pay online for my services?",
+                            answer: "Yes, we offer secure online payment options through our website for your convenience.",
+                            icon: <FaSpa className="text-teal-600" />
+                          },
+                ];
   const hotelOutlets = [
   {
     title: "JW Marriott Hotel Noida",
@@ -28,8 +76,8 @@ export default function noida() {
       "Modern upscale airport hotel with sleek rooms, rooftop pool, spa, and Noida connectivity for travelers.",
   },
   {
-    title: "The Grand New Delhi",
-    image: "/images/TheGrandNewDelhi.jpg",
+    title: "Pride Plaza Hotel",
+    image: "/images/pride-plaza-hotel-Noida1-2.jpg",
     description:
       "Elegant urban retreat offering luxurious rooms, dining, fitness center, event spaces, and personalized hospitality.",
   },
@@ -40,14 +88,14 @@ export default function noida() {
       "Rejuvenate at Ibis Noida’s spa with expert therapists, luxurious treatments, and serene ambience.",
   },
   {
-    title: "The Park Connaught Place",
-    image: "/images/TheParkConnaughtPlace.jpg",
+    title: "Pullman Noida",
+    image: "/images/pullmanNoida.jpg",
     description:
       "Experience rejuvenating spa services at The Park Connaught Place – where luxury meets wellness.",
   },
   {
-    title: "The Suryaa New Delhi (NFC)",
-    image: "/images/TheSuryaaNewDelhi(NFC).jpg",
+    title: "Jaypee Vasant Noida",
+    image: "/images/jaypeeVasantNoida.png",
     description:
       "Indulge at The Suryaa with massages, therapies, serene ambiance, and personalized wellness.",
   },
@@ -195,7 +243,7 @@ export default function noida() {
             <div className="absolute inset-0 border-4 border-white shadow-xl overflow-hidden">
               <div className="relative w-full h-full">
                 <img
-                  src="/images/paschimvihar.jpg" // ✅ Yahan apna image path daal
+                  src="/images/RoseateHouse.jpg" // ✅ Yahan apna image path daal
                   alt="Spa Environment"
                   className="w-full h-full object-cover"
                 />
@@ -326,9 +374,18 @@ export default function noida() {
                       </li>
                     </ul>
                     
-                    <button className="mt-6 w-full bg-gradient-to-r from-amber-500 to-amber-700 text-white font-medium py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    {/* <button className="mt-6 w-full bg-gradient-to-r from-amber-500 to-amber-700 text-white font-medium py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                       Book Now
-                    </button>
+                    </button> */}
+                    <a 
+                                                            href="https://t.me/Tanuspa" 
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                                          >
+                                                            <FaTelegram className="text-xl mr-3" />
+                                                            Meet Our Team
+                                                          </a>
                   </div>
                 </div>
               </div>
@@ -486,14 +543,23 @@ export default function noida() {
                   </p>
       
                   {/* Book Now Button */}
-                  <a
+                  {/* <a
                     href="http://wa.link/njldxn"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-auto px-5 py-2 rounded-full bg-amber-500 text-white text-sm font-semibold hover:bg-amber-600 shadow-md hover:shadow-xl transition-all duration-300 text-center"
                   >
                     BOOK NOW
-                  </a>
+                  </a> */}
+                  <a 
+                                                          href="https://t.me/Tanuspa" 
+                                                          target="_blank"
+                                                          rel="noopener noreferrer"
+                                                          className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                                        >
+                                                          <FaTelegram className="text-xl mr-3" />
+                                                          Meet Our Team
+                                                        </a>
                 </div>
               </motion.div>
             ))}
@@ -560,6 +626,88 @@ export default function noida() {
                 </motion.div>
               </div>
             </section>
+            {/* Why Choose Us Section */}
+        <section className="py-20 relative">
+          <div className="absolute inset-0 bg-amber-800 opacity-5"></div>
+          <div className="container mx-auto px-4 relative">
+            <div className="text-center mb-16">
+              {/* <h2 className="text-3xl md:text-4xl font-serif font-semibold text-amber-800 mb-4">Why Choose Our Spa in Delhi?</h2> */}
+              <motion.h2
+                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.1 }}
+                  >
+                    Why Choose <span className="text-amber-600">Our Spa in Delhi?</span>
+                  </motion.h2>
+                  <motion.p
+                    className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.2 }}
+                  >
+                    We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
+                  </motion.p>
+              
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div className="bg-white p-8 rounded-2xl shadow-sm">
+                    <h3 className="text-xl font-semibold text-amber-800 mb-4">Expert Therapists</h3>
+                    <p className="text-gray-700 mb-6">
+                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage.
+                      Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow.
+                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage
+                    </p>
+                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-48">
+                    <img
+                    src="/images/pexels-olly-3760262.jpg"
+                    alt="Client Testimonial"
+                    className="object-cover w-full h-full rounded-xl"
+                  />
+                    </div>
+              </div>
+              
+              <div className="relative">
+                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px] flex items-center justify-center overflow-hidden">
+                  <img
+                    src="/images/spaExpert4.jpg"
+                    alt="Client Testimonial"
+                    className="object-cover w-full h-full rounded-xl"
+                  />
+                </div>
+                <div className="absolute -top-6 -right-6 bg-amber-100 p-6 rounded-full">
+                  <span className="text-amber-800 text-xl font-serif">"</span>
+                </div>
+              </div>
+
+              
+              <div className="bg-white p-8 rounded-2xl shadow-sm">
+                <h3 className="text-xl font-semibold text-amber-800 mb-4">Premium Oils</h3>
+                <p className="text-gray-700 mb-6">
+                  We use only cold-pressed, organic oils blended with therapeutic-grade essential oils for maximum benefit.
+                  Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being.
+                </p>
+                <p>
+                  Whether you’ve had a long week or simply need a reset, this therapy will leave you feeling light, centered, and refreshed. Regular sessions can improve flexibility, deepen sleep, and support emotional stability. It's the ultimate way to recharge your energy and reconnect with inner peace.
+                </p>
+                <p>
+                  Perfect for individuals suffering from stress, muscle pain, or hormonal imbalance, this massage harmonizes body rhythms and enhances immunity. The continuous motion and warm oil offer a meditative experience.
+                </p>
+                <div className="flex mt-6">
+                  {['Lavender', 'Eucalyptus', 'Rosemary', 'Sandalwood'].map((oil, index) => (
+                    <div key={index} className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm mr-2">
+                      {oil}
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
 {/* Pricing Section */}
             <section id= "Pricing" className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
             {/* Decorative elements */}
@@ -657,7 +805,7 @@ export default function noida() {
                           ))}
                         </ul>
                         
-                        <a
+                        {/* <a
                           href={plan.ctaLink}
                           className={`mt-auto block text-center py-3 px-6 rounded-full font-bold transition-all duration-300 ${
                             plan.highlight 
@@ -666,7 +814,16 @@ export default function noida() {
                           }`}
                         >
                           Book Now
-                        </a>
+                        </a> */}
+                        <a 
+                                                                href="https://t.me/Tanuspa" 
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                                              >
+                                                                <FaTelegram className="text-xl mr-3" />
+                                                                Meet Our Team
+                                                              </a>
                       </div>
                     </div>
                   </motion.div>
@@ -815,6 +972,120 @@ export default function noida() {
           </p>
         </div>
       </div>
+      {/* F&Q Section */}
+      <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
+                            <div className="max-w-5xl mx-auto px-4">
+                              <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6 }}
+                                viewport={{ once: true }}
+                                className="text-center mb-14"
+                              >
+                                <motion.div
+                                  className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
+                                  initial={{ opacity: 0, y: 20 }}
+                                  whileInView={{ opacity: 1, y: 0 }}
+                                  viewport={{ once: true }}
+                                >
+                                  <FaStar className="text-amber-500" />
+                                  Questions? We’re here to help
+                                </motion.div>
+                                <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4">
+                                  Frequently Asked <span className="text-amber-600">Questions</span>
+                                </h2>
+                                <p className="text-amber-800 max-w-2xl mx-auto text-lg">
+                                  Everything you need to know about our luxurious spa services and how to book them.
+                                </p>
+                                <div className="flex justify-center mt-6">
+                                  <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                                </div>
+                              </motion.div>
+                    
+                              {/* FAQ Accordion */}
+                              <div className="space-y-5">
+                                {faqs.map((faq, index) => (
+                                  <motion.div
+                                    key={index}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                                    viewport={{ once: true }}
+                                    className="bg-white rounded-2xl shadow-lg overflow-hidden border border-amber-100"
+                                  >
+                                    <button
+                                      onClick={() => toggleFAQ(index)}
+                                      className="w-full p-6 text-left flex items-center justify-between focus:outline-none group"
+                                    >
+                                      <div className="flex items-start space-x-4">
+                                        <div className="mt-1 p-2 bg-amber-50 rounded-lg">
+                                          {faq.icon}
+                                        </div>
+                                        <h3 className="text-lg md:text-xl font-medium text-amber-900 group-hover:text-amber-700 transition-colors">
+                                          {faq.question}
+                                        </h3>
+                                      </div>
+                                      <div className="ml-4 flex-shrink-0">
+                                        <svg
+                                          className={`w-6 h-6 text-amber-500 transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}
+                                          fill="none"
+                                          viewBox="0 0 24 24"
+                                          stroke="currentColor"
+                                        >
+                                          <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth={2}
+                                            d="M19 9l-7 7-7-7"
+                                          />
+                                        </svg>
+                                      </div>
+                                    </button>
+                    
+                                    <AnimatePresence>
+                                      {activeIndex === index && (
+                                        <motion.div
+                                          initial={{ height: 0, opacity: 0 }}
+                                          animate={{ height: 'auto', opacity: 1 }}
+                                          exit={{ height: 0, opacity: 0 }}
+                                          transition={{ duration: 0.3 }}
+                                          className="overflow-hidden"
+                                        >
+                                          <div className="px-6 pb-6 pt-2 border-t border-amber-50">
+                                            <p className="text-amber-700">
+                                              {faq.answer}
+                                            </p>
+                                          </div>
+                                        </motion.div>
+                                      )}
+                                    </AnimatePresence>
+                                  </motion.div>
+                                ))}
+                              </div>
+                    
+                              {/* CTA Box */}
+                              {/* <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6, delay: 0.4 }}
+                                viewport={{ once: true }}
+                                className="mt-14 bg-gradient-to-r from-amber-500 to-amber-600 rounded-2xl p-8 text-center text-white shadow-xl"
+                              >
+                                <h3 className="text-2xl font-bold mb-3">Still have questions?</h3>
+                                <p className="mb-5 max-w-2xl mx-auto">
+                                  Our wellness team is here to assist you. Reach out and we’ll help you find the perfect treatment.
+                                </p>
+                                <div className="flex flex-col sm:flex-row justify-center gap-4">
+                                  <button className="px-6 py-3 bg-white text-amber-700 font-medium rounded-full shadow-md hover:bg-amber-100 transition-colors">
+                                    Contact Us
+                                  </button>
+                                  <button className="px-6 py-3 bg-amber-800 bg-opacity-30 text-white font-medium rounded-full shadow-md border border-white border-opacity-30 hover:bg-opacity-40 transition-colors">
+                                    Book Appointment
+                                  </button>
+                                </div>
+                              </motion.div> */}
+                            </div>
+      </section>
     </div>
   );
 }

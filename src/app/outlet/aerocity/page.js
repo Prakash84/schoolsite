@@ -8,6 +8,7 @@ import { FaSpa, FaHotel, FaCrown } from 'react-icons/fa';
 import { FaStar, FaCheckCircle } from 'react-icons/fa';
 import { FaHandSparkles, FaLeaf, FaHotTub } from 'react-icons/fa';
 import { AnimatePresence } from 'framer-motion';
+import { FaTelegram } from 'react-icons/fa';
 
 
 
@@ -373,9 +374,18 @@ export default function aerocity() {
                       </li>
                     </ul>
                     
-                    <button className="mt-6 w-full bg-gradient-to-r from-amber-500 to-amber-700 text-white font-medium py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    {/* <button className="mt-6 w-full bg-gradient-to-r from-amber-500 to-amber-700 text-white font-medium py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                       Book Now
-                    </button>
+                    </button> */}
+                    <a 
+                                                            href="https://t.me/Tanuspa" 
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                                          >
+                                                            <FaTelegram className="text-xl mr-3" />
+                                                            Meet Our Team
+                                                          </a>
                   </div>
                 </div>
               </div>
@@ -533,14 +543,23 @@ export default function aerocity() {
                   </p>
       
                   {/* Book Now Button */}
-                  <a
+                  {/* <a
                     href="http://wa.link/njldxn"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-auto px-5 py-2 rounded-full bg-amber-500 text-white text-sm font-semibold hover:bg-amber-600 shadow-md hover:shadow-xl transition-all duration-300 text-center"
                   >
                     BOOK NOW
-                  </a>
+                  </a> */}
+                  <a 
+                                                          href="https://t.me/Tanuspa" 
+                                                          target="_blank"
+                                                          rel="noopener noreferrer"
+                                                          className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                                        >
+                                                          <FaTelegram className="text-xl mr-3" />
+                                                          Meet Our Team
+                                                        </a>
                 </div>
               </motion.div>
             ))}
@@ -786,7 +805,7 @@ export default function aerocity() {
                           ))}
                         </ul>
                         
-                        <a
+                        {/* <a
                           href={plan.ctaLink}
                           className={`mt-auto block text-center py-3 px-6 rounded-full font-bold transition-all duration-300 ${
                             plan.highlight 
@@ -795,7 +814,16 @@ export default function aerocity() {
                           }`}
                         >
                           Book Now
-                        </a>
+                        </a> */}
+                        <a 
+                                                                href="https://t.me/Tanuspa" 
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                                              >
+                                                                <FaTelegram className="text-xl mr-3" />
+                                                                Meet Our Team
+                                                              </a>
                       </div>
                     </div>
                   </motion.div>
