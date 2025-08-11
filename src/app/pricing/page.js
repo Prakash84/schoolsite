@@ -273,69 +273,167 @@ export default function pricing() {
           </motion.ul>
         </section>
         {/* End Price List Section */}
+        {/* CTA Button */}
+        <motion.div
+          className="text-center mt-20"
+          initial={{ opacity: 0, y: 30 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 1 }}
+        >
+          <button className="px-10 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-full text-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-amber-500/30">
+            View All Services
+          </button>
+          <p className="mt-6 text-amber-700 max-w-xl mx-auto">
+            Experience the difference of our premium spa treatments. Book a consultation today and discover your path to wellness.
+          </p>
+        </motion.div>
+      </div>
 
-{/* Pricing Section */}
-      <section className="py-1 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden w-full">
-        <div className="relative z-10 w-full">
-          <div className="text-center mb-16">
-            <motion.div className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-              <FaStar className="text-amber-500" /> Affordable Luxury
-            </motion.div>
-            <motion.h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
-              Our <span className="text-amber-600">Pricing Packages</span>
-            </motion.h2>
-            <motion.p className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed" initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.2 }}>
-              Tailored spa experiences starting from just ₹1999. Choose from our exclusive massage options, designed for your total relaxation and rejuvenation.
-            </motion.p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-10 w-full">
-            {pricingPlans.map((plan, index) => (
-              <motion.div
-                key={index}
-                className={`relative rounded-3xl overflow-hidden ${plan.highlight ? "transform lg:-translate-y-4" : ""}`}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -10 }}
-              >
-                {plan.highlight && (
-                  <div className="absolute top-6 right-6 bg-gradient-to-r from-amber-500 to-amber-600 text-white px-4 py-1 rounded-full text-sm font-bold z-20 rotate-12 shadow-lg">
-                    MOST POPULAR
+      {/* Corner decorations */}
+      <div className="absolute top-6 left-6 w-10 h-10 z-10 border-t border-l border-amber-400/50"></div>
+      <div className="absolute top-6 right-6 w-10 h-10 z-10 border-t border-r border-amber-400/50"></div>
+      <div className="absolute bottom-6 left-6 w-10 h-10 z-10 border-b border-l border-amber-400/50"></div>
+      <div className="absolute bottom-6 right-6 w-10 h-10 z-10 border-b border-r border-amber-400/50"></div>
+    </section>  
+    </div>
+    {/* Pricing Section */}
+                <section id= "Pricing" className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
+                {/* Decorative elements */}
+                <div className="absolute top-10 left-0 w-24 h-24 rounded-full bg-amber-100 opacity-20 blur-3xl"></div>
+                <div className="absolute bottom-20 right-0 w-32 h-32 rounded-full bg-amber-200 opacity-15 blur-3xl"></div>
+                
+                <div className="max-w-7xl mx-auto relative z-10">
+                  {/* Heading */}
+                  <div className="text-center mb-16">
+                    <motion.div
+                      className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                    >
+                      <FaStar className="text-amber-500" />
+                      Affordable Luxury
+                    </motion.div>
+                    <motion.h2
+                      className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.1 }}
+                    >
+                      Our <span className="text-amber-600">Pricing Packages</span>
+                    </motion.h2>
+                    <motion.p
+                      className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.2 }}
+                    >
+                      Tailored spa experiences starting from just ₹1999. Choose from our exclusive massage options, designed for your total relaxation and rejuvenation.
+                    </motion.p>
+                    <motion.div
+                       className="flex justify-center mt-10"
+                       initial={{ opacity: 0, y: 20 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                       transition={{ delay: 0.5, duration: 0.5 }}
+                     >
+                       <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                     </motion.div>
                   </div>
-                )}
-                <div className={`h-full flex flex-col border ${plan.highlight ? "border-amber-500 shadow-xl" : "border-amber-100 shadow-lg"} rounded-3xl overflow-hidden bg-white`}>
-                  <div className={`p-8 pb-6 ${plan.highlight ? "bg-gradient-to-r from-amber-600 to-amber-700" : "bg-amber-800"}`}>
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="text-3xl">{plan.icon}</div>
-                      <h3 className={`text-2xl font-bold font-serif ${plan.highlight ? "text-white" : "text-amber-100"}`}>{plan.title}</h3>
+          
+                  {/* Pricing Cards */}
+                  <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
+                    {pricingPlans.map((plan, index) => (
+                      <motion.div
+                        key={index}
+                        className={`relative rounded-3xl overflow-hidden ${plan.highlight ? "transform lg:-translate-y-4" : ""}`}
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                        whileHover={{ y: -10 }}
+                      >
+                        {/* Featured badge */}
+                        {plan.highlight && (
+                          <div className="absolute top-6 right-6 bg-gradient-to-r from-amber-500 to-amber-600 text-white px-4 py-1 rounded-full text-sm font-bold z-20 rotate-12 shadow-lg">
+                            MOST POPULAR
+                          </div>
+                        )}
+                        
+                        <div className={`h-full flex flex-col border ${plan.highlight ? "border-amber-500 shadow-xl" : "border-amber-100 shadow-lg"} rounded-3xl overflow-hidden bg-white`}>
+                          <div className={`p-8 pb-6 ${plan.highlight ? "bg-gradient-to-r from-amber-600 to-amber-700" : "bg-amber-800"}`}>
+                            <div className="flex items-center gap-4 mb-4">
+                              <div className="text-3xl">
+                                {plan.icon}
+                              </div>
+                              <h3 className={`text-2xl font-bold font-serif ${plan.highlight ? "text-white" : "text-amber-100"}`}>
+                                {plan.title}
+                              </h3>
+                            </div>
+                            <p className={`text-lg ${plan.highlight ? "text-amber-100" : "text-amber-200"}`}>
+                              {plan.description}
+                            </p>
+                          </div>
+                          
+                          <div className="p-8 pt-12 pb-10 -mt-6 relative">
+                            {/* Price circle */}
+                            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 flex items-center justify-center shadow-lg">
+                              <span className="text-white text-xl font-bold">
+                                {plan.price}
+                              </span>
+                            </div>
+                            
+                            <ul className="space-y-4 mb-8">
+                              {plan.features.map((feature, i) => (
+                                <li key={i} className="flex items-start gap-3">
+                                  <FaCheckCircle className="text-amber-500 mt-1 flex-shrink-0" />
+                                  <span className="text-amber-800">{feature}</span>
+                                </li>
+                              ))}
+                            </ul>
+                            
+                            <a
+                              href={plan.ctaLink}
+                              className={`mt-auto block text-center py-3 px-6 rounded-full font-bold transition-all duration-300 ${
+                                plan.highlight 
+                                  ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:shadow-xl hover:from-amber-600 hover:to-amber-700"
+                                  : "bg-amber-100 text-amber-800 hover:bg-amber-200"
+                              }`}
+                            >
+                              Book Now
+                            </a>
+                          </div>
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+          
+                  {/* Additional information */}
+                  {/* <motion.div 
+                    className="mt-16 bg-gradient-to-r from-amber-50 to-amber-100 border border-amber-200 rounded-2xl p-6 md:p-8 text-center"
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                  >
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+                      <div className="bg-amber-200 w-16 h-16 rounded-full flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="text-xl font-bold text-amber-900 mb-2">Flexible Booking Options</h3>
+                        <p className="text-amber-800 max-w-2xl">
+                          All packages include free rescheduling up to 24 hours before your appointment. 
+                          <span className="font-semibold"> Group discounts available for 3+ bookings!</span>
+                        </p>
+                      </div>
                     </div>
-                    <p className={`text-lg ${plan.highlight ? "text-amber-100" : "text-amber-200"}`}>{plan.description}</p>
-                  </div>
-                  <div className="p-8 pt-12 pb-10 -mt-6 relative">
-                    <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full bg-gradient-to-r from-amber-500 to-amber-600 flex items-center justify-center shadow-lg">
-                      <span className="text-white text-xl font-bold">{plan.price}</span>
-                    </div>
-                    <ul className="space-y-4 mb-8">
-                      {plan.features.map((feature, i) => (
-                        <li key={i} className="flex items-start gap-3">
-                          <FaCheckCircle className="text-amber-500 mt-1 flex-shrink-0" />
-                          <span className="text-amber-800">{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                    <a href={plan.ctaLink} className={`mt-auto block text-center py-3 px-6 rounded-full font-bold transition-all duration-300 ${plan.highlight ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white hover:shadow-xl hover:from-amber-600 hover:to-amber-700" : "bg-amber-100 text-amber-800 hover:bg-amber-200"}`}>
-                      Book Now
-                    </a>
-                  </div>
+                  </motion.div> */}
                 </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* End Pricing Section */}
+              </section>
+              {/* End Pricing Section */}
       {/* content */}
             <section className="bg-gradient-to-br from-amber-50 to-stone-100 py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden">
             {/* Decorative elements */}
@@ -525,11 +623,13 @@ export default function pricing() {
                   <p className="text-gray-700 text-lg">
                     Step into a world of peace at our Delhi body spa, where luxury meets comfort. From calming interiors to soothing treatments, every detail is designed to relax your body and refresh your mind.
                      From full-body massages to specialized therapies, each session is designed to relax the mind, soothe the body, and uplift the spirit.
+                     Step into a world of peace at our Delhi body spa, where luxury meets comfort.
                   </p>
                   
                   <p className="text-gray-700 text-lg">
                     Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
                      From full-body massages to specialized therapies, each session is designed to relax the mind, soothe the body, and uplift the spirit.
+                     Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
                   </p>
                 </motion.div>
       
@@ -616,32 +716,6 @@ export default function pricing() {
               </div>
             </section>
             {/* End outlate */}
-
-
-        {/* CTA Button */}
-        <motion.div
-          className="text-center mt-20"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 1 }}
-        >
-          <button className="px-10 py-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white rounded-full text-lg font-medium hover:opacity-90 transition-opacity shadow-lg shadow-amber-500/30">
-            View All Services
-          </button>
-          <p className="mt-6 text-amber-700 max-w-xl mx-auto">
-            Experience the difference of our premium spa treatments. Book a consultation today and discover your path to wellness.
-          </p>
-        </motion.div>
-      </div>
-
-      {/* Corner decorations */}
-      <div className="absolute top-6 left-6 w-10 h-10 z-10 border-t border-l border-amber-400/50"></div>
-      <div className="absolute top-6 right-6 w-10 h-10 z-10 border-t border-r border-amber-400/50"></div>
-      <div className="absolute bottom-6 left-6 w-10 h-10 z-10 border-b border-l border-amber-400/50"></div>
-      <div className="absolute bottom-6 right-6 w-10 h-10 z-10 border-b border-r border-amber-400/50"></div>
-    </section>
-     
-    </div>
      {/* F&Q Section */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
                             <div className="max-w-5xl mx-auto px-4">
