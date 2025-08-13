@@ -565,28 +565,52 @@ export default function About() {
         <section className="py-20 relative">
           <div className="absolute inset-0 bg-amber-800 opacity-5"></div>
           <div className="container mx-auto px-4 relative">
-            <div className="text-center mb-16">
-              {/* <h2 className="text-3xl md:text-4xl font-serif font-semibold text-amber-800 mb-4">Why Choose Our Spa in Delhi?</h2> */}
-              <motion.h2
-                    className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.1 }}
-                  >
-                    Our Very <span className="text-amber-600">Memorable Journey</span>
-                  </motion.h2>
-                  <motion.p
-                    className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.2 }}
-                  >
-                    We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
-                  </motion.p>
-              
-            </div>
+            
+            {/* Section Header */}
+        <motion.div 
+          className="text-center mb-20"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+            <span className="text-amber-700 font-medium tracking-wider">Memorable Journey</span>
+          </motion.div>
+          
+          <motion.h2
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+          >
+            Our Very <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Memorable Journey</span>
+          </motion.h2>
+          
+          <motion.p
+            className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+          >
+            We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
+          </motion.p>
+          
+          <motion.div
+            className="flex justify-center mt-10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+          </motion.div>
+        </motion.div>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="bg-white p-8 rounded-2xl shadow-sm">
@@ -598,7 +622,7 @@ export default function About() {
                     </p>
                   <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-48">
                     <img
-                    src="/images/pexels-olly-3760262.jpg"
+                    src="/images/21109.jpg"
                     alt="Client Testimonial"
                     className="object-cover w-full h-full rounded-xl"
                   />
@@ -608,7 +632,7 @@ export default function About() {
               <div className="relative">
                 <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px] flex items-center justify-center overflow-hidden">
                   <img
-                    src="/images/spaExpert4.jpg"
+                    src="/images/staff2.jpg"
                     alt="Client Testimonial"
                     className="object-cover w-full h-full rounded-xl"
                   />
