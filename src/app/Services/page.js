@@ -803,7 +803,7 @@ const faqs = [
                         >
                           <div className="relative aspect-[3/4] rounded-[2.5rem] overflow-hidden shadow-2xl">
                             <Image 
-                              src="/images/spaExpert4.jpg"
+                              src="/images/staff2.jpg"
                               alt="Luxury Spa Treatment"
                               fill
                               className="object-cover"

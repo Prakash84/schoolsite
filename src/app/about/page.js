@@ -141,21 +141,21 @@ const teamMembers = [
 
 const featuresData = [
   {
-    title: "Helps to De-Stress",
+    title: "Stress Relief",
     description:
-      "Soothes your mind and body through calming massage techniques, relaxing aromas, and a peaceful ambiance, leaving you refreshed and tension-free.",
+      "Whether it’s a Thai massage, Nuru massage, or couple massage, a visit to the spa can significantly reduce stress levels and promote relaxation.",
     image: "/images/HelpstoDe-Stress.webp",
   },
   {
-    title: "Improves Blood Flow and Circulation",
+    title: "Improved Blood Circulation",
     description:
-      "Relaxes muscles, stimulates lymphatic drainage, and promotes oxygen-rich blood flow for vitality, healing, and deep relaxation.",
+      "Techniques like acupressure, deep tissue, and Swedish massage improve blood circulation, helping you feel more energized and revitalized.",
     image: "/images/improvebloodflow.webp",
   },
   {
-    title: "Makes Skin More Radiant",
+    title: "Pain Relief",
     description:
-      "Detoxifies, hydrates, and nourishes your skin, leaving it softer, smoother, and naturally radiant.",
+      "If you’re dealing with muscle aches, joint pain, or stiffness, our therapeutic massages can help alleviate discomfort and promote better movement.",
     image: "/images/SkinMoreRadiant.jpeg",
   },
 ];
@@ -208,7 +208,8 @@ export default function About() {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <>
+    <div className="font-sans overflow-hidden">
+     
       {/* Banner */}
         {/* <section
       className="relative w-full h-[45vh] sm:h-[60px] md:h-[70vh] lg:h-[85vh] xl:h-[80vh] bg-center bg-cover flex items-center justify-center text-white"
@@ -372,7 +373,7 @@ export default function About() {
               <img src="/images/luxurySpaRoom.jpg" alt="Luxury Spa Room" className="w-full h-full object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img src="/images/MassageSession.webp" alt="Massage Session" className="w-full h-full object-cover" />
+              <img src="/images/staff12.jpg" alt="Massage Session" className="w-full h-full object-cover" />
             </div>
           </motion.div>
         </div>
@@ -670,7 +671,7 @@ export default function About() {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3, duration: 0.6 }}
                     >
-                      Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">DelhiBodySpa for Body Spa</span>
+                      The Benefits <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Of Regular Spa Visits</span>
                     </motion.h2>
                     
                     <motion.p
@@ -679,7 +680,7 @@ export default function About() {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.4, duration: 0.5 }}
                     >
-                      Choose expert therapists, serene ambiance, and premium wellness services. Customized treatments with top hygiene standards in the heart of Delhi.
+                      Visiting a spa offers more than just a moment of indulgence. Regular visits can have significant benefits for your mental, physical, and emotional well-being. Some of the key benefits include:
                     </motion.p>
                     
                     <motion.div
@@ -723,7 +724,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
       {/* content */}
       {/* demo 1 */}
       <section className="w-full py-16 bg-yellow-50 relative overflow-hidden">
@@ -849,7 +849,7 @@ export default function About() {
         </div>
 
         <div className="mt-20 bg-gradient-to-r from-indigo-500 to-rose-500 rounded-3xl p-10 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Your Transformation Awaits</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">Call To Action</h2>
           <p className="text-indigo-100 max-w-3xl mx-auto mb-8 text-lg">
             We invite you to experience the difference that intention, expertise, and genuine care can make. Whether seeking relief from chronic stress, post-injury recovery, or simply sacred "me time," our doors open to welcome you home to yourself.
           </p>
@@ -863,10 +863,6 @@ export default function About() {
       {/* end demo 1 */}
       
       {/* end content */}
-
-
-      
-
       {/* Our Therapy Experts */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -1345,6 +1341,8 @@ export default function About() {
                 </section>
        <WhatsappFloat />
       
-    </>
+
+    </div>
+    
   );
 }

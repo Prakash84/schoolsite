@@ -105,14 +105,14 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
   ];
 const [isMenuOpen, setIsMenuOpen] = useState(false);
     const sections = [
-      // {
-      //   title: "Oil Therapy",
-      //   description1:
-      //     "Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow.",
-      //   description2:
-      //     "Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being.",
-      //   image: "/images/SpecializedTreatments.jpg",
-      // },
+      {
+        title: "Oil Therapy",
+        description1:
+          "Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow.",
+        description2:
+          "Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being.",
+        image: "/images/137.jpg",
+      },
       // {
       //   title: "Ayurvedic Massage",
       //   description1:
@@ -127,7 +127,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           "Our full body oil massage is a holistic experience combining techniques like kneading, long strokes, and pressure point activation. It aims to release deep-seated tension, ease joint stiffness, and soothe sore muscles. This deeply immersive treatment melts away physical stress while reviving your body's natural healing process.",
         description2:
           "Whether you’ve had a long week or simply need a reset, this therapy will leave you feeling light, centered, and refreshed. Regular sessions can improve flexibility, deepen sleep, and support emotional stability. It's the ultimate way to recharge your energy and reconnect with inner peace.",
-        image: "/images/SpecializedTreatments.jpg",
+        image: "/images/2147816920.jpg",
       },
     ];
      const pricingPlans = [
