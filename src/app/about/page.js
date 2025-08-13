@@ -581,7 +581,7 @@ export default function About() {
             transition={{ delay: 0.2, duration: 0.5 }}
           >
             <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
-            <span className="text-amber-700 font-medium tracking-wider">Memorable Journey</span>
+            <span className="text-amber-700 font-medium tracking-wider">Specialty</span>
           </motion.div>
           
           <motion.h2
@@ -590,7 +590,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Our Very <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Memorable Journey</span>
+            Our Specialty <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Services at Delhi Spa</span>
           </motion.h2>
           
           <motion.p
@@ -599,7 +599,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
-            We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
+            Erotic and Nuru Massage, Thai Massage, Sandwich Massage, Full Body Massage by Expert Therapists
           </motion.p>
           
           <motion.div
@@ -616,9 +616,8 @@ export default function About() {
               <div className="bg-white p-8 rounded-2xl shadow-sm">
                     <h3 className="text-xl font-semibold text-amber-800 mb-4">Expert Therapists</h3>
                     <p className="text-gray-700 mb-6">
-                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage.
-                      Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow.
-                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage
+                      When it comes to indulgent relaxation and rejuvenation, Delhi spa centers stand out for their exceptional massage therapies. Among the most popular and sought-after treatments are erotic massage, nuru massage, thai massage, sandwich massage, and full body massage. Whether you seek pure relaxation, therapeutic relief, or something more sensual, Delhi's best spas offer a range of services tailored to suit every need. With both Indian and foreign therapists, these therapies are designed to promote deep relaxation, reduce stress, and rejuvenate the body.
+
                     </p>
                   <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-48">
                     <img
@@ -644,17 +643,17 @@ export default function About() {
 
               
               <div className="bg-white p-8 rounded-2xl shadow-sm">
-                <h3 className="text-xl font-semibold text-amber-800 mb-4">Premium Oils</h3>
+                <span className="font-semibold text-amber-800 mb-4">Erotic Massage in Delhi: An Intimate Experience</span>
                 <p className="text-gray-700 mb-6">
-                  We use only cold-pressed, organic oils blended with therapeutic-grade essential oils for maximum benefit.
-                  Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being.
+                  The erotic massage in Delhi is a highly specialized and intimate therapy that offers a combination of relaxation and sensuality. Ideal for those who wish to experience heightened pleasure while relieving stress, this service is carried out by expert therapists who understand how to deliver a soothing, yet deeply stimulating experience. If you're looking for something beyond the usual therapeutic massage, the erotic massage is a great choice, enhancing both emotional and physical well-being. This service is performed with care and professionalism, ensuring you receive the highest quality relaxation.                  
                 </p>
+                <span className="font-semibold text-amber-800 mb-4">Nuru Massage in Delhi: A Luxurious Sensation</span>
                 <p>
-                  Whether you’ve had a long week or simply need a reset, this therapy will leave you feeling light, centered, and refreshed. Regular sessions can improve flexibility, deepen sleep, and support emotional stability. It's the ultimate way to recharge your energy and reconnect with inner peace.
+                 The nuru massage in Delhi is a uniquely sensual experience that has gained popularity for its exotic, slippery, and intimate nature. This Japanese massage style uses a special gel derived from seaweed, which makes the skin glide smoothly, allowing for a deep body-to-body connection between the therapist and the client. It’s a treatment that blends relaxation with sensual indulgence, making it ideal for individuals seeking a luxurious and intimate spa experience. Nuru massage offers a heightened sense of intimacy while still ensuring ultimate relaxation and stress relief.
                 </p>
-                <p>
+                {/* <p>
                   Perfect for individuals suffering from stress, muscle pain, or hormonal imbalance, this massage harmonizes body rhythms and enhances immunity. The continuous motion and warm oil offer a meditative experience.
-                </p>
+                </p> */}
                 <div className="flex mt-6">
                   {['Lavender', 'Eucalyptus', 'Rosemary', 'Sandalwood'].map((oil, index) => (
                     <div key={index} className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm mr-2">
@@ -784,7 +783,7 @@ export default function About() {
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
               <h2 className="text-3xl  font-bold text-amber-800 mb-6">
-                Journey to Wellness
+                Foreigner Staff
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Serenity Body Spa was born from a simple vision: to create an urban oasis where modern wellness meets ancient healing traditions. Founded in 2010 by renowned holistic therapist Elena Rodriguez, our spa began as a single-treatment room with a passionate mission. Today, we've grown into an award-winning sanctuary serving over 5,000 clients annually, yet we've maintained our core commitment to personalized care.
@@ -796,7 +795,7 @@ export default function About() {
 
             <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
               <h2 className="text-3xl font-bold text-amber-800 mb-6">
-                Our Healing Philosophy
+                Hotel Staff In Delhi
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 We believe true wellness emerges from harmony between physical, mental, and energetic dimensions. Unlike conventional spas, our approach integrates three core principles:
@@ -822,7 +821,7 @@ export default function About() {
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
               <h2 className="text-3xl font-bold text-amber-800 mb-6">
-                Masterful Hands, Compassionate Hearts
+                Day And Night Staff
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Our team of 23 therapists represents the pinnacle of spa craftsmanship. Each practitioner undergoes 500+ hours of training in our proprietary modalities before touching clients. We source talent globally, with specialists in:
@@ -846,7 +845,7 @@ export default function About() {
 
             <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
               <h2 className="text-3xl font-bold text-amber-800 mb-6">
-                Sustainable Wellness
+                offer
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Our commitment extends beyond individual wellness to planetary health. We're proud to be the first Carbon Neutral spa in our region, with initiatives including:
