@@ -115,7 +115,7 @@ const teamMembers = [
       duration: "60 min"
     },
     {
-      title: "Potli Massage",
+      title: "Erotic Massage",
       image: "/images/potliMassage.jpg",
       description: "Our luxury spa in Delhi offers the ancient Indian technique known as Potli massage. This treatment uses herbal pouches, warmed up and filled with spices and herbs,.",
       duration: "60 min"
@@ -127,13 +127,13 @@ const teamMembers = [
       duration: "60 min"
     },
     {
-      title: "Specialized Treatments",
+      title: "Nuru Massage",
       image: "/images/SpecializedTreatments.jpg",
       description: "While this is not all that can be had, a massage is the crown jewel at Luxury Spa in Delhi where we do have a variety of special treatments that can suit all your wellness needs.",
       duration: "60 min"
     },
     {
-      title: "Skincare Treatments",
+      title: "B2B Massage",
       image: "/images/SkincareTreatments.jpg",
       description: "High-end spas in Delhi offer a wide range of treatments to enhance the health and beauty of your skin. These treatments often include facials that cleanse, exfoliate, and moisturize your skin.",
       duration: "90-120 min"
@@ -1091,7 +1091,7 @@ const faqs = [
                                               transition={{ duration: 0.8 }}
                                               style={{ fontFamily: "'Playfair Display', serif" }}
                                         >
-                                          Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">DelhiBodySpa for Body Spa</span>
+                                          The Benefits <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Of Regular Spa Visits</span>
                                         </motion.h2>
                                         {/* Divider */}
                                           <motion.div
