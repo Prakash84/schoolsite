@@ -29,7 +29,57 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
     weight: ['100', '200', '300', '400', '500'],
     variable: '--font-montserrat'
   });
-
+  const services = [
+    {
+      title: "Four-Hand Synchronized Flow",
+      image: "/images/aromatherapy-featured-jpg.webp",
+      description: "Two therapists move their hands together in the same pattern. This feels amazing and helps your body relax completely.",
+      // duration: "60-90 min"
+    },
+    {
+      title: "Hot Oil Indulgence",
+      image: "/images/19-2-1024x427.png",
+      description: "We use warm, fragrant oils that make your skin soft and help your muscles relax. It also improves blood flow, making you feel fresh.",
+      // duration: "75 min"
+    },
+    {
+      title: "Deep Tissue Pressure Therapy",
+      image: "/images/Couple Massage.webp",
+      description: "If you like strong pressure, this is for you. The oil penetrates deep into your muscles, relieves tightness, and helps you feel light and energetic again.",
+      // duration: "90 min"
+    },
+    {
+      title: "Soothing Feather Touch Technique",
+      image: "/images/Sandwich Massage.jpg",
+      description: "As the name suggests, this method uses feather-like soft strokes to calm your nerves and help you feel peaceful and relaxed.",
+      // duration: "60 min"
+    },
+    {
+      title: "Alternate Wave Massage",
+      image: "/images/thaimassage.jpg",
+      description: "In this technique, two therapists use fast and slow movements simultaneously; one therapist is fast, and the other is slow. It feels like gentle waves on your body and is excellent for relieving mental fatigue.",
+      // duration: "60 min"
+    },
+    {
+      title: "Fusion Exotic Experience",
+      image: "/images/potliMassage.jpg",
+      description: "This is a blend of various massage styles like Swedish, Thai, and Balinese. It is tailored according to your body’s needs, providing both relaxation and healing in one session.",
+      // duration: "60 min"
+    }
+  ];
+const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  };
+   const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 }
+  };
  
 
 {/* End Our Process */}
@@ -108,9 +158,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
       {
         title: "Oil Therapy",
         description1:
-          "Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow.",
-        description2:
-          "Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being.",
+          "Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow. Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being. Ayurvedic oil massage, also known as Abhyanga, uses herbal oils that balance the body's doshas—Vata, Pitta, and Kapha. The warm oil is massaged into the skin to energize vital points, improve blood circulation, and promote internal healing. This therapy not only revitalizes the skin but also clears toxins stored in deeper tissues.",
         image: "/images/137.jpg",
       },
       // {
@@ -121,14 +169,14 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
       //     "Perfect for individuals suffering from stress, muscle pain, or hormonal imbalance, this massage harmonizes body rhythms and enhances immunity. The continuous motion and warm oil offer a meditative experience, calming the nervous system and stimulating marma points for rejuvenation and internal balance.",
       //   image: "/images/SpecializedTreatments.jpg",
       // },
-      {
-        title: "Full Body Relief",
-        description1:
-          "Our full body oil massage is a holistic experience combining techniques like kneading, long strokes, and pressure point activation. It aims to release deep-seated tension, ease joint stiffness, and soothe sore muscles. This deeply immersive treatment melts away physical stress while reviving your body's natural healing process.",
-        description2:
-          "Whether you’ve had a long week or simply need a reset, this therapy will leave you feeling light, centered, and refreshed. Regular sessions can improve flexibility, deepen sleep, and support emotional stability. It's the ultimate way to recharge your energy and reconnect with inner peace.",
-        image: "/images/2147816920.jpg",
-      },
+      // {
+      //   title: "Full Body Relief",
+      //   description1:
+      //     "Our full body oil massage is a holistic experience combining techniques like kneading, long strokes, and pressure point activation. It aims to release deep-seated tension, ease joint stiffness, and soothe sore muscles. This deeply immersive treatment melts away physical stress while reviving your body's natural healing process.",
+      //   description2:
+      //     "Whether you’ve had a long week or simply need a reset, this therapy will leave you feeling light, centered, and refreshed. Regular sessions can improve flexibility, deepen sleep, and support emotional stability. It's the ultimate way to recharge your energy and reconnect with inner peace.",
+      //   image: "/images/2147816920.jpg",
+      // },
     ];
      const pricingPlans = [
         {
@@ -241,11 +289,19 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </button>
-        <button className="px-6 py-3 bg-white text-amber-800 rounded-sm border border-amber-200 hover:bg-amber-50 transition-colors duration-300 flex items-center space-x-2">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-          </svg>
-          <span>Book Now</span>
+        <button className=" text-blue-500 rounded-sm  hover:bg-amber-50 transition-colors duration-300 flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        <a 
+                                                href="https://t.me/Tanuspa" 
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                              >
+                                                <FaTelegram className="text-xl mr-3" />
+                                                Meet Our Team
+                                              </a>
         </button>
       </div>
     </div>
@@ -329,11 +385,19 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
       ))}
     </div>
 
-    <div className="mt-16 text-center">
-      <button className="bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
-        Book Your Session
-      </button>
-    </div>
+    <div className="mt-16 flex justify-center">
+  <a
+    href="https://t.me/Tanuspa" 
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-10 rounded-full transition duration-300 transform hover:scale-105 flex items-center justify-center gap-3">
+      <FaTelegram className="text-xl" />
+      Book Your Session
+    </button>
+  </a>
+</div>
+
   </div>
         </section>
         {/* end highlights */}
@@ -406,324 +470,340 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           </div>
         </section>
       {/* Services Section */}
-       {/* Call to Action Section */}
-<section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-  {/* Decorative Elements */}
-  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-amber-50/80 to-rose-50/50 z-0"></div>
-  <div className="absolute -bottom-32 -right-32 w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-amber-200/30 z-0"></div>
-  <div className="absolute -top-32 -left-32 w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-amber-100/40 z-0"></div>
-
-  {/* Content */}
-  <div className="relative z-10 max-w-4xl mx-auto text-center">
-    <motion.h2
-      className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4 leading-tight"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: 0.1 }}
-    >
-      Experience <span className="text-amber-600">Ultimate Relaxation</span>
-    </motion.h2>
-
-    <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed">
-      Treat yourself to our premium Swedish massage – a journey to complete physical and mental rejuvenation. 
-      Book now and receive a complimentary aromatherapy session.
-    </p>
-
-    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-      <a href="https://api.whatsapp.com/send?phone=918826482370">
-        <button className="bg-gradient-to-r from-amber-600 to-amber-800 text-white font-medium py-3 px-6 sm:py-4 sm:px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group">
-          Book Your Session
-          <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-        </button>
-      </a>
-
-      <a href="#Pricing">
-        <button className="bg-white text-amber-800 font-medium py-3 px-6 sm:py-4 sm:px-8 rounded-full border-2 border-amber-800 shadow-sm hover:shadow-md transition-all duration-300">
-          View Packages
-        </button>
-      </a>
-    </div>
-
-    <div className="mt-10 sm:mt-12 flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6">
-      {[...Array(3)].map((_, i) => (
-        <div key={i} className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-amber-600 animate-pulse"></div>
-          <span className="text-gray-700 text-sm sm:text-base font-medium">No commitment required</span>
-        </div>
-      ))}
-    </div>
-  </div>
-</section>
-{/* End Call to Action Section */}
-{/* Content */}
-{/* content */}
-            <section className="bg-gradient-to-br from-amber-50 to-stone-100 py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden">
-            {/* Decorative elements */}
-            <div className="absolute top-10 left-10 opacity-10">
-              <svg width="100" height="100" viewBox="0 0 100 100">
-                <path d="M50,15 C65,15 80,25 85,40 C90,55 85,70 70,85 C55,90 40,85 25,70 C15,55 15,40 25,25 C30,20 40,15 50,15 Z" fill="none" stroke="#4a5a5a" strokeWidth="1" />
-              </svg>
-            </div>
-            
-            <div className="absolute bottom-20 right-10 opacity-10 rotate-45">
-              <svg width="80" height="80" viewBox="0 0 80 80">
-                <path d="M40,10 C50,10 60,15 65,25 C70,35 65,45 55,55 C45,60 35,65 25,55 C15,45 15,35 25,25 C30,20 35,15 40,10 Z" fill="none" stroke="#4a5a5a" strokeWidth="1" />
-              </svg>
-            </div>
-            
-            <div className="max-w-[95%] mx-auto">
-              {/* Section header */}
-              <div className="text-center mb-16">
-                <motion.div
-                            className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.2, duration: 0.5 }}
-                          >
-                            <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
-                            <span className="text-amber-700 font-medium tracking-wider">PREMIUM EXPERIENCE</span>
-                          </motion.div>
-                          
-                          <motion.h2
-                            className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.3, duration: 0.6 }}
-                          >
-                            Top Luxury Spa <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Outlets in Aerocity Delhi</span>
-                          </motion.h2>
-                <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
-              </div>
-              
-      
-              <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-               {/* Left Image & Content */}
-          
-          <motion.div 
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-            className="w-full lg:w-1/2 relative"
-          >
-            <div className="relative overflow-hidden rounded-2xl shadow-xl z-10">
-              <div className="bg-gradient-to-br from-stone-50 to-amber-50 p-1 rounded-2xl">
-                <div className="bg-white p-6 rounded-2xl shadow-sm">
-                  <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
-                    <img
-                        src="/images/hb3.jpg" // Change path accordingly
-                        alt="Premium Body Spa"
-                        className="w-full h-full object-cover rounded-xl"
-                      />
-                    <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" />
-                    <div className="absolute top-4 right-4 bg-amber-700 text-white text-sm px-3 py-1 rounded-full">
-                      Most Popular
-                    </div>
-                  </div>
-                  
-                  <div className="mt-6">
-                    <div className="flex justify-between items-start">
-                      <h3 className="text-2xl font-serif font-bold text-stone-800">Premium Body Spa</h3>
-                      <div className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full">
-                        <span className="font-bold">₹1999</span> First Visit
-                      </div>
-                    </div>
-                    
-                    <ul className="mt-4 space-y-2">
-                      <li className="flex items-center">
-                        <span className="text-amber-600 mr-2">✓</span>
-                        <span className="text-stone-700">Couple Massage</span>
-                      </li>
-                      <li className="flex items-center">
-                        <span className="text-amber-600 mr-2">✓</span>
-                        <span className="text-stone-700">Jacuzzi Bath</span>
-                      </li>
-                      <li className="flex items-center">
-                        <span className="text-amber-600 mr-2">✓</span>
-                        <span className="text-stone-700">Private Room</span>
-                      </li>
-                      <li className="flex items-center">
-                        <span className="text-amber-600 mr-2">✓</span>
-                        <span className="text-stone-700">Oil & Cream Massage</span>
-                      </li>
-                      <li className="flex items-center">
-                        <span className="text-amber-600 mr-2">✓</span>
-                        <span className="text-stone-700">Aromatherapy</span>
-                      </li>
-                    </ul>
-                    
-                    {/* <button className="mt-6 w-full bg-gradient-to-r from-amber-500 to-amber-700 text-white font-medium py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-                      Book Now
-                    </button> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Decorative elements */}
-            <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-amber-100 rounded-full z-0"></div>
-            <div className="absolute -top-6 -right-6 w-16 h-16 bg-stone-200 rounded-full z-0"></div>
-          </motion.div>
-      
-              {/* Right Text Content */}
-          <motion.div 
-            initial={{ opacity: 0, x: 30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-            className="w-full lg:w-1/2"
-          >
-            <div className="max-w-lg">
-              <p className="text-lg text-stone-600 mb-6 leading-relaxed">
-                Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
-                Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
-                of calm in the heart of Delhi.We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
-                <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
-                and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
-                designed private sanctuaries.
-              </p>
-              
-              
-              
-              <p className="text-stone-600 mb-6 leading-relaxed">
-                We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
-                <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
-                and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
-                designed private sanctuaries.Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
-                Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
-                of calm in the heart of Delhi.
-              </p>
-              
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                  <div className="text-amber-600 text-2xl mb-2">★</div>
-                  <h4 className="font-medium text-stone-800">Award-Winning</h4>
-                  <p className="text-sm text-stone-600 mt-1">5-star rated luxury spa</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                  <div className="text-amber-600 text-2xl mb-2">♨</div>
-                  <h4 className="font-medium text-stone-800">Thermal Suite</h4>
-                  <p className="text-sm text-stone-600 mt-1">Steam, sauna & jacuzzi</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                  <div className="text-amber-600 text-2xl mb-2">👨‍👩‍👧</div>
-                  <h4 className="font-medium text-stone-800">Couples Welcome</h4>
-                  <p className="text-sm text-stone-600 mt-1">Private couple suites</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                  <div className="text-amber-600 text-2xl mb-2">🌿</div>
-                  <h4 className="font-medium text-stone-800">Organic Products</h4>
-                  <p className="text-sm text-stone-600 mt-1">Natural & sustainable</p>
-                </div>
-              </div>
-              
-              {/* <div className="flex flex-col sm:flex-row gap-4">
-                <button className="flex-1 bg-gradient-to-r from-stone-800 to-stone-900 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
-                  View Treatments
-                </button>
-                <button className="flex-1 bg-gradient-to-r from-amber-500 to-amber-700 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
-                  Book Appointment
-                </button>
-              </div> */}
-            
-            </div>
-          </motion.div>
-              </div>
-              {/* /// */}
-              <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-                   
-                {/* Right Text Content */}
-                <motion.div 
-                  initial={{ opacity: 0, x: 30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.7 }}
-                  className="w-full lg:w-1/2"
-                >
-                  <div className="max-w-lg">
-                    <p className="text-lg text-stone-600 mb-6 leading-relaxed">
-                      
-                      Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
-                      Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
-                      of calm in the heart of Delhi.We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
-                      <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
-                      and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
-                      designed private sanctuaries.
-                    </p>
-                    
-                    
-                    
-                    <p className="text-stone-600 mb-6 leading-relaxed">
-                      We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
-                      <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
-                      and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
-                      designed private sanctuaries.Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
-                      Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
-                      of calm in the heart of Delhi.
-                    </p>
-                    
-                    
-                    
-                    <div className="flex flex-col sm:flex-row gap-4">
-                      <button className="flex-1 bg-gradient-to-r from-stone-800 to-stone-900 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
-                        View Treatments
-                      </button>
-                      <button className="flex-1 bg-gradient-to-r from-amber-500 to-amber-700 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
-                        Book Appointment
-                      </button>
-                    </div>
-                  
-                  </div>
-                </motion.div>
-                 {/* Left Image & Content */}
-                <motion.div 
-                  initial={{ opacity: 0, x: -30 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.7 }}
-                  className="w-full lg:w-1/2 relative"
-                >
-                  <div className="relative overflow-hidden rounded-2xl shadow-xl z-10">
-                    <div className="bg-gradient-to-br from-stone-50 to-amber-50 p-1 rounded-2xl">
-                      <div className="bg-white p-6 rounded-2xl shadow-sm">
-                        <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
-                          <img
-                              src="/images/b1.jpg" // Change path accordingly
-                              alt="Premium Body Spa"
-                              className="w-full h-full object-cover rounded-xl"
-                            />
-                          <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" />
-                          <div className="absolute top-4 right-4 bg-amber-700 text-white text-sm px-3 py-1 rounded-full">
-                            Most Popular
-                          </div>
-                        </div>
-                        
-                        <div className="mt-6">
-                          
-                          
-                          <a 
-                        href="https://t.me/Tanuspa" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+       {/* content */}
+             <section className="bg-gradient-to-br from-amber-50 to-stone-100 py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden">
+             {/* Decorative elements */}
+             <div className="absolute top-10 left-10 opacity-10">
+               <svg width="100" height="100" viewBox="0 0 100 100">
+                 <path d="M50,15 C65,15 80,25 85,40 C90,55 85,70 70,85 C55,90 40,85 25,70 C15,55 15,40 25,25 C30,20 40,15 50,15 Z" fill="none" stroke="#4a5a5a" strokeWidth="1" />
+               </svg>
+             </div>
+             
+             <div className="absolute bottom-20 right-10 opacity-10 rotate-45">
+               <svg width="80" height="80" viewBox="0 0 80 80">
+                 <path d="M40,10 C50,10 60,15 65,25 C70,35 65,45 55,55 C45,60 35,65 25,55 C15,45 15,35 25,25 C30,20 35,15 40,10 Z" fill="none" stroke="#4a5a5a" strokeWidth="1" />
+               </svg>
+             </div>
+             
+             <div className="max-w-[95%] mx-auto">
+               {/* Section Header */}
+                    <motion.div 
+                      className="text-center mb-20"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-100px" }}
+                      transition={{ duration: 0.8 }}
+                    >
+                      <motion.div
+                        className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.2, duration: 0.5 }}
                       >
-                        <FaTelegram className="text-xl mr-3" />
-                        Join Telegram Channel
-                      </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-      
-                  {/* Decorative elements */}
-                  <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-amber-100 rounded-full z-0"></div>
-                  <div className="absolute -top-6 -right-6 w-16 h-16 bg-stone-200 rounded-full z-0"></div>
-                </motion.div>
+                        <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+                        <span className="text-amber-700 font-medium tracking-wider">PREMIUM EXPERIENCE</span>
+                      </motion.div>
+                      
+                      <motion.h2
+                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3, duration: 0.6 }}
+                      >
+                        Top Luxury Spa <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Outlets in Aerocity Delhi</span>
+                      </motion.h2>
+                      
+                      <motion.p
+                        className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4, duration: 0.5 }}
+                      >
+                        Experience Pampering and Care with Sandwich Massage at Luxury Spa.
+                      </motion.p>
+                      
+                      <motion.div
+                        className="flex justify-center mt-10"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.5, duration: 0.5 }}
+                      >
+                        <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                      </motion.div>
+                    </motion.div>
+               
+       
+               <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+                 {/* Left Image & Content */}
                  
-              </div>
-
-
-
-            </div>
-          </section>
-            {/* end content */}
+                 <motion.div 
+                   initial={{ opacity: 0, x: -30 }}
+                   animate={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.7 }}
+                   className="w-full lg:w-1/2 relative"
+                 >
+                   <div className="relative overflow-hidden rounded-2xl shadow-xl z-10">
+                     <div className="bg-gradient-to-br from-stone-50 to-amber-50 p-1 rounded-2xl">
+                       <div className="bg-white p-6 rounded-2xl shadow-sm">
+                         <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
+                           <img
+                               src="/images/hb3.jpg" // Change path accordingly
+                               alt="Premium Body Spa"
+                               className="w-full h-full object-cover rounded-xl"
+                             />
+                           <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full" />
+                           <div className="absolute top-4 right-4 bg-amber-700 text-white text-sm px-3 py-1 rounded-full">
+                             Most Popular
+                           </div>
+                         </div>
+                         
+                         <div className="mt-6">
+                           <div className="flex justify-between items-start">
+                             <h3 className="text-2xl font-serif font-bold text-stone-800">Premium Body Spa</h3>
+                             <div className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full">
+                               <span className="font-bold">₹1999</span> First Visit
+                             </div>
+                           </div>
+                           
+                           <ul className="mt-4 space-y-2">
+                             <li className="flex items-center">
+                               <span className="text-amber-600 mr-2">✓</span>
+                               <span className="text-stone-700">Couple Massage</span>
+                             </li>
+                             <li className="flex items-center">
+                               <span className="text-amber-600 mr-2">✓</span>
+                               <span className="text-stone-700">Jacuzzi Bath</span>
+                             </li>
+                             <li className="flex items-center">
+                               <span className="text-amber-600 mr-2">✓</span>
+                               <span className="text-stone-700">Private Room</span>
+                             </li>
+                             <li className="flex items-center">
+                               <span className="text-amber-600 mr-2">✓</span>
+                               <span className="text-stone-700">Oil & Cream Massage</span>
+                             </li>
+                             <li className="flex items-center">
+                               <span className="text-amber-600 mr-2">✓</span>
+                               <span className="text-stone-700">Aromatherapy</span>
+                             </li>
+                           </ul>
+                           
+                           {/* <button className="mt-6 w-full bg-gradient-to-r from-amber-500 to-amber-700 text-white font-medium py-3 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                             Book Now
+                           </button> */}
+                           <a 
+                                                                   href="https://t.me/Tanuspa" 
+                                                                   target="_blank"
+                                                                   rel="noopener noreferrer"
+                                                                   className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                                                 >
+                                                                   <FaTelegram className="text-xl mr-3" />
+                                                                   Meet Our Team
+                                                                 </a>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+       
+                   {/* Decorative elements */}
+                   <div className="absolute -bottom-6 -left-6 w-24 h-24 bg-amber-100 rounded-full z-0"></div>
+                   <div className="absolute -top-6 -right-6 w-16 h-16 bg-stone-200 rounded-full z-0"></div>
+                 </motion.div>
+       
+                 {/* Right Text Content */}
+                 <motion.div 
+                   initial={{ opacity: 0, x: 30 }}
+                   animate={{ opacity: 1, x: 0 }}
+                   transition={{ duration: 0.7 }}
+                   className="w-full lg:w-1/2"
+                 >
+                   <div className="max-w-lg">
+                     <p className="text-lg text-stone-600 mb-6 leading-relaxed">
+                       Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
+                       Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
+                       of calm in the heart of Delhi.We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
+                       <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
+                       and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
+                       designed private sanctuaries.
+                     </p>
+                     
+                     
+                     
+                     <p className="text-stone-600 mb-6 leading-relaxed">
+                       We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
+                       <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
+                       and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
+                       designed private sanctuaries.Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
+                       Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
+                       of calm in the heart of Delhi.
+                     </p>
+                     
+                     <div className="grid grid-cols-2 gap-4 mb-8">
+                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                         <div className="text-amber-600 text-2xl mb-2">★</div>
+                         <h4 className="font-medium text-stone-800">Award-Winning</h4>
+                         <p className="text-sm text-stone-600 mt-1">5-star rated luxury spa</p>
+                       </div>
+                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                         <div className="text-amber-600 text-2xl mb-2">♨</div>
+                         <h4 className="font-medium text-stone-800">Thermal Suite</h4>
+                         <p className="text-sm text-stone-600 mt-1">Steam, sauna & jacuzzi</p>
+                       </div>
+                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                         <div className="text-amber-600 text-2xl mb-2">👨‍👩‍👧</div>
+                         <h4 className="font-medium text-stone-800">Couples Welcome</h4>
+                         <p className="text-sm text-stone-600 mt-1">Private couple suites</p>
+                       </div>
+                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                         <div className="text-amber-600 text-2xl mb-2">🌿</div>
+                         <h4 className="font-medium text-stone-800">Organic Products</h4>
+                         <p className="text-sm text-stone-600 mt-1">Natural & sustainable</p>
+                       </div>
+                     </div>
+                     
+                     <div className="flex flex-col sm:flex-row gap-4">
+                       <button className="flex-1 bg-gradient-to-r from-stone-800 to-stone-900 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                         View Treatments
+                       </button>
+                       <button className="flex-1 bg-gradient-to-r from-amber-500 to-amber-700 text-white font-medium py-3 px-6 rounded-xl shadow-lg hover:shadow-xl transition-all">
+                         Book Appointment
+                       </button>
+                     </div>
+                   
+                   </div>
+                 </motion.div>
+               </div>
+             </div>
+           </section>
+             {/* end content */}
+              {/* Our Signature Treatments */}
+                           <section className="w-full my-5 py-5 bg-gradient-to-b from-amber-50 to-white relative overflow-hidden">
+                     {/* Decorative elements */}
+                     <div className="absolute top-10 left-0 w-24 h-24 rounded-full bg-amber-100 opacity-70 blur-3xl"></div>
+                     <div className="absolute bottom-20 right-0 w-32 h-32 rounded-full bg-amber-200 opacity-50 blur-3xl"></div>
+                     
+                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                       {/* Section Header */}
+                    <motion.div 
+                      className="text-center mb-20"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true, margin: "-100px" }}
+                      transition={{ duration: 0.8 }}
+                    >
+                      <motion.div
+                        className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                      >
+                        <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+                        <span className="text-amber-700 font-medium tracking-wider">Relax & Rejuvenate</span>
+                      </motion.div>
+                      
+                      <motion.h2
+                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3, duration: 0.6 }}
+                      >
+                       Our Sandwich <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Massage Techniques</span>
+                      </motion.h2>
+                      
+                      <motion.p
+                        className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.4, duration: 0.5 }}
+                      >
+                        Experience tranquility with our curated selection of premium spa treatments, each designed to transport you to a state of complete relaxation.
+                      </motion.p>
+                      
+                      <motion.div
+                        className="flex justify-center mt-10"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.5, duration: 0.5 }}
+                      >
+                        <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                      </motion.div>
+                    </motion.div>
+             
+                       {/* Services grid */}
+                       <motion.div 
+                         className="grid grid-cols-1 lg:grid-cols-2 gap-16"
+                         variants={container}
+                         initial="hidden"
+                         whileInView="show"
+                         viewport={{ once: true, margin: "-100px" }}
+                       >
+                         {services.map((service, index) => (
+                           <motion.div 
+                             key={index}
+                             variants={item}
+                             className="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl"
+                           >
+                             <div className={`flex flex-col md:flex-row h-full ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
+                               {/* Image */}
+                               <div className="md:w-2/5 relative overflow-hidden">
+                                 <div className="relative h-64 md:h-full">
+                                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10"></div>
+                                   <Image 
+                                     src={service.image}
+                                     alt={service.title}
+                                     layout="fill"
+                                     objectFit="cover"
+                                     className="transition-transform duration-500 hover:scale-105"
+                                   />
+                                   <div className="absolute top-4 left-4 z-20 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                                     {service.duration}
+                                   </div>
+                                 </div>
+                               </div>
+                               
+                               {/* Content */}
+                               <div className="md:w-3/5 p-8 flex flex-col">
+                                 <div className="flex-1">
+                                   <div className="flex items-center gap-3 mb-4">
+                                     <div className="w-10 h-0.5 bg-amber-600"></div>
+                                     <span className="text-amber-600 font-medium">Treatment</span>
+                                   </div>
+                                   <h3 className="text-2xl md:text-3xl font-serif font-semibold text-amber-900 mb-4">
+                                     {service.title}
+                                   </h3>
+                                   <p className="text-amber-800 mb-6">
+                                     {service.description}
+                                   </p>
+                                 </div>
+                                 
+                                 <div>
+                                   {/* <a 
+                                     href="tel:+919211235800" 
+                                     className="inline-flex items-center bg-gradient-to-r text-white rounded-full font-medium transition-all duration-300 hover:gap-3 hover:shadow-lg"
+                                   >
+                                     <a 
+                                                     href="https://t.me/Tanuspa" 
+                                                     target="_blank"
+                                                     rel="noopener noreferrer"
+                                                     className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                                   >
+                                                     <FaTelegram className="text-xl mr-3" />
+                                                     Meet Our Team
+                                                   </a>
+                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                       <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                                     </svg>
+                                   </a> */}
+                                 </div>
+                               </div>
+                             </div>
+                           </motion.div>
+                         ))}
+                       </motion.div>
+             
+                     </div>
+                           </section>
+                           {/* End Our Signature Treatments */}
 
         {/* About Oil Therapy Section */}
         {sections.map((section, index) => (
@@ -1094,9 +1174,15 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
               Book your oil therapy massage today and embark on a journey to complete relaxation and rejuvenation.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a href='https://api.whatsapp.com/send?phone=918826482370'><button className="bg-white text-amber-800 hover:bg-amber-100 px-8 py-3 rounded-full text-lg font-medium transition-colors">
-                Book Your Session
-              </button></a>
+              <a 
+                                                      href="https://t.me/Tanuspa" 
+                                                      target="_blank"
+                                                      rel="noopener noreferrer"
+                                                      className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                                    >
+                                                      <FaTelegram className="text-xl mr-3" />
+                                                      Chat On Telegram
+                                                    </a>
               <button className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-3 rounded-full text-lg font-medium transition-colors">
                 Call: +91 98765 43210
               </button>
@@ -1105,7 +1191,55 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
         </section>
 
       </div>
-      
+      {/* Call to Action Section */}
+{/* <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-amber-50/80 to-rose-50/50 z-0"></div>
+  <div className="absolute -bottom-32 -right-32 w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-amber-200/30 z-0"></div>
+  <div className="absolute -top-32 -left-32 w-80 h-80 sm:w-96 sm:h-96 rounded-full bg-amber-100/40 z-0"></div>
+
+  <div className="relative z-10 max-w-4xl mx-auto text-center">
+    <motion.h2
+      className="text-3xl sm:text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4 leading-tight"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.1 }}
+    >
+      Experience <span className="text-amber-600">Ultimate Relaxation</span>
+    </motion.h2>
+
+    <p className="text-base sm:text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8 md:mb-10 leading-relaxed">
+      Treat yourself to our premium Swedish massage – a journey to complete physical and mental rejuvenation. 
+      Book now and receive a complimentary aromatherapy session.
+    </p>
+
+    <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="https://api.whatsapp.com/send?phone=918826482370">
+        <button className="bg-gradient-to-r from-amber-600 to-amber-800 text-white font-medium py-3 px-6 sm:py-4 sm:px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group">
+          Book Your Session
+          <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+        </button>
+      </a>
+
+      <a href="#Pricing">
+        <button className="bg-white text-amber-800 font-medium py-3 px-6 sm:py-4 sm:px-8 rounded-full border-2 border-amber-800 shadow-sm hover:shadow-md transition-all duration-300">
+          View Packages
+        </button>
+      </a>
+    </div>
+
+    <div className="mt-10 sm:mt-12 flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-6">
+      {[...Array(3)].map((_, i) => (
+        <div key={i} className="flex items-center gap-2">
+          <div className="w-3 h-3 rounded-full bg-amber-600 animate-pulse"></div>
+          <span className="text-gray-700 text-sm sm:text-base font-medium">No commitment required</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section> */}
+{/* End Call to Action Section */}
+
        {/* F&Q Section */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
         <div className="max-w-5xl mx-auto px-4">
@@ -1220,6 +1354,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           </motion.div> */}
         </div>
       </section>
+
  <WhatsappFloat />
       </>
     );

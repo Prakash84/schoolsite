@@ -845,7 +845,7 @@ export default function About() {
 
             <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
               <h2 className="text-3xl font-bold text-amber-800 mb-6">
-                offer
+                First Visit offer
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
                 Our commitment extends beyond individual wellness to planetary health. We're proud to be the first Carbon Neutral spa in our region, with initiatives including:
