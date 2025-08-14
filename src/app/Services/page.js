@@ -1165,10 +1165,10 @@ const faqs = [
                           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                             {/* Left Column */}
                             <div>
-                              {/* Massage Therapy */}
+                              {/* Facial Treatments */}
                               <motion.div 
-                                className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#e8d5c9]"
-                                initial={{ opacity: 0, x: -30 }}
+                                className="bg-white bg-optage-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#e8d5c9]"
+                                initial={{ opacity: 0, x: 30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.7 }}
@@ -1176,21 +1176,36 @@ const faqs = [
                                 <div className="flex items-center gap-4 mb-6">
                                   <div className="bg-amber-100 p-3 rounded-xl">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                     </svg>
                                   </div>
-                                  <h2 className="text-2xl font-bold text-[#3a2e2a]">Home & Hotel Spa</h2>
+                                  <h2 className="text-3xl font-bold text-amber-800 mb-6">
+                                    Foreigner Staff
+                                  </h2>
                                 </div>
-                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                                  Our therapeutic massage treatments are designed to melt away tension and restore balance. Using a blend of Swedish, deep tissue, and aromatherapy techniques, our certified therapists customize each session to address your specific needs. Experience relief from muscle soreness, improved circulation, and profound relaxation as our expert hands work to release accumulated stress.
-                                </p>
-                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                                  Choose from our signature offerings: the 90-minute Royal Indulgence massage featuring warm Himalayan salt stones, or the Tropical Escape combining coconut oil massage with exotic frangipani aromas. Each treatment includes a complimentary consultation to ensure optimal results.
-                                </p>
+                                 <p className="text-gray-600 leading-relaxed mb-6">
+                We believe true wellness emerges from harmony between physical, mental, and energetic dimensions. Unlike conventional spas, our approach integrates three core principles:
+                                  </p>
+                                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                                    {[
+                                      {title: 'Russian Therapist', desc: 'Therapists trained in meditation techniques to create truly present healing experiences'},
+                                      {title: 'Afgani Therapist', desc: 'Therapies designed to activate your body\'s innate healing capabilities'},
+                                      {title: 'Uzbeki Therapist', desc: 'Space designed with sacred geometry to enhance therapeutic benefits'}
+                                    ].map((item, index) => (
+                                      <div key={index} className="bg-indigo-50 p-4 rounded-xl">
+                                        <h3 className="font-bold text-amber-800 mb-2">{item.title}</h3>
+                                        <p className="text-sm text-gray-600">{item.desc}</p>
+                                      </div>
+                                    ))}
+                                  </div>
+                                  <p className="text-gray-600 leading-relaxed">
+                                    This holistic framework allows us to create treatments that don't just relax temporarily but catalyze lasting change. Our clients report benefits ranging from improved sleep patterns to reduced chronic pain months after their visits.
+                                  </p>
                                 <div className="mt-6">
-                                  <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-120 min | From ₹2,500</span>
+                                  <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-90 min | From ₹2,800</span>
                                 </div>
                               </motion.div>
+                              
 
                               {/* Body Treatments */}
                               <motion.div 
@@ -1206,14 +1221,28 @@ const faqs = [
                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                                     </svg>
                                   </div>
-                                  <h2 className="text-2xl font-bold text-[#3a2e2a]">Why Go For Delhi Spa</h2>
+                                  <h2 className="text-3xl font-bold text-amber-800 mb-6">
+                                    Why Go For Delhi Spa
+                                  </h2>
                                 </div>
-                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                                  Revitalize your skin with our luxurious exfoliation and hydration treatments. Our signature Himalayan Salt Glow uses mineral-rich salts from the Punjab region combined with nourishing essential oils to buff away dead skin cells and stimulate circulation. Follow with our Ayurvedic Herbal Wrap featuring 15 medicinal herbs grown in our organic garden to detoxify and replenish your skin.
-                                </p>
-                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                                  For the ultimate indulgence, try our Chocolate Espresso Wrap - a decadent blend of antioxidant-rich cocoa and energizing coffee that leaves skin incredibly smooth and radiant. All body treatments include access to our steam room and relaxation lounge to extend your rejuvenation experience.
-                                </p>
+                                                    <p className="text-gray-600 leading-relaxed mb-6">
+                                    Our team of 23 therapists represents the pinnacle of spa craftsmanship. Each practitioner undergoes 500+ hours of training in our proprietary modalities before touching clients. We source talent globally, with specialists in:
+                                  </p>
+                                  <ul className="grid grid-cols-2 gap-3 mb-6">
+                                    {[
+                                      'Thai Herbal Compress', 'Shiatsu', 'Lymphatic Drainage', 
+                                      'Ayurvedic Abhyanga', 'Hot Stone Therapy', 'Aromatherapy',
+                                      'Deep Tissue Sculpting', 'Craniosacral'
+                                    ].map((item, index) => (
+                                      <li key={index} className="flex items-center">
+                                        <div className="w-2 h-2 bg-amber-800 rounded-full mr-3"></div>
+                                        <span className="text-gray-600">{item}</span>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                  <p className="text-gray-600 leading-relaxed">
+                                    Beyond technical excellence, we select therapists for their intuitive healing abilities. Monthly training includes emotional intelligence development and energy work certification. This investment shows in our 98% client retention rate and numerous industry awards.
+                                  </p>
                                 <div className="mt-6">
                                   <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">75-90 min | From ₹3,200</span>
                                 </div>
@@ -1222,10 +1251,12 @@ const faqs = [
 
                             {/* Right Column */}
                             <div>
-                              {/* Facial Treatments */}
+                              
+
+                              {/* Massage Therapy */}
                               <motion.div 
-                                className="bg-white bg-optage-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#e8d5c9]"
-                                initial={{ opacity: 0, x: 30 }}
+                                className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#e8d5c9]"
+                                initial={{ opacity: 0, x: -30 }}
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.7 }}
@@ -1236,19 +1267,36 @@ const faqs = [
                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
                                   </div>
-                                  <h2 className="text-2xl font-bold text-[#3a2e2a]">Foreigner Staff</h2>
+                                  <h2 className="text-3xl font-bold text-amber-800 mb-6">
+                                    Top Rated Services
+                                  </h2>
                                 </div>
-                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                                  Experience transformative skin care with our customized facials. Using organic products from local Indian botanicals, our estheticians analyze your skin type and concerns to create a personalized treatment. The Golden Radiance Facial features 24-karat gold leaf to brighten and firm, while our Monsoon Hydration Treatment combats Delhi's dry climate with hyaluronic acid and aloe vera.
+                                <p className="text-gray-600 leading-relaxed mb-6">
+                                  Our commitment extends beyond individual wellness to planetary health. We're proud to be the first Carbon Neutral spa in our region, with initiatives including:
                                 </p>
-                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                                  Our signature Kashmiri Saffron & Rose Facial utilizes precious saffron threads from Pampore to reduce pigmentation and revive dull skin. Each facial includes décolletage massage, lymphatic drainage, and a customized mask. We finish with an SPF application to protect your new glow.
+                                <div className="flex flex-wrap gap-4 mb-6">
+                                  {[
+                                    {icon: '♻️', text: 'Zero-Waste Policy'},
+                                    {icon: '🌱', text: 'Organic Linens'},
+                                    {icon: '💧', text: 'Water Recycling'},
+                                    {icon: '🌎', text: 'Carbon Offsetting'},
+                                    {icon: '🏺', text: 'Handcrafted Products'}
+                                  ].map((item, index) => (
+                                    <span key={index} className="bg-[#f0eae3] text-amber-800 px-4 py-2 rounded-full flex items-center">
+                                      <span className="mr-2 text-xl">{item.icon}</span>
+                                      {item.text}
+                                    </span>
+                                  ))}
+                                </div>
+                                <p className="text-gray-600 leading-relaxed">
+                                  Our product line features sustainably harvested ingredients from ethical cooperatives. We've partnered with local environmental initiatives, donating 5% of profits to wetland conservation. When you indulge at Serenity, you're supporting a healthier ecosystem.
                                 </p>
+                                {/* // */}
+                                
                                 <div className="mt-6">
-                                  <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-90 min | From ₹2,800</span>
+                                  <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-120 min | From ₹2,500</span>
                                 </div>
                               </motion.div>
-
                               {/* Wellness Packages */}
                               <motion.div 
                                 className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-[#e8d5c9]"
@@ -1260,17 +1308,32 @@ const faqs = [
                                 <div className="flex items-center gap-4 mb-6">
                                   <div className="bg-amber-100 p-3 rounded-xl">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                                     </svg>
                                   </div>
-                                  <h2 className="text-2xl font-bold text-[#3a2e2a]">Top Rated Services</h2>
+                                  <h2 className="text-2xl font-bold text-[#3a2e2a]">Home & Hotel Spa</h2>
                                 </div>
-                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                                  Our thoughtfully curated packages provide complete rejuvenation for body, mind and spirit. The Royal Retreat is our most popular offering - a full day experience including a Himalayan salt scrub, ayurvedic massage, gold facial, gourmet lunch, and access to our hydrotherapy facilities. Perfect for special occasions or when you need comprehensive renewal.
+                                <p className="text-gray-600 leading-relaxed mb-6">
+                                  Our commitment extends beyond individual wellness to planetary health. We're proud to be the first Carbon Neutral spa in our region, with initiatives including:
                                 </p>
-                                <p className="text-[#5c4a42] mb-4 leading-relaxed">
-                                  The Urban Escape package combines a deep tissue massage with our detox body wrap in just 3 hours - ideal for busy professionals. New parents love our Postpartum Revival with specialized abdominal massage and nutrient-rich facial. All packages include herbal tea service, plush robe and slippers, and private changing facilities.
-                                </p>
+                                <div className="flex flex-wrap gap-4 mb-6">
+                                  {[
+                                    {icon: '🏨', text: 'JW Marriott Hotel Aerocity'},
+                                    {icon: '🏩', text: 'The Ashok (Chanakyapuri)'},
+                                    {icon: '🏨', text: 'The Park Connaught Place'},
+                                    {icon: '🏩', text: 'The Suryaa New Delhi (NFC)'},
+                                    {icon: '🏨', text: 'The Grand New Delhi'},
+                                    {icon: '🏩', text: 'Novotel New Delhi Aerocity'},
+                                  ].map((item, index) => (
+                                    <span key={index} className="bg-[#f0eae3] text-amber-800 px-4 py-2 rounded-full flex items-center">
+                                      <span className="mr-2 text-xl">{item.icon}</span>
+                                      {item.text}
+                                    </span>
+                                  ))}
+                                </div>
+                                {/* <p className="text-gray-600 leading-relaxed">
+                                  Our product line features sustainably harvested ingredients from ethical cooperatives. We've partnered with local environmental initiatives, donating 5% of profits to wetland conservation. When you indulge at Serenity, you're supporting a healthier ecosystem.
+                                </p> */}
                                 <div className="mt-6">
                                   <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">3-6 hours | From ₹8,500</span>
                                 </div>
