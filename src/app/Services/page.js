@@ -1322,8 +1322,8 @@ const faqs = [
                                     {icon: '🏩', text: 'The Ashok (Chanakyapuri)'},
                                     {icon: '🏨', text: 'The Park Connaught Place'},
                                     {icon: '🏩', text: 'The Suryaa New Delhi (NFC)'},
-                                    {icon: '🏨', text: 'The Grand New Delhi'},
-                                    {icon: '🏩', text: 'Novotel New Delhi Aerocity'},
+                                    // {icon: '🏨', text: 'The Grand New Delhi'},
+                                    // {icon: '🏩', text: 'Novotel New Delhi Aerocity'},
                                   ].map((item, index) => (
                                     <span key={index} className="bg-[#f0eae3] text-amber-800 px-4 py-2 rounded-full flex items-center">
                                       <span className="mr-2 text-xl">{item.icon}</span>
@@ -1331,9 +1331,9 @@ const faqs = [
                                     </span>
                                   ))}
                                 </div>
-                                {/* <p className="text-gray-600 leading-relaxed">
-                                  Our product line features sustainably harvested ingredients from ethical cooperatives. We've partnered with local environmental initiatives, donating 5% of profits to wetland conservation. When you indulge at Serenity, you're supporting a healthier ecosystem.
-                                </p> */}
+                                <p className="text-gray-600 leading-relaxed">
+                                  Our product line features sustainably harvested ingredients from ethical cooperatives. We've partnered with local environmental initiatives, donating 5% of profits to wetland conservation.
+                                </p>
                                 <div className="mt-6">
                                   <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">3-6 hours | From ₹8,500</span>
                                 </div>
