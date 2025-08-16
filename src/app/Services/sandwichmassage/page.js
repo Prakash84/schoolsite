@@ -30,18 +30,7 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
     variable: '--font-montserrat'
   });
   const services = [
-    {
-      title: "Four-Hand Synchronized Flow",
-      image: "/images/aromatherapy-featured-jpg.webp",
-      description: "Two therapists move their hands together in the same pattern. This feels amazing and helps your body relax completely.",
-      // duration: "60-90 min"
-    },
-    {
-      title: "Hot Oil Indulgence",
-      image: "/images/19-2-1024x427.png",
-      description: "We use warm, fragrant oils that make your skin soft and help your muscles relax. It also improves blood flow, making you feel fresh.",
-      // duration: "75 min"
-    },
+    
     {
       title: "Deep Tissue Pressure Therapy",
       image: "/images/Couple Massage.webp",
