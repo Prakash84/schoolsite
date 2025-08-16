@@ -31,28 +31,28 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
   });
   const services = [
     {
-      title: "Four-Hand Synchronized Flow",
+      title: "Relax Together",
       image: "/images/aromatherapy-featured-jpg.webp",
-      description: "Two therapists move their hands together in the same pattern. This feels amazing and helps your body relax completely.",
+      description: "Couple massage ek best way hai apne partner ke sath relax karne ka. Aap dono ek hi room me side by side treatment enjoy karte ho. Ye stress kam karta hai aur ek peaceful moment deta hai jo aap dono ko ek dusre ke aur kareeb laata hai.",
       // duration: "60-90 min"
     },
    
     {
-      title: "Soothing Feather Touch Technique",
+      title: "Strengthen Your Bond",
       image: "/images/Couple Massage.jpg",
-      description: "As the name suggests, this method uses feather-like soft strokes to calm your nerves and help you feel peaceful and relaxed.",
+      description: "Is massage ka sabse bada benefit ye hai ki ye relationship bond strong banata hai. Jab aap saath me relaxation aur positive energy feel karte ho, toh naturally emotional connection aur bhi deep ho jata hai.",
       // duration: "60 min"
     },
     {
-      title: "Alternate Wave Massage",
+      title: "Double Health Benefits",
       image: "/images/thaimassage.jpg",
-      description: "In this technique, two therapists use fast and slow movements simultaneously; one therapist is fast, and the other is slow. It feels like gentle waves on your body and is excellent for relieving mental fatigue.",
+      description: "Massage apne aap me hi body ke liye healthy hai — jaise blood circulation improve karna, muscle tension door karna aur mind fresh rakhna. Couple massage me ye dono partners ko ek sath milta hai, matlab double health benefit ek hi time me.",
       // duration: "60 min"
     },
     {
-      title: "Fusion Exotic Experience",
+      title: "Perfect for Special Occasions",
       image: "/images/potliMassage.jpg",
-      description: "This is a blend of various massage styles like Swedish, Thai, and Balinese. It is tailored according to your body’s needs, providing both relaxation and healing in one session.",
+      description: "Couple massage ek ideal choice hai anniversaries, birthdays ya kisi bhi special day ke liye. Ye ek unique experience hai jo aapke din ko memorable aur romantic bana deta hai.",
       // duration: "60 min"
     }
   ];
@@ -629,25 +629,25 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                      
                      <div className="grid grid-cols-2 gap-4 mb-8">
                        <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">★</div>
-                         <h4 className="font-medium text-stone-800">Award-Winning</h4>
-                         <p className="text-sm text-stone-600 mt-1">5-star rated luxury spa</p>
-                       </div>
-                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">♨</div>
-                         <h4 className="font-medium text-stone-800">Thermal Suite</h4>
-                         <p className="text-sm text-stone-600 mt-1">Steam, sauna & jacuzzi</p>
-                       </div>
-                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">👨‍👩‍👧</div>
-                         <h4 className="font-medium text-stone-800">Couples Welcome</h4>
-                         <p className="text-sm text-stone-600 mt-1">Private couple suites</p>
-                       </div>
-                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">🌿</div>
-                         <h4 className="font-medium text-stone-800">Organic Products</h4>
-                         <p className="text-sm text-stone-600 mt-1">Natural & sustainable</p>
-                       </div>
+                        <div className="text-amber-600 text-2xl mb-2">★</div>
+                        <h4 className="font-medium text-stone-800">5 Start Hotel</h4>
+                        <p className="text-sm text-stone-600 mt-1">5-star rated luxury spa</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">💆🏻</div>
+                        <h4 className="font-medium text-stone-800">Nuru Massage</h4>
+                        <p className="text-sm text-stone-600 mt-1">Steam, sauna & jacuzzi</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">👨‍👩‍👧</div>
+                        <h4 className="font-medium text-stone-800">Couples Welcome</h4>
+                        <p className="text-sm text-stone-600 mt-1">Private couple suites</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">🧖</div>
+                        <h4 className="font-medium text-stone-800">Erotic Massage</h4>
+                        <p className="text-sm text-stone-600 mt-1">Natural & sustainable</p>
+                      </div>
                      </div>
                      
                      <div className="flex flex-col sm:flex-row gap-4">

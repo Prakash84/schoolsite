@@ -30,19 +30,19 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
     variable: '--font-montserrat'
   });
   const services = [
-    
+    {
+      title: "Four-Hand Synchronized Flow",
+      image: "/images/Sandwich Massage.jpg",
+      description: "Two therapists move their hands together in the same pattern. This feels amazing and helps your body relax completely.",
+      // duration: "60 min"
+    },
     {
       title: "Deep Tissue Pressure Therapy",
       image: "/images/Couple Massage.webp",
       description: "If you like strong pressure, this is for you. The oil penetrates deep into your muscles, relieves tightness, and helps you feel light and energetic again.",
       // duration: "90 min"
     },
-    {
-      title: "Soothing Feather Touch Technique",
-      image: "/images/Sandwich Massage.jpg",
-      description: "As the name suggests, this method uses feather-like soft strokes to calm your nerves and help you feel peaceful and relaxed.",
-      // duration: "60 min"
-    },
+    
     {
       title: "Alternate Wave Massage",
       image: "/images/thaimassage.jpg",
@@ -629,25 +629,25 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                      
                      <div className="grid grid-cols-2 gap-4 mb-8">
                        <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">★</div>
-                         <h4 className="font-medium text-stone-800">Award-Winning</h4>
-                         <p className="text-sm text-stone-600 mt-1">5-star rated luxury spa</p>
-                       </div>
-                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">♨</div>
-                         <h4 className="font-medium text-stone-800">Thermal Suite</h4>
-                         <p className="text-sm text-stone-600 mt-1">Steam, sauna & jacuzzi</p>
-                       </div>
-                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">👨‍👩‍👧</div>
-                         <h4 className="font-medium text-stone-800">Couples Welcome</h4>
-                         <p className="text-sm text-stone-600 mt-1">Private couple suites</p>
-                       </div>
-                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">🌿</div>
-                         <h4 className="font-medium text-stone-800">Organic Products</h4>
-                         <p className="text-sm text-stone-600 mt-1">Natural & sustainable</p>
-                       </div>
+                        <div className="text-amber-600 text-2xl mb-2">★</div>
+                        <h4 className="font-medium text-stone-800">5 Start Hotel</h4>
+                        <p className="text-sm text-stone-600 mt-1">5-star rated luxury spa</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">💆🏻</div>
+                        <h4 className="font-medium text-stone-800">Nuru Massage</h4>
+                        <p className="text-sm text-stone-600 mt-1">Steam, sauna & jacuzzi</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">👨‍👩‍👧</div>
+                        <h4 className="font-medium text-stone-800">Couples Welcome</h4>
+                        <p className="text-sm text-stone-600 mt-1">Private couple suites</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">🧖</div>
+                        <h4 className="font-medium text-stone-800">Erotic Massage</h4>
+                        <p className="text-sm text-stone-600 mt-1">Natural & sustainable</p>
+                      </div>
                      </div>
                      
                      <div className="flex flex-col sm:flex-row gap-4">

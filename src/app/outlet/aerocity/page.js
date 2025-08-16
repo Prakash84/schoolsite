@@ -426,25 +426,25 @@ export default function aerocity() {
               
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                  <div className="text-amber-600 text-2xl mb-2">★</div>
-                  <h4 className="font-medium text-stone-800">Award-Winning</h4>
-                  <p className="text-sm text-stone-600 mt-1">5-star rated luxury spa</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                  <div className="text-amber-600 text-2xl mb-2">♨</div>
-                  <h4 className="font-medium text-stone-800">Thermal Suite</h4>
-                  <p className="text-sm text-stone-600 mt-1">Steam, sauna & jacuzzi</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                  <div className="text-amber-600 text-2xl mb-2">👨‍👩‍👧</div>
-                  <h4 className="font-medium text-stone-800">Couples Welcome</h4>
-                  <p className="text-sm text-stone-600 mt-1">Private couple suites</p>
-                </div>
-                <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                  <div className="text-amber-600 text-2xl mb-2">🌿</div>
-                  <h4 className="font-medium text-stone-800">Organic Products</h4>
-                  <p className="text-sm text-stone-600 mt-1">Natural & sustainable</p>
-                </div>
+                        <div className="text-amber-600 text-2xl mb-2">★</div>
+                        <h4 className="font-medium text-stone-800">5 Start Hotel</h4>
+                        <p className="text-sm text-stone-600 mt-1">5-star rated luxury spa</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">💆🏻</div>
+                        <h4 className="font-medium text-stone-800">Nuru Massage</h4>
+                        <p className="text-sm text-stone-600 mt-1">Steam, sauna & jacuzzi</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">👨‍👩‍👧</div>
+                        <h4 className="font-medium text-stone-800">Couples Welcome</h4>
+                        <p className="text-sm text-stone-600 mt-1">Private couple suites</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">🧖</div>
+                        <h4 className="font-medium text-stone-800">Erotic Massage</h4>
+                        <p className="text-sm text-stone-600 mt-1">Natural & sustainable</p>
+                      </div>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">

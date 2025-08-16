@@ -31,27 +31,27 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
   });
   const services = [
     {
-      title: "Four-Hand Synchronized Flow",
+      title: "Swedish Full Body Massage",
       image: "/images/aromatherapy-featured-jpg.webp",
-      description: "Two therapists move their hands together in the same pattern. This feels amazing and helps your body relax completely.",
+      description: "Gentle, flowing strokes with oils help improve blood flow and relax your whole body. This is perfect for beginners and gives a very soothing effect.",
       // duration: "60-90 min"
     },
     {
-      title: "Hot Oil Indulgence",
+      title: "Deep Tissue Massage",
       image: "/images/19-2-1024x427.png",
-      description: "We use warm, fragrant oils that make your skin soft and help your muscles relax. It also improves blood flow, making you feel fresh.",
+      description: "If you have sore muscles or long-term pain, this is ideal. It focuses on deep muscle layers to relieve tension and stiffness.",
       // duration: "75 min"
     },
     {
-      title: "Deep Tissue Pressure Therapy",
+      title: "Aromatherapy Massage",
       image: "/images/Full Body Massage.webp",
-      description: "If you like strong pressure, this is for you. The oil penetrates deep into your muscles, relieves tightness, and helps you feel light and energetic again.",
+      description: "This massage uses essential oils with soft massage movements. Great for stress, anxiety, and better sleep, it helps calm your mind and body.",
       // duration: "90 min"
     },
     {
-      title: "Soothing Feather Touch Technique",
+      title: "Female-to-Male Full Body Massage",
       image: "/images/Full Body Massage.jpg",
-      description: "As the name suggests, this method uses feather-like soft strokes to calm your nerves and help you feel peaceful and relaxed.",
+      description: "Done by a trained female therapist, this massage offers relaxation, stress relief, and emotional peace in a comfortable luxury setting.",
       // duration: "60 min"
     },
     // {
@@ -640,25 +640,25 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                      
                      <div className="grid grid-cols-2 gap-4 mb-8">
                        <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">★</div>
-                         <h4 className="font-medium text-stone-800">Award-Winning</h4>
-                         <p className="text-sm text-stone-600 mt-1">5-star rated luxury spa</p>
-                       </div>
-                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">♨</div>
-                         <h4 className="font-medium text-stone-800">Thermal Suite</h4>
-                         <p className="text-sm text-stone-600 mt-1">Steam, sauna & jacuzzi</p>
-                       </div>
-                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">👨‍👩‍👧</div>
-                         <h4 className="font-medium text-stone-800">Couples Welcome</h4>
-                         <p className="text-sm text-stone-600 mt-1">Private couple suites</p>
-                       </div>
-                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                         <div className="text-amber-600 text-2xl mb-2">🌿</div>
-                         <h4 className="font-medium text-stone-800">Organic Products</h4>
-                         <p className="text-sm text-stone-600 mt-1">Natural & sustainable</p>
-                       </div>
+                        <div className="text-amber-600 text-2xl mb-2">★</div>
+                        <h4 className="font-medium text-stone-800">5 Start Hotel</h4>
+                        <p className="text-sm text-stone-600 mt-1">5-star rated luxury spa</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">💆🏻</div>
+                        <h4 className="font-medium text-stone-800">Nuru Massage</h4>
+                        <p className="text-sm text-stone-600 mt-1">Steam, sauna & jacuzzi</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">👨‍👩‍👧</div>
+                        <h4 className="font-medium text-stone-800">Couples Welcome</h4>
+                        <p className="text-sm text-stone-600 mt-1">Private couple suites</p>
+                      </div>
+                      <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
+                        <div className="text-amber-600 text-2xl mb-2">🧖</div>
+                        <h4 className="font-medium text-stone-800">Erotic Massage</h4>
+                        <p className="text-sm text-stone-600 mt-1">Natural & sustainable</p>
+                      </div>
                      </div>
                      
                      <div className="flex flex-col sm:flex-row gap-4">
