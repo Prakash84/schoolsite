@@ -15,6 +15,8 @@ import {  FaMapMarkerAlt } from 'react-icons/fa';
 import WhatsappFloat from './components/WhatsappFloat';
 // import womanImage from '/images/spaExpert4.jpg';
 import { FaTelegram } from 'react-icons/fa';
+import { Building2 } from "lucide-react";
+import {  Star, MapPin, Sparkles, Hotel } from 'lucide-react';
 
 
 const specialFeatures = [
@@ -449,6 +451,37 @@ const features2 = [
       icon: "🌀"
     }
   ];
+
+ const outlets = [
+  {
+    name: "The Grand Plaza",
+    desc: "Luxury spa at the heart of downtown with panoramic city views",
+    rating: 5,
+    tag: "Exclusive",
+    icon: <Sparkles className="w-6 h-6 text-amber-600" />
+  },
+  {
+    name: "Marina Bay Resort",
+    desc: "Beachfront sanctuary with ocean-inspired treatments",
+    rating: 4.9,
+    tag: "Waterfront",
+    icon: <Hotel className="w-6 h-6 text-amber-600" />
+  },
+  {
+    name: "Skyline Tower",
+    desc: "Rooftop wellness center with city skyline views",
+    rating: 4.8,
+    tag: "Panoramic",
+    icon: <Building2 className="w-6 h-6 text-amber-600" />
+  },
+  {
+    name: "Royal Gardens",
+    desc: "Historic mansion transformed into a luxury spa retreat",
+    rating: 5,
+    tag: "Heritage",
+    icon: <MapPin className="w-6 h-6 text-amber-600" />
+  },
+];
   return (
      <div className="font-sans overflow-hidden">
       {/* Floating Decorative Elements */}
@@ -1132,6 +1165,121 @@ const features2 = [
       </div>
     </section>
 {/* ENd icon section */}
+<section className="py-24 bg-gradient-to-b from-amber-50 to-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div 
+          className="text-center mb-20"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+        >
+          <motion.div
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+            <span className="text-amber-700 font-medium tracking-wider">PREMIUM LOCATIONS</span>
+          </motion.div>
+          
+          <motion.h2
+            className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+          >
+            Premium  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Hotel Outlets</span>
+          </motion.h2>
+          
+          <motion.p
+            className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.5 }}
+          >
+            Discover our exclusive spa outlets at top luxury hotels across the city
+          </motion.p>
+          
+          <motion.div
+            className="flex justify-center mt-10"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
+            <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+          </motion.div>
+        </motion.div>
+
+        {/* Enhanced Outlets Grid */}
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+          {outlets.map((outlet, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ 
+                duration: 0.6, 
+                delay: index * 0.1,
+                type: "spring",
+                stiffness: 100
+              }}
+              viewport={{ once: true, amount: 0.2 }}
+              whileHover={{ 
+                y: -10,
+                boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)"
+              }}
+              className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl border border-amber-100 relative overflow-hidden group"
+            >
+              {/* Premium ribbon */}
+              <div className="absolute top-4 right-4 bg-gradient-to-r from-amber-500 to-amber-600 text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1">
+                <Star className="w-3 h-3 fill-white" />
+                <span>{outlet.rating}</span>
+              </div>
+              
+              {/* Icon with subtle shine effect */}
+              <div className="flex justify-center mb-6">
+                <div className="relative">
+                  <div className="bg-gradient-to-br from-amber-50 to-amber-100 p-5 rounded-full shadow-inner group-hover:shadow-md transition-all duration-300">
+                    {outlet.icon}
+                  </div>
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+                </div>
+              </div>
+
+              {/* Hotel Name */}
+              <h3 className="text-xl font-bold text-amber-900 mb-3 font-serif">
+                {outlet.name}
+              </h3>
+              
+              {/* Tag */}
+              <div className="inline-block bg-amber-50 border border-amber-200 text-amber-700 text-xs px-3 py-1 rounded-full mb-4">
+                {outlet.tag}
+              </div>
+
+              {/* Description */}
+              <p className="text-amber-800/80 text-sm leading-relaxed mb-6">
+                {outlet.desc}
+              </p>
+              
+              {/* Decorative line */}
+              <div className="h-0.5 bg-gradient-to-r from-transparent via-amber-200 to-transparent w-3/4 mx-auto group-hover:via-amber-400 transition-colors duration-300"></div>
+              
+              {/* Button */}
+              <div className="mt-6">
+                <button className="text-amber-700 text-sm font-medium hover:text-amber-900 flex items-center justify-center gap-1.5 mx-auto transition-colors duration-200 group-hover:gap-2">
+                  <span>Explore Location</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
        {/* Our Process */}
                <section className="w-full py-10 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
