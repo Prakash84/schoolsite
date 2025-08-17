@@ -1414,7 +1414,6 @@ const faqs = [
                 </motion.div>
               </div>
             </section>
-
                     {/* content section */}
                      <section className="bg-gradient-to-b from-[#fcf7f4] to-[#f8f0eb] py-20 px-6 md:px-16">
                         <div className="max-w-6xl mx-auto">
