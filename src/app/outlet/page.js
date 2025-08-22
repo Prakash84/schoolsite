@@ -396,7 +396,7 @@ export default function Outlet() {
           className="relative"
         >
           <Image
-            src="/Images/5969.jpg" // apni image path yaha dena
+            src="/images/5969.jpg" // apni image path yaha dena
             alt="Spa & Beauty"
             width={700}
             height={500}
