@@ -272,37 +272,142 @@ export default function Outlet() {
   return (
     <>
      {/* Banner */}
-      <section
-        className="relative w-full h-[45vh] sm:h-[60px] md:h-[70vh] lg:h-[85vh] xl:h-[80vh] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white"
-        style={{
-          backgroundImage: "url('/images/spa-treatment_outlet.png')"
-        }}
-      >
-        {/* Gradient Overlay with soft blur */}
-        {/* <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div> */}
+     
+     {/* <div className="relative w-full h-[45vh] sm:h-[60px] md:h-[70vh] lg:h-[85vh] xl:h-[80vh] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white">
+      
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/Images/5969.jpg" 
+          alt="Luxury Spa Background"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl text-center px-4">
-          <h1
-            className={`text-1xl md:text-3xl font-bold text-white leading-tight ${playfair.variable} font-serif`}
-          >
-            Relax, Rejuvenate & Refresh at Our Premium Spa Outlet Near You
+      <div className="relative z-10 max-w-6xl mx-auto px-4 py-16 text-center text-white">
+        <div className="mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light tracking-wider mb-2">
+            BEAUTY SPA
           </h1>
-          <p
-            className={`mt-6 text-lg md:text-1xl text-white/90 font-light ${montserrat.variable}`}
-          >
-            Indulge in world-class wellness treatments crafted to soothe your soul and rejuvenate your body.
-          </p>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-light tracking-wider">
+            Spa & <span className="block mt-1">BEAUTYCARE</span>
+          </h2>
+        </div>
 
-          <a
-            href="tel:+919211235800"
-            className="mt-10 inline-block px-8 py-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-full shadow-lg hover:scale-105 transition-transform duration-300"
+        <div className="max-w-2xl mx-auto mb-10">
+          <p className="text-lg md:text-xl font-light leading-relaxed">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 md:gap-10 text-lg">
+          <a 
+            href="tel:+00123456789" 
+            className="flex items-center gap-2 hover:text-amber-100 transition-colors"
           >
-            Book Your Session Now
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            +00123456789
+          </a>
+          
+          <a 
+            href="https://www.website.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-amber-100 transition-colors"
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+            </svg>
+            www.website.com
           </a>
         </div>
-      </section>
+        <div className="mt-12">
+          <button className="bg-white text-gray-800 px-8 py-3 rounded-full font-medium hover:bg-amber-50 transition-colors shadow-lg">
+            Book an Appointment
+          </button>
+        </div>
+      </div>
+    </div> */}
+      
       {/* End Banner */}
+       <section className="relative bg-gradient-to-r from-amber-50 to-white py-16">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+        
+        {/* Left Content */}
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="space-y-6"
+        >
+          <div className="flex items-center gap-2">
+            <div className="w-10 h-10 rounded-full bg-amber-200 flex items-center justify-center">
+              <span className="text-amber-800 text-lg font-bold">✦</span>
+            </div>
+            <p className="text-lg font-medium text-amber-900">OUR OUTLETS</p>
+          </div>
+
+          <h1 className="text-5xl md:text-6xl font-bold font-serif text-amber-900 leading-tight">
+            Our Premium <span className="text-amber-600"></span> <br /> 
+            <span className="bg-black text-white px-3 py-1 rounded-md">Spa Outlets</span>
+          </h1>
+
+          <p className="text-gray-600 max-w-md">
+            Relax your body and mind with our premium spa and wellness care. 
+            Experience tranquility, beauty, and complete rejuvenation in one place.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex items-center gap-4">
+            <a
+              href="tel:+00123456789"
+              className="flex items-center gap-2 text-amber-800 hover:text-amber-600 transition"
+            >
+              📞 +00 123 456 789
+            </a>
+
+            <a
+              href="#book"
+              className="px-6 py-3 rounded-xl bg-amber-600 text-white font-medium shadow-md hover:bg-amber-700 transition"
+            >
+              Book Now
+            </a>
+          </div>
+
+          <a
+            href="https://www.website.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-500 hover:text-amber-600"
+          >
+            🌐 www.website.com
+          </a>
+        </motion.div>
+
+        {/* Right Image */}
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+          className="relative"
+        >
+          <Image
+            src="/Images/5969.jpg" // apni image path yaha dena
+            alt="Spa & Beauty"
+            width={700}
+            height={500}
+            className="rounded-2xl shadow-lg object-cover"
+          />
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent"></div>
+        </motion.div>
+      </div>
+    </section>
+    {/* ///// */}
+    
       {/* our 5* hoterl outlets */}
        <section className="w-full py-16 bg-gradient-to-b from-white to-amber-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -836,274 +941,7 @@ export default function Outlet() {
     </motion.div>
   </div>
 </section>
-{/* Why Choose Us Section */}
-        <section className="py-24 relative overflow-hidden bg-gradient-to-b from-amber-50 to-white">
-              {/* Decorative elements */}
-              <div className="absolute top-20 left-0 w-72 h-72 rounded-full bg-amber-200 opacity-20 blur-3xl -z-0"></div>
-              <div className="absolute bottom-20 right-0 w-80 h-80 rounded-full bg-amber-300 opacity-15 blur-3xl -z-0"></div>
-              
-              <div className="container mx-auto px-4 relative z-10">
-                {/* Header */}
-                <div className="text-center max-w-3xl mx-auto mb-20">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5 }}
-                  >
-                    <span className="inline-block bg-amber-100 text-amber-800 px-4 py-1 rounded-full text-sm font-medium mb-4">
-                      Premium Wellness Experience
-                    </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-6">
-                      Why Choose <span className="text-amber-600">Our Spa in Delhi?</span>
-                    </h2>
-                    <p className="text-amber-800 text-lg md:text-xl leading-relaxed">
-                      We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care that revitalizes your mind, body and spirit.
-                    </p>
-                  </motion.div>
-                </div>
-                
-                {/* Main Content Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                  {/* Left Column - Expert Therapists */}
-                  <motion.div 
-                    className="flex flex-col"
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                  >
-                    <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-amber-100">
-                      <div className="p-8">
-                        <div className="flex items-start mb-6">
-                          <div className="bg-amber-100 p-3 rounded-lg mr-4 flex-shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                            </svg>
-                          </div>
-                          <div>
-                            <h3 className="text-2xl font-bold text-amber-800 font-serif mb-2">Expert Therapists</h3>
-                            <p className="text-amber-700">
-                              Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage.
-                            </p>
-                          </div>
-                        </div>
-                        
-                        <p className="text-gray-700 mb-6">
-                          Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. 
-                          This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation.
-                        </p>
-                        
-                        <div className="flex flex-wrap gap-3 mb-8">
-                          {['Ayurvedic Certification', '10+ Years Experience', 'Personalized Techniques', 'Deep Tissue Mastery'].map((item, index) => (
-                            <div key={index} className="bg-amber-50 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
-                              {item}
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                      
-                      <div className="relative h-96">
-                        <Image 
-                          src="/images/446979.jpg"
-                          alt="Expert therapist performing massage"
-                          layout="fill"
-                          objectFit="cover"
-                          className="transition-transform duration-700 hover:scale-105"
-                        />
-                      </div>
-                    </div>
-                  </motion.div>
-                  
-                  {/* Right Column - Premium Oils */}
-                  <motion.div 
-                    className="flex flex-col"
-                    initial={{ opacity: 0, x: 30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6 }}
-                  >
-                    <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-amber-100">
-                      <div className="relative h-96">
-                        <Image 
-                          src="/images/447701.jpg"
-                          alt="Premium spa oils"
-                          layout="fill"
-                          objectFit="cover"
-                          className="transition-transform duration-700 hover:scale-105"
-                        />
-                      </div>
-                      
-                      <div className="p-8">
-                        <div className="flex items-start mb-6">
-                          <div className="bg-amber-100 p-3 rounded-lg mr-4 flex-shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" viewBox="0 0 20 20" fill="currentColor">
-                              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                            </svg>
-                          </div>
-                          <div>
-                            <h3 className="text-2xl font-bold text-amber-800 font-serif mb-2">Premium Oils & Blends</h3>
-                            <p className="text-amber-700">
-                              We use only cold-pressed, organic oils blended with therapeutic-grade essential oils for maximum benefit.
-                            </p>
-                          </div>
-                        </div>
-                        
-                        <p className="text-gray-700 mb-6">
-                          The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being. 
-                          Regular sessions can improve flexibility, deepen sleep, and support emotional stability.
-                        </p>
-                        
-                        <div className="mb-6">
-                          <h4 className="text-lg font-bold text-amber-700 mb-3">Signature Oil Blends</h4>
-                          <div className="grid grid-cols-2 gap-3">
-                            {['Lavender Dream', 'Eucalyptus Renewal', 'Rosemary Harmony', 'Sandalwood Serenity', 'Jasmine Bliss', 'Frankincense Balance'].map((oil, index) => (
-                              <div key={index} className="flex items-center">
-                                <div className="w-2 h-2 rounded-full bg-amber-400 mr-2"></div>
-                                <span className="text-amber-800">{oil}</span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </motion.div>
-                </div>
-                
-                {/* Testimonial Section */}
-                <motion.div 
-                  className="mt-20 bg-gradient-to-r from-amber-700 to-amber-800 rounded-3xl overflow-hidden shadow-2xl"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.7 }}
-                >
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="p-10 flex flex-col justify-center">
-                      <div className="mb-6">
-                        <div className="flex mb-4">
-                          {[...Array(5)].map((_, i) => (
-                            <svg key={i} xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-amber-300" viewBox="0 0 20 20" fill="currentColor">
-                              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                            </svg>
-                          ))}
-                        </div>
-                        <blockquote className="text-2xl italic text-white leading-relaxed">
-                          "The oil therapy treatment was transformative. I've never felt so deeply relaxed and rejuvenated. The therapist's expertise was evident in every movement."
-                        </blockquote>
-                      </div>
-                      
-                      <div className="flex items-center">
-                        <div className="mr-4">
-                          <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-amber-300">
-                            <Image 
-                              src="/images/couple-bathrobes-posing-embraced.jpg"
-                              alt="Client testimonial"
-                              width={64}
-                              height={64}
-                              className="object-cover w-full h-full"
-                            />
-                          </div>
-                        </div>
-                        <div>
-                          <h4 className="text-xl font-bold text-amber-50">Priya Sharma</h4>
-                          <p className="text-amber-200">Regular Client since 2020</p>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="relative h-full min-h-[400px]">
-                      <Image 
-                        src="/images/137.jpg"
-                        alt="Spa treatment"
-                        layout="fill"
-                        objectFit="cover"
-                        className="transition-transform duration-700 hover:scale-105"
-                      />
-                      <div className="absolute -top-6 -right-6 bg-amber-100 p-6 rounded-full shadow-lg">
-                        <span className="text-amber-800 text-4xl font-serif">"</span>
-                      </div>
-                    </div>
-                  </div>
-                </motion.div>
-                
-                {/* Benefits Section */}
-                <motion.div 
-                  className="mt-20"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                >
-                  <h3 className="text-3xl font-bold text-amber-900 font-serif text-center mb-12">
-                    Our Holistic Approach to Wellness
-                  </h3>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {[
-                      {
-                        title: "Mindful Relaxation",
-                        description: "Techniques that calm the mind and reduce stress through focused breathing and meditation",
-                        icon: (
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-                          </svg>
-                        )
-                      },
-                      {
-                        title: "Body Rejuvenation",
-                        description: "Therapies that restore physical vitality and promote healing at the cellular level",
-                        icon: (
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                          </svg>
-                        )
-                      },
-                      {
-                        title: "Spiritual Balance",
-                        description: "Practices that align your energy centers and connect you with your inner self",
-                        icon: (
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        )
-                      }
-                    ].map((benefit, index) => (
-                      <motion.div 
-                        key={index} 
-                        className="bg-white p-8 rounded-2xl shadow-lg border border-amber-100 text-center"
-                        whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                      >
-                        <div className="bg-amber-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                          {benefit.icon}
-                        </div>
-                        <h4 className="text-xl font-bold text-amber-800 mb-3">{benefit.title}</h4>
-                        <p className="text-amber-700">{benefit.description}</p>
-                      </motion.div>
-                    ))}
-                  </div>
-                </motion.div>
-                
-                {/* CTA */}
-                <motion.div 
-                  className="text-center mt-20"
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: 0.3 }}
-                >
-                  <button className="bg-gradient-to-r from-amber-600 to-amber-800 text-white font-bold py-5 px-10 rounded-full text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2">
-                    Book Your Rejuvenating Experience
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 inline-block ml-2" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </button>
-                  <p className="text-amber-700 mt-4">
-                    Limited slots available. Reserve your session today.
-                  </p>
-                </motion.div>
-              </div>
-            </section>
+
             {/* content section */}
                                  <section className="bg-gradient-to-b from-[#fcf7f4] to-[#f8f0eb] py-20 px-6 md:px-16">
                                     <div className="max-w-6xl mx-auto">

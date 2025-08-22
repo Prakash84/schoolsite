@@ -1281,7 +1281,7 @@ const faqs = [
                 </div>
                 
                 {/* Testimonial Section */}
-                <motion.div 
+                {/* <motion.div 
                   className="mt-20 bg-gradient-to-r from-amber-700 to-amber-800 rounded-3xl overflow-hidden shadow-2xl"
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -1335,7 +1335,7 @@ const faqs = [
                       </div>
                     </div>
                   </div>
-                </motion.div>
+                </motion.div> */}
                 
                 {/* Benefits Section */}
                 <motion.div 
@@ -1610,7 +1610,7 @@ const faqs = [
                           </div>
 
                           {/* Additional Information */}
-                          <motion.div 
+                          {/* <motion.div 
                             className="mt-16 bg-gradient-to-r from-amber-700 to-amber-600 rounded-2xl p-8 text-white shadow-xl"
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -1639,7 +1639,7 @@ const faqs = [
                                   </a>
                               </div>
                             </div>
-                          </motion.div>
+                          </motion.div> */}
                         </div>
                       </section>
                     {/* end */}

@@ -928,7 +928,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                            </div>
                                            
                                            {/* Testimonial Section */}
-                                           <motion.div 
+                                           {/* <motion.div 
                                              className="mt-20 bg-gradient-to-r from-amber-700 to-amber-800 rounded-3xl overflow-hidden shadow-2xl"
                                              initial={{ opacity: 0, y: 30 }}
                                              whileInView={{ opacity: 1, y: 0 }}
@@ -982,7 +982,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                  </div>
                                                </div>
                                              </div>
-                                           </motion.div>
+                                           </motion.div> */}
                                            
                                            {/* Benefits Section */}
                                            <motion.div 
