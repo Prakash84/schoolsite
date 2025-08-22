@@ -1149,111 +1149,116 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
         
         {/* Why Choose Us Section */}
-        <section className="py-20 relative">
-          <div className="absolute inset-0 bg-amber-800 opacity-5"></div>
-          <div className="container mx-auto px-4 relative">
-             {/* Section Header */}
-                    <motion.div 
-                      className="text-center mb-20"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true, margin: "-100px" }}
-                      transition={{ duration: 0.8 }}
-                    >
-                      <motion.div
-                        className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.2, duration: 0.5 }}
-                      >
-                        <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
-                        <span className="text-amber-700 font-medium tracking-wider">ABOUT US</span>
-                      </motion.div>
+                <section className="py-20 relative">
+                  <div className="absolute inset-0 bg-amber-800 opacity-5"></div>
+                  <div className="container mx-auto px-4 relative">
+                    
+                    {/* Section Header */}
+                <motion.div 
+                  className="text-center mb-20"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-100px" }}
+                  transition={{ duration: 0.8 }}
+                >
+                  <motion.div
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: 0.2, duration: 0.5 }}
+                  >
+                    <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+                    <span className="text-amber-700 font-medium tracking-wider">Specialty</span>
+                  </motion.div>
+                  
+                  <motion.h2
+                    className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3, duration: 0.6 }}
+                  >
+                    Our Specialty <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Services at Delhi Spa</span>
+                  </motion.h2>
+                  
+                  <motion.p
+                    className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4, duration: 0.5 }}
+                  >
+                    Erotic and Nuru Massage, Thai Massage, Sandwich Massage, Full Body Massage by Expert Therapists
+                  </motion.p>
+                  
+                  <motion.div
+                    className="flex justify-center mt-10"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5, duration: 0.5 }}
+                  >
+                    <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                  </motion.div>
+                </motion.div>
+                    
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                      <div className="bg-white p-8 rounded-2xl shadow-sm">
+                            <h3 className="text-xl font-semibold text-amber-800 mb-4">Expert Therapists</h3>
+                            <p className="text-gray-700 mb-6">
+                              When it comes to indulgent relaxation and rejuvenation, Delhi spa centers stand out for their exceptional massage therapies. Among the most popular and sought-after treatments are erotic massage, nuru massage, thai massage, sandwich massage, and full body massage. Whether you seek pure relaxation, therapeutic relief, or something more sensual, Delhi's best spas offer a range of services tailored to suit every need. With both Indian and foreign therapists, these therapies are designed to promote deep relaxation, reduce stress, and rejuvenate the body.
+        
+                            </p>
+                          {/* Bullet Points instead of Image */}
+                          <ul className="list-disc list-inside text-gray-700 space-y-2">
+                            <li>Highly trained and certified therapists</li>
+                            <li>Wide range of massage techniques</li>
+                            <li>Focus on relaxation & stress relief</li>
+                            <li>Customized treatments for every client</li>
+                            <li>Professional and hygienic environment</li>
+                          </ul>
+                          
+                          <p className="text-gray-700 mb-6">
+                              When it comes to indulgent relaxation and rejuvenation, Delhi spa centers stand out for their exceptional massage therapies. Among the most popular and sought-after treatments are erotic massage, nuru massage, thai massage, sandwich massage, and full body massage. Whether you seek pure relaxation, therapeutic relief, or something more sensual, Delhi's best spas offer a range of services tailored to suit every need.
+        
+                            </p>
+                      </div>
                       
-                      <motion.h2
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.3, duration: 0.6 }}
-                      >
-                        Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Our Spa in Delhi?</span>
-                      </motion.h2>
+                      <div className="relative">
+                        <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px] flex items-center justify-center overflow-hidden">
+                          <img
+                            src="/images/staff2.jpg"
+                            alt="Client Testimonial"
+                            className="object-cover w-full h-full rounded-xl"
+                          />
+                        </div>
+                        <div className="absolute -top-6 -right-6 bg-amber-100 p-6 rounded-full">
+                          <span className="text-amber-800 text-xl font-serif">"</span>
+                        </div>
+                      </div>
+        
                       
-                      <motion.p
-                        className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.4, duration: 0.5 }}
-                      >
-                        We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
-                      </motion.p>
-                      
-                      <motion.div
-                        className="flex justify-center mt-10"
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.5, duration: 0.5 }}
-                      >
-                        <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
-                      </motion.div>
-                    </motion.div>
-            
-            
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              <div className="bg-white p-8 rounded-2xl shadow-sm">
-                    <h3 className="text-xl font-semibold text-amber-800 mb-4">Expert Therapists</h3>
-                    <p className="text-gray-700 mb-6">
-                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage.
-                      Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow.
-                      Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage
-                    </p>
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-48">
-                    <img
-                    src="/images/5969.jpg"
-                    alt="Client Testimonial"
-                    className="object-cover w-full h-full rounded-xl"
-                  />
+                      <div className="bg-white p-8 rounded-2xl shadow-sm">
+                        <span className="font-semibold text-amber-800 mb-4">Erotic Massage in Delhi: An Intimate Experience</span>
+                        <p className="text-gray-700 mb-6">
+                          The erotic massage in Delhi is a highly specialized and intimate therapy that offers a combination of relaxation and sensuality. Ideal for those who wish to experience heightened pleasure while relieving stress, this service is carried out by expert therapists who understand how to deliver a soothing, yet deeply stimulating experience. If you're looking for something beyond the usual therapeutic massage, the erotic massage is a great choice, enhancing both emotional and physical well-being. This service is performed with care and professionalism, ensuring you receive the highest quality relaxation.                  
+                        </p>
+                        <span className="font-semibold text-amber-800 mb-4">Nuru Massage in Delhi: A Luxurious Sensation</span>
+                        <p>
+                         The nuru massage in Delhi is a uniquely sensual experience that has gained popularity for its exotic, slippery, and intimate nature. This Japanese massage style uses a special gel derived from seaweed, which makes the skin glide smoothly, allowing for a deep body-to-body connection between the therapist and the client. It’s a treatment that blends relaxation with sensual indulgence, making it ideal for individuals seeking a luxurious and intimate spa experience. Nuru massage offers a heightened sense of intimacy while still ensuring ultimate relaxation and stress relief.
+                        </p>
+                        {/* <p>
+                          Perfect for individuals suffering from stress, muscle pain, or hormonal imbalance, this massage harmonizes body rhythms and enhances immunity. The continuous motion and warm oil offer a meditative experience.
+                        </p> */}
+                        <div className="flex mt-6">
+                          {['Lavender', 'Eucalyptus', 'Rosemary', 'Sandalwood'].map((oil, index) => (
+                            <div key={index} className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm mr-2">
+                              {oil}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+        
                     </div>
-              </div>
-              
-              <div className="relative">
-                <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px] flex items-center justify-center overflow-hidden">
-                  <img
-                    src="/images/spaExper2.webp"
-                    alt="Client Testimonial"
-                    className="object-cover w-full h-full rounded-xl"
-                  />
-                </div>
-                <div className="absolute -top-6 -right-6 bg-amber-100 p-6 rounded-full">
-                  <span className="text-amber-800 text-xl font-serif">"</span>
-                </div>
-              </div>
-
-              
-              <div className="bg-white p-8 rounded-2xl shadow-sm">
-                <h3 className="text-xl font-semibold text-amber-800 mb-4">Premium Oils</h3>
-                <p className="text-gray-700 mb-6">
-                  We use only cold-pressed, organic oils blended with therapeutic-grade essential oils for maximum benefit.
-                  Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being.
-                </p>
-                <p>
-                  Whether you’ve had a long week or simply need a reset, this therapy will leave you feeling light, centered, and refreshed. Regular sessions can improve flexibility, deepen sleep, and support emotional stability. It's the ultimate way to recharge your energy and reconnect with inner peace.
-                </p>
-                <p>
-                  Perfect for individuals suffering from stress, muscle pain, or hormonal imbalance, this massage harmonizes body rhythms and enhances immunity. The continuous motion and warm oil offer a meditative experience.
-                </p>
-                <div className="flex mt-6">
-                  {['Lavender', 'Eucalyptus', 'Rosemary', 'Sandalwood'].map((oil, index) => (
-                    <div key={index} className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm mr-2">
-                      {oil}
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
+                  </div>
+                </section>
         {/* Pricing Section */}
               <section id= "Pricing" className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
               {/* Decorative elements */}
