@@ -58,50 +58,50 @@ export default function cp() {
                 ];
   const hotelOutlets = [
   {
-    title: "JW Marriott Hotel Connaught Place",
-    image: "/images/JW Marriott Hotel Connaught Place.jpg",
+    title: "Radisson Blu Hotel Connaught Place",
+    image: "/images/radissonblu_CP.jpg",
     description:
       "JW Marriott Hotel Connaught Place offers luxury stays, fine dining, spa services, and elegant ambiance near Delhi Airport’s business district.",
   },
   {
-    title: "Lemon Tree Premier Connaught Place",
-    image: "/images/LemonTreePremierConnaught Place.jpg",
+    title: "The Park Connaught Place",
+    image: "/images/thePrak_CP.jpg",
     description:
       "Lemon Tree Premier Connaught Place is a stylish, upscale hotel in Delhi’s Connaught Place offering contemporary rooms and top-notch service.",
   },
   {
-    title: "Novotel New Delhi Connaught Place",
-    image: "/images/NovotelNewDelhiConnaught Place.jpeg",
+    title: "The Lalit New Delhi Connaught Place",
+    image: "/images/theLalit_CP.jpg",
     description:
       "Modern upscale airport hotel with sleek rooms, rooftop pool, spa, and Connaught Place connectivity for travelers.",
   },
   {
-    title: "Pride Plaza Hotel",
-    image: "/images/pride-plaza-hotel-Connaught Place1-2.jpg",
+    title: "Holiday Inn New Delhi Connaught Place",
+    image: "/images/holidayIn_CP.jpg",
     description:
       "Elegant urban retreat offering luxurious rooms, dining, fitness center, event spaces, and personalized hospitality.",
   },
   {
-    title: "IBIS New Delhi Connaught Place",
-    image: "/images/IBISNewDelhiConnaught Place.jpg",
+    title: "Jw Marriott New Delhi Connaught Place",
+    image: "/images/JwMarriott_CP.jpg",
     description:
       "Rejuvenate at Ibis Connaught Place’s spa with expert therapists, luxurious treatments, and serene ambience.",
   },
   {
     title: "Pullman Connaught Place",
-    image: "/images/pullmanConnaught Place.jpg",
+    image: "/images/pullman.jpg",
     description:
       "Experience rejuvenating spa services at The Park Connaught Place – where luxury meets wellness.",
   },
   {
-    title: "Jaypee Vasant Connaught Place",
-    image: "/images/jaypeeVasantConnaught Place.png",
+    title: "Shangri-La Eros, New Delhi",
+    image: "/images/shangri-la-s-eros-hotel-connaught-place-delhi-5-star-hotels-2zj8oj1.AVIF",
     description:
       "Indulge at The Suryaa with massages, therapies, serene ambiance, and personalized wellness.",
   },
   {
-    title: "The Ashok (Chanakyapuri)",
-    image: "/images/TheAshok(Chanakyapuri).webp",
+    title: "The Imperial New Delhi",
+    image: "/images/theImperial_CP.jpeg",
     description:
       "Rejuvenate at The Ashok’s luxury spa in Chanakyapuri—experience ultimate relaxation and wellness.",
   },
