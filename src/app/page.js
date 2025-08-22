@@ -72,33 +72,7 @@ const teamMembers = [
   },
 ];
 
-const outlets = [
-  {
-    title: 'Aerocity',
-    description: 'Experience comfort at Novotel Aerocity, just minutes from the airport, perfect for business stays and spa relaxation nearby.',
-    image: '/images/NovotelNewDelhiAerocity.jpeg',
 
-    link: 'https://api.whatsapp.com/send?phone=918826482370',
-  },
-  {
-    title: 'New Friends Colony (NFC)',
-    description: 'Experience luxury at The Suryaa New Delhi (NFC), a serene escape offering premium spa and wellness services in style.',
-    image: '/images/TheSuryaaNewDelhi(NFC).jpg',
-    link: 'https://api.whatsapp.com/send?phone=918826482370',
-  },
-  {
-    title: 'Connaught Place',
-    description: 'Experience luxury at The Park New Delhi, Connaught Place. Relax, rejuvenate, and unwind with premium spa treatments in style.',
-    image: '/images/TheParkConnaughtPlace.jpg',
-    link: 'https://api.whatsapp.com/send?phone=918826482370',
-  },
-  {
-    title: 'Grand Vasant Kunj',
-    description: 'Experience luxury at The Roseate Aerocity, and indulge in relaxing spa therapies with expert care and serene ambiance.',
-    image: '/images/TheGrandNewDelhi.jpg',
-    link: 'https://api.whatsapp.com/send?phone=918826482370',
-  },
-];
 {/* Our Process */}
   const processSteps = [
   {
@@ -454,32 +428,29 @@ const features2 = [
 
  const outlets = [
   {
-    name: "The Grand Plaza",
-    desc: "Luxury spa at the heart of downtown with panoramic city views",
-    rating: 5,
-    tag: "Exclusive",
-    icon: <Sparkles className="w-6 h-6 text-amber-600" />
+    title: 'Novotel Aerocity',
+    description: 'Experience comfort at Novotel Aerocity, just minutes from the airport, perfect for business stays and spa relaxation nearby.',
+    image: '/images/NovotelNewDelhiAerocity.jpeg',
+
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
-    name: "Marina Bay Resort",
-    desc: "Beachfront sanctuary with ocean-inspired treatments",
-    rating: 4.9,
-    tag: "Waterfront",
-    icon: <Hotel className="w-6 h-6 text-amber-600" />
+    title: 'Suryaa New Friends Colony (NFC)',
+    description: 'Experience luxury at The Suryaa New Delhi (NFC), a serene escape offering premium spa and wellness services in style.',
+    image: '/images/TheSuryaaNewDelhi(NFC).jpg',
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
-    name: "Skyline Tower",
-    desc: "Rooftop wellness center with city skyline views",
-    rating: 4.8,
-    tag: "Panoramic",
-    icon: <Building2 className="w-6 h-6 text-amber-600" />
+    title: 'The Park Connaught Place',
+    description: 'Experience luxury at The Park New Delhi, Connaught Place. Relax, rejuvenate, and unwind with premium spa treatments in style.',
+    image: '/images/TheParkConnaughtPlace.jpg',
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
-    name: "Royal Gardens",
-    desc: "Historic mansion transformed into a luxury spa retreat",
-    rating: 5,
-    tag: "Heritage",
-    icon: <MapPin className="w-6 h-6 text-amber-600" />
+    title: 'Grand Vasant Kunj',
+    description: 'Experience luxury at The Roseate Aerocity, and indulge in relaxing spa therapies with expert care and serene ambiance.',
+    image: '/images/TheGrandNewDelhi.jpg',
+    link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
 ];
   return (
