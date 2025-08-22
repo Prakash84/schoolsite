@@ -58,52 +58,28 @@ export default function lajpatnagar() {
                 ];
   const hotelOutlets = [
   {
-    title: "JW Marriott Hotel Lajpat Nagar",
-    image: "/images/JW Marriott Hotel Lajpat Nagar.jpg",
+    title: "Taj Mahal Hotel Lajpat Nagar",
+    image: "/images/tajmahalhotel_lajpatnagar.jpg",
     description:
-      "JW Marriott Hotel Lajpat Nagar offers luxury stays, fine dining, spa services, and elegant ambiance near Delhi Airport’s business district.",
+      "Taj Mahal Hotel Lajpat Nagar offers luxury stays, fine dining, spa services, and elegant ambiance near Delhi Airport’s business district.",
   },
   {
-    title: "Lemon Tree Premier Lajpat Nagar",
-    image: "/images/LemonTreePremierLajpat Nagar.jpg",
+    title: "The Oberoi Lajpat Nagar",
+    image: "/images/TheOberoi_Lajpatnagar.jpg",
     description:
-      "Lemon Tree Premier Lajpat Nagar is a stylish, upscale hotel in Delhi’s Lajpat Nagar offering contemporary rooms and top-notch service.",
+      "The Oberoi Premier Lajpat Nagar is a stylish, upscale hotel in Delhi’s Lajpat Nagar offering contemporary rooms and top-notch service.",
   },
   {
-    title: "Novotel New Delhi Lajpat Nagar",
-    image: "/images/NovotelNewDelhiLajpat Nagar.jpeg",
+    title: "Eros Hotel New Delhi Lajpat Nagar",
+    image: "/images/ErosHotel_lajpatnagar.jpg",
     description:
       "Modern upscale airport hotel with sleek rooms, rooftop pool, spa, and Lajpat Nagar connectivity for travelers.",
   },
   {
-    title: "Pride Plaza Hotel",
-    image: "/images/pride-plaza-hotel-Lajpat Nagar1-2.jpg",
+    title: "Crowne Plaza Hotel",
+    image: "/images/crowne-plaza-lajpatnagar.jpg",
     description:
       "Elegant urban retreat offering luxurious rooms, dining, fitness center, event spaces, and personalized hospitality.",
-  },
-  {
-    title: "IBIS New Delhi Lajpat Nagar",
-    image: "/images/IBISNewDelhiLajpat Nagar.jpg",
-    description:
-      "Rejuvenate at Ibis Lajpat Nagar’s spa with expert therapists, luxurious treatments, and serene ambience.",
-  },
-  {
-    title: "Pullman Lajpat Nagar",
-    image: "/images/pullmanLajpat Nagar.jpg",
-    description:
-      "Experience rejuvenating spa services at The Park Connaught Place – where luxury meets wellness.",
-  },
-  {
-    title: "Jaypee Vasant Lajpat Nagar",
-    image: "/images/jaypeeVasantLajpat Nagar.png",
-    description:
-      "Indulge at The Suryaa with massages, therapies, serene ambiance, and personalized wellness.",
-  },
-  {
-    title: "The Ashok (Chanakyapuri)",
-    image: "/images/TheAshok(Chanakyapuri).webp",
-    description:
-      "Rejuvenate at The Ashok’s luxury spa in Chanakyapuri—experience ultimate relaxation and wellness.",
   },
 ];
   const pricingPlans = [

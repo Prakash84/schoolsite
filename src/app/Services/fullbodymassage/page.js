@@ -860,10 +860,11 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                    <p className="text-gray-700 mb-6">
                                                      Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. 
                                                      This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation.
+                                                     The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being. Regular sessions can improve flexibility, deepen sleep, and support emotional stability.
                                                    </p>
                                                    
                                                    <div className="flex flex-wrap gap-3 mb-8">
-                                                     {['Ayurvedic Certification', '10+ Years Experience', 'Personalized Techniques', 'Deep Tissue Mastery'].map((item, index) => (
+                                                     {['10+ Years Experience', 'Personalized Techniques', 'Deep Tissue Mastery'].map((item, index) => (
                                                        <div key={index} className="bg-amber-50 text-amber-800 px-4 py-2 rounded-full text-sm font-medium">
                                                          {item}
                                                        </div>

@@ -843,13 +843,19 @@ export default function About() {
                       When it comes to indulgent relaxation and rejuvenation, Delhi spa centers stand out for their exceptional massage therapies. Among the most popular and sought-after treatments are erotic massage, nuru massage, thai massage, sandwich massage, and full body massage. Whether you seek pure relaxation, therapeutic relief, or something more sensual, Delhi's best spas offer a range of services tailored to suit every need. With both Indian and foreign therapists, these therapies are designed to promote deep relaxation, reduce stress, and rejuvenate the body.
 
                     </p>
-                  <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-48">
-                    <img
-                    src="/images/21109.jpg"
-                    alt="Client Testimonial"
-                    className="object-cover w-full h-full rounded-xl"
-                  />
-                    </div>
+                  {/* Bullet Points instead of Image */}
+                  <ul className="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Highly trained and certified therapists</li>
+                    <li>Wide range of massage techniques</li>
+                    <li>Focus on relaxation & stress relief</li>
+                    <li>Customized treatments for every client</li>
+                    <li>Professional and hygienic environment</li>
+                  </ul>
+                  
+                  <p className="text-gray-700 mb-6">
+                      When it comes to indulgent relaxation and rejuvenation, Delhi spa centers stand out for their exceptional massage therapies. Among the most popular and sought-after treatments are erotic massage, nuru massage, thai massage, sandwich massage, and full body massage. Whether you seek pure relaxation, therapeutic relief, or something more sensual, Delhi's best spas offer a range of services tailored to suit every need.
+
+                    </p>
               </div>
               
               <div className="relative">
@@ -973,142 +979,237 @@ export default function About() {
         </div>
       </section>
       {/* content */}
-      {/* demo 1 */}
-      <section className="w-full py-16 bg-yellow-50 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-yellow-100/50 backdrop-blur-sm -z-10" />
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-rose-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-      <div className="absolute top-0 right-0 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-      <div className="absolute bottom-0 left-1/4 w-72 h-72 bg-amber-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
-      
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <motion.div
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.2, duration: 0.5 }}
-                    >
-                      <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
-                      <span className="text-amber-700 font-medium tracking-wider">PREMIUM LOCATIONS</span>
-                    </motion.div>
-                    
-                    <motion.h2
-                      className="text-4xl md:text-5xl lg:text-6xl font-bold text-amber-900 mb-6 font-serif"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.3, duration: 0.6 }}
-                    >
-                      Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Sanctuary</span>
-                    </motion.h2>
-          <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-8">
-            <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
-              <h2 className="text-3xl  font-bold text-amber-800 mb-6">
-                Foreigner Staff
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Serenity Body Spa was born from a simple vision: to create an urban oasis where modern wellness meets ancient healing traditions. Founded in 2010 by renowned holistic therapist Elena Rodriguez, our spa began as a single-treatment room with a passionate mission. Today, we've grown into an award-winning sanctuary serving over 5,000 clients annually, yet we've maintained our core commitment to personalized care.
-              </p>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Our journey mirrors the transformations we facilitate - starting small, nurturing growth, and evolving while staying true to our essence. Each expansion was guided by client feedback and emerging wellness research, resulting in our unique blend of evidence-based therapies and intuitive body wisdom.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
-              <h2 className="text-3xl font-bold text-amber-800 mb-6">
-                Hotel Staff In Delhi
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                We believe true wellness emerges from harmony between physical, mental, and energetic dimensions. Unlike conventional spas, our approach integrates three core principles:
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-                {[
-                  {title: 'Mindful Presence', desc: 'Therapists trained in meditation techniques to create truly present healing experiences'},
-                  {title: 'Biome Intelligence', desc: 'Therapies designed to activate your body\'s innate healing capabilities'},
-                  {title: 'Energy Alignment', desc: 'Space designed with sacred geometry to enhance therapeutic benefits'}
-                ].map((item, index) => (
-                  <div key={index} className="bg-indigo-50 p-4 rounded-xl">
-                    <h3 className="font-bold text-amber-800 mb-2">{item.title}</h3>
-                    <p className="text-sm text-gray-600">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="text-gray-600 leading-relaxed">
-                This holistic framework allows us to create treatments that don't just relax temporarily but catalyze lasting change. Our clients report benefits ranging from improved sleep patterns to reduced chronic pain months after their visits.
-              </p>
-            </div>
-          </div>
-
-          <div className="space-y-8">
-            <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
-              <h2 className="text-3xl font-bold text-amber-800 mb-6">
-                Day And Night Staff
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Our team of 23 therapists represents the pinnacle of spa craftsmanship. Each practitioner undergoes 500+ hours of training in our proprietary modalities before touching clients. We source talent globally, with specialists in:
-              </p>
-              <ul className="grid grid-cols-2 gap-3 mb-6">
-                {[
-                  'Thai Herbal Compress', 'Shiatsu', 'Lymphatic Drainage', 
-                  'Ayurvedic Abhyanga', 'Hot Stone Therapy', 'Aromatherapy',
-                  'Deep Tissue Sculpting', 'Craniosacral'
-                ].map((item, index) => (
-                  <li key={index} className="flex items-center">
-                    <div className="w-2 h-2 bg-amber-800 rounded-full mr-3"></div>
-                    <span className="text-gray-600">{item}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-gray-600 leading-relaxed">
-                Beyond technical excellence, we select therapists for their intuitive healing abilities. Monthly training includes emotional intelligence development and energy work certification. This investment shows in our 98% client retention rate and numerous industry awards.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-3xl shadow-xl border border-white/20 backdrop-blur-sm">
-              <h2 className="text-3xl font-bold text-amber-800 mb-6">
-                First Visit offer
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-6">
-                Our commitment extends beyond individual wellness to planetary health. We're proud to be the first Carbon Neutral spa in our region, with initiatives including:
-              </p>
-              <div className="flex flex-wrap gap-4 mb-6">
-                {[
-                  {icon: '♻️', text: 'Zero-Waste Policy'},
-                  {icon: '🌱', text: 'Organic Linens'},
-                  {icon: '💧', text: 'Water Recycling'},
-                  {icon: '🌎', text: 'Carbon Offsetting'},
-                  {icon: '🏺', text: 'Handcrafted Products'}
-                ].map((item, index) => (
-                  <span key={index} className="bg-[#f0eae3] text-amber-800 px-4 py-2 rounded-full flex items-center">
-                    <span className="mr-2 text-xl">{item.icon}</span>
-                    {item.text}
-                  </span>
-                ))}
-              </div>
-              <p className="text-gray-600 leading-relaxed">
-                Our product line features sustainably harvested ingredients from ethical cooperatives. We've partnered with local environmental initiatives, donating 5% of profits to wetland conservation. When you indulge at Serenity, you're supporting a healthier ecosystem.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-20 bg-gradient-to-r from-indigo-500 to-rose-500 rounded-3xl p-10 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">Call To Action</h2>
-          <p className="text-indigo-100 max-w-3xl mx-auto mb-8 text-lg">
-            We invite you to experience the difference that intention, expertise, and genuine care can make. Whether seeking relief from chronic stress, post-injury recovery, or simply sacred "me time," our doors open to welcome you home to yourself.
-          </p>
-          <button className="bg-amber-400 hover:bg-amber-300 text-gray-900 font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg">
-            Book Your Journey
-          </button>
-        </div>
-      </div>
-      
-    </section>
-      {/* end demo 1 */}
+      {/* content section */}
+     <section className="bg-gradient-to-b from-[#fcf7f4] to-[#f8f0eb] py-20 px-6 md:px-16">
+                                      <div className="max-w-6xl mx-auto">
+                                        {/* Section Header */}
+                                        <motion.div 
+                                          className="text-center mb-16"
+                                          initial={{ opacity: 0, y: 20 }}
+                                          whileInView={{ opacity: 1, y: 0 }}
+                                          viewport={{ once: true }}
+                                          transition={{ duration: 0.6 }}
+                                        >
+                                          <span className="text-lg font-medium text-amber-700 tracking-widest">OUR SIGNATURE OFFERINGS</span>
+                                          <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-6">Premium Spa Experiences</h1>
+                                          <div className="w-24 h-1 bg-amber-600 mx-auto rounded-full"></div>
+                                        </motion.div>
+              
+                                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                                          {/* Left Column */}
+                                          <div>
+                                            {/* Facial Treatments */}
+                                            <motion.div 
+                                              className="bg-white bg-optage-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#e8d5c9]"
+                                              initial={{ opacity: 0, x: 30 }}
+                                              whileInView={{ opacity: 1, x: 0 }}
+                                              viewport={{ once: true }}
+                                              transition={{ duration: 0.7 }}
+                                            >
+                                              <div className="flex items-center gap-4 mb-6">
+                                                <div className="bg-amber-100 p-3 rounded-xl">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                                  </svg>
+                                                </div>
+                                                <h2 className="text-3xl font-bold text-amber-800 mb-6">
+                                                  Foreigner Staff
+                                                </h2>
+                                              </div>
+                                               <p className="text-gray-600 leading-relaxed mb-6">
+                              We believe true wellness emerges from harmony between physical, mental, and energetic dimensions. Unlike conventional spas, our approach integrates three core principles:
+                                                </p>
+                                                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                                                  {[
+                                                    {title: 'Russian Therapist', desc: 'Therapists trained in meditation techniques to create truly present healing experiences'},
+                                                    {title: 'Afgani Therapist', desc: 'Therapies designed to activate your body\'s innate healing capabilities'},
+                                                    {title: 'Uzbeki Therapist', desc: 'Space designed with sacred geometry to enhance therapeutic benefits'}
+                                                  ].map((item, index) => (
+                                                    <div key={index} className="bg-indigo-50 p-4 rounded-xl">
+                                                      <h3 className="font-bold text-amber-800 mb-2">{item.title}</h3>
+                                                      <p className="text-sm text-gray-600">{item.desc}</p>
+                                                    </div>
+                                                  ))}
+                                                </div>
+                                                <p className="text-gray-600 leading-relaxed">
+                                                  This holistic framework allows us to create treatments that don't just relax temporarily but catalyze lasting change. Our clients report benefits ranging from improved sleep patterns to reduced chronic pain months after their visits.
+                                                </p>
+                                              <div className="mt-6">
+                                                <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-90 min | From ₹2,800</span>
+                                              </div>
+                                            </motion.div>
+                                            
+              
+                                            {/* Body Treatments */}
+                                            <motion.div 
+                                              className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-[#e8d5c9]"
+                                              initial={{ opacity: 0, x: -30 }}
+                                              whileInView={{ opacity: 1, x: 0 }}
+                                              viewport={{ once: true }}
+                                              transition={{ duration: 0.7, delay: 0.1 }}
+                                            >
+                                              <div className="flex items-center gap-4 mb-6">
+                                                <div className="bg-amber-100 p-3 rounded-xl">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                                  </svg>
+                                                </div>
+                                                <h2 className="text-3xl font-bold text-amber-800 mb-6">
+                                                  Why Go For Delhi Spa
+                                                </h2>
+                                              </div>
+                                                                  <p className="text-gray-600 leading-relaxed mb-6">
+                                                  Our team of 23 therapists represents the pinnacle of spa craftsmanship. Each practitioner undergoes 500+ hours of training in our proprietary modalities before touching clients. We source talent globally, with specialists in:
+                                                </p>
+                                                <ul className="grid grid-cols-2 gap-3 mb-6">
+                                                  {[
+                                                    'Thai Herbal Compress', 'Shiatsu', 'Lymphatic Drainage', 
+                                                    'Ayurvedic Abhyanga', 'Hot Stone Therapy', 'Aromatherapy',
+                                                    'Deep Tissue Sculpting', 'Craniosacral'
+                                                  ].map((item, index) => (
+                                                    <li key={index} className="flex items-center">
+                                                      <div className="w-2 h-2 bg-amber-800 rounded-full mr-3"></div>
+                                                      <span className="text-gray-600">{item}</span>
+                                                    </li>
+                                                  ))}
+                                                </ul>
+                                                <p className="text-gray-600 leading-relaxed">
+                                                  Beyond technical excellence, we select therapists for their intuitive healing abilities. Monthly training includes emotional intelligence development and energy work certification. This investment shows in our 98% client retention rate and numerous industry awards.
+                                                </p>
+                                              <div className="mt-6">
+                                                <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">75-90 min | From ₹3,200</span>
+                                              </div>
+                                            </motion.div>
+                                          </div>
+              
+                                          {/* Right Column */}
+                                          <div>
+                                            
+              
+                                            {/* Massage Therapy */}
+                                            <motion.div 
+                                              className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg mb-10 border border-[#e8d5c9]"
+                                              initial={{ opacity: 0, x: -30 }}
+                                              whileInView={{ opacity: 1, x: 0 }}
+                                              viewport={{ once: true }}
+                                              transition={{ duration: 0.7 }}
+                                            >
+                                              <div className="flex items-center gap-4 mb-6">
+                                                <div className="bg-amber-100 p-3 rounded-xl">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                                  </svg>
+                                                </div>
+                                                <h2 className="text-3xl font-bold text-amber-800 mb-6">
+                                                  Top Rated Services
+                                                </h2>
+                                              </div>
+                                              <p className="text-gray-600 leading-relaxed mb-6">
+                                                Our commitment extends beyond individual wellness to planetary health. We're proud to be the first Carbon Neutral spa in our region, with initiatives including:
+                                                Unlike conventional spas, our approach integrates three core principles:
+                                              </p>
+                                              <div className="flex flex-wrap gap-4 mb-6">
+                                                {[
+                                                  {icon: '♻️', text: 'Zero-Waste Policy'},
+                                                  {icon: '🌱', text: 'Organic Linens'},
+                                                  {icon: '💧', text: 'Water Recycling'},
+                                                  {icon: '🌎', text: 'Carbon Offsetting'},
+                                                  // {icon: '🏺', text: 'Handcrafted Products'}
+                                                ].map((item, index) => (
+                                                  <span key={index} className="bg-[#f0eae3] text-amber-800 px-4 py-2 rounded-full flex items-center">
+                                                    <span className="mr-2 text-xl">{item.icon}</span>
+                                                    {item.text}
+                                                  </span>
+                                                ))}
+                                              </div>
+                                              <p className="text-gray-600 leading-relaxed">
+                                                Our product line features sustainably harvested ingredients from ethical cooperatives. We've partnered with local environmental initiatives, donating 5% of profits to wetland conservation. When you indulge at Serenity, you're supporting a healthier ecosystem.
+                                                Our clients report benefits ranging from improved sleep patterns to reduced chronic pain months after their visits.
+                                              </p>
+                                              {/* // */}
+                                              
+                                              <div className="mt-6">
+                                                <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">60-120 min | From ₹2,500</span>
+                                              </div>
+                                            </motion.div>
+                                            {/* Wellness Packages */}
+                                            <motion.div 
+                                              className="bg-white bg-opacity-80 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-[#e8d5c9]"
+                                              initial={{ opacity: 0, x: 30 }}
+                                              whileInView={{ opacity: 1, x: 0 }}
+                                              viewport={{ once: true }}
+                                              transition={{ duration: 0.7, delay: 0.1 }}
+                                            >
+                                              <div className="flex items-center gap-4 mb-6">
+                                                <div className="bg-amber-100 p-3 rounded-xl">
+                                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                                                  </svg>
+                                                </div>
+                                                <h2 className="text-2xl font-bold text-[#3a2e2a]">Home & Hotel Spa</h2>
+                                              </div>
+                                              <p className="text-gray-600 leading-relaxed mb-6">
+                                                Our commitment extends beyond individual wellness to planetary health. We're proud to be the first Carbon Neutral spa in our region, with initiatives including:
+                                              </p>
+                                              <div className="flex flex-wrap gap-4 mb-6">
+                                                {[
+                                                  {icon: '🏨', text: 'JW Marriott Hotel Aerocity'},
+                                                  {icon: '🏩', text: 'The Ashok (Chanakyapuri)'},
+                                                  {icon: '🏨', text: 'The Park Connaught Place'},
+                                                  {icon: '🏩', text: 'The Suryaa New Delhi (NFC)'},
+                                                  // {icon: '🏨', text: 'The Grand New Delhi'},
+                                                  // {icon: '🏩', text: 'Novotel New Delhi Aerocity'},
+                                                ].map((item, index) => (
+                                                  <span key={index} className="bg-[#f0eae3] text-amber-800 px-4 py-2 rounded-full flex items-center">
+                                                    <span className="mr-2 text-xl">{item.icon}</span>
+                                                    {item.text}
+                                                  </span>
+                                                ))}
+                                              </div>
+                                              <p className="text-gray-600 leading-relaxed">
+                                                Our product line features sustainably harvested ingredients from ethical cooperatives. We've partnered with local environmental initiatives, donating 5% of profits to wetland conservation.
+                                              </p>
+                                              <div className="mt-6">
+                                                <span className="inline-block bg-amber-100 text-amber-800 py-1 px-4 rounded-full text-sm font-medium">3-6 hours | From ₹8,500</span>
+                                              </div>
+                                            </motion.div>
+                                          </div>
+                                        </div>
+              
+                                        {/* Additional Information */}
+                                        <motion.div 
+                                          className="mt-16 bg-gradient-to-r from-amber-700 to-amber-600 rounded-2xl p-8 text-white shadow-xl"
+                                          initial={{ opacity: 0, y: 30 }}
+                                          whileInView={{ opacity: 1, y: 0 }}
+                                          viewport={{ once: true }}
+                                          transition={{ duration: 0.7 }}
+                                        >
+                                          <div className="grid md:grid-cols-2 gap-8 items-center">
+                                            <div>
+                                              <h3 className="text-2xl font-bold mb-4">Personalized Spa Journeys</h3>
+                                              <p className="mb-4 opacity-90">
+                                                Every visit begins with a confidential wellness consultation where our specialists listen to your concerns and goals. We consider your lifestyle, stress levels, and any physical discomfort to create a truly personalized treatment plan.
+                                              </p>
+                                              <p className="opacity-90">
+                                                Our exclusive loyalty program offers priority booking, complimentary upgrades, and special members-only events. Corporate wellness packages are available for businesses looking to invest in their team's wellbeing.
+                                              </p>
+                                            </div>
+                                            <div className="flex justify-center">
+                                              <a 
+                                                  href="https://t.me/Tanuspa" 
+                                                  target="_blank"
+                                                  rel="noopener noreferrer"
+                                                  className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                                >
+                                                  <FaTelegram className="text-xl mr-3" />
+                                                  Join Telegram Channel
+                                                </a>
+                                            </div>
+                                          </div>
+                                        </motion.div>
+                                      </div>
+      </section>
+       {/* end */}
       
       {/* end content */}
       {/* Our Therapy Experts */}

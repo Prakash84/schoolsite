@@ -81,30 +81,6 @@ export default function paschimvihar() {
     description:
       "Elegant urban retreat offering luxurious rooms, dining, fitness center, event spaces, and personalized hospitality.",
   },
-  {
-    title: "IBIS New Delhi Paschim Vihar",
-    image: "/images/IBISNewDelhiPaschim Vihar.jpg",
-    description:
-      "Rejuvenate at Ibis Paschim Vihar’s spa with expert therapists, luxurious treatments, and serene ambience.",
-  },
-  {
-    title: "Pullman Paschim Vihar",
-    image: "/images/pullmanPaschim Vihar.jpg",
-    description:
-      "Experience rejuvenating spa services at The Park Connaught Place – where luxury meets wellness.",
-  },
-  {
-    title: "Jaypee Vasant Paschim Vihar",
-    image: "/images/jaypeeVasantPaschim Vihar.png",
-    description:
-      "Indulge at The Suryaa with massages, therapies, serene ambiance, and personalized wellness.",
-  },
-  {
-    title: "The Ashok (Chanakyapuri)",
-    image: "/images/TheAshok(Chanakyapuri).webp",
-    description:
-      "Rejuvenate at The Ashok’s luxury spa in Chanakyapuri—experience ultimate relaxation and wellness.",
-  },
 ];
   const pricingPlans = [
     {
