@@ -1,4 +1,12 @@
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+
 export default function Footer() {
+  const icons = [
+    { name: "facebook", icon: <FaFacebookF className="text-blue-600" />, link: "#" },
+    { name: "twitter", icon: <FaTwitter className="text-sky-500" />, link: "#" },
+    { name: "instagram", icon: <FaInstagram className="text-pink-500" />, link: "#" },
+  ];
+
   return (
     <footer className="bg-gray-900 text-white py-16 px-6 md:px-16 relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 relative z-10">
@@ -8,13 +16,15 @@ export default function Footer() {
           </h3>
           <p className="text-gray-400 mb-6">Luxury spa experiences for complete rejuvenation in the heart of Delhi.</p>
           <div className="flex space-x-4">
-            {['facebook', 'twitter', 'instagram'].map((_, i) => (
+            {icons.map((item, i) => (
               <a
                 key={i}
                 href="#"
                 className="bg-gray-800 p-3 rounded-full text-gray-300 hover:text-amber-400 hover:bg-gray-700 transition-colors"
               >
-                <div className="w-5 h-5"></div>
+                <div className="w-5 h-5 flex items-center justify-center">
+                  {item.icon}
+                </div>
               </a>
             ))}
           </div>
