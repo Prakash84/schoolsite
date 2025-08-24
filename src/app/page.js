@@ -74,27 +74,27 @@ const teamMembers = [
 
 const outlets = [
   {
-    title: 'Aerocity',
-    description: 'Experience comfort at Novotel Aerocity, just minutes from the airport, perfect for business stays and spa relaxation nearby.',
+    title: 'Hotel in Aerocity',
+    description: 'We provide body massage service at 5-star hotels in Aerocity, like Lemon Tree, Andaz, IBIS and so on.',
     image: '/images/NovotelNewDelhiAerocity.jpeg',
 
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
-    title: 'New Friends Colony (NFC)',
-    description: 'Experience luxury at The Suryaa New Delhi (NFC), a serene escape offering premium spa and wellness services in style.',
+    title: 'Hotel in NFC',
+    description: 'Staying in a hotel in NFC and craving a massage? We provide B2B massage in delhi in hotels like The Suryaa and end all your days tiredness.',
     image: '/images/TheSuryaaNewDelhi(NFC).jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
-    title: 'Connaught Place',
-    description: 'Experience luxury at The Park New Delhi, Connaught Place. Relax, rejuvenate, and unwind with premium spa treatments in style.',
+    title: 'Hotel in Connaught Place',
+    description: 'Our team of massage therapists visits your hotel in CP and provide best spa in CP to hotels like Radisson Blu, The Lalit, The Park and so on.',
     image: '/images/TheParkConnaughtPlace.jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
-    title: 'Grand Vasant Kunj',
-    description: 'Experience luxury at The Roseate Aerocity, and indulge in relaxing spa therapies with expert care and serene ambiance.',
+    title: 'Dwarka Hotel',
+    description: 'Our team of expert massage therapists will visit your hotel room in Dwarka and provide an on-demand hotel spa in Dwarka.',
     image: '/images/TheGrandNewDelhi.jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
@@ -103,20 +103,20 @@ const outlets = [
   const processSteps = [
   {
     number: '01',
-    title: 'Select Hotel And Spa Outlet',
-    description: 'Our spa meeting process ensures a seamless and soothing experience, from scheduling to consultation and relaxation.',
+    title: 'Choose a Massage Service',
+    description: 'Choose the type of massage service that suits your massage needs and requirements that fits your budget.',
     image: '/images/mmeeting.webp',
   },
   {
     number: '02',
-    title: 'Appointment',
-    description: 'Relaxing spa treatment begins with consultation, followed by cleansing, massage, and rejuvenation steps.',
+    title: 'Appointment on Call or Telegram',
+    description: 'Its easy to book and get quick confirmations via call or message us on Telegram with your massage needs.',
     image: '/images/spa-treatments.jpg',
   },
   {
     number: '03',
-    title: 'Visit',
-    description: 'Confirm your appointment, choose your therapy, and relax, your spa journey is now set.',
+    title: 'Visit Us',
+    description: 'At the time you choose, relax in one of our beautiful spa locations.',
     image: '/images/finalizing.avif',
   },
 ];
@@ -161,33 +161,33 @@ const [isVisible, setIsVisible] = useState(false);
 
   const faqs = [
     {
-      question: "What types of massage therapies do you offer?",
-      answer: "We offer Couple Massage, Sandwich Massage, B2B Therapy, Full Body Massage, and Female-to-Male treatments.",
+      question: "Which kinds of massage does Spa Delhi perform?",
+      answer: "There is a wide range of massage services to address your wellness needs, and they include aromatherapy, deep tissue, B2B, and couple massages, to name a few. Both therapeutic techniques are designed to relax and heal.",
       icon: <FaSpa className="text-teal-600" />
     },
     {
-      question: "Where are your spa outlets located in Delhi and Noida?",
-      answer: "Our outlets are located in Rajouri Garden, Rohini, Pitampura, Noida, Aerocity, Dwarka, Connaught Place, and Lajpat Nagar.",
+      question: "Do your therapists have experience, or are they certified?",
+      answer: "Yes, all our therapists are professional, fully trained individuals who are certified in their process and want to provide you with the best experience of massage experience.",
       icon: <FaLeaf className="text-teal-600" />
     },
     {
-      question: "What is your first-visit special offer?",
-      answer: "Our first-visit special is ₹1999, offering a luxurious experience at an affordable price.",
+      question: "How do I make a reservation for a massage?",
+      answer: "Booking is simple by phone, via Telegram, or online. Pick your service, favorable outlet, and time, and we will confirm.",
       icon: <FaHotTub className="text-teal-600" />
     },
     {
-      question: "Do you have therapists from different countries?",
-      answer: "Yes, we have skilled therapists from Russia, Thailand, Afghanistan, India, and other countries.",
+      question: "Do you offer 24/ 7 massage?",
+      answer: "Our timings are adaptable; we are available on a late-night and early-morning schedule to accommodate your tight schedule.",
       icon: <FaLeaf className="text-teal-600" />
     },
     {
-      question: "Can I book a Couple Massage session?",
-      answer: "Yes, we offer Couple Massage sessions for a relaxing and intimate experience.",
+      question: "What safety and hygiene precautions do you take?",
+      answer: "Your safety means everything to us, as we are radically committed to maintaining high standards of cleanliness through the provision of fresh linens, sterilized equipment, and thorough therapist screening.",
       icon: <FaSpa className="text-teal-600" />
     },
     {
-      question: "What is the cost of a Full Body Massage?",
-      answer: "The cost varies based on the treatment, with a special ₹1999 offer for first-time visitors.",
+      question: "May I ask a male or female therapist to see me?",
+      answer: "Absolutely. You may make a therapist preference during the booking and we will take heed of your choice.",
       icon: <FaHandSparkles className="text-teal-600" />
     },   
   ];
@@ -224,22 +224,22 @@ const [isVisible, setIsVisible] = useState(false);
   const services = [
     {
       title: "Aromatherapy",
-      description: "Essential oils for emotional and physical well-being",
+      description: "Healing essential oils calm the senses.",
       icon: "🌸",
     },
     {
       title: "Deep Tissue",
-      description: "Targets chronic muscle tension with slow, deep pressure",
+      description: " Relieves long-term muscular tension",
       icon: "💆‍♂️",
     },
     {
       title: "Hot Stone Therapy",
-      description: "Warm stones to melt away tension and improve circulation",
+      description: "A sensual, professional way to connect with your body",
       icon: "🪨",
     },
     {
       title: "Couples Massage",
-      description: "Shared relaxation experience for two in a private suite",
+      description: "A romantic way to relax and feel good together",
       icon: "👫",
     },
   ];
@@ -339,25 +339,25 @@ const testimonials = [
   {
     name: "Lajpat Nagar",
     image: "/images/TheSuryaaNewDelhi(NFC).jpg", // Replace with actual image URL
-    description: "Discover the tranquility of our luxurious spa at Lajpat Nagar.",
+    description: "We have luxury massage outlets in Lajpat Nagar, so whenever you are in Lajpat Nagar want you can de-stress with a home and massage service. Reach out to us.",
     link: "https://wa.me/8826482370"
   },
   {
     name: "Aerocity",
     image: "/images/NovotelNewDelhiAerocity.jpeg",
-    description: "Relax and unwind with our premium services at Aerocity.",
+    description: "Our team provide b2b massage in Aerocity most luxurious locations. Whenever you choose us for your massage service in Aerocity, we will never disappoint.",
     link: "https://wa.me/8826482370"
   },
   {
     name: "Paschim Vihar",
     image: "/images/TheParkConnaughtPlace.jpg",
-    description: "Experience rejuvenation at our elegant Paschim Vihar location.",
+    description: "Choose Spa Delhi to enjoy the best massage services in Paschim Vihar. Enjoy the most relaxing massage at an outlet with perfect ambience.",
     link: "https://wa.me/8826482370"
   },
   {
     name: "Rohini",
     image: "/images/TheGrandNewDelhi.jpg",
-    description: "Escape to serenity at our luxurious spa in Rohini.",
+    description: "We have our massage outlet available at Rohini location. If you want to experience spa experience in Rohini, we can deliver the best spa services in Delhi.",
     link: "https://wa.me/8826482370"
   }
 ];
@@ -388,32 +388,32 @@ const features2 = [
   const physicalBenefits = [
     { 
       id: 1, 
-      title: "Pain Relief", 
-      description: "Reduce muscle tension and chronic pain with specialized therapies",
+      title: "Muscle Relief", 
+      description: "Stimulates knotted muscles and relieves pain.",
       icon: "💆"
     },
     { 
       id: 2, 
       title: "Improved Circulation", 
-      description: "Enhance blood flow for better oxygenation and nutrient delivery",
+      description: "Increases blood circulation.",
       icon: "❤️"
     },
     { 
       id: 3, 
-      title: "Skin Rejuvenation", 
-      description: "Detoxify and revitalize your skin for a radiant glow",
+      title: "Detoxification", 
+      description: "Helps the body naturally eliminate toxins.",
       icon: "✨"
     },
     { 
       id: 4, 
-      title: "Enhanced Flexibility", 
-      description: "Increase joint mobility and range of motion",
+      title: "Flexibility Boost", 
+      description: "Improves distribution of movement throughout the joints.",
       icon: "🧘"
     },
     { 
       id: 5, 
-      title: "Boosted Immunity", 
-      description: "Stimulate lymphatic system to strengthen your defenses",
+      title: "Pain Management", 
+      description: "Relieves acute and chronic pain.",
       icon: "🛡️"
     }
   ];
@@ -423,31 +423,31 @@ const features2 = [
     { 
       id: 1, 
       title: "Stress Reduction", 
-      description: "Achieve deep relaxation and release daily tensions",
+      description: "Helps to calm the mind and the nerves.",
       icon: "🧘‍♀️"
     },
     { 
       id: 2, 
-      title: "Emotional Balance", 
-      description: "Restore harmony to your emotional wellbeing",
+      title: "Mental Clarity", 
+      description: "Helps you concentrate and relax.",
       icon: "⚖️"
     },
     { 
       id: 3, 
-      title: "Mental Clarity", 
-      description: "Clear your mind and enhance focus and awareness",
+      title: "Emotional Balance", 
+      description: "It is calming for the mind and soul.",
       icon: "💡"
     },
     { 
       id: 4, 
-      title: "Inner Peace", 
-      description: "Connect with your inner self for profound tranquility",
+      title: "Energy Flow", 
+      description: "Opens and revitalizes the body energy.",
       icon: "🕊️"
     },
     { 
       id: 5, 
-      title: "Energy Alignment", 
-      description: "Balance your chakras and restore vital energy flow",
+      title: "Deep Relaxation", 
+      description: "Connects the body, the mind and the spirit.",
       icon: "🌀"
     }
   ];
@@ -643,8 +643,8 @@ const features2 = [
               transition={{ delay: 0.3 }}
               viewport={{ once: true }}
             >
-              Experience the <span className="relative">
-                <span className="text-amber-600 z-10 relative">Art of Relaxation</span>
+              Get the Best <span className="relative">
+                <span className="text-amber-600 z-10 relative">Massage in Delhi</span>
                 <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
               </span>
             </motion.h2>
@@ -657,8 +657,7 @@ const features2 = [
               viewport={{ once: true }}
             >
               <p className="text-gray-600 text-lg leading-relaxed">
-                Welcome to <strong className="text-amber-600 font-medium">Delhi Body Spa</strong>, where we offer a range of <strong className="text-amber-600 font-medium">luxury spa</strong> treatments including <strong className="text-amber-600 font-medium">female to male spa</strong>, <strong className="text-amber-600 font-medium">couple massages</strong>, and much more. Escape the hustle of Delhi and immerse yourself in rejuvenating treatments tailored to your needs.
-                Our expert therapists combine traditional healing methods with modern wellness practices to create custom treatments that will leave you feeling refreshed, balanced, and revitalized.
+                Discover the best <strong className="text-amber-600 font-medium">massage service in Delhi,</strong>where every therapist utilizes their exceptional skills and personalized care to rejuvenate your body and soul. Whether you prefer deep tissue massage, B2B massage, or aromatherapy massage, our high-end treatments will leave you feeling completely satisfied, with a sense of ultimate relaxation and rejuvenation 
               </p>
               {/* <p className="text-gray-600 text-lg leading-relaxed">
                 Our expert therapists combine traditional healing methods with modern wellness practices to create custom treatments that will leave you feeling refreshed, balanced, and revitalized.
@@ -667,36 +666,53 @@ const features2 = [
 
             {/* Feature Grid with Hover Effects */}
           <motion.div
-              className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
-              viewport={{ once: true }}
-            >
-              {[ 
-                { title: "Foreigner Therapist", icon: "🌏" },
-                { title: "Female To Male Massage", icon: "💆‍♂️" },
-                { title: "Best Body To Body Spa", icon: "✨" },
-                { title: "Couple Massage", icon: "👩‍❤️‍👨" }
-              ].map((feature, index) => (
-                <motion.div
-                  key={index}
-                  className="flex items-start p-3 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-amber-50 hover:border-amber-100 group"
-                  whileHover={{ y: -5 }}
-                  transition={{ duration: 0.3 }}
-                >
-                  <div className="bg-amber-100 text-amber-700 p-2.5 rounded-xl text-lg mr-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">
-                    {feature.icon}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-800 text-base mb-1 group-hover:text-amber-600 transition-colors">
-                      {feature.title}
-                    </h4>
-                    <p className="text-gray-600 text-xs">Luxurious and personalized treatments</p>
-                  </div>
-                </motion.div>
-              ))}
-          </motion.div>
+  className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12"
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.5 }}
+  viewport={{ once: true }}
+>
+  {[
+    { 
+      title: "Foreigner Therapist", 
+      icon: "🌏", 
+      desc: "Experts in global massage therapy" 
+    },
+    { 
+      title: "Female To Male Massage", 
+      icon: "💆‍♂️", 
+      desc: "Professional, private, and refreshing massage in Delhi" 
+    },
+    { 
+      title: "Best Body To Body Spa", 
+      icon: "✨", 
+      desc: "Relax together in a private setting" 
+    },
+    { 
+      title: "Couple Massage", 
+      icon: "👩‍❤️‍👨", 
+      desc: "Sensual and healing touch" 
+    }
+  ].map((feature, index) => (
+    <motion.div
+      key={index}
+      className="flex items-start p-3 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 border border-amber-50 hover:border-amber-100 group"
+      whileHover={{ y: -5 }}
+      transition={{ duration: 0.3 }}
+    >
+      <div className="bg-amber-100 text-amber-700 p-2.5 rounded-xl text-lg mr-3 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+        {feature.icon}
+      </div>
+      <div>
+        <h4 className="font-bold text-gray-800 text-base mb-1 group-hover:text-amber-600 transition-colors">
+          {feature.title}
+        </h4>
+        <p className="text-gray-600 text-xs">{feature.desc}</p>
+      </div>
+    </motion.div>
+  ))}
+</motion.div>
+
 
             {/* Action Buttons with Animation */}
             <motion.div
@@ -849,7 +865,7 @@ const features2 = [
         transition={{ duration: 0.5 }}
         viewport={{ once: true }}
       >
-        Our Premium Services
+        Our Luxury Massage Services
       </motion.p>
       <motion.h2
         className="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6 font-serif"
@@ -858,7 +874,7 @@ const features2 = [
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        Luxurious <span className="text-amber-500">Spa Experiences</span>
+        Luxury <span className="text-amber-500">Spa in Aerocity</span>
       </motion.h2>
     </div>
 
@@ -1045,7 +1061,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Process</span>
+            Our Massage <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Booking Process</span>
           </motion.h2>
           
           {/* <motion.p
@@ -1171,7 +1187,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Discover Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Luxury Outlets</span>
+            Our 5-Star <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Spa Outlets in Delhi</span>
           </motion.h2>
           
           <motion.p
@@ -1180,7 +1196,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
-            Located in premium 5-star properties across Delhi – enjoy serenity, comfort, and personalized spa experiences at every outlet.
+            Discover our unique, high-end spa locations in Delhi, each offering world-class treatment.
           </motion.p>
           
           <motion.div
@@ -1446,7 +1462,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Our <span className="text-amber-600">Prime Locations</span>
+            Our Luxury <span className="text-amber-600">Spa Locations in Delhi</span>
           </motion.h2>
           <motion.p
             className="text-gray-600 max-w-2xl mx-auto text-lg"
@@ -1455,7 +1471,7 @@ const features2 = [
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Visit us at any of our luxurious outlets, conveniently located across Delhi for your ultimate spa experience.
+           Find the perfect spa outlet near you for effortless access to world-class relaxation.
           </motion.p>
         </div>
 
@@ -1648,13 +1664,17 @@ const features2 = [
                   🌿
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 ml-4 font-serif">
-                  Experience Ultimate Relaxation
+                  Room of Relaxation
                 </h2>
               </div>
-              
+              <span className="font-semibold text-amber-600">24+ Exclusive Body Spa Outlets.</span>
               <p className="text-gray-700 text-lg mb-8 leading-relaxed">
-                Rejuvenate your body and mind at <span className="font-semibold text-amber-600">SPA DELHI</span>. 
-                Discover premium treatments that combine ancient healing traditions with modern luxury.
+                Each spa designed to provide an immersive, relaxing sanctuary for your mind and body.
+              </p>
+              <span className="font-semibold text-amber-600">Ultimate Choice for Best Body Massage in Delhi</span>
+              
+                 <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+                Experience the finest massages across Delhi with unmatched comfort and luxury.
               </p>
 
               <div className="mb-8">
@@ -1662,54 +1682,46 @@ const features2 = [
                   <div className="bg-amber-50/50 p-4 rounded-xl flex items-start">
                     <div className="text-amber-500 text-2xl mr-3 mt-1">💆‍♀️</div>
                     <div>
-                      <h3 className="font-bold text-gray-800 mb-1">Full Body Massages</h3>
-                      <p className="text-gray-600 text-sm">Traditional & modern therapies</p>
+                      <h3 className="font-bold text-gray-800 mb-1">Lajpat Nagar</h3>
+                      <p className="text-gray-600 text-sm">Prime Location</p>
                     </div>
                   </div>
                   
                   <div className="bg-amber-50/50 p-4 rounded-xl flex items-start">
                     <div className="text-amber-500 text-2xl mr-3 mt-1">🕯️</div>
                     <div>
-                      <h3 className="font-bold text-gray-800 mb-1">Aromatherapy</h3>
-                      <p className="text-gray-600 text-sm">Sensory relaxation experience</p>
+                      <h3 className="font-bold text-gray-800 mb-1">Aerocity</h3>
+                      <p className="text-gray-600 text-sm">Luxury Spa</p>
                     </div>
                   </div>
                   
                   <div className="bg-amber-50/50 p-4 rounded-xl flex items-start">
                     <div className="text-amber-500 text-2xl mr-3 mt-1">🏨</div>
                     <div>
-                      <h3 className="font-bold text-gray-800 mb-1">Luxury Locations</h3>
-                      <p className="text-gray-600 text-sm">5-star facilities across Delhi</p>
+                      <h3 className="font-bold text-gray-800 mb-1">Connaught Place</h3>
+                      <p className="text-gray-600 text-sm">Central Access</p>
                     </div>
                   </div>
                   
                   <div className="bg-amber-50/50 p-4 rounded-xl flex items-start">
                     <div className="text-amber-500 text-2xl mr-3 mt-1">🌱</div>
                     <div>
-                      <h3 className="font-bold text-gray-800 mb-1">Organic Products</h3>
-                      <p className="text-gray-600 text-sm">Natural ingredients for your skin</p>
+                      <h3 className="font-bold text-gray-800 mb-1">Dwarka</h3>
+                      <p className="text-gray-600 text-sm">Exclusive Service</p>
                     </div>
                   </div>
                 </div>
                 
                 <div className="prose prose-amber max-w-none mb-8">
                   <p className="text-gray-700 mb-4">
-                    At SPA DELHI, we believe that true wellness begins with deep relaxation and inner harmony. 
-                    Our body spa is designed to take you on a journey of tranquility, where every therapy is crafted 
-                    to calm your senses and heal your body.
-                     Located in the heart of Delhi and spread across our premium outlets in Noida, Gurgaon, and Ghaziabad, 
-                    SPA DELHI brings a mix of traditional wellness and modern techniques. Our services include full-body 
-                    massage, deep tissue therapy, hot stone massage, foot reflexology, aromatherapy, and more — all 
-                    provided in a calm, hygienic, and private setting.
+                    Our professional therapists use old and new methods of helping to unwind tensions, enhance circulation, and be healthy. As soon as you walk into any of our outlets, you can expect a welcoming atmosphere, professional therapists, and massage services that will rejuvenate you and your mind.
                   </p>
                   
                   <p className="text-gray-700">
-                    Our approach is rooted in Ayurvedic philosophy combined with Western spa trends to deliver holistic 
-                    wellness experiences. We use 100% organic oils, aromatic herbs, and soothing music to create the 
-                    perfect environment for letting go of tension and recharging your soul.
-                    At SPA DELHI, we believe that true wellness begins with deep relaxation and inner harmony. 
-                    Our body spa is designed to take you on a journey of tranquility, where every therapy is crafted 
-                    to calm your senses and heal your body.
+                    Whether you're looking to alleviate chronic pain, unwind after a workout, or just need a break from the city's hustle, we offer an experience tailored to your needs.
+                  </p>
+                  <p className="text-gray-700">
+                   All sessions are created with your complete comfort and satisfaction in mind, including hygienic interior and customized treatment. Spa Delhi is where you can rejuvenate and relax your body in the most convenient places at low costs.
                   </p>
                 </div>
               </div>
@@ -1787,7 +1799,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Our <span className="text-amber-600"> Therapy Experts</span>
+            Our Best<span className="text-amber-600"> Massage Therapist</span>
           </motion.h2>
           
           <motion.p
@@ -1797,7 +1809,7 @@ const features2 = [
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
           >
-             Meet our certified spa professionals dedicated to your relaxation and rejuvenation.
+             World-class therapists dedicated to your wellness.
           </motion.p>
         </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -1855,7 +1867,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Transformative <span className="text-amber-600">Body & Soul</span> Benefits
+            Maximize <span className="text-amber-600">Physical and Spiritual Benefits</span> with Massage in Delhi
           </motion.h2>
           
           <motion.p
