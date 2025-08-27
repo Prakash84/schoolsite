@@ -14,7 +14,7 @@ const LuxuryHotelShowcase = () => {
       location: 'Aerocity, New Delhi',
       rating: 4.9,
       description:
-        'Luxurious beachfront retreat with panoramic ocean views and our signature spa treatments.',
+        'Andaz specializes in couple massages with high-level ambiance and luxury services guaranteed to leave one highly revitalized.',
       features: ['special B2B Therapy', 'Couple Massage', 'Sandwich Massage', 'Female-to-Male'],
       tags: ['Foreigner Therapist', 'Luxury', 'Russian Model'],
     },
@@ -24,7 +24,7 @@ const LuxuryHotelShowcase = () => {
       location: 'Connaught Place, New Delhi',
       rating: 4.8,
       description:
-        'Stunning cliffside villas with infinity pools and exclusive spa services.',
+        'Experience the full luxury of a romantic couple massage at The Park, where elegance and luxury is in action to provide complete relaxation.',
       features: ['Sandwich Massage', 'Female-to-Male', 'special B2B Therapy', 'Couple Massage'],
       tags: ['Foreigner Therapist', 'Romantic', 'Luxury'],
     },
@@ -34,17 +34,17 @@ const LuxuryHotelShowcase = () => {
       location: 'NFC, New Delhi',
       rating: 4.7,
       description:
-        'Tropical paradise with private villas surrounded by lush gardens and award-winning spa.',
+        'Discover an exceptional couple spa experience at The Surya, offering high-quality services in quiet and calm surroundings.',
       features: ['Full Body Massage', 'Thai Massage', 'Female-to-Male', 'special B2B Therapy'],
       tags: ['Tropical', 'Private', 'Exclusive'],
     },
     {
       id: 4,
-      name: 'Welcome by ITC in Dwarka',
+      name: 'Welcomehotel by ITC in Dwarka',
       location: 'Dwarka, New Delhi',
       rating: 4.9,
       description:
-        'Mountain chalet retreat offering panoramic alpine views and exclusive wellness programs.',
+        'Staying at Welcomhotel by ITC Dwarka? Our team of massage therapists visits your hotel to offers royal couple massage services, looking for relaxation and pampering.',
       features: ['special B2B Therapy', 'Couple Massage', 'Sandwich Massage', 'Female-to-Male'],
       tags: ['Mountain', 'Alpine', 'Wellness'],
     },
@@ -59,10 +59,10 @@ const LuxuryHotelShowcase = () => {
             Exclusive Partnerships
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-6">
-            Luxury Hotel Partners
+           Luxury Hotel Spa for Couple Massage Delhi
           </h2>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-            Experience our premium spa services at these exquisite partner locations worldwide
+            We provide couple massage in Delhi to luxurious hotel right at your doorstep. Here are our list of luxury hotels where we bring to your best couple massage in Karol Bagh and other locations:
           </p>
         </div>
 
@@ -175,13 +175,13 @@ const LuxuryHotelShowcase = () => {
 
         <div className="mt-16 text-center">
           <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-amber-600 to-amber-800 text-white font-bold rounded-full hover:shadow-xl transition-all duration-300 group">
-            Explore All Partner Hotels
+            Book Your Romantic Couple Massage Today!
             <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="currentColor">
               <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z" clipRule="evenodd" />
             </svg>
           </button>
           <div className="mt-10 flex flex-wrap justify-center gap-8">
-            {['Marriott', 'Hilton', 'Hyatt', 'Four Seasons', 'Ritz-Carlton'].map((brand, idx) => (
+            {['Unwind', 'reconnect', 'celebrate bond with the best couple massage in Delhi '].map((brand, idx) => (
               <div key={idx} className="bg-white px-6 py-3 rounded-xl shadow-sm border border-amber-100">
                 <span className="text-amber-900 font-bold">{brand}</span>
               </div>

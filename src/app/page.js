@@ -1849,18 +1849,16 @@ const features2 = [
                   🌿
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 ml-4 font-serif">
-                  Room of Relaxation
+                  Enjoy the best Body Massage in Delhi with Spa Delhi
                 </h2>
               </div>
               <span className="font-semibold text-amber-600">24+ Exclusive Body Spa Outlets.</span>
               <p className="text-gray-700 text-lg mb-8 leading-relaxed">
                 Each spa designed to provide an immersive, relaxing sanctuary for your mind and body.
-              </p>
-              <span className="font-semibold text-amber-600">Ultimate Choice for Best Body Massage in Delhi</span>
-              
-                 <p className="text-gray-700 text-lg mb-8 leading-relaxed">
                 Experience the finest massages across Delhi with unmatched comfort and luxury.
               </p>
+              {/* <span className="font-semibold text-amber-600">Ultimate Choice for Best Body Massage in Delhi</span> */}
+              
 
               <div className="mb-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">

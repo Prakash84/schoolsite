@@ -88,33 +88,33 @@ const container = {
     
       const faqs = [
         {
-          question: "What types of massage therapies do you offer?",
-          answer: "We offer Couple Massage, wich MasSandsage, B2B Therapy, Full Body Massage, and Female-to-Male treatments.",
+          question: "What is included in a Couple Massage in Karol Bagh?",
+          answer: "Couple massage offers personalized treatments, calming oils, a private couple's massage room, and shared relaxation areas for couples to enjoy together.",
           icon: <FaSpa className="text-teal-600" />
         },
         {
-          question: "Where are your spa outlets located in Delhi and Noida?",
-          answer: "Our outlets are located in Rajouri Garden, Rohini, Pitampura, Noida, Aerocity, Dwarka, Connaught Place, and Lajpat Nagar.",
+          question: "What is the duration of a couple's massage session?",
+          answer: "Typical sessions range between 60 and 90 minutes, but you can opt to go with the customized packages that will last longer.",
           icon: <FaLeaf className="text-teal-600" />
         },
         {
-          question: "What is your first-visit special offer?",
-          answer: "Our first-visit special is ₹1999, offering a luxurious experience at an affordable price.",
+          question: "Is Couple Massage in Karol Bagh offered in a private room?",
+          answer: "Yes, Spa Delhi offers exquisitely designed individual couple massage rooms to ensure relaxation, privacy, and a level of tranquility.",
           icon: <FaHotTub className="text-teal-600" />
         },
         {
-          question: "Do you have therapists from different countries?",
-          answer: "Yes, we have skilled therapists from Russia, Thailand, Afghanistan, India, and other countries.",
+          question: "Are the oils in a couple massage safe?",
+          answer: "It contains high-quality, skin-safe essential oils that are safe and natural, helping both partners relax during intimate activity.",
           icon: <FaLeaf className="text-teal-600" />
         },
         {
-          question: "Can I book a Couple Massage session?",
-          answer: "Yes, we offer Couple Massage sessions for a relaxing and intimate experience.",
+          question: "Is it possible to book a few massages on special occasions?",
+          answer: "Absolutely! Many couples also book our spa on anniversaries, birthdays, and other romantic occasions to create lasting memories.",
           icon: <FaSpa className="text-teal-600" />
         },
         {
-          question: "What is the cost of a Full Body Massage?",
-          answer: "The cost varies based on the treatment, with a special ₹1999 offer for first-time visitors.",
+          question: "Why Spa Delhi is the top couple massage centre in Delhi?",
+          answer: "With experienced therapists, high-quality ambience, aromatic oils, and its affordable luxury packages, Spa Delhi is the first choice of couples.With experienced therapists, high-quality ambience, aromatic oils, and its affordable luxury packages, Spa Delhi is the first choice of couples.",
           icon: <FaHandSparkles className="text-teal-600" />
         },   
       ];
@@ -123,31 +123,31 @@ const container = {
      const highlights = [
     {
       icon: <Spa className="text-amber-600" />,
-      // title: "Traditional Technique",
+      title: "Boost well being",
       description: "Our couple massage in Delhi boosts your emotional strength, cuts down stress, and builds bonds and relaxation moments with your partner."
     },
     {
       icon: <SelfImprovement className="text-amber-600" />,
-      // title: "Deep Relaxation",
+      title: "Improve circulation",
       description: "Couple massage in Karol Bagh is ideal way to transform physical intimacy with improved circulation, joint flexibility, and overall body relaxation for couples"
     },
     {
       icon: <HealthAndSafety className="text-amber-600" />,
-      // title: "Muscle Tension Relief",
+      title: "Builds bond",
       description: "Encourages open communication and bonding while enjoying a calming, rejuvenating experience together."
     },
     {
       icon: <Air className="text-amber-600" />,
-      // title: "Improved Circulation",
-      description: "Get ready to release tension by 50% with couple massage service in Delhi."
+      title: "Release tension ",
+      description: "Get ready to release tension by 50% with couple massage service in Delhi. Choose our couple massage spa in Delhi to experience the true benefits."
     }
   ];
 const [isMenuOpen, setIsMenuOpen] = useState(false);
     const sections = [
       {
-        title: "Oil Therapy",
+        title: "Soothing Oil Therapy for Couple Massage in Delhi",
         description1:
-          "Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow. Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being. Ayurvedic oil massage, also known as Abhyanga, uses herbal oils that balance the body's doshas—Vata, Pitta, and Kapha. The warm oil is massaged into the skin to energize vital points, improve blood circulation, and promote internal healing. This therapy not only revitalizes the skin but also clears toxins stored in deeper tissues.",
+          "Spa Delhi is best couple spa in Paschim Vihar where our team of therapist utilized high-quality oils for soothing oil therapy. Luxury oils of lavender, sandalwood, and eucalyptus are selected to help deepen the relaxation and renew the body. Not only does this therapy relieve stress, but it also hydrates your skin, leaving both you and your partner with a rejuvenated and glowing complexion. As you are massaged in synchronisation with aromatic oils, it makes the couple massage experience truly memorable and more emotionally fulfilling. It is the high-quality therapy that couples may enjoy, trying to gain physical relaxation and emotional fondness in the best spa centre in Delhi.",
         image: "/images/137.jpg",
       },
       // {
@@ -216,18 +216,18 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
     <div className="space-y-6 text-center lg:text-left">
       <div className="inline-flex items-center space-x-2 mb-6">
         <div className="w-12 h-px bg-amber-600"></div>
-        <span className="text-amber-600 font-light tracking-widest">SIGNATURE TREATMENT</span>
+        <span className="text-amber-600 font-light tracking-widest">Massage TREATMENT</span>
         <div className="w-12 h-px bg-amber-600"></div>
       </div>
 
       <h1 className="text-4xl md:text-5xl font-light text-gray-800">
-        <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">Couple Massage</span>
-        Ultimate Relaxation, 
-        <span className="block mt-2 font-medium">Top & Bottom <span className="text-rose-600">Therapy Blend</span></span>
+        <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">Enjoy Finest Massage</span>
+        to Reconnect and Relax, 
+        <span className="block mt-2 font-medium"> with Couple <span className="text-rose-600"> Massage in Delhi</span></span>
       </h1>
 
       <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-        The Couple Massage is our luxurious, two-therapist experience that pampers you from both sides simultaneously. Warm oil, synchronized strokes, and expert techniques combine to provide deep relaxation and muscle relief, ensuring every inch of tension is gently melted away.
+        Spa Delhi is the best spa for couple in Delhi, offering the finest couple massage in Delhi to strengthen the bond between you and your loved one, relax you, and release tension through high-quality spa treatments.
       </p>
 
       <div className="grid grid-cols-2 gap-4 mt-8 max-w-md mx-auto lg:mx-0">
@@ -354,7 +354,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                   >
-                    We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
+                    Get ready to release tension by 50% with couple massage service in Delhi. Choose our couple massage spa in Delhi to experience the true benefits.
                   </motion.p> */}
       <div className="w-24 h-1 bg-amber-500 mx-auto"></div>
     </div>
@@ -419,27 +419,27 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 { 
-                  // title: "Muscle Relief", 
+                  title: "Improve well being", 
                   description: "Reconnect with intimacy at the most luxurious couple massage center in Delhi, rekindle the warmth through soothing massage therapy.",
                   icon: "💆‍♀️"
                 },
                 { 
-                  // title: "Stress Reduction", 
+                  title: "Boost emotional strength", 
                   description: "Build trust at an emotional level as you savour stress-free couple massage sessions.",
                   icon: "🧘‍♂️"
                 },
                 { 
-                  // title: "Improved Circulation", 
+                  title: "Deep relaxation ", 
                   description: "Feel deeply recharged with a couple massages in Delhi every day.",
                   icon: "❤️"
                 },
                 { 
-                  // title: "Skin Rejuvenation", 
+                  title: "Boost health", 
                   description: "Experience superior couple spa treatments to bring you to new levels of health.",
                   icon: "✨"
                 },
                 { 
-                  // title: "Detoxification", 
+                  title: "Sooth your mind and body", 
                   description: "Enjoy your hassle-free vacation with soothing couple massage offers in Delhi.",
                   icon: "🌿"
                 },
@@ -842,9 +842,9 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                        </p>
                                                      </div>
                                                    </div>
-                                                   <h4 className='font-bold text-amber-800'>Experienced and Professional Therapists</h4>
+                                                   <h4 className='font-bold text-amber-800'>Luxury Spa Ambience for Couples</h4>
                                                    <p className="text-gray-700 mb-6">
-                                                    At Spa Delhi, our team of experienced and professional massage therapists is highly trained to provide personalized treatments, ensuring optimum comfort and relaxation.
+                                                    At Spa Delhi, you get the best ambience so you can rest assured about the environment. Just focus on enjoying the deep relaxing couple massage in Karol Bagh and other areas without compromising the quality. Book your first massage session with us and improve bond with your soulmate.
                                                    </p>
                                                    
                                                    <div className="flex flex-wrap gap-3 mb-8">
@@ -895,16 +895,15 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                        </svg>
                                                      </div>
                                                      <div>
-                                                       <h3 className="text-2xl font-bold text-amber-800 font-serif mb-2">Premium Oils & Blends</h3>
+                                                       <h3 className="text-2xl font-bold text-amber-800 font-serif mb-2">Experienced and Professional Therapists</h3>
                                                        <p className="text-amber-700">
-                                                         We use only cold-pressed, organic oils blended with therapeutic-grade essential oils for maximum benefit.
+                                                         At Spa Delhi, our team of experienced and professional massage therapists is highly trained to provide personalized treatments, ensuring optimum comfort and relaxation.
                                                        </p>
                                                      </div>
                                                    </div>
                                                    
                                                    <p className="text-gray-700 mb-6">
-                                                     The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being. 
-                                                     Regular sessions can improve flexibility, deepen sleep, and support emotional stability.
+                                                     We have massage therapist from Russia, USA, India, Afghan and so on to provide you one of the top class couple massage in Delhi. Our team uses the best techniques to deliver exclusive couple massage in Paschim Vihar. No more waiting, book your session at a click via Telegram.
                                                    </p>
                                                    
                                                    <div className="mb-6">
@@ -989,14 +988,14 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                              transition={{ duration: 0.6, delay: 0.2 }}
                                            >
                                              <h3 className="text-3xl font-bold text-amber-900 font-serif text-center mb-12">
-                                               Our Holistic Approach to Wellness
+                                               How to Book Couple Massage in Delhi?
                                              </h3>
                                              
                                              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                                {[
                                                  {
-                                                   title: "Mindful Relaxation",
-                                                   description: "Techniques that calm the mind and reduce stress through focused breathing and meditation",
+                                                   title: "Reach out to us Via Telegram",
+                                                   description: "Book your preferred couple massage in Delhi via Telegram. All your details and booking will be private with complete confidentiality.",
                                                    icon: (
                                                      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -1004,8 +1003,8 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                    )
                                                  },
                                                  {
-                                                   title: "Body Rejuvenation",
-                                                   description: "Therapies that restore physical vitality and promote healing at the cellular level",
+                                                   title: "Customized Consultation Before Massage",
+                                                   description: "The therapists will first discuss with you what your preferences are and make the couple massage a personal and effective experience.",
                                                    icon: (
                                                      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -1013,8 +1012,8 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                    )
                                                  },
                                                  {
-                                                   title: "Spiritual Balance",
-                                                   description: "Practices that align your energy centers and connect you with your inner self",
+                                                   title: "Private Couple Massage Rooms for Intimacy",
+                                                   description: "We offer rooms designed compassionately with a calming atmosphere, giving privacy and a tranquil environment to both partners.",
                                                    icon: (
                                                      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -1161,7 +1160,8 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.6 }}
                   >
-                    Our Specialty <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Services at Delhi Spa</span>
+                    Spa Delhi: Best Massage <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Centre for Couple Massage in Delhi
+</span>
                   </motion.h2>
                   
                   <motion.p
@@ -1170,7 +1170,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4, duration: 0.5 }}
                   >
-                    Erotic and Nuru Massage, Thai Massage, Sandwich Massage, Full Body Massage by Expert Therapists
+                    Discover the finest treatments, a sensuous atmosphere, and the most proficient therapists at Spa Delhi, your preferred choice for couple massage in Delhi.
                   </motion.p>
                   
                   <motion.div
@@ -1185,10 +1185,13 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                       <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-xl font-semibold text-amber-800 mb-4">Expert Therapists</h3>
+                            <h3 className="text-xl font-semibold text-amber-800 mb-4">Couples Candlelight Massage in Delhi</h3>
                             <p className="text-gray-700 mb-6">
-                              When it comes to indulgent relaxation and rejuvenation, Delhi spa centers stand out for their exceptional massage therapies. Among the most popular and sought-after treatments are erotic massage, nuru massage, thai massage, sandwich massage, and full body massage. Whether you seek pure relaxation, therapeutic relief, or something more sensual, Delhi's best spas offer a range of services tailored to suit every need. With both Indian and foreign therapists, these therapies are designed to promote deep relaxation, reduce stress, and rejuvenate the body.
-        
+                             Ambience is key to couples. Experience ultimate intimacy in candlelit rooms, surrounded by fragrant oils and relaxing music, as you reconnect with your soul mate.
+                            </p>
+                            <h4 className="text-xl font-semibold text-amber-800 mb-4">Luxury Couple Spa Packages for Stress-Free Getaways</h4>
+                            <p className="text-gray-700 mb-6">
+                             Select a couple of programs that include various treatments, beverages, and rest designed to give rejuvenation experiences in the top spa in Delhi.
                             </p>
                           {/* Bullet Points instead of Image */}
                           <ul className="list-disc list-inside text-gray-700 space-y-2">
@@ -1268,7 +1271,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
                   >
-                    Our <span className="text-amber-600">Pricing Packages</span>
+                    Our Pricing Packages <span className="text-amber-600">for Couple Massage in Delhi</span> 
                   </motion.h2>
                   <motion.p
                     className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
@@ -1277,7 +1280,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                   >
-                    Tailored spa experiences starting from just ₹1999. Choose from our exclusive massage options, designed for your total relaxation and rejuvenation.
+                    Unique luxury couple massage packages that take into consideration all budgets, so you can enjoy both high-end body care with your partner.
                   </motion.p>
                 </div>
         
