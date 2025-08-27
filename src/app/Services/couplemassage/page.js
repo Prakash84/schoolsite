@@ -123,23 +123,23 @@ const container = {
      const highlights = [
     {
       icon: <Spa className="text-amber-600" />,
-      title: "Traditional Technique",
-      description: "Authentic Swedish methods using long gliding strokes"
+      // title: "Traditional Technique",
+      description: "Our couple massage in Delhi boosts your emotional strength, cuts down stress, and builds bonds and relaxation moments with your partner."
     },
     {
       icon: <SelfImprovement className="text-amber-600" />,
-      title: "Deep Relaxation",
-      description: "Reduces stress hormones by up to 30% in a single session"
+      // title: "Deep Relaxation",
+      description: "Couple massage in Karol Bagh is ideal way to transform physical intimacy with improved circulation, joint flexibility, and overall body relaxation for couples"
     },
     {
       icon: <HealthAndSafety className="text-amber-600" />,
-      title: "Muscle Tension Relief",
-      description: "Targets muscle knots and improves flexibility"
+      // title: "Muscle Tension Relief",
+      description: "Encourages open communication and bonding while enjoying a calming, rejuvenating experience together."
     },
     {
       icon: <Air className="text-amber-600" />,
-      title: "Improved Circulation",
-      description: "Enhances blood flow and oxygen delivery to tissues"
+      // title: "Improved Circulation",
+      description: "Get ready to release tension by 50% with couple massage service in Delhi."
     }
   ];
 const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -345,9 +345,9 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
                   >
-                    Swedish <span className="text-amber-600">Massage Benefits</span>
+                    Benefits of <span className="text-amber-600">Couple Massage in Delhi</span>
                   </motion.h2>
-                  <motion.p
+                  {/* <motion.p
                     className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -355,7 +355,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     transition={{ delay: 0.2 }}
                   >
                     We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
-                  </motion.p>
+                  </motion.p> */}
       <div className="w-24 h-1 bg-amber-500 mx-auto"></div>
     </div>
 
@@ -403,7 +403,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
                   >
-                    Transformative <span className="text-amber-600">Benefits</span>
+                    Transformative <span className="text-amber-600">Benefits of Couple Massage in Delhi</span>
                   </motion.h2>
                   <motion.p
                     className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
@@ -412,40 +412,40 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                   >
-                     Our signature oil therapy massage offers a holistic approach to wellness that addresses both physical and mental needs.
+                     Experience relaxation, closer bonding, and a stress-free life with our Couple massage at home in Delhi.
                   </motion.p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 { 
-                  title: "Muscle Relief", 
-                  description: "Deep tissue manipulation combined with therapeutic oils helps relieve muscle tension and soreness effectively.",
+                  // title: "Muscle Relief", 
+                  description: "Reconnect with intimacy at the most luxurious couple massage center in Delhi, rekindle the warmth through soothing massage therapy.",
                   icon: "💆‍♀️"
                 },
                 { 
-                  title: "Stress Reduction", 
-                  description: "Aromatherapy oils calm the nervous system, reducing anxiety and promoting mental clarity.",
+                  // title: "Stress Reduction", 
+                  description: "Build trust at an emotional level as you savour stress-free couple massage sessions.",
                   icon: "🧘‍♂️"
                 },
                 { 
-                  title: "Improved Circulation", 
-                  description: "Massage techniques stimulate blood flow, enhancing oxygen delivery to tissues and organs.",
+                  // title: "Improved Circulation", 
+                  description: "Feel deeply recharged with a couple massages in Delhi every day.",
                   icon: "❤️"
                 },
                 { 
-                  title: "Skin Rejuvenation", 
-                  description: "Natural oils nourish and hydrate the skin, leaving it soft, supple, and radiant.",
+                  // title: "Skin Rejuvenation", 
+                  description: "Experience superior couple spa treatments to bring you to new levels of health.",
                   icon: "✨"
                 },
                 { 
-                  title: "Detoxification", 
-                  description: "Stimulates the lymphatic system to flush toxins and boost natural immunity.",
+                  // title: "Detoxification", 
+                  description: "Enjoy your hassle-free vacation with soothing couple massage offers in Delhi.",
                   icon: "🌿"
                 },
                 { 
                   title: "Better Sleep", 
-                  description: "Promotes relaxation that leads to deeper, more restorative sleep patterns.",
+                  description: "Exchange pleasant memories through the indulgent couple spa packages in an exclusive atmosphere.",
                   icon: "😴"
                 }
               ].map((benefit, index) => (

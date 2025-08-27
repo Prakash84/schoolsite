@@ -17,6 +17,9 @@ import WhatsappFloat from './components/WhatsappFloat';
 import { FaTelegram } from 'react-icons/fa';
 import { Building2 } from "lucide-react";
 import {  Star, MapPin, Sparkles, Hotel } from 'lucide-react';
+import { Clock, CheckCircle2 } from "lucide-react";
+import {  Globe } from "lucide-react";
+
 
 
 const specialFeatures = [
@@ -191,6 +194,63 @@ const [isVisible, setIsVisible] = useState(false);
       icon: <FaHandSparkles className="text-teal-600" />
     },   
   ];
+  const features3 = [
+    {
+      icon: <Hotel className="w-8 h-8 text-amber-600" />,
+      title: "24+ Spa Outlets",
+      desc: "We have 24+ luxury spa outlets available to provide you with the best body massage services across Delhi. From hotels and resorts to your private bungalow, we come to your place and bring the best spa experience.",
+    },
+    {
+      icon: <Clock className="w-8 h-8 text-amber-600" />,
+      title: "24/7 Support Available",
+      desc: "We are never off the mark, and our support team is available 24X7 to assist you with all your concerns and ease the booking process for you. At Spa Delhi, you can rest assured that you will get a complete range of full-body massage in Delhi",
+    },
+    {
+      icon: <CheckCircle2 className="w-8 h-8 text-amber-600" />,
+      title: "Luxury Massage Available",
+      desc: "Our team of massage therapists is here to serve you with the best-in-class luxury spa in Delhi right at your doorstep. Get ready to experience a B2B spa in Delhi or any massage service that brings you peace.",
+    },
+    {
+      icon: <Globe className="w-8 h-8 text-amber-600" />,
+      title: "Massage Therapists Across the Globe",
+      desc: "Our team of massage therapists comes across borders, including India, Russia, Afghanistan, and more. When you choose us, you will be surprised with a wide range of massage therapist options available to serve you with your preferred star massage services in Aerocity.",
+    },
+  ];
+  const features5 = [
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+        </svg>
+      ),
+      title: "24+ Spa Outlets",
+      description: "We have 24+ luxury spa outlets available to provide you with the best body massage services across Delhi. From hotels and resorts to your private bungalow, we come to your place and bring the best spa experience."
+    },
+    {
+      icon: <Clock className="w-8 h-8 text-white-600" />,
+      title: "24/7 Support Available",
+      description: "We are never off the mark, and our support team is available 24X7 to assist you with all your concerns and ease the booking process for you. At Spa Delhi, you can rest assured that you will get a complete range of full-body massage in Delhi."
+    },
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905a3.61 3.61 0 01-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" />
+        </svg>
+      ),
+      title: "Luxury Massage Available",
+      description: "Our team of massage therapists is here to serve you with the best-in-class luxury spa in Delhi right at your doorstep. Get ready to experience a B2B spa in Delhi or any massage service that brings you peace."
+    },
+    {
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: "Massage Therapists Across the Globe",
+      description: "Our team of massage therapists comes across borders, including India, Russia, Afghanistan, and more. When you choose us, you will be surprised with a wide range of massage therapist options available to serve you with your preferred star massage services in Aerocity."
+    }
+  ];
+
 
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -854,6 +914,7 @@ const features2 = [
               </motion.div>
         </div>
       </section>
+      
       {/* Services Section */}
       <section id="services" className="py-10 px-6 md:px-16 bg-gradient-to-b from-amber-50 to-white relative">
   <div className="max-w-7xl mx-auto">
@@ -908,6 +969,130 @@ const features2 = [
   </div>
        </section>
        {/* End Services Section */}
+       {/* why choice Us */}
+      <section className="relative py-24 px-6 bg-gradient-to-b from-[#faf7f2] to-[#fff]">
+      {/* Header Section */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6 shadow-sm">
+            <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+            <span className="text-amber-700 font-medium tracking-wider text-sm">PREMIUM SPA SERVICES</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-6 font-serif">
+            Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Spa Delhi</span> for a Massage in Delhi?
+          </h2>
+          
+          <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md mb-8">
+            <p className="text-amber-800/80 text-lg md:text-xl leading-relaxed">
+              Spa Delhi is the best Massage centre in Delhi, bringing all visitors luxurious massage experiences at an affordable price. 
+              At Spa Delhi, we combine professionalism and indulgence to present the most reliable full-body massage in Delhi. 
+              Our experienced massage therapists utilize effective massage techniques to address your custom massage expectations.
+            </p>
+          </div>
+          
+          <div className="flex justify-center mt-6">
+            <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+          </div>
+        </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+        {features3.map((feature, index) => (
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+            className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-xl transition-all duration-300"
+          >
+            <div className="flex justify-center mb-6">{feature.icon}</div>
+            <h3 className="text-xl font-semibold text-amber-800 mb-3">
+              {feature.title}
+            </h3>
+            <p className="text-gray-600 text-sm leading-relaxed">{feature.desc}</p>
+          </motion.div>
+        ))}
+      </div>
+    </section>
+    {/* //// */}
+     <section className="w-full py-20 bg-gradient-to-br from-amber-50 via-amber-100 to-amber-50 relative overflow-hidden">
+      {/* Decorative elements */}
+      {/* <div className="absolute top-0 left-0 w-72 h-72 bg-amber-200 rounded-full -translate-x-36 -translate-y-36 opacity-30"></div> */}
+      {/* <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-300 rounded-full translate-x-48 translate-y-48 opacity-20"></div> */}
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6 shadow-sm">
+            <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+            <span className="text-amber-700 font-medium tracking-wider text-sm">PREMIUM SPA SERVICES</span>
+          </div>
+          
+          <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-6 font-serif">
+            Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Spa Delhi</span> for a Massage in Delhi?
+          </h2>
+          
+          <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md mb-8">
+            <p className="text-amber-800/80 text-lg md:text-xl leading-relaxed">
+              Spa Delhi is the best Massage centre in Delhi, bringing all visitors luxurious massage experiences at an affordable price. 
+              At Spa Delhi, we combine professionalism and indulgence to present the most reliable full-body massage in Delhi. 
+              Our experienced massage therapists utilize effective massage techniques to address your custom massage expectations.
+            </p>
+          </div>
+          
+          <div className="flex justify-center mt-6">
+            <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+          </div>
+        </div>
+        
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {features5.map((feature, index) => (
+            <div 
+              key={index}
+              className="group relative bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-amber-100"
+            >
+              {/* Hover effect background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+              
+              {/* Icon container with subtle gradient */}
+              <div className="bg-gradient-to-br from-amber-500 to-amber-700 p-3 rounded-lg w-fit text-white mb-4 group-hover:scale-110 transition-transform duration-300">
+                {feature.icon}
+              </div>
+              
+              <h3 className="text-xl font-semibold text-amber-900 mb-3 group-hover:text-amber-800 transition-colors duration-300">
+                {feature.title}
+              </h3>
+              
+              <p className="text-gray-700 text-sm leading-relaxed">
+                {feature.description}
+              </p>
+              
+              {/* Decorative corner */}
+              <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden">
+                <div className="absolute top-0 right-0 w-6 h-6 bg-amber-500 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+        
+        {/* CTA Section */}
+        <div className="text-center mt-16">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-6 bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
+            <div className="text-left">
+              <h3 className="text-xl font-semibold text-amber-900 mb-2">Ready to Experience Luxury?</h3>
+              <p className="text-amber-700">Book your massage session today and feel the difference</p>
+            </div>
+            <button className="bg-gradient-to-r from-amber-500 to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white font-medium py-3 px-8 rounded-full transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl flex items-center gap-2">
+              <span>Book Your Massage Now</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+      {/* end why choice Us */}
+
 
 {/* hakjd */}
 {/* <section className="bg-[#FFF9F0] py-16 px-4 sm:px-8 lg:px-20 text-center">
