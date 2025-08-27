@@ -264,18 +264,18 @@ const [isVisible, setIsVisible] = useState(false);
 
   const slides = [
     {
-      title: "Book a Relaxing Spa Session at Lajpat Nagar. Rejuvenate Today!",
+      title: "Authentic Russian Massage in Delhi with Luxury Spa Ambience!",
       link: "https://api.whatsapp.com/send?phone=918826482370",
       image: "/images/hb1.jpg"
       
     },
     {
-      title: "Luxury Rejuvenation Spa Experience at Delhi’s 5-Star Hotel Retreat",
+      title: "Best Massage Parlour in Delhi with Luxury Spa Experience",
       link: "https://api.whatsapp.com/send?phone=918826482370",
       image: "/images/hb2.jpg"
     },
     {
-      title: "Relaxing Spa Services in Aerocity, NFC & Connaught Place",
+      title: "Escape Stress with Luxury B2B Massage in Delhi",
       link: "https://api.whatsapp.com/send?phone=918826482370",
       image: "/images/hb3.jpg"
     },
