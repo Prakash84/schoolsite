@@ -971,7 +971,7 @@ const features2 = [
        {/* End Services Section */}
        {/* why choice Us */}
       <section className="relative py-24 px-6 bg-gradient-to-b from-[#faf7f2] to-[#fff]">
-      {/* Header Section */}
+      
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6 shadow-sm">
             <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
@@ -1013,13 +1013,8 @@ const features2 = [
       </div>
     </section>
     {/* //// */}
-     <section className="w-full py-20 bg-gradient-to-br from-amber-50 via-amber-100 to-amber-50 relative overflow-hidden">
-      {/* Decorative elements */}
-      {/* <div className="absolute top-0 left-0 w-72 h-72 bg-amber-200 rounded-full -translate-x-36 -translate-y-36 opacity-30"></div> */}
-      {/* <div className="absolute bottom-0 right-0 w-96 h-96 bg-amber-300 rounded-full translate-x-48 translate-y-48 opacity-20"></div> */}
-      
+     {/* <section className="w-full py-20 bg-gradient-to-br from-amber-50 via-amber-100 to-amber-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Header Section */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6 shadow-sm">
             <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
@@ -1042,18 +1037,13 @@ const features2 = [
             <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
           </div>
         </div>
-        
-        {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features5.map((feature, index) => (
             <div 
               key={index}
               className="group relative bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-amber-100"
             >
-              {/* Hover effect background */}
               <div className="absolute inset-0 bg-gradient-to-br from-amber-50 to-amber-100 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
-              
-              {/* Icon container with subtle gradient */}
               <div className="bg-gradient-to-br from-amber-500 to-amber-700 p-3 rounded-lg w-fit text-white mb-4 group-hover:scale-110 transition-transform duration-300">
                 {feature.icon}
               </div>
@@ -1065,16 +1055,12 @@ const features2 = [
               <p className="text-gray-700 text-sm leading-relaxed">
                 {feature.description}
               </p>
-              
-              {/* Decorative corner */}
               <div className="absolute top-0 right-0 w-16 h-16 overflow-hidden">
                 <div className="absolute top-0 right-0 w-6 h-6 bg-amber-500 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
             </div>
           ))}
         </div>
-        
-        {/* CTA Section */}
         <div className="text-center mt-16">
           <div className="inline-flex flex-col sm:flex-row items-center gap-6 bg-white/80 backdrop-blur-sm p-6 rounded-2xl shadow-lg">
             <div className="text-left">
@@ -1090,7 +1076,7 @@ const features2 = [
           </div>
         </div>
       </div>
-    </section>
+    </section> */}
       {/* end why choice Us */}
 
 
