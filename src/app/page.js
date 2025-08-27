@@ -264,13 +264,13 @@ const [isVisible, setIsVisible] = useState(false);
 
   const slides = [
     {
-      title: "Authentic Russian Massage in Delhi with Luxury Spa Ambience!",
+      title: "Best Massage Parlour in Delhi with Luxury Spa Experience!",
       link: "https://api.whatsapp.com/send?phone=918826482370",
       image: "/images/hb1.jpg"
       
     },
     {
-      title: "Best Massage Parlour in Delhi with Luxury Spa Experience",
+      title: "Best Massage Parlour in Delhi Awaits You",
       link: "https://api.whatsapp.com/send?phone=918826482370",
       image: "/images/hb2.jpg"
     },
