@@ -11,6 +11,12 @@ import WhatsappFloat from '../components/WhatsappFloat';
   import { AnimatePresence } from "framer-motion";
   import { FaTelegram } from 'react-icons/fa';
   import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+  import { Sparkles } from 'lucide-react';
+  import { Camera } from "lucide-react";
+  import { MapPin } from 'lucide-react';
+  import { Flower2, Bath, HeartHandshake } from "lucide-react";
+  
+ 
 
 
 // ✅ Load Google Fonts
@@ -672,6 +678,91 @@ const teamMembers = [
             </div>
           </section>
             {/* end content */}
+            
+            {/* //// */}
+     <section className="bg-gradient-to-br from-amber-50 to-stone-100 py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 text-center">
+         <div className="text-center mb-16">
+                    <motion.div
+                      className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                    >
+                      <FaStar className="text-amber-500" />
+                      Affordable Luxury
+                    </motion.div>
+                    <motion.h2
+                      className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.1 }}
+                    >
+                      Experience <span className="text-amber-600">True Relaxation</span>
+                    </motion.h2>
+                    <motion.p
+                      className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: 0.2 }}
+                    >
+                      Choose from our carefully curated spa treatments designed to refresh 
+          your body, calm your mind, and rejuvenate your soul.
+                    </motion.p>
+                    <motion.div
+                       className="flex justify-center mt-10"
+                       initial={{ opacity: 0, y: 20 }}
+                       whileInView={{ opacity: 1, y: 0 }}
+                       transition={{ delay: 0.5, duration: 0.5 }}
+                     >
+                       <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                     </motion.div>
+                  </div>
+        {/* Heading */}
+       
+
+        {/* Features Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          
+          <div className="flex flex-col items-center text-center bg-amber-50 rounded-2xl p-8 shadow-md hover:shadow-lg transition">
+            <Flower2 className="w-12 h-12 text-amber-600 mb-3" />
+            <h3 className="text-xl font-semibold text-amber-900 mb-2">Aroma Therapy</h3>
+            <p className="text-gray-900">
+              Soothing essential oils to relax your senses and restore balance.
+              Soothing essential oils to relax your senses and restore balance.
+              Soothing essential oils to relax your senses and restore balance.
+              Gentle hands that relieve stress, improve circulation, and heal.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center text-center bg-amber-50 rounded-2xl p-8 shadow-md hover:shadow-lg transition">
+            <Bath className="w-12 h-12 text-amber-600 mb-3" />
+            <h3 className="text-xl font-semibold text-amber-900 mb-2">Luxury Spa Bath</h3>
+            <p className="text-gray-900">
+              Indulge in warm hydrotherapy with calming fragrances and care.
+              Indulge in warm hydrotherapy with calming fragrances and care.
+              Indulge in warm hydrotherapy with calming fragrances and care.
+              Gentle hands that relieve stress, improve circulation, and heal.
+            </p>
+          </div>
+
+          <div className="flex flex-col items-center text-center bg-amber-50 rounded-2xl p-8 shadow-md hover:shadow-lg transition">
+            <HeartHandshake className="w-12 h-12 text-amber-600 mb-3" />
+            <h3 className="text-xl font-semibold text-amber-900 mb-2">Healing Massage</h3>
+            <p className="text-gray-900">
+              Gentle hands that relieve stress, improve circulation, and heal.
+              Gentle hands that relieve stress, improve circulation, and heal.
+              Gentle hands that relieve stress, improve circulation, and heal.
+              Gentle hands that relieve stress, improve circulation, and heal.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+            {/* //// */}
       {/* About Us Section */}
             <section className="w-full py-16 bg-gradient-to-b from-white to-yellow-50">
               <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
@@ -802,6 +893,93 @@ const teamMembers = [
                 </div>
                </section>
              {/* End Our Process */}
+             {/* /////? */}
+    <section className="relative bg-white py-24 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        
+        {/* Left Side Content */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="space-y-6"
+        >
+          <h2 className="text-4xl md:text-5xl font-extrabold text-amber-900 leading-tight">
+            The <span className="text-amber-600">Delhi Lifestyle</span>
+          </h2>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            A Delhi Girl is more than just a style icon — she’s the perfect
+            blend of elegance and boldness. From morning coffee dates in Khan
+            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
+            every moment. Her lifestyle is a mix of fashion, culture, and
+            unstoppable confidence.
+            A Delhi Girl is more than just a style icon — she’s the perfect
+            blend of elegance and boldness. From morning coffee dates in Khan
+            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
+            every moment. Her lifestyle is a mix of fashion, culture, and
+            unstoppable confidence.
+          </p>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            A Delhi Girl is more than just a style icon — she’s the perfect
+            blend of elegance and boldness. From morning coffee dates in Khan
+            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
+            every moment. Her lifestyle is a mix of fashion, culture, and
+            unstoppable confidence.
+            
+          </p>
+          {/* <p className="text-gray-600 text-lg leading-relaxed">
+            A Delhi Girl is more than just a style icon — she’s the perfect
+            blend of elegance and boldness. From morning coffee dates in Khan
+            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
+            every moment. Her lifestyle is a mix of fashion, culture, and
+            unstoppable confidence.
+            
+          </p> */}
+
+          {/* Highlights */}
+          {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+  <div className="flex flex-col items-center text-center bg-pink-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+    <Flower2 className="w-10 h-10 text-amber-600 mb-2" />
+    <p className="font-semibold text-gray-800">Relaxing Aroma</p>
+  </div>
+
+  <div className="flex flex-col items-center text-center bg-pink-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+    <Bath className="w-10 h-10 text-amber-600 mb-2" />
+    <p className="font-semibold text-gray-800">Luxury Spa</p>
+  </div>
+
+  <div className="flex flex-col items-center text-center bg-pink-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+    <HeartHandshake className="w-10 h-10 text-amber-600 mb-2" />
+    <p className="font-semibold text-gray-800">Healing Touch</p>
+  </div>
+</div> */}
+        </motion.div>
+
+        {/* Right Side Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="relative"
+        >
+          <div className="rounded-3xl overflow-hidden shadow-2xl">
+            <Image
+              src="/images/185.jpg" // apni image ka path daalna
+              alt="Delhi Girl Lifestyle"
+              width={600}
+              height={600}
+              className="object-cover rounded-3xl"
+            />
+          </div>
+          <div className="absolute -bottom-6 -left-6 bg-amber-600 text-white px-6 py-3 rounded-2xl shadow-lg font-semibold">
+            #DelhiVibes
+          </div>
+        </motion.div>
+      </div>
+    </section>
+    
             {/* outlate */}
             <section className="py-10 px-4 sm:px-6 lg:px-16 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
               <div className="max-w-7xl mx-auto">
