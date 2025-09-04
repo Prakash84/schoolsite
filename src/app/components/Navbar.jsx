@@ -49,7 +49,7 @@ export default function Navbar() {
     { name: "Aerocity", href: "/outlet/aerocity" },
     { name: "Connaught Place", href: "/outlet/cp" },
     { name: "Lajpat Nagar", href: "/outlet/lajpatnagar" },
-    { name: "Paschim Vihar", href: "/outlet/paschimvihar" },
+    { name: "Gurugram", href: "/outlet/paschimvihar" },
     { name: "Noida", href: "/outlet/noida" },
   ];
 
