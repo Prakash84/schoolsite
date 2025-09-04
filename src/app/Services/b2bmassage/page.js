@@ -31,27 +31,27 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
   });
   const services = [
     {
-      title: "Aromatherapy Massage",
+      title: "Relaxation-Driven Aromatherapy Massage for Stress Relief and Full Body Rejuvenation",
       image: "/images/aromatherapy-featured-jpg.webp",
-      description: "Our aromatherapy massage technique uses the aroma (fragrance) of different essential oils such as lavender, eucalyptus, and sandalwood. At Luxury Body Spa, our massage therapist uses pleasing fragrances to create a peaceful environment and help your body heal",
+      description: "The calming nature of the oils and the gentle massage motions ease stress and fuel your mind with good energy.",
       // duration: "60-90 min"
     },
     {
-      title: "Sandwich Massage",
+      title: "Traditional Indian Touch with Modern Techniques for Holistic Healing",
       image: "/images/19-2-1024x427.png",
-      description: "Our Sandwich Massage is a very special and rare therapy. Two therapists work together on one person at the same time, one from the front and one from the back. The result is a profoundly relaxing experience that gives attention to every part of your body.",
+      description: "Old Indian massage practices are mixed with the modern spa methods. This special style is known to cure the body, bring a sense of balance and promote wellness.",
       // duration: "75 min"
     },
     {
-      title: "Couple Massage",
-      image: "/images/B2B Massage.webp",
-      description: "Our couple massage offers a unique and great experience for your special days, such as birthdays, anniversaries, honeymoons, or any day you just want to unwind. This therapy strengthens connection, melts away stress, and gives both of you a memorable experience of closeness and care.",
+      title: "Sensual Therapy for Deep Connection and Ultimate Relaxation",
+      image: "/images/45224.jpg",
+      description: "This therapy is about building comfort and intimacy. It helps with confidence, calmness, and deeper relaxation.",
       // duration: "90 min"
     },
     {
-      title: "Thai Massage",
-      image: "/images/B2B Massage.jpg",
-      description: "A Thai Massage is like yoga for your body, without having to do anything. Our therapist will stretch, press, and move your body in a series of flowing movements, focusing on energy lines and pressure points.",
+      title: "Customized B2B Massage Tailored to Your Unique Body Needs",
+      image: "/images/152804.jpg",
+      description: "Every client is different. We design massages according to body type, pressure preference, and relaxation goals to make the session truly personal.",
       // duration: "60 min"
     },
     
@@ -65,6 +65,7 @@ const container = {
       }
     }
   };
+
    const item = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0 }
@@ -88,33 +89,33 @@ const container = {
     
       const faqs = [
         {
-          question: "What types of massage therapies do you offer?",
-          answer: "We offer B2B Massage, wich MasSandsage, B2B Therapy, Full Body Massage, and Female-to-Male treatments.",
+          question: "What is a B2B massage in Delhi?",
+          answer: "It is a body-to-body massage designed to relax the body and refresh the mind. At Spa Delhi, our experts use high-quality oils and massage techniques to provide you with complete comfort.",
           icon: <FaSpa className="text-teal-600" />
         },
         {
-          question: "Where are your spa outlets located in Delhi and Noida?",
-          answer: "Our outlets are located in Rajouri Garden, Rohini, Pitampura, Noida, Aerocity, Dwarka, Connaught Place, and Lajpat Nagar.",
+          question: "Is your B2B massage service in Delhi discreet and private?",
+          answer: "Yes, we respect your privacy. Every session is carried out with complete care, confidentiality, and professionalism.",
           icon: <FaLeaf className="text-teal-600" />
         },
         {
-          question: "What is your first-visit special offer?",
-          answer: "Our first-visit special is ₹1999, offering a luxurious experience at an affordable price.",
+          question: "What are the benefits of B2B massage in Delhi?",
+          answer: "The benefits include stress relief, better sleep, improved circulation, fresh skin, and mental clarity.",
           icon: <FaHotTub className="text-teal-600" />
         },
         {
-          question: "Do you have therapists from different countries?",
-          answer: "Yes, we have skilled therapists from Russia, Thailand, Afghanistan, India, and other countries.",
+          question: "How do I book a B2B massage in Delhi?",
+          answer: "Booking is simple. Just reach us on Telegram, and our team will confirm your appointment quickly.",
           icon: <FaLeaf className="text-teal-600" />
         },
         {
-          question: "Can I book a B2B Massage session?",
-          answer: "Yes, we offer B2B Massage sessions for a relaxing and intimate experience.",
+          question: "What makes Spa Delhi the best B2B massage centre in Delhi?",
+          answer: "Our professional staff, calming interiors, luxury service, and respect for client privacy make us the top choice for B2B massages in Delhi.",
           icon: <FaSpa className="text-teal-600" />
         },
         {
-          question: "What is the cost of a Full Body Massage?",
-          answer: "The cost varies based on the treatment, with a special ₹1999 offer for first-time visitors.",
+          question: "Do you offer hotel B2B massage services in Delhi?",
+          answer: "Yes, we provide exclusive services at hotels like Andaaz, The Park, The Surya, and ITC Welcome Dwarka.",
           icon: <FaHandSparkles className="text-teal-600" />
         },   
       ];
@@ -123,32 +124,32 @@ const container = {
      const highlights = [
     {
       icon: <Spa className="text-amber-600" />,
-      title: "Traditional Technique",
-      description: "Authentic Swedish methods using long gliding strokes"
+      title: "Stress Relief & Relaxation",
+      description: "Our B2B massage spa in Pashchim Vihar reduce stress and anxiety in the most natural way. The gentle strokes relax the nervous system, helping you feel light and calm."
     },
     {
       icon: <SelfImprovement className="text-amber-600" />,
-      title: "Deep Relaxation",
-      description: "Reduces stress hormones by up to 30% in a single session"
+      title: "Improved Blood Circulation",
+      description: "The methods implemented by our therapists enhance blood circulation. A good blood circulation pumps oxygen to all areas of your body and makes you feel more energetic."
     },
     {
       icon: <HealthAndSafety className="text-amber-600" />,
-      title: "Muscle Tension Relief",
-      description: "Targets muscle knots and improves flexibility"
+      title: "Muscle Recovery & Pain Relief",
+      description: "Tight muscles from long hours at work or gym soreness get instant relief with our massages. B2B Spa in Paharganj helps the muscles recover faster also reducing the body pain."
     },
     {
       icon: <Air className="text-amber-600" />,
-      title: "Improved Circulation",
-      description: "Enhances blood flow and oxygen delivery to tissues"
+      title: "Detoxification & Skin Glow",
+      description: "Massage speeds up the lymph movement. A good lymph movement removes toxins from your body and gives your skin a fresh and healthy look."
     }
   ];
 const [isMenuOpen, setIsMenuOpen] = useState(false);
     const sections = [
       {
-        title: "Oil Therapy",
+        title: "Soothing Oil Therapy for B2B Massage in Delhi",
         description1:
-          "Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation. The application of gentle pressure with warm oil improves lymphatic drainage, detoxifies the body, and boosts energy flow. Whether you're dealing with fatigue, anxiety, or physical stiffness, oil therapy helps restore balance to your mind and body. It's especially beneficial for those seeking natural healing rooted in ancient Ayurvedic principles. The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being. Ayurvedic oil massage, also known as Abhyanga, uses herbal oils that balance the body's doshas—Vata, Pitta, and Kapha. The warm oil is massaged into the skin to energize vital points, improve blood circulation, and promote internal healing. This therapy not only revitalizes the skin but also clears toxins stored in deeper tissues.",
-        image: "/images/137.jpg",
+          "Massage is enhanced by our oil treatments. Aromatic oils of high quality feed the skin, relax the muscles, and encourage deep relaxation. Every stroke is meant to heal, as the oils improve circulation and soothing of senses. You have all the comfort with this combination of professional hands and relaxing oils.",        
+          image: "/images/7878.jpg",
       },
       // {
       //   title: "Ayurvedic Massage",
@@ -221,13 +222,13 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
       </div>
 
       <h1 className="text-4xl md:text-5xl font-light text-gray-800">
-        <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">B2B Massage</span>
-        Ultimate Relaxation, 
-        <span className="block mt-2 font-medium">Top & Bottom <span className="text-rose-600">Therapy Blend</span></span>
+        <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">B2B Massage in Delhi:</span>
+        Great Destination 
+        <span className="block mt-2 font-medium">To Get <span className="text-rose-600">Luxury Massage</span></span>
       </h1>
 
       <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-        The B2B Massage is our luxurious, two-therapist experience that pampers you from both sides simultaneously. Warm oil, synchronized strokes, and expert techniques combine to provide deep relaxation and muscle relief, ensuring every inch of tension is gently melted away.
+        Feel the luxury and calmness at the best Body to Body massage in Delhi. Each massage session is designed to provide you with unparalleled comfort and relaxation. Come to us if you want to experience something which is much more than an ordinary spa massage.
       </p>
 
       <div className="grid grid-cols-2 gap-4 mt-8 max-w-md mx-auto lg:mx-0">
@@ -345,7 +346,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
                   >
-                    Swedish <span className="text-amber-600">Massage Benefits</span>
+                    Transformative Benefits <span className="text-amber-600"> of B2B Massage in Delhi</span>
                   </motion.h2>
                   <motion.p
                     className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
@@ -354,7 +355,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                   >
-                    We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
+                    Relaxation is not all that is provided by a proper B2B Massage in Karol Bagh. It makes your body healthy, stress relief, and your mind a refresher. At Spa Delhi, we offer Full body massage in Delhi, and leave you feeling relaxed.
                   </motion.p>
       <div className="w-24 h-1 bg-amber-500 mx-auto"></div>
     </div>
@@ -403,7 +404,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
                   >
-                    Transformative <span className="text-amber-600">Benefits</span>
+                    Benefits of Our B2B <span className="text-amber-600">Massage Service in Delhi</span>
                   </motion.h2>
                   <motion.p
                     className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
@@ -412,35 +413,35 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                   >
-                     Our signature oil therapy massage offers a holistic approach to wellness that addresses both physical and mental needs.
+                     Each experience at Spa Delhi is meant to provide you with peacefulness, clear mind, and healthy body.
                   </motion.p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 { 
-                  title: "Muscle Relief", 
-                  description: "Deep tissue manipulation combined with therapeutic oils helps relieve muscle tension and soreness effectively.",
+                  title: "Premium Locations", 
+                  description: "We work in the chosen five-star hotels and luxury locations in Delhi. You have the most optimal privacy, comfort, and style.",
                   icon: "💆‍♀️"
                 },
                 { 
-                  title: "Stress Reduction", 
-                  description: "Aromatherapy oils calm the nervous system, reducing anxiety and promoting mental clarity.",
+                  title: "Professional Therapists", 
+                  description: "We have trained therapists who use proven massage techniques, delivering instant relief to people around the world. Their skill ensures that every session is more than just relaxation.",
                   icon: "🧘‍♂️"
                 },
                 { 
-                  title: "Improved Circulation", 
-                  description: "Massage techniques stimulate blood flow, enhancing oxygen delivery to tissues and organs.",
+                  title: "Wide Range of Therapies", 
+                  description: "We have a mix of Swedish, Thai, Balinese, Deep Tissue, or Aromatherapy, all in one roof. All the massages are customized to fit your body.",
                   icon: "❤️"
                 },
                 { 
-                  title: "Skin Rejuvenation", 
-                  description: "Natural oils nourish and hydrate the skin, leaving it soft, supple, and radiant.",
+                  title: "Luxury & Comfort", 
+                  description: "With relaxing smells, low music and high grade oils, we establish the ideal environment. The relaxed atmosphere gives you a chance to enjoy all the time you spend during the session.",
                   icon: "✨"
                 },
                 { 
-                  title: "Detoxification", 
-                  description: "Stimulates the lymphatic system to flush toxins and boost natural immunity.",
+                  title: "Better Sleep & Mental Wellness", 
+                  description: "If you are having difficulty while sleeping then B2B Spa in Greater Kailash can be very helpful to you as it is the solution to those who are constantly under stress. It enhances sleep patterns, cleans the mind, and re-establishes the emotional balance.",
                   icon: "🌿"
                 },
                 { 
@@ -499,7 +500,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.6 }}
                       >
-                        Top Luxury Spa <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Outlets in Aerocity Delhi</span>
+                        Our Most Demanded <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">B2B Massage in Delhi</span>
                       </motion.h2>
                       
                       <motion.p
@@ -508,7 +509,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4, duration: 0.5 }}
                       >
-                        Experience Pampering and Care with B2B Massage at Luxury Spa.
+                        Life in Delhi is full of rush and stress. Our Body to Body massage in Delhi will provide relief to many people.
                       </motion.p>
                       
                       <motion.div
@@ -536,7 +537,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                        <div className="bg-white p-6 rounded-2xl shadow-sm">
                          <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
                            <img
-                               src="/images/hb3.jpg" // Change path accordingly
+                               src="/images/6745.jpg" // Change path accordingly
                                alt="Premium Body Spa"
                                className="w-full h-full object-cover rounded-xl"
                              />
@@ -608,23 +609,16 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                  >
                    <div className="max-w-lg">
                      <p className="text-lg text-stone-600 mb-6 leading-relaxed">
-                       Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
-                       Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
-                       of calm in the heart of Delhi.We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
-                       <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
+                       The most requested B2B massage at Spa Delhi are the combination of soft techniques, pure essential oils, and personal care. Every session is both a physical relief and a calming effect. 
+                       {/* <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
                        and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
-                       designed private sanctuaries.
+                       designed private sanctuaries. */}
                      </p>
                      
                      
                      
                      <p className="text-stone-600 mb-6 leading-relaxed">
-                       We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
-                       <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
-                       and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
-                       designed private sanctuaries.Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
-                       Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
-                       of calm in the heart of Delhi.
+                       Your comfort is always in the mind of our therapists. Are you planning to unwind after work, refuel your energy, or simply take care of yourself, whatever the case we will be planning to make every session better than you could have imagined. That is why our customers continue to use us to relax and come back over and over.
                      </p>
                      
                      <div className="grid grid-cols-2 gap-4 mb-8">
@@ -696,7 +690,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.6 }}
                       >
-                       Our Sandwich <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Massage Techniques</span>
+                       Our B2B <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Massage Techniques</span>
                       </motion.h2>
                       
                       <motion.p
@@ -705,7 +699,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4, duration: 0.5 }}
                       >
-                        Experience tranquility with our curated selection of premium spa treatments, each designed to transport you to a state of complete relaxation.
+                        We employ customized massage methods that give you the ultimate relaxation, relief and total comfort.
                       </motion.p>
                       
                       <motion.div
@@ -812,10 +806,10 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                  Premium Wellness Experience
                                                </span>
                                                <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-6">
-                                                 Why Choose <span className="text-amber-600">Our Spa in Delhi?</span>
+                                                 Why Choose Spa Delhi for <span className="text-amber-600">Best B2B Massage Centre in Delhi?</span>
                                                </h2>
                                                <p className="text-amber-800 text-lg md:text-xl leading-relaxed">
-                                                 We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care that revitalizes your mind, body and spirit.
+                                                 Spa Delhi is known for its trusted therapists, professional service, and a luxury environment that guarantees satisfaction.
                                                </p>
                                              </motion.div>
                                            </div>
@@ -841,15 +835,13 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                      <div>
                                                        <h3 className="text-2xl font-bold text-amber-800 font-serif mb-2">Expert Therapists</h3>
                                                        <p className="text-amber-700">
-                                                         Our therapists are trained in traditional Ayurvedic techniques with over 10 years of experience in therapeutic massage.
+                                                         Unmatched Expertise with Professional B2B Therapists in Delhi.
                                                        </p>
                                                      </div>
                                                    </div>
                                                    
                                                    <p className="text-gray-700 mb-6">
-                                                     Oil therapy is a traditional wellness practice that uses warm, herb-infused oils tailored to your skin type and body condition. 
-                                                     This technique not only moisturizes and nourishes your skin but also stimulates deep tissue relaxation.
-                                                     The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being. Regular sessions can improve flexibility, deepen sleep, and support emotional stability.
+                                                     Our therapists are skilled and experienced in B2B massage. They create sessions that are both relaxing and refreshing. We respect your comfort and privacy, ensuring complete professionalism. From soothing strokes to luxury settings, everything is planned to make your visit memorable.
                                                    </p>
                                                    
                                                    <div className="flex flex-wrap gap-3 mb-8">
@@ -863,7 +855,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                  
                                                  <div className="relative h-96">
                                                    <Image 
-                                                     src="/images/446979.jpg"
+                                                     src="/images/6745.jpg"
                                                      alt="Expert therapist performing massage"
                                                      layout="fill"
                                                      objectFit="cover"
@@ -884,7 +876,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-amber-100">
                                                  <div className="relative h-96">
                                                    <Image 
-                                                     src="/images/447701.jpg"
+                                                     src="/images/688824.jpg"
                                                      alt="Premium spa oils"
                                                      layout="fill"
                                                      objectFit="cover"
@@ -902,14 +894,13 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                      <div>
                                                        <h3 className="text-2xl font-bold text-amber-800 font-serif mb-2">Premium Oils & Blends</h3>
                                                        <p className="text-amber-700">
-                                                         We use only cold-pressed, organic oils blended with therapeutic-grade essential oils for maximum benefit.
+                                                         Exclusive Spa Experience with Luxurious Ambience and Personalized Care.
                                                        </p>
                                                      </div>
                                                    </div>
                                                    
                                                    <p className="text-gray-700 mb-6">
-                                                     The calming aroma of essential oils adds a therapeutic layer, relieving stress and enhancing your overall sense of well-being. 
-                                                     Regular sessions can improve flexibility, deepen sleep, and support emotional stability.
+                                                     The spa interiors are built to calm your senses. From peaceful lighting to gentle fragrances, every detail creates the right atmosphere. The primary goal of personalized massage sessions is to make you feel refreshed and energetic.
                                                    </p>
                                                    
                                                    <div className="mb-6">
@@ -994,14 +985,14 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                              transition={{ duration: 0.6, delay: 0.2 }}
                                            >
                                              <h3 className="text-3xl font-bold text-amber-900 font-serif text-center mb-12">
-                                               Our Holistic Approach to Wellness
+                                               Our Process for B2B Massage
                                              </h3>
                                              
                                              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                                                {[
                                                  {
-                                                   title: "Mindful Relaxation",
-                                                   description: "Techniques that calm the mind and reduce stress through focused breathing and meditation",
+                                                   title: "Reach Out to Us via Telegram for Instant Booking Assistance",
+                                                   description: "Booking a B2B massage at Spa Delhi is quick and safe. Contact us on Telegram for instant confirmation.",
                                                    icon: (
                                                      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -1009,8 +1000,8 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                    )
                                                  },
                                                  {
-                                                   title: "Body Rejuvenation",
-                                                   description: "Therapies that restore physical vitality and promote healing at the cellular level",
+                                                   title: "Consultation for Personalized B2B Massage Experience Tailored to Your Comfort",
+                                                   description: "We discuss your needs and preferences with you before the session. This conversation helps us to make the massage perfectly fit according to your needs.",
                                                    icon: (
                                                      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -1018,8 +1009,8 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                                                    )
                                                  },
                                                  {
-                                                   title: "Spiritual Balance",
-                                                   description: "Practices that align your energy centers and connect you with your inner self",
+                                                   title: "Step into Luxury with Our Relaxing and Stress-Free B2B Massage Environment",
+                                                   description: "As soon as you visit us, you feel a welcoming environment. The venue, the staffs, and everything you see is there to make you totally prepared for deep body relaxation.",
                                                    icon: (
                                                      <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-amber-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -1166,7 +1157,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.6 }}
                   >
-                    Our Specialty <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Services at Delhi Spa</span>
+                    Spa Delhi: Best Massage <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Centre for B2B Massage in Delhi</span>
                   </motion.h2>
                   
                   <motion.p
@@ -1175,7 +1166,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4, duration: 0.5 }}
                   >
-                    Erotic and Nuru Massage, Thai Massage, Sandwich Massage, Full Body Massage by Expert Therapists
+                    Spa Delhi is the safest bet when it comes to luxury and secret Body to Body massage in Delhi. We specialize in the development of customer satisfaction by personal care and quality service.
                   </motion.p>
                   
                   <motion.div
@@ -1190,22 +1181,26 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                       <div className="bg-white p-8 rounded-2xl shadow-sm">
-                            <h3 className="text-xl font-semibold text-amber-800 mb-4">Expert Therapists</h3>
+                            <h3 className="font-semibold text-amber-800 mb-4">Personalized B2B Massage Plans Crafted for Total Relaxation in Delhi</h3>
                             <p className="text-gray-700 mb-6">
-                              When it comes to indulgent relaxation and rejuvenation, Delhi spa centers stand out for their exceptional massage therapies. Among the most popular and sought-after treatments are erotic massage, nuru massage, thai massage, sandwich massage, and full body massage. Whether you seek pure relaxation, therapeutic relief, or something more sensual, Delhi's best spas offer a range of services tailored to suit every need. With both Indian and foreign therapists, these therapies are designed to promote deep relaxation, reduce stress, and rejuvenate the body.
+                              We deliver customised massage sessions that appeal to your body and mind. Every massage technique is designed to provide you with the best experience. 
         
                             </p>
-                          {/* Bullet Points instead of Image */}
-                          <ul className="list-disc list-inside text-gray-700 space-y-2">
-                            <li>Highly trained and certified therapists</li>
-                            <li>Wide range of massage techniques</li>
-                            <li>Focus on relaxation & stress relief</li>
-                            <li>Customized treatments for every client</li>
-                            <li>Professional and hygienic environment</li>
-                          </ul>
+                            <h3 className="font-semibold text-amber-800 mb-4">Professional Therapists Who Prioritize Comfort, Discretion, and Satisfaction</h3>
+                            <p className="text-gray-700 mb-6">
+                              Our therapists treat every client with care and respect. Privacy is a top priority, and your comfort comes first during every session. 
+        
+                            </p>
+                            <h3 className="font-semibold text-amber-800 mb-4">Luxurious Spa Interiors That Create the Perfect Mood for Relaxation</h3>
+                            <p className="text-gray-700 mb-6">
+                              The interiors are warm and peaceful. The lighting, the design, and the music all come together to create the right mood for relaxation. 
+        
+                            </p>
                           
-                          <p className="text-gray-700 mb-6">
-                              When it comes to indulgent relaxation and rejuvenation, Delhi spa centers stand out for their exceptional massage therapies. Among the most popular and sought-after treatments are erotic massage, nuru massage, thai massage, sandwich massage, and full body massage. Whether you seek pure relaxation, therapeutic relief, or something more sensual, Delhi's best spas offer a range of services tailored to suit every need.
+                          
+                          <h3 className="font-semibold text-amber-800 mb-4">Premium Quality Oils and Techniques That Enhance Every B2B Massage Experience</h3>
+                            <p className="text-gray-700 mb-6">
+                              We only use premium-grade oils and advanced massage methods. This makes each visit to the massage to be like a luxurious vacation. 
         
                             </p>
                       </div>
@@ -1213,7 +1208,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                       <div className="relative">
                         <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-full min-h-[400px] flex items-center justify-center overflow-hidden">
                           <img
-                            src="/images/staff2.jpg"
+                            src="/images/staff5.jpg"
                             alt="Client Testimonial"
                             className="object-cover w-full h-full rounded-xl"
                           />
@@ -1225,19 +1220,31 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
         
                       
                       <div className="bg-white p-8 rounded-2xl shadow-sm">
-                        <span className="font-semibold text-amber-800 mb-4">Erotic Massage in Delhi: An Intimate Experience</span>
+                        <span className="font-semibold text-amber-800 mb-4">Our Pricing Package for B2B Massage in Delhi</span>
                         <p className="text-gray-700 mb-6">
-                          The erotic massage in Delhi is a highly specialized and intimate therapy that offers a combination of relaxation and sensuality. Ideal for those who wish to experience heightened pleasure while relieving stress, this service is carried out by expert therapists who understand how to deliver a soothing, yet deeply stimulating experience. If you're looking for something beyond the usual therapeutic massage, the erotic massage is a great choice, enhancing both emotional and physical well-being. This service is performed with care and professionalism, ensuring you receive the highest quality relaxation.                  
+                          We keep our prices balanced. Our packages are cheap but will have the luxury feel of a five-star spa.                  
                         </p>
-                        <span className="font-semibold text-amber-800 mb-4">Nuru Massage in Delhi: A Luxurious Sensation</span>
-                        <p>
-                         The nuru massage in Delhi is a uniquely sensual experience that has gained popularity for its exotic, slippery, and intimate nature. This Japanese massage style uses a special gel derived from seaweed, which makes the skin glide smoothly, allowing for a deep body-to-body connection between the therapist and the client. It’s a treatment that blends relaxation with sensual indulgence, making it ideal for individuals seeking a luxurious and intimate spa experience. Nuru massage offers a heightened sense of intimacy while still ensuring ultimate relaxation and stress relief.
+                        <span className="font-semibold text-amber-800 mb-4">Luxury Hotel Spa for B2B Massage in Delhi</span>
+                        <p className="text-gray-700 mb-6">
+                         Spa Delhi also provides services at the most premium hotels in Delhi. Each location offers complete privacy and comfort.
                         </p>
+                        {/* Bullet Points instead of Image */}
+                          <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                            <li>Andaaz – Known for elite indulgence with luxury massages that stand out.</li>
+                            <li>The Park – Offers a rich spa journey with elegance and comfort.</li>
+                            <li>The Surya in NFC – Famous for holistic healing and premium spa sessions.</li>
+                            <li>Welcome by ITC in Dwarka – Combines remarkable luxury with ultimate relaxation in a private environment.</li>
+                            {/* <li>Professional and hygienic environment</li> */}
+                          </ul>
                         {/* <p>
                           Perfect for individuals suffering from stress, muscle pain, or hormonal imbalance, this massage harmonizes body rhythms and enhances immunity. The continuous motion and warm oil offer a meditative experience.
                         </p> */}
+                        <span className="font-semibold text-amber-800 mb-4">Book Your Escape to Wellness Today</span>
+                        <p>
+                         Your luxury B2B massage in Delhi is just a call away.”
+                        </p>
                         <div className="flex mt-6">
-                          {['Lavender', 'Eucalyptus', 'Rosemary', 'Sandalwood'].map((oil, index) => (
+                          {[ 'Eucalyptus', 'Rosemary', 'Sandalwood'].map((oil, index) => (
                             <div key={index} className="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm mr-2">
                               {oil}
                             </div>

@@ -31,27 +31,27 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
   });
   const services = [
     {
-      title: "Swedish Full Body Massage",
+      title: "Swedish Massage for Relaxation and Rejuvenation",
       image: "/images/aromatherapy-featured-jpg.webp",
-      description: "Gentle, flowing strokes with oils help improve blood flow and relax your whole body. This is perfect for beginners and gives a very soothing effect.",
+      description: "Swedish massage involves long and smooth strokes to relax your body, enhance your circulation and reduce stress. The method revitalize your senses and makes you feel relaxed.",
       // duration: "60-90 min"
     },
     {
-      title: "Deep Tissue Massage",
+      title: "Deep Tissue Therapy for Pain and Muscle Relief",
       image: "/images/19-2-1024x427.png",
-      description: "If you have sore muscles or long-term pain, this is ideal. It focuses on deep muscle layers to relieve tension and stiffness.",
+      description: "Deep tissue massage hits the harder parts of the muscle to eliminate any pain or stiffness. It also serves to loosen knots and enhance the mobility of the body.",
       // duration: "75 min"
     },
     {
-      title: "Aromatherapy Massage",
+      title: "Aromatherapy Massage for Stress Relief",
       image: "/images/Full Body Massage.webp",
-      description: "This massage uses essential oils with soft massage movements. Great for stress, anxiety, and better sleep, it helps calm your mind and body.",
+      description: "With light massage movements, essential oils can be used to relieve stress and enable your mind to feel calmer.",
       // duration: "90 min"
     },
     {
-      title: "Female-to-Male Full Body Massage",
+      title: "Hot Stone Massage for Complete Healing",
       image: "/images/Full Body Massage.jpg",
-      description: "Done by a trained female therapist, this massage offers relaxation, stress relief, and emotional peace in a comfortable luxury setting.",
+      description: "Warm stones are placed on special points of your body to help muscles relax, tensions melt, and to create balance through hands-on techniques.",
       // duration: "60 min"
     },
     // {
@@ -134,23 +134,23 @@ const container = {
      const highlights = [
     {
       icon: <Spa className="text-amber-600" />,
-      title: "Traditional Technique",
-      description: "Authentic Swedish methods using long gliding strokes"
+      title: "Blood Circulation",
+      description: "Massage helps blood move better, which makes you feel less tired. It also helps your body heal by balancing your energy."
     },
     {
       icon: <SelfImprovement className="text-amber-600" />,
-      title: "Deep Relaxation",
-      description: "Reduces stress hormones by up to 30% in a single session"
+      title: "Release tension",
+      description: "When muscles are tight, or you feel stressed, a massage works on deep tension, loosening stiff areas and helping your mind focus for a while instead of worrying."
     },
     {
       icon: <HealthAndSafety className="text-amber-600" />,
-      title: "Muscle Tension Relief",
-      description: "Targets muscle knots and improves flexibility"
+      title: "Improve well being",
+      description: "Treatments using spa techniques improve your skin, help your body release bad stuff, and bring back a healthy glow. Skilled hands apply smooth strokes that relax you while making your skin feel soft and clean. "
     },
     {
       icon: <Air className="text-amber-600" />,
-      title: "Improved Circulation",
-      description: "Enhances blood flow and oxygen delivery to tissues"
+      title: "Better Sleep",
+      description: "People who get regular massages often sleep better and have fewer headaches. These therapies use relaxing movements and pleasant oils to help with total health."
     }
   ];
 const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -233,12 +233,12 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
       <h1 className="text-4xl md:text-5xl font-light text-gray-800">
         <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">Full Body Massage</span>
-        Ultimate Relaxation, 
-        <span className="block mt-2 font-medium">Top & Bottom <span className="text-rose-600">Therapy Blend</span></span>
+        in Delhi:, 
+        <span className="block mt-2 font-medium">Relax Your Mind, <span className="text-rose-600">Body, and Soul</span></span>
       </h1>
 
       <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-        The Full Body Massage is our luxurious, two-therapist experience that pampers you from both sides simultaneously. Warm oil, synchronized strokes, and expert techniques combine to provide deep relaxation and muscle relief, ensuring every inch of tension is gently melted away.
+        Looking to treat yourself to a full body massage which makes you feel more relaxed and comfortable in Delhi? Massage sessions in Delhi are designed to assist you in relaxing, clearing your mind and feeling physically and emotionally better.
       </p>
 
       <div className="grid grid-cols-2 gap-4 mt-8 max-w-md mx-auto lg:mx-0">
@@ -356,7 +356,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.1 }}
                   >
-                    Swedish <span className="text-amber-600">Massage Benefits</span>
+                    Benefits of our Full Body <span className="text-amber-600">Massage Service in Delhi</span>
                   </motion.h2>
                   <motion.p
                     className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
@@ -365,7 +365,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                     viewport={{ once: true }}
                     transition={{ delay: 0.2 }}
                   >
-                    We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care.
+                    You can notice a big difference when you try our specialized massage services made to help and repair your body.
                   </motion.p>
       <div className="w-24 h-1 bg-amber-500 mx-auto"></div>
     </div>
@@ -430,33 +430,33 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 { 
-                  title: "Muscle Relief", 
-                  description: "Deep tissue manipulation combined with therapeutic oils helps relieve muscle tension and soreness effectively.",
+                  title: "Release muscle stiffness", 
+                  description: "A full body massage in Delhi focuses on easing tight muscles and bringing the body back to a steady, comfortable state. Professional techniques involved in the practice are very comforting and relieving.",
                   icon: "💆‍♀️"
                 },
                 { 
-                  title: "Stress Reduction", 
-                  description: "Aromatherapy oils calm the nervous system, reducing anxiety and promoting mental clarity.",
+                  title: "Heal Your Body", 
+                  description: "Every massage is aimed at the self-healing of your body. The primary goals in therapy are to improve circulation, ease movement, and rid the body of toxins.",
                   icon: "🧘‍♂️"
                 },
                 { 
-                  title: "Improved Circulation", 
-                  description: "Massage techniques stimulate blood flow, enhancing oxygen delivery to tissues and organs.",
+                  title: "Find Peace", 
+                  description: "Massage practitioners have light movements that perfectly match your requirements. Such gentle motions relax you, and you forget about your stress and find peace.",
                   icon: "❤️"
                 },
                 { 
-                  title: "Skin Rejuvenation", 
-                  description: "Natural oils nourish and hydrate the skin, leaving it soft, supple, and radiant.",
+                  title: "Relax Mind", 
+                  description: "The premium full body massage not only eases sore spots but also relaxes your mind. It makes your body energy flow better so you feel refreshed right away.",
                   icon: "✨"
                 },
                 { 
-                  title: "Detoxification", 
-                  description: "Stimulates the lymphatic system to flush toxins and boost natural immunity.",
+                  title: "Boost energy", 
+                  description: "Sessions are set up to make your skin healthier, help you sleep deeper, and give you a boost of new energy when you finish.",
                   icon: "🌿"
                 },
                 { 
-                  title: "Better Sleep", 
-                  description: "Promotes relaxation that leads to deeper, more restorative sleep patterns.",
+                  title: "Improve well being", 
+                  description: "Therapists use old techniques along with newer ways of treating the body, so your health gets benefits that last. Their experience makes each massage a relaxing routine that supports wellness for a long time.",
                   icon: "😴"
                 }
               ].map((benefit, index) => (
@@ -510,7 +510,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.6 }}
                       >
-                        Top Luxury Spa <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Outlets in Aerocity Delhi</span>
+                        Our Most Demanded <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Full Body Massage in Delhi</span>
                       </motion.h2>
                       
                       <motion.p
@@ -519,7 +519,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4, duration: 0.5 }}
                       >
-                        Experience Pampering and Care with Full Body Massage at Luxury Spa.
+                        "Every session is set up for comfort and luxury from the start."
                       </motion.p>
                       
                       <motion.div
@@ -619,23 +619,21 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                  >
                    <div className="max-w-lg">
                      <p className="text-lg text-stone-600 mb-6 leading-relaxed">
-                       Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
-                       Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
-                       of calm in the heart of Delhi.We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
+                       Lots of people in Delhi choose our popular massages for complete healing and relaxation. There are different types, including massages that relieve stress or use oils to calm your senses. Every visit is designed for your personal comfort. Many repeat clients believe in the reliable quality, professional therapists, and peaceful spa atmosphere.
+                       {/* <span className="font-medium text-stone-800">hot stone massage</span>, 
                        <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
                        and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
-                       designed private sanctuaries.
+                       designed private sanctuaries. */}
                      </p>
                      
                      
                      
                      <p className="text-stone-600 mb-6 leading-relaxed">
-                       We specialize in world-class therapies including <span className="font-medium text-stone-800">hot stone massage</span>, 
-                       <span className="font-medium text-stone-800"> couple experiences</span>, <span className="font-medium text-stone-800">Thai techniques</span>, 
-                       and <span className="font-medium text-stone-800">signature oil treatments</span> - all delivered in beautifully 
-                       designed private sanctuaries.Escape the city's hustle and indulge in a tranquil haven where serenity meets sophistication. 
-                       Our premium spa is nestled within Aerocity's most luxurious 5-star hotels, offering an oasis 
-                       of calm in the heart of Delhi.
+                       Massage options can be combined such as aromatherapy, Swedish, or deep tissue, and each option is scheduled to suit you. Regardless of the choice you make, all the sessions will have an uplifting effect and will restore your energy. Book an appointment today to one of the most reliable full body massages in Delhi. 
+                       {/* <span className="font-medium text-stone-800">hot stone massage</span>, 
+                       <span className="font-medium text-stone-800"> couple experiences</span>, 
+                       <span className="font-medium text-stone-800">Thai techniques</span>,  */}
+                       
                      </p>
                      
                      <div className="grid grid-cols-2 gap-4 mb-8">
@@ -707,7 +705,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.6 }}
                       >
-                       Our Sandwich <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Massage Techniques</span>
+                       Our Full Body <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Massage Techniques</span>
                       </motion.h2>
                       
                       <motion.p
@@ -716,7 +714,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.4, duration: 0.5 }}
                       >
-                        Experience tranquility with our curated selection of premium spa treatments, each designed to transport you to a state of complete relaxation.
+                        Spa Delhi combines the latest spa experience with the old massage techniques to ensure that you enjoy a relaxing and wholesome experience every time.
                       </motion.p>
                       
                       <motion.div
