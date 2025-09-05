@@ -8,14 +8,21 @@
   import { Check } from "lucide-react";
   // import WhatsappFloat from '../components/WhatsappFloat';
   import WhatsappFloat from '../../components/WhatsappFloat';
-
-
-
-
- 
-
- 
-
+  import { Briefcase, Sparkles, BadgeCheck, MapPin, Building2, IndianRupee, Gift, BusFront, GraduationCap, ShieldCheck } from "lucide-react";
+  import { 
+  FaSpa, 
+  FaHandsHelping, 
+  FaUserTie, 
+  FaMapMarkerAlt, 
+  FaStar,
+  FaShieldAlt,
+  FaMoneyBillWave,
+  FaUsers,
+  FaCertificate,
+  FaPhoneAlt,
+  FaEnvelope
+} from 'react-icons/fa';
+import { FaHeart, FaHotel, FaFemale } from 'react-icons/fa';
 
   const playfair = Playfair_Display({
     subsets: ['latin'],
@@ -32,8 +39,23 @@
 {/* End Our Process */}
 
   export default function hotstonemassage() {
+    const hotels = [
+"Lemon Tree",
+"Novotel",
+"Roseate House",
+"Radisson",
+"ITC",
+"Taj",
+];
+
+
+const fadeUp = {
+hidden: { opacity: 0, y: 20 },
+show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
 
     return (
+      <>
       <div className="w-full">
         {/* Banner */}
     <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-rose-50">
@@ -60,9 +82,10 @@
       </h1>
 
       <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-       Are you passionate about wellness and luxury? Do you have a knack for providing top-notch spa experiences? If so, we want you to be a part of our growing team!
+       Are you passionate about wellness, relaxation, and the art of massage therapy? Do you have a natural ability to provide exceptional spa experiences in a luxury setting? If you are a skilled and dedicated professional, we have an exciting opportunity for you to join our prestigious spa team!
       </p>
-      <p>We are currently hiring professional Therapists for our luxury spa and hotel outlets across Delhi NCR, including renowned hotels like Lemon Tree, Novotel, Roseate House, and Radisson. This is an exciting opportunity for both part-time and full-time positions!</p>
+      <p>We are currently hiring Therapist Staff for our luxury spa outlets located in 5-star hotels across the Delhi NCR region. This includes renowned establishments such as Lemon Tree, Novotel, Roseate House, and Radisson. Whether you are looking for a full-time or part-time position, we have a variety of roles available to suit your lifestyle and career aspirations.</p>
+<p>At our luxury spa, we are committed to providing the highest standard of services to our clients, ensuring that each visit is a transformative experience. If you are looking for a spa job in Delhi or a therapist job that allows you to grow professionally in a luxury environment, this could be the perfect opportunity for you!</p>
 
       <div className="grid grid-cols-2 gap-4 mt-8 max-w-md mx-auto lg:mx-0">
         <div className="flex items-center space-x-3">
@@ -72,7 +95,7 @@
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <span className="text-sm text-gray-700">Top Luxury Spa Locations</span>
+          <span className="text-sm text-gray-700">Spa Therapist (Female)</span>
         </div>
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
@@ -80,7 +103,7 @@
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9" />
             </svg>
           </div>
-          <span className="text-sm text-gray-700">Flexible Work Hours</span>
+          <span className="text-sm text-gray-700">Massage Therapist (Male and Female)</span>
         </div>
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
@@ -88,7 +111,7 @@
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
             </svg>
           </div>
-          <span className="text-sm text-gray-700">Great Incentives & Tips</span>
+          <span className="text-sm text-gray-700">Body Spa Therapist</span>
         </div>
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
@@ -154,6 +177,10 @@
   </div>
 </div>
       {/* End Banner */}
+      {/* //// */}
+      
+
+      {/* //// */}
  <div className="bg-white text-gray-800">
       <section className="py-20 px-4">
         <div className="text-center mb-14">
@@ -178,60 +205,364 @@
           <div className="w-24 h-1 bg-amber-500 mx-auto mt-4"></div>
         </div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Responsibilities Card */}
           <motion.div
-            className="space-y-6"
+            className="bg-amber-50 rounded-xl p-6 shadow-lg border border-amber-100"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
           >
-            <h3 className="text-2xl font-bold text-amber-800">Why Join Us?</h3>
-            <ul className="list-disc list-inside space-y-2 text-gray-700">
-              <li>24+ outlets across Delhi, Noida, and Gurgaon</li>
-              <li>Luxurious 5-star hotel spa locations</li>
-              <li>Accommodation & safety assured</li>
-              <li>High income with weekly payouts</li>
-              <li>Professional and friendly team</li>
+            <div className="flex items-center mb-4">
+              <div className="bg-amber-100 p-3 rounded-full mr-4">
+                <FaHandsHelping className="text-amber-700 text-xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-amber-800">Key Responsibilities</h3>
+            </div>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span>Perform a variety of treatments including massages, facials, and body wraps</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span>Provide exceptional customer service and create a soothing atmosphere</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span>Maintain cleanliness and hygiene of treatment rooms</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span>Assist clients with product recommendations for home care</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span>Follow all protocols for safety and sanitation</span>
+              </li>
             </ul>
-
-            <h3 className="text-2xl font-bold text-amber-800">Available Positions</h3>
-            <p className="text-gray-700">We are hiring <strong>Female Spa Therapists</strong> for full-time roles. Freshers and experienced professionals welcome.</p>
-
-            <h3 className="text-2xl font-bold text-amber-800">Locations</h3>
-            <p className="text-gray-700">Aerocity, CP, NFC, Dwarka, Rajouri Garden, Rohini, Noida, Lajpat Nagar, and more.</p>
           </motion.div>
 
+          {/* Requirements Card */}
           <motion.div
-            className="space-y-6"
+            className="bg-amber-50 rounded-xl p-6 shadow-lg border border-amber-100"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
           >
-            <h3 className="text-2xl font-bold text-amber-800">Therapies We Offer</h3>
-            <ul className="list-disc list-inside space-y-2 text-gray-700">
-              <li>Couple Massage</li>
-              <li>Sandwich Massage</li>
-              <li>Full Body Massage</li>
-              <li>Female to Male Massage</li>
-              <li>B2B Therapy</li>
+            <div className="flex items-center mb-4">
+              <div className="bg-amber-100 p-3 rounded-full mr-4">
+                <FaUserTie className="text-amber-700 text-xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-amber-800">Requirements</h3>
+            </div>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span><strong>Experience:</strong> Previous experience in luxury spa preferred</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span><strong>Skills:</strong> Knowledge of various spa therapies and techniques</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span><strong>Qualifications:</strong> Certification in spa therapy is a plus</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span><strong>Gender:</strong> Open to both Male and Female candidates</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span><strong>Location:</strong> Positions across top hotels in Delhi NCR</span>
+              </li>
             </ul>
+          </motion.div>
 
-            <h3 className="text-2xl font-bold text-amber-800">Extra Services</h3>
-            <p className="text-gray-700">We also provide premium extra services to our clients as per their personalized needs in a safe, private, and relaxing environment.</p>
+          {/* Benefits Card */}
+          <motion.div
+            className="bg-amber-50 rounded-xl p-6 shadow-lg border border-amber-100"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+          >
+            <div className="flex items-center mb-4">
+              <div className="bg-amber-100 p-3 rounded-full mr-4">
+                <FaStar className="text-amber-700 text-xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-amber-800">Why Join Us?</h3>
+            </div>
+            <ul className="space-y-3 text-gray-700">
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span>24+ outlets across Delhi, Noida, and Gurgaon</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span>Luxurious 5-star hotel spa locations</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span>Accommodation & safety assured</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span>High income with weekly payouts</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-amber-600 mr-2 mt-1">•</span>
+                <span>Professional and friendly team</span>
+              </li>
+            </ul>
+          </motion.div>
 
-            <h3 className="text-2xl font-bold text-amber-800">Apply Now</h3>
-            <p className="text-gray-700">
-              Send your resume and photo on WhatsApp: <strong>+91-XXXXXXXXXX</strong><br />
-              Or email at: <strong>info@luxuryspacare.in</strong>
+          {/* Positions Card */}
+          <motion.div
+            className="bg-amber-50 rounded-xl p-6 shadow-lg border border-amber-100"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.6 }}
+          >
+            <div className="flex items-center mb-4">
+              <div className="bg-amber-100 p-3 rounded-full mr-4">
+                <FaSpa className="text-amber-700 text-xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-amber-800">Available Positions</h3>
+            </div>
+            <p className="text-gray-700 mb-4">
+              We are hiring <strong>Female Spa Therapists</strong> for full-time roles. 
+              Freshers and experienced professionals welcome.
             </p>
+            <div className="bg-amber-100 p-4 rounded-lg">
+              <h4 className="font-semibold text-amber-800 mb-2">Therapies We Offer</h4>
+              <div className="grid grid-cols-2 gap-2 text-sm">
+                <span className="flex items-center">
+                  <span className="text-amber-600 mr-1">•</span> Couple Massage
+                </span>
+                <span className="flex items-center">
+                  <span className="text-amber-600 mr-1">•</span> Sandwich Massage
+                </span>
+                <span className="flex items-center">
+                  <span className="text-amber-600 mr-1">•</span> Full Body Massage
+                </span>
+                <span className="flex items-center">
+                  <span className="text-amber-600 mr-1">•</span> Female to Male Massage
+                </span>
+                <span className="flex items-center">
+                  <span className="text-amber-600 mr-1">•</span> B2B Therapy
+                </span>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Locations Card */}
+          <motion.div
+            className="bg-amber-50 rounded-xl p-6 shadow-lg border border-amber-100"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.7 }}
+          >
+            <div className="flex items-center mb-4">
+              <div className="bg-amber-100 p-3 rounded-full mr-4">
+                <FaMapMarkerAlt className="text-amber-700 text-xl" />
+              </div>
+              <h3 className="text-2xl font-bold text-amber-800">Locations</h3>
+            </div>
+            <p className="text-gray-700 mb-4">
+              Positions available in top hotels across Delhi NCR including:
+            </p>
+            <ul className="grid grid-cols-2 gap-2 text-gray-700">
+              <li className="flex items-center">
+                <span className="text-amber-600 mr-2">•</span> Lemon Tree
+              </li>
+              <li className="flex items-center">
+                <span className="text-amber-600 mr-2">•</span> Novotel
+              </li>
+              <li className="flex items-center">
+                <span className="text-amber-600 mr-2">•</span> Roseate House
+              </li>
+              <li className="flex items-center">
+                <span className="text-amber-600 mr-2">•</span> Radisson
+              </li>
+              <li className="flex items-center">
+                <span className="text-amber-600 mr-2">•</span> Aerocity
+              </li>
+              <li className="flex items-center">
+                <span className="text-amber-600 mr-2">•</span> CP
+              </li>
+              <li className="flex items-center">
+                <span className="text-amber-600 mr-2">•</span> Dwarka
+              </li>
+              <li className="flex items-center">
+                <span className="text-amber-600 mr-2">•</span> Noida
+              </li>
+            </ul>
+          </motion.div>
+
+          {/* Contact Card */}
+          <motion.div
+            className="bg-amber-800 text-white rounded-xl p-6 shadow-lg"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.8 }}
+          >
+            <h3 className="text-2xl font-bold mb-4">Apply Now</h3>
+            <p className="mb-6">
+              Send your resume and photo to start your journey with us
+            </p>
+            
+            <div className="space-y-4">
+              <div className="flex items-center">
+                <div className="bg-amber-700 p-2 rounded-full mr-3">
+                  <FaPhoneAlt className="text-xl" />
+                </div>
+                <div>
+                  <p className="text-amber-200 text-sm">Call or WhatsApp</p>
+                  <p className="font-semibold">+91-XXXXXXXXXX</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center">
+                <div className="bg-amber-700 p-2 rounded-full mr-3">
+                  <FaEnvelope className="text-xl" />
+                </div>
+                <div>
+                  <p className="text-amber-200 text-sm">Email us at</p>
+                  <p className="font-semibold">info@luxuryspacare.in</p>
+                </div>
+              </div>
+            </div>
+            
+            <button className="mt-6 w-full bg-white text-amber-800 py-3 rounded-lg font-semibold hover:bg-amber-100 transition-colors">
+              Apply Now
+            </button>
           </motion.div>
         </div>
       </section>
     </div>
+    <div className="bg-amber-50 py-16 px-4">
+      <div className="max-w-5xl mx-auto">
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-amber-900 font-serif mb-4">
+            Apply <span className="text-amber-600">Today</span>
+          </h2>
+          <div className="w-24 h-1 bg-amber-500 mx-auto mb-6"></div>
+          <p className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed">
+            If you're looking for a spa job in Delhi, a spa job vacancy, or a therapist job in a luxury environment, we encourage you to apply.
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Left Content */}
+          <motion.div
+            className="space-y-6"
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <p className="text-amber-800 text-lg">
+              We are particularly looking for dedicated and talented individuals for <span className="font-semibold">spa therapist jobs for females</span>, as well as <span className="font-semibold">male-to-female spa jobs</span> in our hotel spa outlets.
+            </p>
+            
+            <div className="bg-white p-6 rounded-xl shadow-md border border-amber-100">
+              <h3 className="text-xl font-bold text-amber-800 mb-4 flex items-center">
+                <FaHeart className="text-amber-600 mr-2" /> Why Choose Us?
+              </h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="text-amber-600 mr-2 mt-1">•</span>
+                  <span>Work in premium 5-star hotel environments</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-600 mr-2 mt-1">•</span>
+                  <span>Professional growth and skill development opportunities</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-600 mr-2 mt-1">•</span>
+                  <span>Supportive and respectful work culture</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-amber-600 mr-2 mt-1">•</span>
+                  <span>Competitive compensation with regular incentives</span>
+                </li>
+              </ul>
+            </div>
+          </motion.div>
+
+          {/* Right Content */}
+          <motion.div
+            className="space-y-6"
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <div className="bg-amber-100 p-6 rounded-xl border border-amber-200">
+              <h3 className="text-xl font-bold text-amber-800 mb-4 flex items-center">
+                <FaHotel className="text-amber-600 mr-2" /> Hotel Spa Outlets
+              </h3>
+              <p className="text-amber-800 mb-4">
+                Our spa outlets are located within prestigious hotels across Delhi NCR, offering you a premium work environment.
+              </p>
+              <div className="flex items-center text-sm text-amber-700">
+                <FaMapMarkerAlt className="mr-2" />
+                <span>Multiple locations including Aerocity, CP, Dwarka, Noida, and more</span>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl shadow-md border border-amber-100">
+              <h3 className="text-xl font-bold text-amber-800 mb-4 flex items-center">
+                <FaFemale className="text-amber-600 mr-2" /> Positions Available
+              </h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-amber-50 p-4 rounded-lg text-center">
+                  <h4 className="font-semibold text-amber-800">Female Therapists</h4>
+                  <p className="text-sm text-amber-700 mt-2">Full-time & Part-time</p>
+                </div>
+                <div className="bg-amber-50 p-4 rounded-lg text-center">
+                  <h4 className="font-semibold text-amber-800">Male to Female</h4>
+                  <p className="text-sm text-amber-700 mt-2">Spa Positions</p>
+                </div>
+              </div>
+            </div>
+
+            <motion.div
+              className="text-center mt-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <button className="bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full transition duration-300 transform hover:scale-105">
+                Apply Now
+              </button>
+              <p className="text-amber-700 text-sm mt-4">
+                Send your resume to: info@luxuryspacare.in
+              </p>
+            </motion.div>
+          </motion.div>
+        </div>
+      </div>
+    </div>
  <WhatsappFloat />
       </div>
+      
+      </>
+      
     );
   }
 
