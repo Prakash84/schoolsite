@@ -18,12 +18,7 @@ import WhatsappFloat from '../components/WhatsappFloat';
   
  
 
- export const metadata = {
-  title: "Get the best spa price in Delhi | Check Full Body massage price",
-  description:
-    "Get Best spa price in delhi our spa service starting from just 1999. We have top 5 star outlets to provide you spa sessions in delhi or ncr regions. Check out full body massage price in noida",
-  keywords: "spa in delhi, body massage in delhi, couple massage, luxury spa, spadelhi.com",
-};
+
 // ✅ Load Google Fonts
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' });
 const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' });
