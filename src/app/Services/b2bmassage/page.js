@@ -16,7 +16,7 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
   import { FaTelegram } from 'react-icons/fa';
   import { FaLeaf, FaHotTub, FaHandSparkles } from "react-icons/fa";
   import { AnimatePresence } from 'framer-motion';
-
+  import Head from "next/head";
 
   const playfair = Playfair_Display({
     subsets: ['latin'],
@@ -75,6 +75,13 @@ const container = {
 {/* End Our Process */}
 
   export default function b2bmassage() {
+    <Head>
+        <title>Get Body To Body Massage in Delhi | B2B Massage in Karol Bagh</title>
+        <meta
+          name="description"
+          content="We offer genuine body to body massage in Delhi. If you are looking for B2B massage or body massage just visit our spa in Karol Bagh. Book Your Session"
+        />
+    </Head>
     const [isVisible, setIsVisible] = useState(false);
     
       useEffect(() => {
@@ -197,10 +204,9 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
           icon: <FaCrown className="text-amber-500" />
         }
       ];
-
-
+      
     return (
-      <>
+      <main>
       
       <div className="font-sans overflow-hidden">
         {/* Banner */}
@@ -1627,6 +1633,6 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
       </section>
 
  <WhatsappFloat />
-      </>
+      </main>
     );
   }

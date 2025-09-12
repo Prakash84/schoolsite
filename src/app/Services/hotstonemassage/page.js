@@ -1,5 +1,4 @@
-
-    'use client';
+'use client';
 
   import React, { useState, useEffect } from 'react';
   import { motion } from 'framer-motion';
@@ -22,7 +21,10 @@
   FaPhoneAlt,
   FaEnvelope
 } from 'react-icons/fa';
+import {  FaHotTub, FaBath, FaLeaf, FaHandSparkles, FaCrown, FaCheckCircle } from "react-icons/fa";
+import { AnimatePresence } from "framer-motion";
 import { FaHeart, FaHotel, FaFemale } from 'react-icons/fa';
+import Head from "next/head";
 
   const playfair = Playfair_Display({
     subsets: ['latin'],
@@ -39,6 +41,52 @@ import { FaHeart, FaHotel, FaFemale } from 'react-icons/fa';
 {/* End Our Process */}
 
   export default function hotstonemassage() {
+
+      <Head>
+        <title>Looking for Spa Therapist jobs in Delhi? Part Time & Full Time</title>
+        <meta
+          name="description"
+          content="Get the best Spa Therapist jobs in Delhi. We have part time and full time spa jobs available. Just contact us and get your spa therapist jobs in Delhi, Noida and Gurgaon. Contact Now."
+        />
+      </Head>
+        const [activeIndex, setActiveIndex] = useState(null);
+      
+        const toggleFAQ = (index) => {
+          setActiveIndex(activeIndex === index ? null : index);
+        };
+      
+        const faqs = [
+          {
+            question: "Which kinds of massage does Spa Delhi perform?",
+            answer: "There is a wide range of massage services to address your wellness needs, and they include aromatherapy, deep tissue, B2B, and couple massages, to name a few. Both therapeutic techniques are designed to relax and heal.",
+            icon: <FaSpa className="text-teal-600" />
+          },
+          {
+            question: "Do your therapists have experience, or are they certified?",
+            answer: "Yes, all our therapists are professional, fully trained individuals who are certified in their process and want to provide you with the best experience of massage experience.",
+            icon: <FaLeaf className="text-teal-600" />
+          },
+          {
+            question: "How do I make a reservation for a massage?",
+            answer: "Booking is simple by phone, via Telegram, or online. Pick your service, favorable outlet, and time, and we will confirm.",
+            icon: <FaHotTub className="text-teal-600" />
+          },
+          {
+            question: "Do you offer 24/ 7 massage?",
+            answer: "Our timings are adaptable; we are available on a late-night and early-morning schedule to accommodate your tight schedule.",
+            icon: <FaLeaf className="text-teal-600" />
+          },
+          {
+            question: "What safety and hygiene precautions do you take?",
+            answer: "Your safety means everything to us, as we are radically committed to maintaining high standards of cleanliness through the provision of fresh linens, sterilized equipment, and thorough therapist screening.",
+            icon: <FaSpa className="text-teal-600" />
+          },
+          {
+            question: "May I ask a male or female therapist to see me?",
+            answer: "Absolutely. You may make a therapist preference during the booking and we will take heed of your choice.",
+            icon: <FaHandSparkles className="text-teal-600" />
+          },   
+        ];
     const hotels = [
 "Lemon Tree",
 "Novotel",
@@ -55,7 +103,7 @@ show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 };
 
     return (
-      <>
+      <main>
       <div className="w-full">
         {/* Banner */}
     <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-rose-50">
@@ -558,10 +606,127 @@ show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
         </div>
       </div>
     </div>
+
+    {/* F&Q Section */}
+          <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
+            <div className="max-w-5xl mx-auto px-4">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+                className="text-center mb-14"
+              >
+                <motion.div
+                  className="inline-flex items-center gap-2 px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                >
+                  <FaStar className="text-amber-500" />
+                  Questions? We’re here to help
+                </motion.div>
+                <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-4">
+                  Frequently Asked <span className="text-amber-600">Questions</span>
+                </h2>
+                <p className="text-amber-800 max-w-2xl mx-auto text-lg">
+                  Everything you need to know about our luxurious spa services and how to book them.
+                </p>
+                <div className="flex justify-center mt-6">
+                  <div className="w-24 h-1 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                </div>
+              </motion.div>
+    
+              {/* FAQ Accordion */}
+              <div className="space-y-5">
+                {faqs.map((faq, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="bg-white rounded-2xl shadow-lg overflow-hidden border border-amber-100"
+                  >
+                    <button
+                      onClick={() => toggleFAQ(index)}
+                      className="w-full p-6 text-left flex items-center justify-between focus:outline-none group"
+                    >
+                      <div className="flex items-start space-x-4">
+                        <div className="mt-1 p-2 bg-amber-50 rounded-lg">
+                          {faq.icon}
+                        </div>
+                        <h3 className="text-lg md:text-xl font-medium text-amber-900 group-hover:text-amber-700 transition-colors">
+                          {faq.question}
+                        </h3>
+                      </div>
+                      <div className="ml-4 flex-shrink-0">
+                        <svg
+                          className={`w-6 h-6 text-amber-500 transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+    
+                    <AnimatePresence>
+                      {activeIndex === index && (
+                        <motion.div
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: 'auto', opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          transition={{ duration: 0.3 }}
+                          className="overflow-hidden"
+                        >
+                          <div className="px-6 pb-6 pt-2 border-t border-amber-50">
+                            <p className="text-amber-700">
+                              {faq.answer}
+                            </p>
+                          </div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.div>
+                ))}
+              </div>
+    
+              {/* CTA Box */}
+              {/* <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+                className="mt-14 bg-gradient-to-r from-amber-500 to-amber-600 rounded-2xl p-8 text-center text-white shadow-xl"
+              >
+                <h3 className="text-2xl font-bold mb-3">Still have questions?</h3>
+                <p className="mb-5 max-w-2xl mx-auto">
+                  Our wellness team is here to assist you. Reach out and we’ll help you find the perfect treatment.
+                </p>
+                <div className="flex flex-col sm:flex-row justify-center gap-4">
+                  <button className="px-6 py-3 bg-white text-amber-700 font-medium rounded-full shadow-md hover:bg-amber-100 transition-colors">
+                    Contact Us
+                  </button>
+                  <button className="px-6 py-3 bg-amber-800 bg-opacity-30 text-white font-medium rounded-full shadow-md border border-white border-opacity-30 hover:bg-opacity-40 transition-colors">
+                    Book Appointment
+                  </button>
+                </div>
+              </motion.div> */}
+            </div>
+          </section>
+        {/* End F&Q Section */}
  <WhatsappFloat />
+
       </div>
       
-      </>
+      </main>
       
     );
   }

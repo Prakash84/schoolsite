@@ -16,6 +16,7 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
   import { FaTelegram } from 'react-icons/fa';
   import { FaLeaf, FaHotTub, FaHandSparkles } from "react-icons/fa";
   import { AnimatePresence } from 'framer-motion';
+  import Head from "next/head";
 
 
   const playfair = Playfair_Display({
@@ -74,6 +75,13 @@ const container = {
 {/* End Our Process */}
 
   export default function couplemassage() {
+    <Head>
+        <title>Couple Massage in Delhi | Female to male Couple Massage</title>
+        <meta
+          name="description"
+          content="Looking for a couple massage in Delhi? Visit our spa in Karol bagh for the best couples massage. We have certified therapists to provide you perfect relaxation."
+        />
+      </Head>
     const [isVisible, setIsVisible] = useState(false);
     
       useEffect(() => {
@@ -199,7 +207,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
     return (
-      <>
+      <main>
       
       <div className="font-sans overflow-hidden">
         {/* Banner */}
@@ -1618,6 +1626,6 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
       </section>
 
  <WhatsappFloat />
-      </>
+      </main>
     );
   }

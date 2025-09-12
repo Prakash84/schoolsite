@@ -13,7 +13,7 @@
   import { FaStar } from "react-icons/fa";
   import { AnimatePresence } from "framer-motion";
   import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
-
+import Head from "next/head";
 
 
 
@@ -255,6 +255,13 @@ const faqs = [
   ];
 
   export default function Services() {
+    <Head>
+        <title>Best Massage & Spa Service in Delhi By Top Therapists</title>
+        <meta
+          name="description"
+          content=" Experience top-notch spa service in Delhi at the best spa centre in Greater Kailash. Our top therapists are ready to give you relaxation in Delhi or NCR Areas. Check Out"
+        />
+      </Head>
     const [isVisible, setIsVisible] = useState(false);
         useEffect(() => {
           setIsVisible(true);
@@ -292,6 +299,7 @@ const faqs = [
     );
 
     return (
+      <main>
       <div className="w-full">
         {/* Banner */}         
       <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-rose-50">
@@ -2032,6 +2040,8 @@ const faqs = [
                       </section>
  <WhatsappFloat />
       </div>
+      </main>
+      
     );
   }
 

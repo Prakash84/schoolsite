@@ -19,6 +19,7 @@ import { Building2 } from "lucide-react";
 import {  Star, MapPin, Sparkles, Hotel } from 'lucide-react';
 import { Clock, CheckCircle2 } from "lucide-react";
 import {  Globe } from "lucide-react";
+import Head from "next/head";
 
 
 
@@ -140,16 +141,23 @@ const outlets = [
 //   },
 //   {
 //     number: '03',
-//     title: 'Finalizing',
+//     title: 'Finalizignng',
 //     description: 'Confirm your appointment, choose your therapy, and relax, your spa journey is now set.',
 //     image: '/images/finalizing.avif',
-//   },
+//   }, 
 // ];
 {/* End Our Process */}
 
 
 
 export default function Home() {
+  <Head>
+        <title>Get Best Body Massage in Delhi | First Visit Offer 1999</title>
+        <meta
+          name="description"
+          content="Looking for a relaxing massage in Delhi? Experience the best full body, sandwich massage, Couple massages at the top massage parlour in Delhi. Book Your Session Now."
+        />
+      </Head>
 const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -543,7 +551,8 @@ const features2 = [
   },
 ];
   return (
-     <div className="font-sans overflow-hidden">
+    <main>
+    <div className="font-sans overflow-hidden">
       {/* Floating Decorative Elements */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-1/4 left-10 w-24 h-24 rounded-full bg-amber-400/10 blur-3xl animate-pulse" />
@@ -2471,5 +2480,7 @@ const features2 = [
       <WhatsappFloat />
       
     </div>
+    </main>
+     
   );
 }

@@ -180,7 +180,8 @@ export default function aerocity() {
     },
   ];
   return (
-    <div className="bg-rose-50 text-gray-800">
+    <main>
+<div className="bg-rose-50 text-gray-800">
       {/* Banner */}         
       <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-rose-50">
         {/* Floating decorative elements */}
@@ -567,7 +568,7 @@ export default function aerocity() {
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3, duration: 0.6 }}
                     >
-                      Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">5-Star Hotel Outlets</span>
+                      Body Massage in Aerocity <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">at Top Hotels</span>
                     </motion.h2>
                     
                     <motion.p
@@ -672,8 +673,8 @@ export default function aerocity() {
                                 transition={{ delay: 0.3 }}
                                 viewport={{ once: true }}
                               >
-                                Welcome to <span className="relative">
-                                  <span className="text-amber-600 z-10 relative">Delhi Body Spa</span>
+                                How to Book Body Massage <span className="relative">
+                                  <span className="text-amber-600 z-10 relative">in Aerocity At 5 Star Hotels?</span>
                                   <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
                                 </span>
                               </motion.h2>
@@ -681,10 +682,10 @@ export default function aerocity() {
                     At Luxury Body Spa, we are dedicated to creating a haven of peace, wellness, and rejuvenation in the heart of Delhi. With a blend of ancient healing traditions and modern techniques, our expert therapists restore balance and vitality. From full-body massages to specialized therapies, each session is designed to relax the mind, soothe the body, and uplift the spirit.
                     Located in the heart of Delhi’s bustling Aerocity, our spa is surrounded by some of the city’s most prestigious hotels, making it the perfect destination for travelers and locals alike. Aerocity is renowned for its world-class hospitality, modern infrastructure, and seamless connectivity to IGI Airport and central Delhi.
                   </p>
-                  <p className="text-gray-700 text-lg">
+                  {/* <p className="text-gray-700 text-lg">
                     Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
                      Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
-                  </p>
+                  </p> */}
                 </motion.div>
       
                 <motion.div
@@ -1170,7 +1171,7 @@ export default function aerocity() {
                                 </section>
                               {/* End Our Process */}
       {/* 700+ Words Content Block */}
-      <div className="bg-white py-14 px-6 md:px-20">
+      {/* <div className="bg-white py-14 px-6 md:px-20">
         <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-lg leading-relaxed">
           <h2 className="text-2xl font-bold text-amber-700 mb-4 text-center">Why Choose Our Spa in Aerocity?</h2>
           <p>
@@ -1195,7 +1196,7 @@ export default function aerocity() {
             Come, experience Aerocity’s best luxury spa — where wellness meets elegance.
           </p>
         </div>
-      </div>
+      </div> */}
       {/* F&Q Section */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
                             <div className="max-w-5xl mx-auto px-4">
@@ -1311,5 +1312,7 @@ export default function aerocity() {
                             </div>
       </section>
     </div>
+    </main>
+    
   );
 }

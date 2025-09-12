@@ -156,7 +156,8 @@ export default function lajpatnagar() {
     },
   ];
   return (
-    <div className="bg-rose-50 text-gray-800">
+    <main>
+      <div className="bg-rose-50 text-gray-800">
       {/* Banner */}         
       <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-rose-50">
         {/* Floating decorative elements */}
@@ -1287,5 +1288,7 @@ export default function lajpatnagar() {
                             </div>
       </section>
     </div>
+    </main>
+    
   );
 }

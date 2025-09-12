@@ -16,6 +16,7 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
   import { FaTelegram } from 'react-icons/fa';
   import { FaLeaf, FaHotTub, FaHandSparkles } from "react-icons/fa";
   import { AnimatePresence } from 'framer-motion';
+  import Head from 'next/head';
 
 
   const playfair = Playfair_Display({
@@ -74,6 +75,13 @@ const container = {
 {/* End Our Process */}
 
   export default function sandwichmassage() {
+     <Head>
+        <title>Visit Our Best Sandwich Massage Spa in Delhi </title>
+        <meta
+          name="description"
+          content="Relax with Sandwich Massage in Delhi. Just visit our Sandwich Massage Spa in Karol Bagh to get the perfect sandwich massage in Delhi."
+        />
+      </Head>
     const [isVisible, setIsVisible] = useState(false);
     
       useEffect(() => {
@@ -199,7 +207,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
     return (
-      <>
+      <main>
       
       <div className="font-sans overflow-hidden">
         {/* Banner */}
@@ -1620,6 +1628,6 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
       </section>
 
  <WhatsappFloat />
-      </>
+      </main>
     );
   }

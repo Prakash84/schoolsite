@@ -16,6 +16,7 @@ import LuxuryHotelShowcase from '../../components/LuxuryHotelShowcase';
   import { FaTelegram } from 'react-icons/fa';
   import { FaLeaf, FaHotTub, FaHandSparkles } from "react-icons/fa";
   import { AnimatePresence } from 'framer-motion';
+  import Head from "next/head";
 
 
   const playfair = Playfair_Display({
@@ -85,6 +86,13 @@ const container = {
 {/* End Our Process */}
 
   export default function fullbodymassage() {
+    <Head>
+        <title>Best Full body massage in Delhi | Starting From Just 1999</title>
+        <meta
+          name="description"
+          content="Looking for Full Body Massage in Delhi? Get Body massage in Karol Bagh by Well trained therapist. We always maintain proper hygiene and cleanliness between your spa session"
+        />
+      </Head>
     const [isVisible, setIsVisible] = useState(false);
     
       useEffect(() => {
@@ -210,7 +218,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 
     return (
-      <>
+      <main>
       
       <div className="font-sans overflow-hidden">
         {/* Banner */}
@@ -1629,6 +1637,6 @@ const [isMenuOpen, setIsMenuOpen] = useState(false);
       </section>
 
  <WhatsappFloat />
-      </>
+      </main>
     );
   }
