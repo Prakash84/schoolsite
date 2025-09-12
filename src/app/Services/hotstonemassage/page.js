@@ -25,6 +25,7 @@ import {  FaHotTub, FaBath, FaLeaf, FaHandSparkles, FaCrown, FaCheckCircle } fro
 import { AnimatePresence } from "framer-motion";
 import { FaHeart, FaHotel, FaFemale } from 'react-icons/fa';
 import Head from "next/head";
+import { FaTelegram } from 'react-icons/fa';
 
   const playfair = Playfair_Display({
     subsets: ['latin'],
@@ -39,6 +40,96 @@ import Head from "next/head";
   });
 
 {/* End Our Process */}
+const cities = [
+{ name: 'DELHI', img: '/images/hotel3.webp' },
+{ name: 'MUMBAI', img: '/images/lajpatnagahotel.avif' },
+{ name: 'NOIDA', img: '/images/RoseateHouse.jpg' },
+{ name: 'BANGALORE', img: '/images/paschimvihar.jpg' },
+{ name: 'PUNE', img: '/images/JwMarriott_CP.jpg' },
+{ name: 'AHMEDABAD', img: '/images/Andazhat.jpg' },
+{ name: 'GURGAON', img: '/images/holidayIn_CP.jpg' },
+{ name: 'HYDERABAD', img: '/images/tajmahalhotel_lajpatnagar.jpg' },
+{ name: 'KOLKATA', img: '/images/paschimvihar.jpg' },
+{ name: 'CHENNAI', img: '/images/hotel2.jpg' },
+{ name: 'CHANDIGARH', img: '/images/pullmanAerocity.jpg' },
+{ name: 'JAIPUR', img: '/images/jwmarriott.jpeg' },
+]
+ const services = [
+    {
+      title: "AromaTherapy",
+      image: "/images/aromatherapy-featured-jpg.webp",
+      description: "Aromatherapy, available at our body spa in Delhi, dates back to ancient Egypt where people used scented oils for massage and bathing.",
+      duration: "60-90 min"
+    },
+    {
+      title: "Stone Therapy",
+      image: "/images/19-2-1024x427.png",
+      description: "Rebalance your energy with our soothing Stone Therapy. Using heated stones, this therapeutic treatment melts away tension and promotes deep relaxation.",
+      duration: "75 min"
+    },
+    {
+      title: "Couple Massage",
+      image: "/images/Couple Massage.webp",
+      description: "A couples massage at our Delhi luxury spa allows you and your partner or family member to enjoy a relaxing massage together in the same room.",
+      duration: "90 min"
+    },
+    {
+      title: "Sandwich Massage",
+      image: "/images/Sandwich Massage.jpg",
+      description: "Rebalance your energy with our soothing Sandwich Massage therapy. A layered, deeply relaxing treatment for full-body stress relief.",
+      duration: "60 min"
+    },
+    {
+      title: "Thai Massage",
+      image: "/images/thaimassage.jpg",
+      description: "Thai massage is ideal for those seeking an active form of massage to relieve pain and stress, offered at our luxury spa in Delhi. This massage helps with flexibility, circulation, and energy levels.",
+      duration: "60 min"
+    },
+    {
+      title: "Erotic Massage",
+      image: "/images/potliMassage.jpg",
+      description: "Our luxury spa in Delhi offers the ancient Indian technique known as Potli massage. This treatment uses herbal pouches, warmed up and filled with spices and herbs,.",
+      duration: "60 min"
+    },
+    {
+      title: "Full-body Massage",
+      image: "/images/Sandwich Massage.jpg",
+      description: "Our full-body massage spa in Delhi offers a complete relaxation experience for both your mind and body. Our massage center in Delhi targets major muscle groups such as your back, shoulders, arms, legs, and neck using techniques like kneading, stroking, and pressure.",
+      duration: "60 min"
+    },
+    {
+      title: "Nuru Massage",
+      image: "/images/SpecializedTreatments.jpg",
+      description: "While this is not all that can be had, a massage is the crown jewel at Luxury Spa in Delhi where we do have a variety of special treatments that can suit all your wellness needs.",
+      duration: "60 min"
+    },
+    {
+      title: "B2B Massage",
+      image: "/images/SkincareTreatments.jpg",
+      description: "High-end spas in Delhi offer a wide range of treatments to enhance the health and beauty of your skin. These treatments often include facials that cleanse, exfoliate, and moisturize your skin.",
+      duration: "90-120 min"
+    },
+    {
+      title: "Reflexology",
+      image: "/images/Reflexology.jpg",
+      description: "Another holistic health practice popularized in the United States around the 1930s is Reflexology, offered by our luxury spa in Delhi. The process involves stimulating acupressure on both hands and feet to promote health and well-being..",
+      duration: "60 min"
+    }
+    
+  ];
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2
+      }
+    }
+  };
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0 }
+  };
 
   export default function hotstonemassage() {
 
@@ -226,7 +317,189 @@ show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
 </div>
       {/* End Banner */}
       {/* //// */}
-      
+      {/* Location */}
+    <section className="py-12 bg-gray-50">
+<div className="max-w-7xl mx-auto px-6">
+   <motion.h2
+      className="text-4xl md:text-5xl font-bold text-center text-amber-900 font-serif mb-6"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
+     Our Premium Location
+    </motion.h2>
+
+    {/* Description */}
+    <motion.p
+      className="text-center text-amber-800 max-w-3xl mx-auto mb-12 text-base md:text-lg font-medium"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+    >
+      Meet our diverse team of professionals who bring excellence and passion to every engagement.
+    </motion.p>
+  
+
+
+
+<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8">
+{cities.map((c, i) => (
+<motion.a
+key={c.name}
+href={`#/cities/${c.name.toLowerCase()}`}
+initial={{ opacity: 0, y: 8 }}
+animate={{ opacity: 1, y: 0 }}
+transition={{ delay: i * 0.04, duration: 0.35 }}
+className="group block rounded-2xl overflow-hidden shadow-lg relative transform hover:-translate-y-1 hover:shadow-2xl transition-all duration-300 bg-white"
+>
+<div className="relative w-full h-44 sm:h-48 lg:h-52">
+<Image
+src={c.img}
+alt={c.name}
+fill
+sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
+style={{ objectFit: 'cover' }}
+className="group-hover:scale-105 transition-transform duration-500"
+/>
+<div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
+</div>
+
+
+<div className="absolute left-0 right-0 bottom-4 px-4 text-center">
+<span className="text-white text-lg sm:text-xl font-semibold tracking-wider drop-shadow-lg uppercase">{c.name}</span>
+</div>
+</motion.a>
+))}
+</div>
+
+
+<div className="flex justify-center mt-10">
+<a
+href="#/cities"
+className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition-all"
+>
+View All Cities
+<svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+</svg>
+</a>
+</div>
+</div>
+</section>
+    {/* End Location */}
+      {/* Our Signature Treatments */}
+              <section className="w-full my-5 py-5 bg-gradient-to-b from-amber-50 to-white relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-10 left-0 w-24 h-24 rounded-full bg-amber-100 opacity-70 blur-3xl"></div>
+        <div className="absolute bottom-20 right-0 w-32 h-32 rounded-full bg-amber-200 opacity-50 blur-3xl"></div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section header */}
+          <div className="text-center mb-20">
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="inline-block px-4 py-1 mb-4 bg-amber-100 rounded-full text-amber-800 font-medium"
+            >
+              Relax & Rejuvenate
+            </motion.div>
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-4xl md:text-5xl font-serif font-bold text-amber-900 mb-6"
+            >
+              Our Signature Treatments
+            </motion.h2>
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="max-w-2xl mx-auto text-lg text-amber-800"
+            >
+              Experience tranquility with our curated selection of premium spa treatments, each designed to transport you to a state of complete relaxation.
+            </motion.p>
+          </div>
+
+          {/* Services grid */}
+          <motion.div 
+            className="grid grid-cols-1 lg:grid-cols-2 gap-16"
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-100px" }}
+          >
+            {services.map((service, index) => (
+              <motion.div 
+                key={index}
+                variants={item}
+                className="bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 hover:shadow-2xl"
+              >
+                <div className={`flex flex-col md:flex-row h-full ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
+                  {/* Image */}
+                  <div className="md:w-2/5 relative overflow-hidden">
+                    <div className="relative h-64 md:h-full">
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10"></div>
+                      <Image 
+                        src={service.image}
+                        alt={service.title}
+                        layout="fill"
+                        objectFit="cover"
+                        className="transition-transform duration-500 hover:scale-105"
+                      />
+                      <div className="absolute top-4 left-4 z-20 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                        {service.duration}
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Content */}
+                  <div className="md:w-3/5 p-8 flex flex-col">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-10 h-0.5 bg-amber-600"></div>
+                        <span className="text-amber-600 font-medium">Treatment</span>
+                      </div>
+                      <h3 className="text-2xl md:text-3xl font-serif font-semibold text-amber-900 mb-4">
+                        {service.title}
+                      </h3>
+                      <p className="text-amber-800 mb-6">
+                        {service.description}
+                      </p>
+                    </div>
+                    
+                    <div>
+                      <a 
+                        href="tel:+919211235800" 
+                        className="inline-flex items-center bg-gradient-to-r text-white rounded-full font-medium transition-all duration-300 hover:gap-3 hover:shadow-lg"
+                      >
+                        <a 
+                                        href="https://t.me/Tanuspa" 
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                      >
+                                        <FaTelegram className="text-xl mr-3" />
+                                        Meet Our Team
+                                      </a>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                          <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+        </div>
+              </section>
+              {/* End Our Signature Treatments */}
+    
 
       {/* //// */}
  <div className="bg-white text-gray-800">
@@ -606,6 +879,8 @@ show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
         </div>
       </div>
     </div>
+     
+   
 
     {/* F&Q Section */}
           <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
