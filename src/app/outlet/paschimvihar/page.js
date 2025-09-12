@@ -1146,33 +1146,7 @@ export default function paschimvihar() {
                                  </div>
                                 </section>
                               {/* End Our Process */}
-      {/* 700+ Words Content Block */}
-      <div className="bg-white py-14 px-6 md:px-20">
-        <div className="max-w-5xl mx-auto space-y-6 text-gray-700 text-lg leading-relaxed">
-          <h2 className="text-2xl font-bold text-amber-700 mb-4 text-center">Why Choose Our Spa in Paschim Vihar?</h2>
-          <p>
-            Paschim Vihar is a destination that blends luxury, convenience, and connectivity — and what better way to enhance your stay than with a relaxing spa session designed to soothe your mind and body? Our spa outlets are located in the most prestigious hotels across Paschim Vihar, giving you access to world-class wellness experiences within arm’s reach.
-          </p>
-          <p>
-            Whether you're a couple looking for a romantic escape, a business traveler seeking stress relief, or a local resident desiring some weekend rejuvenation, our spa services are tailored to meet every need. From couple massages, oil therapy, deep tissue massage to aroma and Swedish therapy — our professionally trained therapists ensure every session is personal, effective, and deeply relaxing.
-          </p>
-          <p>
-            Our outlets follow the highest hygiene and quality standards. Every treatment room is designed to provide peace and privacy, with soothing music, ambient lighting, and a tranquil environment that elevates your entire experience.
-          </p>
-          <p>
-            What sets our Paschim Vihar spa services apart is our commitment to customization. We understand that every body is different — so we ask the right questions before beginning any session, and we curate treatments based on your lifestyle, tension areas, and wellness goals. You leave feeling refreshed, realigned, and ready to take on the world.
-          </p>
-          <p>
-            With easy access to the IGI Airport, metro, and luxury shopping arcades, our Paschim Vihar locations are ideal for those short on time but high on expectation. We ensure that even a 60-minute session makes a lasting impact on your mood, energy, and health.
-          </p>
-          <p>
-            Whether you are staying at JW Marriott, Andaz, Roseate House, Pullman, or Novotel — we are just an elevator ride away. Book your couple spa or signature massage session today and unlock the door to pure bliss.
-          </p>
-          <p className="font-medium text-center text-amber-700">
-            Come, experience Paschim Vihar’s best luxury spa — where wellness meets elegance.
-          </p>
-        </div>
-      </div>
+      
       {/* F&Q Section */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
                             <div className="max-w-5xl mx-auto px-4">
