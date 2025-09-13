@@ -567,10 +567,11 @@ export default function About({
             className="bg-white shadow-lg p-8 rounded-xl"
           >
             <p className="text-gray-600 text-lg leading-relaxed">
-              Our <span className="font-semibold text-amber-700">massage spa in Delhi</span> 
+              Luxury Spa is a one-stop destination where expert therapists, premium oils, and tailored therapies come together to deliver a lasting sense of rejuvenation. We combine modern techniques with traditional practices to create therapy plans that suit your body and lifestyle — making us one of the most trusted luxury spas in Delhi.
+              Our <span className="font-semibold text-amber-700">massage spa in Delhi </span> 
               was established several years ago with the prime goal of giving 
               pleasure with the perfect package of massage services to individuals 
-              struggling with finding peace.
+              struggling with finding peace. Luxury Spa is a one-stop destination where expert therapists, premium oils, and tailored therapies come together to deliver a lasting sense of rejuvenation.
             </p>
           </motion.div>
         </div>
@@ -585,10 +586,10 @@ export default function About({
             className="bg-white shadow-lg p-8 rounded-xl order-2 md:order-1"
           >
             <p className="text-gray-600 text-lg leading-relaxed">
-              Our <span className="font-semibold text-amber-700">full-body massage in Connaught Place</span> 
+              Our <span className="font-semibold text-amber-700">full-body massage in Connaught Place </span> 
               is an ideal destination where you can set yourself free and get all set 
               to find the wonders with a deep relaxation massage led by the best 
-              massage therapist.
+              massage therapist. We combine modern techniques with traditional practices to create therapy plans that suit your body and lifestyle — making us one of the most trusted luxury spas in Delhi. Our massage spa in Delhi was established several years ago with the prime goal of giving pleasure with the perfect package of massage services to individuals struggling with finding peace. Luxury Spa is a one-stop destination where expert therapists, premium oils, and tailored therapies come together to deliver a lasting sense of rejuvenation.
             </p>
           </motion.div>
 
