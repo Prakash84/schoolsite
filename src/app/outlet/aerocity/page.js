@@ -179,6 +179,66 @@ export default function aerocity() {
       icon: "👫",
     },
   ];
+  const services1 = [
+  {
+    id: 'swedish',
+    title: 'Swedish Massage',
+    desc: 'Gentle long strokes for total relaxation — perfect for first-time guests and light-tension relief.',
+    duration: '60 / 90 mins',
+    price: '₹1,499 - ₹2,499',
+    icon: (
+      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+        <path d="M3 12h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M6 8l3-3 3 3" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+  },
+  {
+    id: 'deep',
+    title: 'Deep Tissue Massage',
+    desc: 'Targeted pressure to relieve chronic muscle tension and knots. Best for athletes and heavy tension.',
+    duration: '60 / 90 mins',
+    price: '₹1,799 - ₹2,999',
+    icon: (
+      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+        <path d="M12 3v18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M3 12h18" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+  },
+  {
+    id: 'couple',
+    title: 'Couple Massage',
+    desc: 'Shared, synchronised therapy for two — perfect for couples staying at Aerocity hotels.',
+    duration: '60 / 90 mins',
+    price: '₹3,499 - ₹4,999',
+    icon: (
+      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+        <path d="M7 7a4 4 0 018 0" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M3 20a9 9 0 0118 0" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+  },
+  {
+    id: 'aroma',
+    title: 'Aromatherapy',
+    desc: 'Relaxing aromatic oils combined with light-to-medium pressure to calm mind and senses.',
+    duration: '45 / 60 mins',
+    price: '₹1,299 - ₹1,899',
+    icon: (
+      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+        <path d="M12 2s4 1 4 4-2 4-4 4-4-1-4-4 4-4 4-4z" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M6 18c2-2 4-3 6-3s4 1 6 3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+  },
+  
+  
+]
+
+
+
+  
   return (
     <main>
 <div className="bg-rose-50 text-gray-800">
@@ -302,6 +362,166 @@ export default function aerocity() {
         </div>
       </div>
       {/* End Banner */}
+      {/* our 5* hoterl outlets */}
+             <section className="w-full py-16 bg-gradient-to-b from-white to-amber-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Title */}
+          <motion.div 
+                    className="text-center mb-20"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 0.8 }}
+                  >
+                    <motion.div
+                      className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.2, duration: 0.5 }}
+                    >
+                      <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
+                      <span className="text-amber-700 font-medium tracking-wider">PREMIUM LOCATIONS</span>
+                    </motion.div>
+                    
+                    <motion.h2
+                      className="text-4xl md:text-5xl lg:text-5xl font-bold text-amber-900 mb-6 font-serif"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.3, duration: 0.6 }}
+                    >
+                      Body Massage in Aerocity <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">at Top Hotels</span>
+                    </motion.h2>
+                    
+                    <motion.p
+                      className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.4, duration: 0.5 }}
+                    >
+                      Discover premium spa experiences at our 5-star hotel outlets. Indulge in luxurious treatments, rejuvenating therapies, and serene environments tailored for relaxation and elegance.
+                    </motion.p>
+                    
+                    <motion.div
+                      className="flex justify-center mt-10"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.5, duration: 0.5 }}
+                    >
+                      <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
+                    </motion.div>
+                  </motion.div>
+      
+          {/* Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {hotelOutlets.map((hotel, index) => (
+              <motion.div
+                key={index}
+                className="bg-white/80 backdrop-blur-lg shadow-xl rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+              >
+                {/* Image */}
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={hotel.image}
+                    alt={hotel.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+      
+                {/* Content */}
+                <div className="p-5 flex flex-col flex-grow">
+                  <h3 className="text-lg font-semibold text-amber-800 font-serif mb-2">
+                    {hotel.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm flex-grow mb-4">
+                    {hotel.description}
+                  </p>
+      
+                  {/* Book Now Button */}
+                  {/* <a
+                    href="http://wa.link/njldxn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block mt-auto px-5 py-2 rounded-full bg-amber-500 text-white text-sm font-semibold hover:bg-amber-600 shadow-md hover:shadow-xl transition-all duration-300 text-center"
+                  >
+                    BOOK NOW
+                  </a> */}
+                  <a 
+                                                          href="https://t.me/Tanuspa" 
+                                                          target="_blank"
+                                                          rel="noopener noreferrer"
+                                                          className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
+                                                        >
+                                                          <FaTelegram className="text-xl mr-3" />
+                                                          Meet Our Team
+                                                        </a>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+            {/* End outlets */}
+            {/* About Us Section */}
+            <section className="w-full py-16 bg-gradient-to-b from-white to-yellow-50">
+              <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
+                
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="space-y-6"
+                >
+                  <motion.div
+                                className="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full mb-6 font-medium"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.2 }}
+                                viewport={{ once: true }}
+                              >
+                                <span className="mr-2">✦</span> About Our Aerocity Spa Outlets
+                              </motion.div>
+                  
+                              <motion.h2
+                                className="text-4xl md:text-5xl lg:text-4xl font-bold text-gray-800 leading-tight mb-8"
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.3 }}
+                                viewport={{ once: true }}
+                              >
+                                How to Book Body Massage <span className="relative">
+                                  <span className="text-amber-600 z-10 relative">in Aerocity At 5 Star Hotels?</span>
+                                  <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
+                                </span>
+                              </motion.h2>
+                  <p className="text-gray-700 text-lg">
+                    At Luxury Body Spa, we are dedicated to creating a haven of peace, wellness, and rejuvenation in the heart of Delhi. With a blend of ancient healing traditions and modern techniques, our expert therapists restore balance and vitality. From full-body massages to specialized therapies, each session is designed to relax the mind, soothe the body, and uplift the spirit.
+                    Located in the heart of Delhi’s bustling Aerocity, our spa is surrounded by some of the city’s most prestigious hotels, making it the perfect destination for travelers and locals alike. Aerocity is renowned for its world-class hospitality, modern infrastructure, and seamless connectivity to IGI Airport and central Delhi.
+                  </p>
+                  {/* <p className="text-gray-700 text-lg">
+                    Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
+                     Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
+                  </p> */}
+                </motion.div>
+      
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="grid grid-cols-2 gap-4"
+                >
+                  <div className="rounded-2xl overflow-hidden shadow-xl">
+                    <img src="/images/luxurySpaRoom.jpg" alt="Luxury Spa Room" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden shadow-xl">
+                    <img src="/images/spaexpert3.webp" alt="Massage Session" className="w-full h-full object-cover" />
+                  </div>
+                </motion.div>
+              </div>
+            </section>
       {/* Services Section */}
             <section id="services" className="py-10 px-6 md:px-16 bg-gradient-to-b from-amber-50 to-white relative">
         <div className="max-w-7xl mx-auto">
@@ -356,6 +576,147 @@ export default function aerocity() {
         </div>
              </section>
              {/* End Services Section */}
+                 <section className="bg-gray-50 py-16">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Header */}
+        <div className="text-center mb-10">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
+            <span className="text-amber-600">Our Massage Services</span>{' '}
+            <span className="text-amber-700">in Aerocity — At Partner Hotels</span>
+          </h2>
+          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+            Relax in the comfort of premium Aerocity hotel rooms — our certified therapists bring personalised spa treatments directly to your hotel stay.
+            Choose from soothing relaxation therapies to advanced deep-tissue programs tailored for your needs.
+          </p>
+
+          <div className="mt-6 flex items-center justify-center">
+            <span className="inline-block w-20 h-1 rounded-full bg-amber-500"></span>
+          </div>
+        </div>
+
+        {/* Two-column layout: left content & cards, right gallery */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          {/* Left: services list & hotels */}
+          <div className="lg:col-span-7">
+            <div className="grid sm:grid-cols-2 gap-6">
+              {services1.map((s, idx) => (
+                <motion.article
+                  key={s.id}
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.45, delay: idx * 0.06 }}
+                  className="bg-white rounded-2xl shadow-md p-5 sm:p-6 hover:shadow-xl transition-shadow border border-transparent hover:border-amber-100"
+                  aria-labelledby={`${s.id}-title`}
+                >
+                  <div className="flex items-start gap-4">
+                    <div className="flex-none w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center">
+                      {s.icon}
+                    </div>
+                    <div className="flex-1">
+                      <h3 id={`${s.id}-title`} className="text-lg font-semibold text-amber-700">
+                        {s.title}
+                      </h3>
+                      <p className="mt-2 text-gray-600 text-sm leading-relaxed">{s.desc}</p>
+
+                      <div className="mt-3 flex items-center justify-between text-sm">
+                        <div className="text-gray-500">
+                          <span className="font-medium text-gray-700">{s.duration}</span>
+                        </div>
+                        <div className="text-amber-700 font-semibold">{s.price}</div>
+                      </div>
+                    </div>
+                  </div>
+                </motion.article>
+              ))}
+            </div>
+
+            {/* Hotel partners and quick bullets */}
+            <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+              <div>
+                <h4 className="text-sm font-semibold text-gray-700 mb-2">Available at top Aerocity hotels</h4>
+                <div className="flex items-center gap-3">
+                  {/* Replace with real partner logos */}
+                  <div className="w-20 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm border">
+                    <span className="text-xs text-gray-600">Hotel A</span>
+                  </div>
+                  <div className="w-20 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm border">
+                    <span className="text-xs text-gray-600">Hotel B</span>
+                  </div>
+                  <div className="w-20 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm border">
+                    <span className="text-xs text-gray-600">Hotel C</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-gray-600 text-sm">
+                <ul className="space-y-1">
+                  <li>• Certified therapists with hotel-approved protocols</li>
+                  <li>• Full hygiene & safety compliance</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center">
+              <a
+                href="/booking"
+                className="inline-flex items-center gap-3 px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white rounded-full font-semibold shadow"
+                aria-label="Book massage in Aerocity hotel"
+                role="button"
+              >
+                Book Now
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" aria-hidden>
+                  <path d="M5 12h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </a>
+
+              <a href="tel:+911234567890" className="text-sm text-gray-600 hover:underline">
+                Or call: +91 12345 67890
+              </a>
+            </div>
+          </div>
+
+          {/* Right: gallery/promo image */}
+          <div className="lg:col-span-5">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.98 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="relative rounded-2xl overflow-hidden shadow-xl"
+            >
+              <Image
+                src="/images/6745.jpg"
+                alt="In-room hotel massage at Aerocity"
+                width={900}
+                height={700}
+                className="w-full h-auto object-cover"
+              />
+
+              {/* small overlay card */}
+              <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-4 py-3 rounded-lg shadow-md border">
+                <div className="text-xs text-gray-500">In-room spa at</div>
+                <div className="font-semibold text-gray-800">Aerocity Premium Hotels</div>
+                <div className="text-sm text-gray-600 mt-1">Book early for guaranteed therapist availability</div>
+              </div>
+            </motion.div>
+
+            {/* small thumbnails */}
+            <div className="mt-4 grid grid-cols-3 gap-3">
+              <div className="rounded-lg overflow-hidden shadow-sm">
+                <Image src="/images/5969.jpg" alt="Massage preview" width={140} height={100} className="object-cover w-full h-full"/>
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-sm">
+                <Image src="/images/443601.jpg" alt="Therapist" width={140} height={100} className="object-cover w-full h-full"/>
+              </div>
+              <div className="rounded-lg overflow-hidden shadow-sm">
+                <Image src="/images/5969.jpg" alt="Aromatherapy" width={140} height={100} className="object-cover w-full h-full"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
       {/* content */}
       <section className="bg-gradient-to-br from-amber-50 to-stone-100 py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden">
       {/* Decorative elements */}
@@ -539,170 +900,6 @@ export default function aerocity() {
       </div>
     </section>
       {/* end content */}
-
-      
-      {/* our 5* hoterl outlets */}
-             <section className="w-full py-16 bg-gradient-to-b from-white to-amber-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Title */}
-          <motion.div 
-                    className="text-center mb-20"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, margin: "-100px" }}
-                    transition={{ duration: 0.8 }}
-                  >
-                    <motion.div
-                      className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 to-amber-500/5 border border-amber-500/20 px-5 py-2 rounded-full mb-6"
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.2, duration: 0.5 }}
-                    >
-                      <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
-                      <span className="text-amber-700 font-medium tracking-wider">PREMIUM LOCATIONS</span>
-                    </motion.div>
-                    
-                    <motion.h2
-                      className="text-4xl md:text-5xl lg:text-5xl font-bold text-amber-900 mb-6 font-serif"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.3, duration: 0.6 }}
-                    >
-                      Body Massage in Aerocity <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">at Top Hotels</span>
-                    </motion.h2>
-                    
-                    <motion.p
-                      className="text-amber-800/80 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.4, duration: 0.5 }}
-                    >
-                      Discover premium spa experiences at our 5-star hotel outlets. Indulge in luxurious treatments, rejuvenating therapies, and serene environments tailored for relaxation and elegance.
-                    </motion.p>
-                    
-                    <motion.div
-                      className="flex justify-center mt-10"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      transition={{ delay: 0.5, duration: 0.5 }}
-                    >
-                      <div className="h-1 w-24 bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"></div>
-                    </motion.div>
-                  </motion.div>
-      
-          {/* Cards */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {hotelOutlets.map((hotel, index) => (
-              <motion.div
-                key={index}
-                className="bg-white/80 backdrop-blur-lg shadow-xl rounded-2xl overflow-hidden flex flex-col justify-between transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.1 }}
-              >
-                {/* Image */}
-                <div className="relative h-48 w-full">
-                  <Image
-                    src={hotel.image}
-                    alt={hotel.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-      
-                {/* Content */}
-                <div className="p-5 flex flex-col flex-grow">
-                  <h3 className="text-lg font-semibold text-amber-800 font-serif mb-2">
-                    {hotel.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm flex-grow mb-4">
-                    {hotel.description}
-                  </p>
-      
-                  {/* Book Now Button */}
-                  {/* <a
-                    href="http://wa.link/njldxn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mt-auto px-5 py-2 rounded-full bg-amber-500 text-white text-sm font-semibold hover:bg-amber-600 shadow-md hover:shadow-xl transition-all duration-300 text-center"
-                  >
-                    BOOK NOW
-                  </a> */}
-                  <a 
-                                                          href="https://t.me/Tanuspa" 
-                                                          target="_blank"
-                                                          rel="noopener noreferrer"
-                                                          className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white font-medium py-3 px-6 rounded-full flex items-center justify-center transition-all shadow-lg"
-                                                        >
-                                                          <FaTelegram className="text-xl mr-3" />
-                                                          Meet Our Team
-                                                        </a>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-            {/* End outlets */}
-
-      {/* About Us Section */}
-            <section className="w-full py-16 bg-gradient-to-b from-white to-yellow-50">
-              <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
-                
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6 }}
-                  className="space-y-6"
-                >
-                  <motion.div
-                                className="inline-block bg-amber-100 text-amber-700 px-4 py-2 rounded-full mb-6 font-medium"
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.2 }}
-                                viewport={{ once: true }}
-                              >
-                                <span className="mr-2">✦</span> About Our Aerocity Spa Outlets
-                              </motion.div>
-                  
-                              <motion.h2
-                                className="text-4xl md:text-5xl lg:text-4xl font-bold text-gray-800 leading-tight mb-8"
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.3 }}
-                                viewport={{ once: true }}
-                              >
-                                How to Book Body Massage <span className="relative">
-                                  <span className="text-amber-600 z-10 relative">in Aerocity At 5 Star Hotels?</span>
-                                  <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
-                                </span>
-                              </motion.h2>
-                  <p className="text-gray-700 text-lg">
-                    At Luxury Body Spa, we are dedicated to creating a haven of peace, wellness, and rejuvenation in the heart of Delhi. With a blend of ancient healing traditions and modern techniques, our expert therapists restore balance and vitality. From full-body massages to specialized therapies, each session is designed to relax the mind, soothe the body, and uplift the spirit.
-                    Located in the heart of Delhi’s bustling Aerocity, our spa is surrounded by some of the city’s most prestigious hotels, making it the perfect destination for travelers and locals alike. Aerocity is renowned for its world-class hospitality, modern infrastructure, and seamless connectivity to IGI Airport and central Delhi.
-                  </p>
-                  {/* <p className="text-gray-700 text-lg">
-                    Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
-                     Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
-                  </p> */}
-                </motion.div>
-      
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="grid grid-cols-2 gap-4"
-                >
-                  <div className="rounded-2xl overflow-hidden shadow-xl">
-                    <img src="/images/luxurySpaRoom.jpg" alt="Luxury Spa Room" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="rounded-2xl overflow-hidden shadow-xl">
-                    <img src="/images/spaexpert3.webp" alt="Massage Session" className="w-full h-full object-cover" />
-                  </div>
-                </motion.div>
-              </div>
-            </section>
             
     {/* content section */}
                          <section className="bg-gradient-to-b from-[#fcf7f4] to-[#f8f0eb] py-20 px-6 md:px-16">
