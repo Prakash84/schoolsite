@@ -246,6 +246,62 @@ export default function aerocity() {
     ),
   },
 ]
+const SERVICES_LEFT = [
+  {
+    id: 'foreigner',
+    title: 'Foreigner Staff',
+    subtitle: 'International therapists for authentic treatments',
+    desc:
+      "We bring therapists trained across Russia, Afghanistan and Uzbekistan to deliver refined, presence-based healing that goes beyond standard relaxation.",
+    chips: ['Russian Therapist', 'Afgani Therapist', 'Uzbeki Therapist'],
+    time: '60-90 min',
+    price: 'From ₹2,800',
+    image: '/images/spamodel.jpg',
+  },
+  {
+    id: 'body',
+    title: 'Body Treatments',
+    subtitle: 'Mastery across 23 specialised modalities',
+    desc:
+      "From Thai Herbal Compress to Craniosacral therapy — every therapist completes 500+ hours of in-house training before serving clients.",
+    chips: [
+      'Thai Herbal Compress',
+      'Shiatsu',
+      'Lymphatic Drainage',
+      'Ayurvedic Abhyanga',
+      'Hot Stone',
+      'Aromatherapy',
+    ],
+    time: '75-90 min',
+    price: 'From ₹3,200',
+    image: '/images/services.webp',
+  },
+]
+
+const SERVICES_RIGHT = [
+  {
+    id: 'top',
+    title: 'Top Rated Services',
+    subtitle: 'Sustainable + award-winning',
+    desc:
+      "Carbon-neutral operations, zero-waste policies and handcrafted products from ethical cooperatives — wellness that cares for the planet.",
+    chips: ['Zero-Waste', 'Organic Linens', 'Water Recycling', 'Carbon Offsetting'],
+    time: '60-120 min',
+    price: 'From ₹2,500',
+    image: '/images/Sandwich Massage.jpg',
+  },
+  {
+    id: 'packages',
+    title: 'Home & Hotel Spa',
+    subtitle: 'Premium in-room & home journeys',
+    desc:
+      "We partner with leading hotels to offer private suites and fully equipped in-room spa experiences. Corporate & event packages available.",
+    chips: ['JW Marriott Aerocity', 'The Suryaa', 'The Park CP'],
+    time: '3-6 hours',
+    price: 'From ₹8,500',
+    image: '/images/RoseateHouse.jpg',
+  },
+]
 
   
   return (
@@ -998,6 +1054,177 @@ export default function aerocity() {
                               </motion.div>
                             </div>
                           </section>
+                          {/* /// */}
+                              <section className="bg-gradient-to-b from-[#fcf7f4] to-[#f8f0eb] py-20 px-6 md:px-16">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <motion.div
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <span className="text-sm font-medium text-amber-700 tracking-widest">OUR SIGNATURE OFFERINGS</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-4 font-serif">Premium Spa Experiences</h1>
+          <div className="mx-auto w-28 h-1 bg-amber-600 rounded-full" />
+          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
+            Bespoke wellness journeys — experienced therapists, modern techniques and planetary-conscious operations for a restorative spa
+            experience.
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* LEFT COLUMN: stacked service cards */}
+          <div className="space-y-8">
+            {SERVICES_LEFT.map((s, idx) => (
+              <motion.div
+                key={s.id}
+                className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-[#e8d5c9] overflow-hidden"
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.08 }}
+              >
+                <div className="md:flex gap-6">
+                  {/* Image */}
+                  <div className="relative w-full md:w-48 h-40 rounded-xl overflow-hidden flex-shrink-0">
+                    <Image src={s.image} alt={s.title} fill className="object-cover" />
+                  </div>
+
+                  {/* Text */}
+                  <div className="mt-4 md:mt-0 flex-1">
+                    <h3 className="text-2xl font-semibold text-amber-800">{s.title}</h3>
+                    <p className="text-sm text-amber-700 mt-1 font-medium">{s.subtitle}</p>
+                    <p className="text-gray-600 mt-3 leading-relaxed">{s.desc}</p>
+
+                    <div className="mt-4 flex flex-wrap gap-3">
+                      {s.chips.slice(0, 6).map((c, i) => (
+                        <span
+                          key={i}
+                          className="bg-[#f7efe7] text-amber-800 px-3 py-1 rounded-full text-sm"
+                        >
+                          {c}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="mt-4 flex items-center justify-between">
+                      <span className="inline-block bg-amber-100 text-amber-800 py-1 px-3 rounded-full text-sm font-medium">
+                        {s.time} • {s.price}
+                      </span>
+                      <a
+                        href="http://wa.link/njldxn"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-full text-sm font-semibold shadow focus:outline-none focus:ring-2 focus:ring-amber-200"
+                      >
+                        Book Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* RIGHT COLUMN: stacked service cards + promo */}
+          <div className="space-y-8">
+            {SERVICES_RIGHT.map((s, idx) => (
+              <motion.div
+                key={s.id}
+                className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-[#e8d5c9] overflow-hidden"
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: idx * 0.08 }}
+              >
+                <div className="md:flex gap-6">
+                  <div className="relative w-full md:w-48 h-40 rounded-xl overflow-hidden flex-shrink-0">
+                    <Image src={s.image} alt={s.title} fill className="object-cover" />
+                  </div>
+
+                  <div className="mt-4 md:mt-0 flex-1">
+                    <h3 className="text-2xl font-semibold text-amber-800">{s.title}</h3>
+                    <p className="text-sm text-amber-700 mt-1 font-medium">{s.subtitle}</p>
+                    <p className="text-gray-600 mt-3 leading-relaxed">{s.desc}</p>
+
+                    <div className="mt-4 flex flex-wrap gap-3">
+                      {s.chips.slice(0, 6).map((c, i) => (
+                        <span
+                          key={i}
+                          className="bg-[#f7efe7] text-amber-800 px-3 py-1 rounded-full text-sm"
+                        >
+                          {c}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="mt-4 flex items-center justify-between">
+                      <span className="inline-block bg-amber-100 text-amber-800 py-1 px-3 rounded-full text-sm font-medium">
+                        {s.time} • {s.price}
+                      </span>
+                      <a
+                        href="http://wa.link/njldxn"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-full text-sm font-semibold shadow focus:outline-none focus:ring-2 focus:ring-amber-200"
+                      >
+                        Book Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+
+            {/* Promo / Additional info block */}
+            <motion.div
+              className="bg-gradient-to-r from-amber-700 to-amber-600 rounded-2xl p-6 text-white shadow-xl"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.12 }}
+            >
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                  <h4 className="text-2xl font-bold">Personalized Spa Journeys</h4>
+                  <p className="mt-2 opacity-95">
+                    Consultation-based plans, loyalty benefits and corporate wellness options. Priority booking for members.
+                  </p>
+                </div>
+                <div className="flex gap-3">
+                  <a
+                    href="https://t.me/Tanuspa"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full font-medium shadow-sm transition"
+                  >
+                    <FaTelegram className="text-white" /> Join Telegram
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+
+        {/* Footer CTA */}
+        <motion.div
+          className="mt-12 text-center"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.08 }}
+        >
+          <a
+            href="/booking"
+            className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-amber-600 hover:bg-amber-700 text-white font-semibold shadow-lg focus:outline-none focus:ring-2 focus:ring-amber-200"
+          >
+            Book a Personalized Journey
+          </a>
+        </motion.div>
+      </div>
+    </section>
                         {/* end */}
 {/* Pricing Section */}
             <section id= "Pricing" className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
