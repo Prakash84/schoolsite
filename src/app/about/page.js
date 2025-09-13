@@ -688,6 +688,15 @@ export default function About({
                   <p className="text-xs text-gray-600">Morning to late-evening</p>
                 </div>
               </div>
+              <div className="flex items-center gap-3 bg-amber-50 border border-amber-100 rounded-lg px-4 py-2">
+                <div className="w-8 h-8 rounded-md bg-amber-600/10 grid place-items-center text-amber-700">
+                  <FaHotel className="text-lg" />  {/* Hotel icon */}
+                </div>
+                <div>
+                  <p className="text-sm font-semibold text-amber-900">5 Star Outlet</p>
+                  <p className="text-xs text-gray-600">Morning to late-evening</p>
+                </div>
+              </div>
             </div>
 
             {/* description list */}
@@ -885,23 +894,23 @@ export default function About({
                   <FaLeaf className="w-3 h-3" />
                 </div>
                 <h4 className="text-lg font-semibold text-amber-900">Holistic Therapies</h4>
-                <p className="text-sm text-gray-600 mt-1">Ayurvedic & modern techniques blended for effective results.</p>
+                <p className="text-sm text-gray-600 mt-1">We are providing a team of highly experienced <span className="text-sm text-amber-900 mt-1 font-bold">foreigner therapists, Thai therapists, and Indian therapists,</span> all professionally trained in luxury spa treatments.</p>
               </div>
 
               <div className="relative pl-2">
                 <div className="absolute -left-8 top-0 w-6 h-6 rounded-full bg-amber-600 text-white flex items-center justify-center shadow-sm">
                   <FaHands className="w-3 h-3" />
                 </div>
-                <h4 className="text-lg font-semibold text-amber-900">Skilled Therapists</h4>
-                <p className="text-sm text-gray-600 mt-1">Handpicked professionals trained in luxury hospitality.</p>
+                <h4 className="text-lg font-semibold text-amber-900">Our Services</h4>
+                <p className="text-sm text-gray-600 mt-1">Choose from a wide range of our signature therapies including: <span className="text-sm text-amber-900 mt-1 font-bold">B2B Massage, Couple Massage, Erotic Massage</span></p>
               </div>
 
               <div className="relative pl-2">
                 <div className="absolute -left-8 top-0 w-6 h-6 rounded-full bg-amber-600 text-white flex items-center justify-center shadow-sm">
                   <FaHeartbeat className="w-3 h-3" />
                 </div>
-                <h4 className="text-lg font-semibold text-amber-900">Personalised Care</h4>
-                <p className="text-sm text-gray-600 mt-1">Tailored treatments and aftercare for every guest.</p>
+                <h4 className="text-lg font-semibold text-amber-900">5-Star Outlets</h4>
+                <p className="text-sm text-gray-600 mt-1">We proudly serve our guests at luxury 5-star hotels across Delhi NCR: <span className='text-sm text-amber-900 mt-1 font-bold'>Novotel, The Suryaa, The Park</span></p>
               </div>
 
               <div className="relative pl-2">

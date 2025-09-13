@@ -367,7 +367,7 @@ export default function Outlet() {
 
           <h1 className="text-5xl md:text-6xl font-bold font-serif text-amber-900 leading-tight">
             Our Premium <span className="text-amber-600"></span> <br /> 
-            <span className="bg-black text-white px-3 py-1 rounded-md">Spa Outlets</span>
+            <span className="bg-amber-600 text-white px-3 py-1 rounded-md">Spa Outlets</span>
           </h1>
 
           <p className="text-gray-600 max-w-md">
