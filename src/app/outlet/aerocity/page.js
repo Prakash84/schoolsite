@@ -232,11 +232,20 @@ export default function aerocity() {
       </svg>
     ),
   },
-  
-  
+  {
+    id: 'hotstone',
+    title: 'Hot Stone Massage',
+    desc: 'Warm stones and calming strokes to release deep muscle tension and induce deep relaxation.',
+    duration: '75 / 90 mins',
+    price: '₹2,199 - ₹3,499',
+    icon: (
+      <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+        <path d="M4 17c2-3 7-4 9-4s7 1 9 4" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M6 12c3-4 9-4 12 0" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    ),
+  },
 ]
-
-
 
   
   return (
@@ -576,147 +585,7 @@ export default function aerocity() {
         </div>
              </section>
              {/* End Services Section */}
-                 <section className="bg-gray-50 py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <div className="text-center mb-10">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">
-            <span className="text-amber-600">Our Massage Services</span>{' '}
-            <span className="text-amber-700">in Aerocity — At Partner Hotels</span>
-          </h2>
-          <p className="mt-4 text-gray-600 max-w-3xl mx-auto">
-            Relax in the comfort of premium Aerocity hotel rooms — our certified therapists bring personalised spa treatments directly to your hotel stay.
-            Choose from soothing relaxation therapies to advanced deep-tissue programs tailored for your needs.
-          </p>
-
-          <div className="mt-6 flex items-center justify-center">
-            <span className="inline-block w-20 h-1 rounded-full bg-amber-500"></span>
-          </div>
-        </div>
-
-        {/* Two-column layout: left content & cards, right gallery */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left: services list & hotels */}
-          <div className="lg:col-span-7">
-            <div className="grid sm:grid-cols-2 gap-6">
-              {services1.map((s, idx) => (
-                <motion.article
-                  key={s.id}
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.45, delay: idx * 0.06 }}
-                  className="bg-white rounded-2xl shadow-md p-5 sm:p-6 hover:shadow-xl transition-shadow border border-transparent hover:border-amber-100"
-                  aria-labelledby={`${s.id}-title`}
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="flex-none w-12 h-12 rounded-lg bg-amber-50 text-amber-700 flex items-center justify-center">
-                      {s.icon}
-                    </div>
-                    <div className="flex-1">
-                      <h3 id={`${s.id}-title`} className="text-lg font-semibold text-amber-700">
-                        {s.title}
-                      </h3>
-                      <p className="mt-2 text-gray-600 text-sm leading-relaxed">{s.desc}</p>
-
-                      <div className="mt-3 flex items-center justify-between text-sm">
-                        <div className="text-gray-500">
-                          <span className="font-medium text-gray-700">{s.duration}</span>
-                        </div>
-                        <div className="text-amber-700 font-semibold">{s.price}</div>
-                      </div>
-                    </div>
-                  </div>
-                </motion.article>
-              ))}
-            </div>
-
-            {/* Hotel partners and quick bullets */}
-            <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-              <div>
-                <h4 className="text-sm font-semibold text-gray-700 mb-2">Available at top Aerocity hotels</h4>
-                <div className="flex items-center gap-3">
-                  {/* Replace with real partner logos */}
-                  <div className="w-20 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm border">
-                    <span className="text-xs text-gray-600">Hotel A</span>
-                  </div>
-                  <div className="w-20 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm border">
-                    <span className="text-xs text-gray-600">Hotel B</span>
-                  </div>
-                  <div className="w-20 h-10 bg-white rounded-lg flex items-center justify-center shadow-sm border">
-                    <span className="text-xs text-gray-600">Hotel C</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="text-gray-600 text-sm">
-                <ul className="space-y-1">
-                  <li>• Certified therapists with hotel-approved protocols</li>
-                  <li>• Full hygiene & safety compliance</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div className="mt-8 flex flex-col sm:flex-row gap-4 items-center">
-              <a
-                href="/booking"
-                className="inline-flex items-center gap-3 px-6 py-3 bg-amber-600 hover:bg-amber-700 text-white rounded-full font-semibold shadow"
-                aria-label="Book massage in Aerocity hotel"
-                role="button"
-              >
-                Book Now
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" aria-hidden>
-                  <path d="M5 12h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M13 6l6 6-6 6" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </a>
-
-              <a href="tel:+911234567890" className="text-sm text-gray-600 hover:underline">
-                Or call: +91 12345 67890
-              </a>
-            </div>
-          </div>
-
-          {/* Right: gallery/promo image */}
-          <div className="lg:col-span-5">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.98 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              className="relative rounded-2xl overflow-hidden shadow-xl"
-            >
-              <Image
-                src="/images/6745.jpg"
-                alt="In-room hotel massage at Aerocity"
-                width={900}
-                height={700}
-                className="w-full h-auto object-cover"
-              />
-
-              {/* small overlay card */}
-              <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-4 py-3 rounded-lg shadow-md border">
-                <div className="text-xs text-gray-500">In-room spa at</div>
-                <div className="font-semibold text-gray-800">Aerocity Premium Hotels</div>
-                <div className="text-sm text-gray-600 mt-1">Book early for guaranteed therapist availability</div>
-              </div>
-            </motion.div>
-
-            {/* small thumbnails */}
-            <div className="mt-4 grid grid-cols-3 gap-3">
-              <div className="rounded-lg overflow-hidden shadow-sm">
-                <Image src="/images/5969.jpg" alt="Massage preview" width={140} height={100} className="object-cover w-full h-full"/>
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-sm">
-                <Image src="/images/443601.jpg" alt="Therapist" width={140} height={100} className="object-cover w-full h-full"/>
-              </div>
-              <div className="rounded-lg overflow-hidden shadow-sm">
-                <Image src="/images/5969.jpg" alt="Aromatherapy" width={140} height={100} className="object-cover w-full h-full"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+                 
       {/* content */}
       <section className="bg-gradient-to-br from-amber-50 to-stone-100 py-16 px-4 md:px-8 lg:px-16 relative overflow-hidden">
       {/* Decorative elements */}
