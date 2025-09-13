@@ -9,6 +9,7 @@ import { FaStar, FaCheckCircle } from 'react-icons/fa';
 import { FaHandSparkles, FaLeaf, FaHotTub } from 'react-icons/fa';
 import { AnimatePresence } from 'framer-motion';
 import { FaTelegram } from 'react-icons/fa';
+import {  FaClock, FaPhoneAlt,  FaCreditCard } from 'react-icons/fa'
 
 
 
@@ -302,11 +303,41 @@ const SERVICES_RIGHT = [
     image: '/images/RoseateHouse.jpg',
   },
 ]
+const topSteps = [
+    {
+      icon: <FaHotel className="text-amber-700 text-xl" />,
+      title: 'Choose Your Hotel & Room Type',
+      text: 'Tell us your hotel (JW Marriott, The Suryaa, Pullman, Holiday Inn etc.). Our therapists set up a spa-grade space in any room, hassle-free.',
+    },
+    {
+      icon: <FaClock className="text-amber-700 text-xl" />,
+      title: 'Pick the Massage Type & Duration',
+      text: 'Choose a full 120-minute treatment or a quick 30-minute session. Not sure? Our team suggests the best option for your goals.',
+    },
+    {
+      icon: <FaPhoneAlt className="text-amber-700 text-xl" />,
+      title: 'Confirm Booking Online or via Call',
+      text: 'Book via website, WhatsApp or call. Therapist schedules are live and confirmations are instant — no waiting, no guessing.',
+    },
+  ]
 
+  const bottomSteps = [
+    {
+      icon: <FaSpa className="text-amber-700 text-2xl" />,
+      title: 'Expect a Spa-Grade Setup in Your Room',
+      text: 'We bring fresh sheets, calming oils, mood lighting and sanitized equipment. You just relax, we handle the rest.',
+    },
+    {
+      icon: <FaCreditCard className="text-amber-700 text-2xl" />,
+      title: 'Flexible Payments & Feedback System',
+      text: 'Pay via UPI, cash, card or online. After your session, rate your therapist and share feedback — we value your experience.',
+    },
+  ]
   
   return (
     <main>
 <div className="bg-rose-50 text-gray-800">
+  
       {/* Banner */}         
       <div className="relative overflow-hidden bg-gradient-to-br from-amber-50 to-rose-50">
         {/* Floating decorative elements */}
@@ -1000,6 +1031,84 @@ const SERVICES_RIGHT = [
       </div>
     </section>
                         {/* end */}
+                        {/* how to book Aerocity spa outlets */}
+                        <section className="w-full py-20 bg-gradient-to-b from-white to-amber-50">
+      <div className="max-w-6xl mx-auto px-6">
+        {/* Header */}
+        <header className="text-center mb-14">
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-amber-900"
+          >
+            <span className="block font-[Great_Vibes] text-4xl md:text-5xl text-amber-800">
+              How to Book Massage Therapy in Aerocity&apos;s
+            </span>
+            <span className="block font-[Great_Vibes] text-3xl md:text-4xl bg-gradient-to-r from-amber-600 to-amber-400 text-transparent bg-clip-text">
+              Prestigious Hotels?
+            </span>
+          </motion.h1>
+
+          <p className="mt-4 text-gray-700 max-w-2xl mx-auto text-sm md:text-base">
+            Experience luxury massage in your hotel with quick, easy and flexible booking. Our <span className="font-semibold text-amber-700">massage spa in Aerocity</span> comes directly to your room — at your convenience.
+          </p>
+        </header>
+
+        {/* Top row: 3 cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {topSteps.map((s, idx) => (
+            <motion.article
+              key={idx}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="bg-white rounded-2xl shadow-lg p-6 border border-amber-100 text-center hover:shadow-xl hover:-translate-y-1 transition"
+            >
+              <div className="w-12 h-12 mx-auto flex items-center justify-center rounded-full bg-amber-100 mb-4">
+                {s.icon}
+              </div>
+              <h3 className="text-lg md:text-xl font-semibold text-amber-800 mb-2">{s.title}</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">{s.text}</p>
+            </motion.article>
+          ))}
+        </div>
+
+        {/* Bottom row: 2 wide cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {bottomSteps.map((s, idx) => (
+            <motion.article
+              key={idx}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="bg-white rounded-2xl shadow-lg p-6 border border-amber-100 flex items-start gap-4 hover:shadow-xl transition"
+            >
+              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-amber-100">
+                {s.icon}
+              </div>
+              <div>
+                <h4 className="text-lg font-semibold text-amber-800 mb-1">{s.title}</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">{s.text}</p>
+              </div>
+            </motion.article>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="mt-12 text-center">
+          <a
+            href="http://wa.link/njldxn"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-amber-600 to-amber-500 text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition"
+          >
+            Book Now on WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+                        {/* how to book Aerocity spa outlets */}
 {/* Pricing Section */}
             <section id= "Pricing" className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
             {/* Decorative elements */}
