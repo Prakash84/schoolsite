@@ -271,10 +271,10 @@ export default function Outlet() {
   // Features for the 18+ section  
   const cities = [
 { name: 'DELHI', img: '/images/hotel3.webp' },
-{ name: 'MUMBAI', img: '/images/lajpatnagahotel.avif' },
-{ name: 'NOIDA', img: '/images/RoseateHouse.jpg' },
-{ name: 'BANGALORE', img: '/images/paschimvihar.jpg' },
-{ name: 'PUNE', img: '/images/JwMarriott_CP.jpg' },
+{ name: 'LAJPATNAGAR', img: '/images/lajpatnagahotel.avif' },
+{ name: 'AEROCITY', img: '/images/RoseateHouse.jpg' },
+{ name: 'PASHIMVIVAR', img: '/images/paschimvihar.jpg' },
+{ name: 'CANNAUGHT PLACE', img: '/images/JwMarriott_CP.jpg' },
 { name: 'AHMEDABAD', img: '/images/Andazhat.jpg' },
 { name: 'GURGAON', img: '/images/holidayIn_CP.jpg' },
 { name: 'HYDERABAD', img: '/images/tajmahalhotel_lajpatnagar.jpg' },
