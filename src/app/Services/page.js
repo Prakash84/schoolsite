@@ -1280,7 +1280,7 @@ const faqs = [
                         <div className="mb-6">
                           <h4 className="text-lg font-bold text-amber-700 mb-3">Signature Oil Blends</h4>
                           <div className="grid grid-cols-2 gap-3">
-                            {['Lavender Dream', 'Eucalyptus Renewal', 'Rosemary Harmony', 'Sandalwood Serenity', 'Jasmine Bliss', 'Frankincense Balance'].map((oil, index) => (
+                            {['Erotic Massage', 'Nuru Massage', 'B2B Massage', 'Sandalwood Serenity', 'Jasmine Bliss', 'Frankincense Balance'].map((oil, index) => (
                               <div key={index} className="flex items-center">
                                 <div className="w-2 h-2 rounded-full bg-amber-400 mr-2"></div>
                                 <span className="text-amber-800">{oil}</span>
