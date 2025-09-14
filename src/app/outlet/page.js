@@ -274,14 +274,14 @@ export default function Outlet() {
 { name: 'LAJPATNAGAR', img: '/images/lajpatnagahotel.avif' },
 { name: 'AEROCITY', img: '/images/RoseateHouse.jpg' },
 { name: 'PASHIMVIVAR', img: '/images/paschimvihar.jpg' },
-{ name: 'CANNAUGHT PLACE', img: '/images/JwMarriott_CP.jpg' },
+{ name: 'CP', img: '/images/JwMarriott_CP.jpg' },
 { name: 'AHMEDABAD', img: '/images/Andazhat.jpg' },
 { name: 'GURGAON', img: '/images/holidayIn_CP.jpg' },
-{ name: 'HYDERABAD', img: '/images/tajmahalhotel_lajpatnagar.jpg' },
-{ name: 'KOLKATA', img: '/images/paschimvihar.jpg' },
-{ name: 'CHENNAI', img: '/images/hotel2.jpg' },
-{ name: 'CHANDIGARH', img: '/images/pullmanAerocity.jpg' },
-{ name: 'JAIPUR', img: '/images/jwmarriott.jpeg' },
+{ name: 'KALKAJI', img: '/images/tajmahalhotel_lajpatnagar.jpg' },
+{ name: 'kAROL BAGH', img: '/images/paschimvihar.jpg' },
+{ name: 'MAHIPALPURE', img: '/images/hotel2.jpg' },
+{ name: 'ROHINI', img: '/images/pullmanAerocity.jpg' },
+{ name: 'GREATER KAILASH', img: '/images/jwmarriott.jpeg' },
 ]
   return (
     <>
@@ -430,7 +430,7 @@ export default function Outlet() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-     Our Premium Location
+     Our Premium Hotel Spa Outlets in Delhi
     </motion.h2>
 
     {/* Description */}
@@ -596,7 +596,7 @@ View All Cities
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3, duration: 0.6 }}
                           >
-                            Top Luxury Spa <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Outlets in Aerocity Delhi</span>
+                            Get Exclusive Massage at <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Our Premium Spa Outlet in Noida</span>
                           </motion.h2>
                 <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
               </div>
@@ -814,7 +814,7 @@ View All Cities
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                 >
-                  Our <span className="text-amber-600">Prime Locations</span>
+                  Our Luxury Hotel <span className="text-amber-600">Spa Outlets in Delhi</span>
                 </motion.h2>
                 <motion.p
                   className="text-gray-600 max-w-2xl mx-auto text-lg"
@@ -986,7 +986,7 @@ View All Cities
 
       {/* Heading */}
       <h2 className="text-3xl md:text-4xl font-bold text-amber-900 font-serif">
-        Best Luxury Spa in Delhi NCR
+         Experience Full Body Massage in Connaught Place At Prime Location Of Delhi
       </h2>
 
       {/* Description */}
@@ -1038,7 +1038,7 @@ View All Cities
                                         transition={{ duration: 0.6 }}
                                       >
                                         <span className="text-lg font-medium text-amber-700 tracking-widest">OUR SIGNATURE OFFERINGS</span>
-                                        <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-6">Premium Spa Experiences</h1>
+                                        <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-6">What We Offer At Our Premium Spa Outlets in Delhi</h1>
                                         <div className="w-24 h-1 bg-amber-600 mx-auto rounded-full"></div>
                                       </motion.div>
             
@@ -1276,7 +1276,7 @@ View All Cities
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Our <span className="text-amber-600"> Therapy Experts</span>
+            Foreign therapists available <span className="text-amber-600"> at our Spa Outlets in Aerocity</span>
           </motion.h2>
           
           <motion.p

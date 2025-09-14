@@ -319,9 +319,9 @@ const faqs = [
             </div>
             
             <h1 className="text-4xl md:text-5xl font-light text-gray-800">
-              <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">Harmony</span>
-            Tailored Experiences,
-              <span className="block mt-2 font-medium">Journey to <span className="text-rose-600">Tranquility</span></span>
+              <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">Book Best</span>
+            Massage service
+              <span className="block mt-2 font-medium">in Delhi by <span className="text-rose-600">International Therapists</span></span>
             </h1>
             
             <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
@@ -483,7 +483,7 @@ const faqs = [
             transition={{ duration: 0.8 }}
             style={{ fontFamily: "'Playfair Display', serif" }}
           >
-            Our Services
+             What we offer in our spa service 
           </motion.h2>
 
           {/* Divider */}
@@ -614,7 +614,7 @@ const faqs = [
               transition={{ delay: 0.1 }}
               className="text-4xl md:text-5xl font-serif font-bold text-amber-900 mb-6"
             >
-              Our Signature Treatments
+              Our Top-Notch Massage service in Delhi
             </motion.h2>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -728,7 +728,7 @@ const faqs = [
                               animate={{ opacity: 1, y: 0 }}
                               transition={{ duration: 0.5, delay: 0.2 }}
                             >
-                              Why choose a luxury <span className="text-amber-700">spa for premium massage services in Delhi?</span>
+                               Why Choose us for <span className="text-amber-700">Premium Massage Service in Delhi, Noida and Gurgaon</span>
                             </motion.h2>
                             
                             <motion.p 
@@ -885,8 +885,8 @@ const faqs = [
                             transition={{ delay: 0.3 }}
                             viewport={{ once: true }}
                           >
-                            Experience the <span className="relative">
-                              <span className="text-amber-600 z-10 relative">Art of Relaxation</span>
+                            Enjoy a Full Body Massage <span className="relative">
+                              <span className="text-amber-600 z-10 relative">Service in Aerocity for Full Relaxation</span>
                               <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
                             </span>
                           </motion.h2>
@@ -1100,7 +1100,7 @@ const faqs = [
                                               transition={{ duration: 0.8 }}
                                               style={{ fontFamily: "'Playfair Display', serif" }}
                                         >
-                                          The Benefits <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Of Regular Spa Visits</span>
+                                          Top-rated Massage Therapy <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">in Aerocity for Ultimate Relaxation</span>
                                         </motion.h2>
                                         {/* Divider */}
                                           <motion.div
@@ -1173,7 +1173,7 @@ const faqs = [
                       Premium Wellness Experience
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold text-amber-900 font-serif mb-6">
-                      Why Choose <span className="text-amber-600">Our Spa in Delhi?</span>
+                      Experience our Premium <span className="text-amber-600">Massage Services in Lajpat Nagar or Karol Bagh</span>
                     </h2>
                     <p className="text-amber-800 text-lg md:text-xl leading-relaxed">
                       We stand apart through our commitment to authentic techniques, premium ingredients, and personalized care that revitalizes your mind, body and spirit.
@@ -1359,7 +1359,7 @@ const faqs = [
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
                   <h3 className="text-3xl font-bold text-amber-900 font-serif text-center mb-12">
-                    Our Holistic Approach to Wellness
+                    Benefits Of Taking Our Massage Service in Delhi
                   </h3>
                   
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -1439,7 +1439,7 @@ const faqs = [
                                                        transition={{ duration: 0.6 }}
                                                      >
                                                        <span className="text-lg font-medium text-amber-700 tracking-widest">OUR SIGNATURE OFFERINGS</span>
-                                                       <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-6">Premium Spa Experiences</h1>
+                                                       <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-6">What We Offer in Female-to-Male Massage Services in Noida</h1>
                                                        <div className="w-24 h-1 bg-amber-600 mx-auto rounded-full"></div>
                                                      </motion.div>
                            
@@ -1685,7 +1685,7 @@ const faqs = [
                                    whileInView={{ opacity: 1, y: 0 }}
                                    transition={{ delay: 0.3, duration: 0.6 }}
                                  >
-                                   Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Process</span>
+                                   Our Process <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">for Spa Services</span>
                                  </motion.h2>
                                  
                                  {/* <motion.p
@@ -1772,7 +1772,7 @@ const faqs = [
                           whileInView={{ opacity: 1, y: 0 }}
                           viewport={{ once: true }}
                         >
-                          Our <span className="text-amber-600"> Therapy Experts</span>
+                          Get massage service <span className="text-amber-600"> in Delhi with Special Offer</span>
                         </motion.h2>
                         
                         <motion.p
