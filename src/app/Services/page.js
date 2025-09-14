@@ -1265,7 +1265,7 @@ const faqs = [
                             </svg>
                           </div>
                           <div>
-                            <h3 className="text-2xl font-bold text-amber-800 font-serif mb-2">Premium Oils & Blends</h3>
+                            <h3 className="text-2xl font-bold text-amber-800 font-serif mb-2">Premium Services</h3>
                             <p className="text-amber-700">
                               We use only cold-pressed, organic oils blended with therapeutic-grade essential oils for maximum benefit.
                             </p>
