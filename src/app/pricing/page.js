@@ -293,7 +293,7 @@ const teamMembers = [
           transition={{ duration: 0.8 }}
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
-          Massages & Prices
+         Our Spa & Massages Prices in Delhi
         </motion.h2>
         <motion.div
           className="mt-4 w-32 h-1 mx-auto bg-gradient-to-r from-amber-400 to-amber-600 rounded-full"
@@ -391,7 +391,7 @@ const teamMembers = [
                       viewport={{ once: true }}
                       transition={{ delay: 0.1 }}
                     >
-                      Our <span className="text-amber-600">Pricing Packages</span>
+                      Our Massage with <span className="text-amber-600">Full Service Price in Delhi, Noida and Gurgaon</span>
                     </motion.h2>
                     <motion.p
                       className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
@@ -538,7 +538,7 @@ const teamMembers = [
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.3, duration: 0.6 }}
                           >
-                            Top Luxury Spa <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Outlets in Aerocity Delhi</span>
+                            Full Body Massage Price <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">in Karol Bagh by Female Therapists.</span>
                           </motion.h2>
                 <div className="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
               </div>
@@ -773,7 +773,9 @@ const teamMembers = [
                   className="space-y-6"
                 >
                   <h2 className="text-3xl md:text-4xl font-bold text-amber-900 font-serif">
-                   Delhi body spa — luxury, comfort, and calming visuals in one place.
+                   Massage with Full Service Price in Delhi. Get All-in-One Relaxation at an 
+                  Affordable Price
+
                   </h2>
                   <p className="text-gray-700 text-lg">
                     Step into a world of peace at our Delhi body spa, where luxury meets comfort. From calming interiors to soothing treatments, every detail is designed to relax your body and refresh your mind.
@@ -830,7 +832,7 @@ const teamMembers = [
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Process</span>
+            We Offer Luxurious <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Treatments at Great Rates</span>
           </motion.h2>
           
           {/* <motion.p
@@ -906,7 +908,7 @@ const teamMembers = [
           className="space-y-6"
         >
           <h2 className="text-4xl md:text-5xl font-extrabold text-amber-900 leading-tight">
-            The <span className="text-amber-600">Delhi Lifestyle</span>
+            Our Transparent B2B <span className="text-amber-600">Massage Price in Connaught Place</span>
           </h2>
           <p className="text-gray-600 text-lg leading-relaxed">
             A Delhi Girl is more than just a style icon — she’s the perfect
@@ -1069,7 +1071,7 @@ const teamMembers = [
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                       >
-                        Our <span className="text-amber-600"> Therapy Experts</span>
+                        International<span className="text-amber-600"> Therapists at affordable Price</span>
                       </motion.h2>
                       
                       <motion.p
