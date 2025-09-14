@@ -253,7 +253,7 @@ const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat
 export default function About({
   imageSrc = '/images/spa-hero.jpg',
   alt = 'Relaxing spa treatment',
-  title = 'Experience Luxury & Deep Relaxation',
+  title = 'Meet Our Experience Indian And International Therapists',
   subtitle = 'Rejuvenate your body and mind with our signature therapies designed for ultimate comfort and wellness.',
   ctaText = 'Book Your Session',
   ctaHref = '#book',
@@ -310,9 +310,10 @@ export default function About({
           </div>
           
           <h1 className="text-4xl md:text-5xl font-light text-gray-800">
-            <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">Serenity</span>
-            Crafted with Care, 
-            <span className="block mt-2 font-medium">Experience the Essence of <span className="text-rose-600">Wellness</span></span>
+             
+            <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">Welcome</span>
+            To The Best
+            <span className="block mt-2 font-medium"> Relaxation Centre <span className="text-rose-600">in Luxury Delhi Spa</span></span>
           </h1>
           
           <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
@@ -403,7 +404,7 @@ export default function About({
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        Luxurious <span className="text-amber-500">Spa Experiences</span>
+        A Wide Range of Spa <span className="text-amber-500">Services to Suit Your Needs</span>
       </motion.h2>
     </div>
 
@@ -464,8 +465,8 @@ export default function About({
                           transition={{ delay: 0.3 }}
                           viewport={{ once: true }}
                         >
-                          Welcome to <span className="relative">
-                            <span className="text-amber-600 z-10 relative">Delhi Body Spa</span>
+                          We offer High-Quality, <span className="relative">
+                            <span className="text-amber-600 z-10 relative">Affordable Spa Services in Delhi</span>
                             <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
                           </span>
                         </motion.h2>
@@ -521,7 +522,7 @@ export default function About({
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.6 }}
                   >
-                    Luxury Spa in Delhi, <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Setting the Centre of Relaxation</span>
+                    Premium Spa Massage in <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Lajpat Nagar, Karol Bagh, and Mahipalpur</span>
                   </motion.h2>
                   
                   <motion.p
@@ -655,7 +656,8 @@ export default function About({
             <span className="inline-block px-3 py-1 rounded-full bg-amber-600 text-white text-sm font-semibold">Premium Care</span>
 
             <h2 className="mt-6 text-3xl md:text-4xl font-extrabold text-amber-900 leading-tight">
-              Reclaim Your Calm — <span className="text-amber-600">Luxury Body Therapies</span>
+              Get First— <span className="text-amber-600">Visit Special at ₹1999 at our spa in Delhi
+</span>
             </h2>
 
             <p className="mt-4 text-gray-700 max-w-xl">
@@ -880,7 +882,7 @@ export default function About({
           >
             <p className="text-sm font-medium text-amber-600 uppercase">Our Promise</p>
             <h3 className="mt-3 text-3xl md:text-4xl font-extrabold text-amber-900 leading-tight">
-              Where Luxury Meets Healing
+              What Makes Our Spa in Delhi Special From Others?
             </h3>
             <p className="mt-4 text-gray-700 max-w-xl">
               A sanctuary crafted for deep relaxation — curated therapies, expert therapists, 
@@ -894,7 +896,7 @@ export default function About({
                   <FaLeaf className="w-3 h-3" />
                 </div>
                 <h4 className="text-lg font-semibold text-amber-900">Holistic Therapies</h4>
-                <p className="text-sm text-gray-600 mt-1">We are providing a team of highly experienced <span className="text-sm text-amber-900 mt-1 font-bold">foreigner therapists, Thai therapists, and Indian therapists,</span> all professionally trained in luxury spa treatments.</p>
+                <p className="text-sm text-gray-600 mt-1">We are providing a team of highly experienced <span className="text-sm text-amber-600 mt-1 font-bold">foreigner therapists, Thai therapists, and Indian therapists,</span> all professionally trained in luxury spa treatments.</p>
               </div>
 
               <div className="relative pl-2">
@@ -902,7 +904,7 @@ export default function About({
                   <FaHands className="w-3 h-3" />
                 </div>
                 <h4 className="text-lg font-semibold text-amber-900">Our Services</h4>
-                <p className="text-sm text-gray-600 mt-1">Choose from a wide range of our signature therapies including: <span className="text-sm text-amber-900 mt-1 font-bold">B2B Massage, Couple Massage, Erotic Massage</span></p>
+                <p className="text-sm text-gray-600 mt-1">Choose from a wide range of our signature therapies including: <span className="text-sm text-amber-600 mt-1 font-bold">B2B Massage, Couple Massage, Erotic Massage</span></p>
               </div>
 
               <div className="relative pl-2">
@@ -910,7 +912,7 @@ export default function About({
                   <FaHeartbeat className="w-3 h-3" />
                 </div>
                 <h4 className="text-lg font-semibold text-amber-900">5-Star Outlets</h4>
-                <p className="text-sm text-gray-600 mt-1">We proudly serve our guests at luxury 5-star hotels across Delhi NCR: <span className='text-sm text-amber-900 mt-1 font-bold'>Novotel, The Suryaa, The Park</span></p>
+                <p className="text-sm text-gray-600 mt-1">We proudly serve our guests at luxury 5-star hotels across Delhi NCR: <span className='text-sm text-amber-600 mt-1 font-bold'>Novotel, The Suryaa, The Park</span></p>
               </div>
 
               <div className="relative pl-2">
@@ -1214,7 +1216,7 @@ export default function About({
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Premium  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Hotel Outlets</span>
+            Our Spa Located  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">in Top Hotels of Delhi</span>
           </motion.h2>
           
           <motion.p
@@ -1335,7 +1337,7 @@ export default function About({
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3, duration: 0.6 }}
                     >
-                      The Benefits <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Of Regular Spa Visits</span>
+                      Benefits of <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Taking Massage from Us</span>
                     </motion.h2>
                     
                     <motion.p
@@ -1401,7 +1403,7 @@ export default function About({
                                           transition={{ duration: 0.6 }}
                                         >
                                           <span className="text-lg font-medium text-amber-700 tracking-widest">OUR SIGNATURE OFFERINGS</span>
-                                          <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-6">Premium Spa Experiences</h1>
+                                          <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-6">What We Offer in Our Spa Session</h1>
                                           <div className="w-24 h-1 bg-amber-600 mx-auto rounded-full"></div>
                                         </motion.div>
               
@@ -1596,7 +1598,7 @@ export default function About({
                                         >
                                           <div className="grid md:grid-cols-2 gap-8 items-center">
                                             <div>
-                                              <h3 className="text-2xl font-bold mb-4">Personalized Spa Journeys</h3>
+                                              <h3 className="text-2xl font-bold mb-4">Contact Us to Book Your Next Spa Experience</h3>
                                               <p className="mb-4 opacity-90">
                                                 Every visit begins with a confidential wellness consultation where our specialists listen to your concerns and goals. We consider your lifestyle, stress levels, and any physical discomfort to create a truly personalized treatment plan.
                                               </p>
