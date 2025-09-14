@@ -616,7 +616,7 @@ View All Cities
                       <div className="bg-white p-6 rounded-2xl shadow-sm">
                         <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
                           <img
-                              src="/images/hb3.jpg" // Change path accordingly
+                              src="/images/potliMassage.jpg" // Change path accordingly
                               alt="Premium Body Spa"
                               className="w-full h-full object-cover rounded-xl"
                             />
@@ -1010,7 +1010,7 @@ View All Cities
     >
       <div className="rounded-2xl overflow-hidden shadow-lg">
         <img
-          src="/images/luxurySpaRoom.jpg"
+          src="/images/new4.jpeg"
           alt="Spa Room"
           className="w-full h-full object-cover"
         />

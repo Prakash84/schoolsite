@@ -558,7 +558,7 @@ const teamMembers = [
                       <div className="bg-white p-6 rounded-2xl shadow-sm">
                         <div className="relative h-80 md:h-96 rounded-xl overflow-hidden">
                           <img
-                              src="/images/hb3.jpg" // Change path accordingly
+                              src="/images/spapic.jpg" // Change path accordingly
                               alt="Premium Body Spa"
                               className="w-full h-full object-cover rounded-xl"
                             />
@@ -763,48 +763,94 @@ const teamMembers = [
       </div>
     </section>
             {/* //// */}
-      {/* About Us Section */}
-            <section className="w-full py-16 bg-gradient-to-b from-white to-yellow-50">
-              <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6 }}
-                  className="space-y-6"
-                >
-                  <h2 className="text-3xl md:text-4xl font-bold text-amber-900 font-serif">
-                   Massage with Full Service Price in Delhi. Get All-in-One Relaxation at an 
-                  Affordable Price
-
-                  </h2>
-                  <p className="text-gray-700 text-lg">
-                    Step into a world of peace at our Delhi body spa, where luxury meets comfort. From calming interiors to soothing treatments, every detail is designed to relax your body and refresh your mind.
-                     From full-body massages to specialized therapies, each session is designed to relax the mind, soothe the body, and uplift the spirit.
-                     Step into a world of peace at our Delhi body spa, where luxury meets comfort.
-                  </p>
-                  
-                  <p className="text-gray-700 text-lg">
-                    Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
-                     From full-body massages to specialized therapies, each session is designed to relax the mind, soothe the body, and uplift the spirit.
-                     Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
-                  </p>
-                </motion.div>
       
-                <motion.div
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="grid grid-cols-2 gap-4"
-                >
-                  <div className="rounded-2xl overflow-hidden shadow-xl">
-                    <img src="/images/SpecializedTreatments.jpg" alt="Luxury Spa Room" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="rounded-2xl overflow-hidden shadow-xl">
-                    <img src="/images/spa-treatments.jpg" alt="Massage Session" className="w-full h-full object-cover" />
-                  </div>
-                </motion.div>
-              </div>
-            </section>
+            {/* /////? */}
+    <section className="relative bg-white py-24 px-6 md:px-16">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        
+        {/* Left Side Content */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="space-y-6"
+        >
+          <h2 className="text-4xl md:text-5xl font-extrabold text-amber-900 leading-tight">
+            Our Transparent B2B <span className="text-amber-600">Massage Price in Connaught Place</span>
+          </h2>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            A Delhi Girl is more than just a style icon — she’s the perfect
+            blend of elegance and boldness. From morning coffee dates in Khan
+            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
+            every moment. Her lifestyle is a mix of fashion, culture, and
+            unstoppable confidence.
+            A Delhi Girl is more than just a style icon — she’s the perfect
+            blend of elegance and boldness. From morning coffee dates in Khan
+            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
+            every moment. Her lifestyle is a mix of fashion, culture, and
+            unstoppable confidence.
+          </p>
+          <p className="text-gray-600 text-lg leading-relaxed">
+            A Delhi Girl is more than just a style icon — she’s the perfect
+            blend of elegance and boldness. From morning coffee dates in Khan
+            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
+            every moment. Her lifestyle is a mix of fashion, culture, and
+            unstoppable confidence.
+            
+          </p>
+          {/* <p className="text-gray-600 text-lg leading-relaxed">
+            A Delhi Girl is more than just a style icon — she’s the perfect
+            blend of elegance and boldness. From morning coffee dates in Khan
+            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
+            every moment. Her lifestyle is a mix of fashion, culture, and
+            unstoppable confidence.
+            
+          </p> */}
+
+          {/* Highlights */}
+          {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
+  <div className="flex flex-col items-center text-center bg-pink-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+    <Flower2 className="w-10 h-10 text-amber-600 mb-2" />
+    <p className="font-semibold text-gray-800">Relaxing Aroma</p>
+  </div>
+
+  <div className="flex flex-col items-center text-center bg-pink-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+    <Bath className="w-10 h-10 text-amber-600 mb-2" />
+    <p className="font-semibold text-gray-800">Luxury Spa</p>
+  </div>
+
+  <div className="flex flex-col items-center text-center bg-pink-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+    <HeartHandshake className="w-10 h-10 text-amber-600 mb-2" />
+    <p className="font-semibold text-gray-800">Healing Touch</p>
+  </div>
+</div> */}
+        </motion.div>
+
+        {/* Right Side Image */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="relative"
+        >
+          <div className="rounded-3xl overflow-hidden shadow-2xl">
+            <Image
+              src="/images/185.jpg" // apni image ka path daalna
+              alt="Delhi Girl Lifestyle"
+              width={600}
+              height={600}
+              className="object-cover rounded-3xl"
+            />
+          </div>
+          <div className="absolute -bottom-6 -left-6 bg-amber-600 text-white px-6 py-3 rounded-2xl shadow-lg font-semibold">
+            #DelhiVibes
+          </div>
+        </motion.div>
+      </div>
+    </section>
+    
             {/* Our Process */}
                <section className="w-full py-10 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -895,93 +941,48 @@ const teamMembers = [
                 </div>
                </section>
              {/* End Our Process */}
-             {/* /////? */}
-    <section className="relative bg-white py-24 px-6 md:px-16">
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        
-        {/* Left Side Content */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="space-y-6"
-        >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-amber-900 leading-tight">
-            Our Transparent B2B <span className="text-amber-600">Massage Price in Connaught Place</span>
-          </h2>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            A Delhi Girl is more than just a style icon — she’s the perfect
-            blend of elegance and boldness. From morning coffee dates in Khan
-            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
-            every moment. Her lifestyle is a mix of fashion, culture, and
-            unstoppable confidence.
-            A Delhi Girl is more than just a style icon — she’s the perfect
-            blend of elegance and boldness. From morning coffee dates in Khan
-            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
-            every moment. Her lifestyle is a mix of fashion, culture, and
-            unstoppable confidence.
-          </p>
-          <p className="text-gray-600 text-lg leading-relaxed">
-            A Delhi Girl is more than just a style icon — she’s the perfect
-            blend of elegance and boldness. From morning coffee dates in Khan
-            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
-            every moment. Her lifestyle is a mix of fashion, culture, and
-            unstoppable confidence.
-            
-          </p>
-          {/* <p className="text-gray-600 text-lg leading-relaxed">
-            A Delhi Girl is more than just a style icon — she’s the perfect
-            blend of elegance and boldness. From morning coffee dates in Khan
-            Market ☕ to vibrant nightlife in Hauz Khas ✨, she knows how to own
-            every moment. Her lifestyle is a mix of fashion, culture, and
-            unstoppable confidence.
-            
-          </p> */}
+             {/* About Us Section */}
+            <section className="w-full py-16 bg-gradient-to-b from-white to-yellow-50">
+              <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="space-y-6"
+                >
+                  <h2 className="text-3xl md:text-4xl font-bold text-amber-900 font-serif">
+                   Massage with Full Service Price in Delhi. Get All-in-One Relaxation at an 
+                  Affordable Price
 
-          {/* Highlights */}
-          {/* <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4">
-  <div className="flex flex-col items-center text-center bg-pink-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
-    <Flower2 className="w-10 h-10 text-amber-600 mb-2" />
-    <p className="font-semibold text-gray-800">Relaxing Aroma</p>
-  </div>
-
-  <div className="flex flex-col items-center text-center bg-pink-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
-    <Bath className="w-10 h-10 text-amber-600 mb-2" />
-    <p className="font-semibold text-gray-800">Luxury Spa</p>
-  </div>
-
-  <div className="flex flex-col items-center text-center bg-pink-50 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
-    <HeartHandshake className="w-10 h-10 text-amber-600 mb-2" />
-    <p className="font-semibold text-gray-800">Healing Touch</p>
-  </div>
-</div> */}
-        </motion.div>
-
-        {/* Right Side Image */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="relative"
-        >
-          <div className="rounded-3xl overflow-hidden shadow-2xl">
-            <Image
-              src="/images/185.jpg" // apni image ka path daalna
-              alt="Delhi Girl Lifestyle"
-              width={600}
-              height={600}
-              className="object-cover rounded-3xl"
-            />
-          </div>
-          <div className="absolute -bottom-6 -left-6 bg-amber-600 text-white px-6 py-3 rounded-2xl shadow-lg font-semibold">
-            #DelhiVibes
-          </div>
-        </motion.div>
-      </div>
-    </section>
-    
+                  </h2>
+                  <p className="text-gray-700 text-lg">
+                    Step into a world of peace at our Delhi body spa, where luxury meets comfort. From calming interiors to soothing treatments, every detail is designed to relax your body and refresh your mind.
+                     From full-body massages to specialized therapies, each session is designed to relax the mind, soothe the body, and uplift the spirit.
+                     Step into a world of peace at our Delhi body spa, where luxury meets comfort.
+                  </p>
+                  
+                  <p className="text-gray-700 text-lg">
+                    Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
+                     From full-body massages to specialized therapies, each session is designed to relax the mind, soothe the body, and uplift the spirit.
+                     Whether you seek relaxation, stress relief, or wellness therapy, Luxury Body Spa is your ultimate destination for holistic care and comfort.
+                  </p>
+                </motion.div>
+      
+                <motion.div
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="grid grid-cols-2 gap-4"
+                >
+                  <div className="rounded-2xl overflow-hidden shadow-xl">
+                    <img src="/images/new5.jpeg" alt="Luxury Spa Room" className="w-full h-full object-cover" />
+                  </div>
+                  <div className="rounded-2xl overflow-hidden shadow-xl">
+                    <img src="/images/spa-treatments.jpg" alt="Massage Session" className="w-full h-full object-cover" />
+                  </div>
+                </motion.div>
+              </div>
+            </section>
             {/* outlate */}
             <section className="py-10 px-4 sm:px-6 lg:px-16 bg-gradient-to-b from-white to-amber-50 relative overflow-hidden">
               <div className="max-w-7xl mx-auto">

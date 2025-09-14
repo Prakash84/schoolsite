@@ -998,7 +998,7 @@ const faqs = [
                                   {/* <div className="bg-gradient-to-tr from-amber-200 to-rose-100 w-full h-full animate-pulse"></div> */}
                                   <Image
                                    loading="lazy"
-                                    src="/images/chatgptspa.png"
+                                    src="/images/Couple Massage.webp"
                                     alt="Spa Interior"
                                     layout="fill"
                                     objectFit="cover"

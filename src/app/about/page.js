@@ -487,7 +487,7 @@ export default function About({
             className="grid grid-cols-2 gap-4"
           >
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img src="/images/luxurySpaRoom.jpg" alt="Luxury Spa Room" className="w-full h-full object-cover" />
+              <img src="/images/152804.jpg" alt="Luxury Spa Room" className="w-full h-full object-cover" />
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img src="/images/staff12.jpg" alt="Massage Session" className="w-full h-full object-cover" />
