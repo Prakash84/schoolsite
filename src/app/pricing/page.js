@@ -643,16 +643,16 @@ const teamMembers = [
                     <div className="grid grid-cols-2 gap-4 mb-8">
                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
                         <div className="text-amber-600 text-2xl mb-2">★</div>
-                        <h4 className="font-medium text-stone-800">Award-Winning</h4>
+                        <h4 className="font-medium text-stone-800">starting At 1999</h4>
                         <p className="text-sm text-stone-600 mt-1">5-star rated luxury spa</p>
                       </div>
                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                        <div className="text-amber-600 text-2xl mb-2">♨</div>
-                        <h4 className="font-medium text-stone-800">Thermal Suite</h4>
+                        <div className="text-amber-600 text-2xl mb-2">🙎🏼‍♀️</div>
+                        <h4 className="font-medium text-stone-800">Foreigner Therapist</h4>
                         <p className="text-sm text-stone-600 mt-1">Steam, sauna & jacuzzi</p>
                       </div>
                       <div className="bg-white p-4 rounded-xl shadow-sm border border-stone-100">
-                        <div className="text-amber-600 text-2xl mb-2">👨‍👩‍👧</div>
+                        <div className="text-amber-600 text-2xl mb-2">👩🏻‍❤️‍💋‍👨🏼</div>
                         <h4 className="font-medium text-stone-800">Couples Welcome</h4>
                         <p className="text-sm text-stone-600 mt-1">Private couple suites</p>
                       </div>
