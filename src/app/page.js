@@ -288,7 +288,6 @@ const [isVisible, setIsVisible] = useState(false);
       image: "/images/hb3.jpg"
     },
   ];
-
   const services = [
     {
       title: "Aromatherapy",
@@ -311,7 +310,6 @@ const [isVisible, setIsVisible] = useState(false);
       icon: "👫",
     },
   ];
-
   const testimonials1 = [
     {
       name: "Priya Sharma",
@@ -361,8 +359,6 @@ const testimonials = [
       gradient: "from-emerald-500 to-teal-600"
     }
   ];
-
-
   const pricingPlans = [
     {
       title: "Spa Outlet",
@@ -392,7 +388,6 @@ const testimonials = [
       icon: <FaCrown className="text-amber-500" />
     }
   ];
-
   const features = [
     "Private Room",
     "Jacuzzi Bath",
@@ -402,7 +397,6 @@ const testimonials = [
     "Female Therapist",
     "Foreigner Therapist",
   ];
-
   const locations = [
   {
     name: "Lajpat Nagar",
@@ -550,6 +544,9 @@ const features2 = [
     icon: <MapPin className="w-6 h-6 text-amber-600" />
   },
 ];
+
+
+
   return (
     <main>
     <div className="font-sans overflow-hidden">
@@ -559,6 +556,9 @@ const features2 = [
         <div className="absolute bottom-1/3 right-20 w-32 h-32 rounded-full bg-amber-600/10 blur-3xl animate-pulse" />
         <div className="absolute top-1/3 right-1/4 w-16 h-16 rounded-full bg-amber-300/15 blur-3xl" />
       </div>
+      {/* //// */}
+      
+
 
       {/* Hero Slider */}
       <section className="relative w-full h-[45vh] sm:h-[60px] md:h-[70vh] lg:h-[85vh] xl:h-[80vh]">
@@ -2213,8 +2213,6 @@ const features2 = [
         </div>
       </section>      */}
       {/* end */}
-
-
       <section className="py-16 px-4 sm:px-6 bg-gradient-to-br from-[#FFF9F0] via-[#fcf5e9] to-[#f9f1e2]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
@@ -2320,9 +2318,7 @@ const features2 = [
           </button>
         </div>
       </div>
-    </section>
-
-      
+    </section>     
       {/* F&Q Section */}
       <section className="py-16 bg-gradient-to-b from-amber-50 to-white">
         <div className="max-w-5xl mx-auto px-4">
