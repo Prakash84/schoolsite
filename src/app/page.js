@@ -850,7 +850,7 @@ const features2 = [
                     {/* <div className="bg-gradient-to-tr from-amber-200 to-rose-100 w-full h-full animate-pulse"></div> */}
                     <Image
                      loading="lazy"
-                      src="/images/chatgptspa.png"
+                      src="/images/instamodels.jpg"
                       alt="Spa Interior"
                       layout="fill"
                       objectFit="cover"
