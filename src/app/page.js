@@ -330,9 +330,9 @@ const [isVisible, setIsVisible] = useState(false);
 const testimonials = [
     {
       id: 1,
-      name: "John Doe",
-      role: "Product Manager, TechCorp",
-      content: "This service completely transformed our workflow. The team's attention to detail and innovative approach solved problems we didn't even know we had!",
+      name: "Anjali Sharma",
+      role: "Corporate Professional",
+      content: "After long office hours, I wanted a place to relax. Delhi Body Spa in Connaught Place gave me the perfect body massage. The ambience was soothing, and I felt completely stress-free after the session. Highly recommended for anyone looking for the best body spa in Delhi",
       date: "April 15, 2023",
       rating: 5,
       initials: "JD",
@@ -340,9 +340,9 @@ const testimonials = [
     },
     {
       id: 2,
-      name: "Sarah Anderson",
-      role: "Marketing Director, GrowthLab",
-      content: "The results have been outstanding. Our conversion rates increased by 45% in just two months. The platform is intuitive and the support team is incredibly responsive.",
+      name: "Rohit Verma",
+      role: "Entrepreneur",
+      content: "I tried many spas in Delhi, but the experience here was truly different. The therapists are well-trained, the spa is hygienic, and the massage really helped me release body pain. This is surely one of the top body spas in Delhi.",
       date: "May 3, 2023",
       rating: 5,
       initials: "SA",
@@ -350,9 +350,9 @@ const testimonials = [
     },
     {
       id: 3,
-      name: "Michael Roberts",
-      role: "CTO, InnovateX",
-      content: "As a tech company, we're always skeptical about new tools. But this solution has exceeded our expectations. The API integration was seamless and performance is rock solid.",
+      name: "Meera Kapoor",
+      role: "Fitness Enthusiast",
+      content: "After my workout sessions, I visit Delhi Body Spa for full body massage. The team is very professional, and the oils they use are premium quality. This is the perfect spot for relaxation and body care in Delhi",
       date: "June 8, 2023",
       rating: 4,
       initials: "MR",
@@ -2231,7 +2231,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            What Our <span className="text-amber-600">Clients Say</span>
+            What Our Clients<span className="text-amber-600"> Say About Our Body Spa in Delhi</span>
           </motion.h2>
           <motion.p
             className="text-gray-600 max-w-2xl mx-auto text-lg"
@@ -2240,7 +2240,7 @@ const features2 = [
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
           >
-             Discover why thousands of customers trust our services and products every day.
+             Discover why so many customers choose Delhi Body Spa for a relaxing and luxury spa experience. Our clients love the peaceful environment, professional staff, and the way we make them feel refreshed every time.
           </motion.p>
         </div>
         {/* Section Header */}
