@@ -713,7 +713,7 @@ const features2 = [
               viewport={{ once: true }}
             >
               Affordable & Professional <span className="relative">
-                <span className="text-amber-600 z-10 relative">Full Body Spa Massage in Delhi</span>
+                <span className="text-amber-600 z-10 relative">Luxury Body Spa in Delhi</span>
                 <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
               </span>
             </motion.h2>
@@ -753,7 +753,7 @@ const features2 = [
       desc: "Professional, private, and refreshing massage in Delhi" 
     },
     { 
-      title: "Best Body To Body Spa", 
+      title: "5 Star Outlet", 
       icon: "✨", 
       desc: "Relax together in a private setting" 
     },
@@ -944,7 +944,7 @@ const features2 = [
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        Best B2B Spa in Delhi <span className="text-amber-500">with Uzbek, Russian & Thai Staff</span>
+        Top Rated <span className="text-amber-500">Services In Delhi, Noida & Gurgaon</span>
       </motion.h2>
     </div>
 
@@ -1527,7 +1527,7 @@ const features2 = [
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Affordable Luxury Spa <span className="text-amber-600">in Noida & Massage Spa in Gurgaon</span>
+            Affordable luxury <span className="text-amber-600">Spa In Gurgaon, Delhi And Noida</span>
           </motion.h2>
           <motion.p
             className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
@@ -1740,7 +1740,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Our Luxury <span className="text-amber-600">Spa Locations in Delhi</span>
+            Our Luxury <span className="text-amber-600">Spa in Delhi</span>
           </motion.h2>
           <motion.p
             className="text-gray-600 max-w-2xl mx-auto text-lg"
@@ -1942,7 +1942,7 @@ const features2 = [
                   🌿
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 ml-4 font-serif">
-                  Enjoy the best Body Massage in Delhi with Spa Delhi
+                  Best B2B Spa in Delhi with Uzbek, Russian & Thai Staff
                 </h2>
               </div>
               <span className="font-semibold text-amber-600">24+ Exclusive Body Spa Outlets.</span>
@@ -2143,7 +2143,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            Maximize <span className="text-amber-600">Physical and Spiritual Benefits</span> with Massage in Delhi
+            Physical and Spiritual <span className="text-amber-600"> Benefits</span> with Massage Spa in Noida, Delhi & Gurgaon
           </motion.h2>
           
           <motion.p
@@ -2329,7 +2329,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            What Our Clients<span className="text-amber-600"> Say About Our Body Spa in Delhi</span>
+            What Our Clients<span className="text-amber-600"> Say About Spa Delhi</span>
           </motion.h2>
           <motion.p
             className="text-gray-600 max-w-2xl mx-auto text-lg"
