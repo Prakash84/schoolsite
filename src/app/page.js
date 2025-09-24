@@ -272,18 +272,18 @@ const [isVisible, setIsVisible] = useState(false);
 
   const slides = [
     {
-      title: "Best Massage Parlour in Delhi with Luxury Spa Experience!",
+      title: "Premium B2B Massage in Delhi with Trained Therapists",
       link: "https://api.whatsapp.com/send?phone=918826482370",
       image: "/images/hb1.jpg"
       
     },
     {
-      title: "Best Massage Parlour in Delhi Awaits You",
+      title: " Luxury Spa in Delhi with 12+ Outlets Across NCR",
       link: "https://api.whatsapp.com/send?phone=918826482370",
       image: "/images/hb2.jpg"
     },
     {
-      title: "Escape Stress with Luxury B2B Massage in Delhi",
+      title: "Relax at Our Exotic Spa in Aerocity Delhi – 5 Star Hotel Outlets",
       link: "https://api.whatsapp.com/send?phone=918826482370",
       image: "/images/hb3.jpg"
     },
@@ -712,8 +712,8 @@ const features2 = [
               transition={{ delay: 0.3 }}
               viewport={{ once: true }}
             >
-              Get the Best <span className="relative">
-                <span className="text-amber-600 z-10 relative">Massage in Delhi</span>
+              Affordable & Professional <span className="relative">
+                <span className="text-amber-600 z-10 relative">Full Body Spa Massage in Delhi</span>
                 <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
               </span>
             </motion.h2>
@@ -944,7 +944,7 @@ const features2 = [
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        Luxury <span className="text-amber-500">Spa in Aerocity</span>
+        Best B2B Spa in Delhi <span className="text-amber-500">with Uzbek, Russian & Thai Staff</span>
       </motion.h2>
     </div>
 
@@ -988,7 +988,7 @@ const features2 = [
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-6 font-serif">
-            Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Spa Delhi</span> for a Massage in Delhi?
+            Find Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">We’re the Best </span> Massage Parlour in Delhi?
           </h2>
           
           <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md mb-8">
@@ -1368,7 +1368,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Our 5-Star <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Spa Outlets in Delhi</span>
+            Our 5-Star <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Hotel Spa in Delhi</span>
           </motion.h2>
           
           <motion.p
@@ -1666,8 +1666,8 @@ const features2 = [
                           transition={{ delay: 0.3 }}
                           viewport={{ once: true }}
                         >
-                          We offer High-Quality, <span className="relative">
-                            <span className="text-amber-600 z-10 relative">Affordable Spa Services in Delhi</span>
+                          Romantic Relaxation with <span className="relative">
+                            <span className="text-amber-600 z-10 relative">Couple Massage Spa in Noida</span>
                             <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
                           </span>
                         </motion.h2>
@@ -1697,12 +1697,12 @@ const features2 = [
                           transition={{ delay: 0.3 }}
                           viewport={{ once: true }}
                         >
-                          We offer High-Quality, <span className="relative">
-                            <span className="text-amber-600 z-10 relative">Affordable Spa Services in Delhi</span>
+                          Relax with Premium Body Spa <span className="relative">
+                            <span className="text-amber-600 z-10 relative">in Rohini & Noida</span>
                             <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
                           </span>
                         </motion.h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-gray-600 text-lg leading-Spa Outlets in Delhirelaxed">
               Our <span className="font-semibold text-amber-700">full-body massage in Connaught Place </span> 
               is an ideal destination where you can set yourself free and get all set 
               to find the wonders with a deep relaxation massage led by the best 
