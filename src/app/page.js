@@ -1021,103 +1021,7 @@ const features2 = [
         ))}
       </div>
     </section>
-    {/* luxury spa content section */}
-        <section className="bg-gray-50 py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* First Row */}
-        <div className="grid md:grid-cols-2 gap-10 items-center mt-14">
-          {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <Image
-              src="/images/80535.jpg"
-              alt="Luxury Spa in Delhi"
-              width={600}
-              height={400}
-              className="rounded-2xl shadow-lg"
-            />
-          </motion.div>
-
-          {/* Text */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-white shadow-lg p-8 rounded-xl"
-          >
-            <motion.h2
-                          className="text-4xl md:text-5xl lg:text-4xl font-bold text-gray-800 leading-tight mb-8"
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.3 }}
-                          viewport={{ once: true }}
-                        >
-                          We offer High-Quality, <span className="relative">
-                            <span className="text-amber-600 z-10 relative">Affordable Spa Services in Delhi</span>
-                            <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
-                          </span>
-                        </motion.h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Luxury Spa is a one-stop destination where expert therapists, premium oils, and tailored therapies come together to deliver a lasting sense of rejuvenation. We combine modern techniques with traditional practices to create therapy plans that suit your body and lifestyle — making us one of the most trusted luxury spas in Delhi.
-              Our <span className="font-semibold text-amber-700">massage spa in Delhi </span> 
-              was established several years ago with the prime goal of giving 
-              pleasure with the perfect package of massage services to individuals 
-              struggling with finding peace. Luxury Spa is a one-stop destination where expert therapists, premium oils, and tailored therapies come together to deliver a lasting sense of rejuvenation.
-            </p>
-          </motion.div>
-        </div>
-
-        {/* Second Row */}
-        <div className="grid md:grid-cols-2 gap-10 items-center mt-16">
-          {/* Text */}
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="bg-white shadow-lg p-8 rounded-xl order-2 md:order-1"
-          >
-            <motion.h2
-                          className="text-4xl md:text-5xl lg:text-4xl font-bold text-gray-800 leading-tight mb-8"
-                          initial={{ opacity: 0, y: 20 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          transition={{ delay: 0.3 }}
-                          viewport={{ once: true }}
-                        >
-                          We offer High-Quality, <span className="relative">
-                            <span className="text-amber-600 z-10 relative">Affordable Spa Services in Delhi</span>
-                            <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
-                          </span>
-                        </motion.h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Our <span className="font-semibold text-amber-700">full-body massage in Connaught Place </span> 
-              is an ideal destination where you can set yourself free and get all set 
-              to find the wonders with a deep relaxation massage led by the best 
-              massage therapist. We combine modern techniques with traditional practices to create therapy plans that suit your body and lifestyle — making us one of the most trusted luxury spas in Delhi. Our massage spa in Delhi was established several years ago with the prime goal of giving pleasure with the perfect package of massage services to individuals struggling with finding peace. Luxury Spa is a one-stop destination where expert therapists, premium oils, and tailored therapies come together to deliver a lasting sense of rejuvenation.
-            </p>
-          </motion.div>
-
-          {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            className="order-1 md:order-2"
-          >
-            <Image
-              src="/images/b2.jpg"
-              alt="Full Body Massage in Connaught Place"
-              width={600}
-              height={400}
-              className="rounded-2xl shadow-lg"
-            />
-          </motion.div>
-        </div>       
-      </div>
-    </section>
-    {/* end luxury spa content section */}
+    
     {/* //// */}
      {/* <section className="w-full py-20 bg-gradient-to-br from-amber-50 via-amber-100 to-amber-50 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -1728,6 +1632,103 @@ const features2 = [
       </div>
     </section>
     {/* End Pricing Section */}
+    {/* luxury spa content section */}
+        <section className="bg-gray-50 py-20">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* First Row */}
+        <div className="grid md:grid-cols-2 gap-10 items-center mt-14">
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <Image
+              src="/images/80535.jpg"
+              alt="Luxury Spa in Delhi"
+              width={600}
+              height={400}
+              className="rounded-2xl shadow-lg"
+            />
+          </motion.div>
+
+          {/* Text */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="bg-white shadow-lg p-8 rounded-xl"
+          >
+            <motion.h2
+                          className="text-4xl md:text-5xl lg:text-4xl font-bold text-gray-800 leading-tight mb-8"
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.3 }}
+                          viewport={{ once: true }}
+                        >
+                          We offer High-Quality, <span className="relative">
+                            <span className="text-amber-600 z-10 relative">Affordable Spa Services in Delhi</span>
+                            <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
+                          </span>
+                        </motion.h2>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              Luxury Spa is a one-stop destination where expert therapists, premium oils, and tailored therapies come together to deliver a lasting sense of rejuvenation. We combine modern techniques with traditional practices to create therapy plans that suit your body and lifestyle — making us one of the most trusted luxury spas in Delhi.
+              Our <span className="font-semibold text-amber-700">massage spa in Delhi </span> 
+              was established several years ago with the prime goal of giving 
+              pleasure with the perfect package of massage services to individuals 
+              struggling with finding peace. Luxury Spa is a one-stop destination where expert therapists, premium oils, and tailored therapies come together to deliver a lasting sense of rejuvenation.
+            </p>
+          </motion.div>
+        </div>
+
+        {/* Second Row */}
+        <div className="grid md:grid-cols-2 gap-10 items-center mt-16">
+          {/* Text */}
+          <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="bg-white shadow-lg p-8 rounded-xl order-2 md:order-1"
+          >
+            <motion.h2
+                          className="text-4xl md:text-5xl lg:text-4xl font-bold text-gray-800 leading-tight mb-8"
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          transition={{ delay: 0.3 }}
+                          viewport={{ once: true }}
+                        >
+                          We offer High-Quality, <span className="relative">
+                            <span className="text-amber-600 z-10 relative">Affordable Spa Services in Delhi</span>
+                            <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
+                          </span>
+                        </motion.h2>
+            <p className="text-gray-600 text-lg leading-relaxed">
+              Our <span className="font-semibold text-amber-700">full-body massage in Connaught Place </span> 
+              is an ideal destination where you can set yourself free and get all set 
+              to find the wonders with a deep relaxation massage led by the best 
+              massage therapist. We combine modern techniques with traditional practices to create therapy plans that suit your body and lifestyle — making us one of the most trusted luxury spas in Delhi. Our massage spa in Delhi was established several years ago with the prime goal of giving pleasure with the perfect package of massage services to individuals struggling with finding peace. Luxury Spa is a one-stop destination where expert therapists, premium oils, and tailored therapies come together to deliver a lasting sense of rejuvenation.
+            </p>
+          </motion.div>
+
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            className="order-1 md:order-2"
+          >
+            <Image
+              src="/images/b2.jpg"
+              alt="Full Body Massage in Connaught Place"
+              width={600}
+              height={400}
+              className="rounded-2xl shadow-lg"
+            />
+          </motion.div>
+        </div>       
+      </div>
+    </section>
+    {/* end luxury spa content section */}
     {/* Locations Section */}
     <section className="py-16 px-6 md:px-16 bg-gradient-to-b from-white to-amber-50 relative">
       <div className="max-w-7xl mx-auto">
