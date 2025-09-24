@@ -78,26 +78,26 @@ const teamMembers = [
 
 const outlets = [
   {
-    title: 'Hotel in Aerocity',
+    title: 'Hotel Spa in Aerocity',
     description: 'We provide body massage service at 5-star hotels in Aerocity, like Lemon Tree, Andaz, IBIS and so on.',
     image: '/images/NovotelNewDelhiAerocity.jpeg',
 
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
-    title: 'Hotel in NFC',
+    title: 'Hotel Spa in new friends colony (NFC)',
     description: 'Staying in a hotel in NFC and craving a massage? We provide B2B massage in delhi in hotels like The Suryaa and end all your days tiredness.',
     image: '/images/TheSuryaaNewDelhi(NFC).jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
-    title: 'Hotel in Connaught Place',
+    title: 'Hotel Spa in Connaught Place',
     description: 'Our team of massage therapists visits your hotel in CP and provide best spa in CP to hotels like Radisson Blu, The Lalit, The Park and so on.',
     image: '/images/TheParkConnaughtPlace.jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
-    title: 'Dwarka Hotel',
+    title: 'Hotel Spa in Dwarka',
     description: 'Our team of expert massage therapists will visit your hotel room in Dwarka and provide an on-demand hotel spa in Dwarka.',
     image: '/images/TheGrandNewDelhi.jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
