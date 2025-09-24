@@ -944,7 +944,7 @@ const features2 = [
         transition={{ duration: 0.5, delay: 0.1 }}
         viewport={{ once: true }}
       >
-        Top Rated <span className="text-amber-500">Services In Delhi, Noida & Gurgaon</span>
+        Top Rated <span className="text-amber-500">Spa Services In Delhi, Noida & Gurgaon</span>
       </motion.h2>
     </div>
 
@@ -988,7 +988,7 @@ const features2 = [
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-amber-900 mb-6 font-serif">
-            Find Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">We’re the Best </span> Massage Parlour in Delhi?
+            Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Spa Delhi for </span> Relaxation & Wellness?
           </h2>
           
           <div className="max-w-3xl mx-auto bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-md mb-8">
