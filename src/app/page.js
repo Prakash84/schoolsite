@@ -220,7 +220,7 @@ const [isVisible, setIsVisible] = useState(false);
     },
     {
       icon: <Globe className="w-8 h-8 text-amber-600" />,
-      title: "Massage Therapists Across the Globe",
+      title: "Massage With Foreigner Therapists",
       desc: "Our team of massage therapists comes across borders, including India, Russia, Afghanistan, and more. When you choose us, you will be surprised with a wide range of massage therapist options available to serve you with your preferred star massage services in Aerocity.",
     },
   ];
@@ -850,7 +850,7 @@ const features2 = [
                     {/* <div className="bg-gradient-to-tr from-amber-200 to-rose-100 w-full h-full animate-pulse"></div> */}
                     <Image
                      loading="lazy"
-                      src="/images/instamodels.jpg"
+                      src="/images/3777.jpg"
                       alt="Spa Interior"
                       layout="fill"
                       objectFit="cover"
@@ -1666,8 +1666,8 @@ const features2 = [
                           transition={{ delay: 0.3 }}
                           viewport={{ once: true }}
                         >
-                          Romantic Relaxation with <span className="relative">
-                            <span className="text-amber-600 z-10 relative">Couple Massage Spa in Noida</span>
+                          Best Rated Spa Massage <span className="relative">
+                            <span className="text-amber-600 z-10 relative">in Delhi for Stress Relief</span>
                             <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
                           </span>
                         </motion.h2>
@@ -1697,8 +1697,8 @@ const features2 = [
                           transition={{ delay: 0.3 }}
                           viewport={{ once: true }}
                         >
-                          Relax with Premium Body Spa <span className="relative">
-                            <span className="text-amber-600 z-10 relative">in Rohini & Noida</span>
+                          Premium Spa in <span className="relative">
+                            <span className="text-amber-600 z-10 relative">Gurgoan with Certified Therapists</span>
                             <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
                           </span>
                         </motion.h2>
