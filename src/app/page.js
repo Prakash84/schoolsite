@@ -1527,7 +1527,7 @@ const features2 = [
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            Our <span className="text-amber-600">Pricing Packages</span>
+            Affordable Luxury Spa <span className="text-amber-600">in Noida & Massage Spa in Gurgaon</span>
           </motion.h2>
           <motion.p
             className="text-amber-800 max-w-3xl mx-auto text-lg leading-relaxed"
