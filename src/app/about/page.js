@@ -610,13 +610,13 @@ export default function About({
             <span className="inline-block px-3 py-1 rounded-full bg-amber-600 text-white text-sm font-semibold">Premium Care</span>
 
             <h2 className="mt-6 text-3xl md:text-4xl font-extrabold text-amber-900 leading-tight">
-              Get First— <span className="text-amber-600">Visit Special at ₹1999 at our spa in Delhi
+              Our Presence <span className="text-amber-600">in the Top Hotels of Delhi NCR
+
 </span>
             </h2>
 
             <p className="mt-4 text-gray-700 max-w-xl">
-              Our signature treatments blend ancient healing and modern techniques to deliver deep muscle relief, improved circulation and lasting calm.
-              Each session is personalised to your needs — from aromatherapy to hot stones.
+              We have also had the honour of collaborating with some of the most esteemed hotels to provide in-room massage and spa experiences. In Connaught Place (CP), Aerocity, Noida, Gurgaon or Dwarka, SpaDelhi will bring its spa to your door.
             </p>
 
             {/* three highlight chips */}

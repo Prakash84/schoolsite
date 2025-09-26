@@ -222,29 +222,29 @@ const features2 = [
 const faqs = [
     
     {
-      question: "What types of massage therapies are offered at your spa?",
-      answer: "We offer a range of therapies, including Couple Massage, Sandwich Massage, Full Body Massage, B2B Therapy, and Female-to-Male Spa treatments to cater to all your relaxation needs.",
+      question: "Do you offer Spa Services in Karol Bagh?",
+      answer: " Yes, We have a spa outlet in karol bagh. Where we provide full-body, sandwich and couple massage service with certified therapists, private rooms and follow all hygiene protocols. Contact us to experience massage Services in Karol Bagh.",
       icon: <FaSpa className="text-teal-600" />
     },
     {
-      question: "Where are your spa locations in Delhi, Noida, and Gurgaon?",
-      answer: "We have over 24 outlets located in premium areas such as Rajouri Garden, Rohini, Pitampura, Noida, Aerocity, Connaught Place, and Lajpat Nagar, with top 5-star hotels like Andaz, JW Marriott, and Novotel.",
+      question: "Can I book a Female to Male  Massage Service in Delhi online?",
+      answer: "Yes, you can easily book Female to Male Massage Service in Delhi From our official website or by Contact Us. Our trained therapists provide genuine services across Rajouri Garden, Rohini, Noida, and Aerocity to make your spa journey smooth, private, and stress-free.",
       icon: <FaHandSparkles className="text-teal-600" />
     },
     
     {
-      question: "What makes your spa different from others in Delhi and Gurgaon?",
-      answer: "Our spa stands out by offering luxury experiences with a variety of massages, skilled therapists from around the world, and prime locations in major hotels, providing you with top-quality service at affordable prices.",
+      question: "Can I combine multiple spa services in Delhi into a package?",
+      answer: "Yes, you can book combo and customized spa service in Delhi (for example, full body plus aromatherapy or couple plus shower) are available. Pricing and duration are adjusted accordingly; request custom combos while booking or contact customer support for quotes.",
       icon: <FaLeaf className="text-teal-600" />
     },
     {
-      question: "Do you offer any special deals or discounts for first-time visitors?",
-      answer: "Yes, we offer an exclusive first-visit special at just ₹1999, allowing you to enjoy a premium spa experience at an affordable price",
+      question: "Can I select my preferred therapist for my spa session?",
+      answer: " Yes, at our spa in Delhi you can choose your preferred therapist. We always try to accommodate your request to ensure a comfortable, personalized, and relaxing spa experience tailored to your needs.",
       icon: <FaSpa className="text-teal-600" />
     },
     {
-          question: "What types of therapists work at your spa?",
-          answer: "Our team consists of skilled Russian, Thai, Afghan, Indian, and foreign therapists, each trained in various massage techniques to ensure a personalized and effective treatment for every client.",
+          question: "What Spa Treatments Available at Spa Delhi?",
+          answer: "We offer sandwich massage, couple massage, B2B massage, full-body massage, Thai massage, aromatherapy, nuru and hotel/home spa service in Delhi, plus therapist profiles, session durations and add-ons. Each service includes outlet availability and booking links for convenient scheduling.",
           icon: <FaHotTub className="text-teal-600" />
         },
         {

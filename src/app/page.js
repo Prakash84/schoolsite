@@ -119,7 +119,7 @@ const outlets = [
   },
   {
     number: '03',
-    title: 'Visit Us',
+    title: 'Visit Spa/Hotel',
     description: 'At the time you choose, relax in one of our beautiful spa locations.',
     image: '/images/Sandwich Massage.jpg',
   },
@@ -172,28 +172,28 @@ const [isVisible, setIsVisible] = useState(false);
 
   const faqs = [
     {
-      question: "Which kinds of massage does Spa Delhi perform?",
-      answer: "There is a wide range of massage services to address your wellness needs, and they include aromatherapy, deep tissue, B2B, and couple massages, to name a few. Both therapeutic techniques are designed to relax and heal.",
+      question: "What services does Spa in Delhi provide?",
+      answer: " At Spa in Delhi, We are Offering full-body massage, Thai massage, aromatherapy, B2B massage, sandwich massage, couple massage and many more. Our certified therapists (Indian and international) deliver private, hygienic sessions tailored for relaxation, therapeutic relief, and special-event packages at all major outlets.",
       icon: <FaSpa className="text-teal-600" />
     },
     {
-      question: "Do your therapists have experience, or are they certified?",
-      answer: "Yes, all our therapists are professional, fully trained individuals who are certified in their process and want to provide you with the best experience of massage experience.",
+      question: "Do you have hotel & home spa options in Delhi?",
+      answer: "Yes, our hotel spa services include in-hotel treatments, room setups, full-service packages and trained international therapists at 5 star hotels. We Offer Hotel Spa and Spa home service in Delhi NCR. Some packages include accommodation or transport depending on the hotel arrangement.",
       icon: <FaLeaf className="text-teal-600" />
     },
     {
-      question: "How do I make a reservation for a massage?",
-      answer: "Booking is simple by phone, via Telegram, or online. Pick your service, favorable outlet, and time, and we will confirm.",
+      question: "Is there a first-visit discount at Spa in Delhi?",
+      answer: "Yes, We run first-visit offers periodically, such as introductory full body packages with showers. Our full body massage in Delhi started in 1999. so check the homepage deals or contact your preferred branch for current promotions. Spa in Noida",
       icon: <FaHotTub className="text-teal-600" />
     },
     {
-      question: "Do you offer 24/ 7 massage?",
-      answer: "Our timings are adaptable; we are available on a late-night and early-morning schedule to accommodate your tight schedule.",
+      question: "Can I book a safe home spa service?",
+      answer: "Yes, We offer spa at home in Delhi or NCR regions. You don’t need to step out of your home, just contact us and get your solution. We are the best massage parlour in Delhi for home spa service.",
       icon: <FaLeaf className="text-teal-600" />
     },
     {
-      question: "What safety and hygiene precautions do you take?",
-      answer: "Your safety means everything to us, as we are radically committed to maintaining high standards of cleanliness through the provision of fresh linens, sterilized equipment, and thorough therapist screening.",
+      question: "Are Spa Delhi therapists certified and experienced?",
+      answer: "All our therapists are well trained and certified in their modalities. We have Indian or foreign therapists from Thai, Uzbek, Russian and Afghan to provide you perfect relaxation at our 5 star hotel outlets.",
       icon: <FaSpa className="text-teal-600" />
     },
     {
