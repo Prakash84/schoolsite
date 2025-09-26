@@ -521,6 +521,18 @@ export default function About({
             transition={{ duration: 0.6 }}
             className="bg-white shadow-lg p-8 rounded-xl"
           >
+            <motion.h2
+                                      className="text-4xl md:text-5xl lg:text-4xl font-bold text-gray-800 leading-tight mb-8"
+                                      initial={{ opacity: 0, y: 20 }}
+                                      whileInView={{ opacity: 1, y: 0 }}
+                                      transition={{ delay: 0.3 }}
+                                      viewport={{ once: true }}
+                                    >
+                                      Your Trusted Massage <span className="relative">
+                                        <span className="text-amber-600 z-10 relative">Spa in Karol Bagh for Luxury & Healing</span>
+                                        <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
+                                      </span>
+                                    </motion.h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Luxury Spa is a one-stop destination where expert therapists, premium oils, and tailored therapies come together to deliver a lasting sense of rejuvenation. We combine modern techniques with traditional practices to create therapy plans that suit your body and lifestyle — making us one of the most trusted luxury spas in Delhi.
               Our <span className="font-semibold text-amber-700">massage spa in Delhi </span> 
@@ -540,6 +552,18 @@ export default function About({
             transition={{ duration: 0.6 }}
             className="bg-white shadow-lg p-8 rounded-xl order-2 md:order-1"
           >
+            <motion.h2
+                                      className="text-4xl md:text-5xl lg:text-4xl font-bold text-gray-800 leading-tight mb-8"
+                                      initial={{ opacity: 0, y: 20 }}
+                                      whileInView={{ opacity: 1, y: 0 }}
+                                      transition={{ delay: 0.3 }}
+                                      viewport={{ once: true }}
+                                    >
+                                      Step Into Serenity <span className="relative">
+                                        <span className="text-amber-600 z-10 relative">with the Best Massage Spa in Connaught Place</span>
+                                        <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
+                                      </span>
+                                    </motion.h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Our <span className="font-semibold text-amber-700">full-body massage in Connaught Place </span> 
               is an ideal destination where you can set yourself free and get all set 

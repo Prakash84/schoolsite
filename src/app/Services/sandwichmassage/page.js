@@ -96,28 +96,28 @@ const container = {
     
       const faqs = [
         {
-          question: "What types of massage therapies do you offer?",
-          answer: "We offer Couple Massage, Sandwich Massage, B2B Therapy, Full Body Massage, and Female-to-Male treatments.",
+          question: "What exactly is a Sandwich Massage Spa in Delhi?",
+          answer: "In sandwich massage. Two therapists provide you synchronized motion for deeper, balanced stimulation. It enhances sensory relaxation and muscle release while maintaining professional consent and privacy standards in a private treatment room.",
           icon: <FaSpa className="text-teal-600" />
         },
         {
-          question: "Where are your spa outlets located in Delhi and Noida?",
-          answer: "Our outlets are located in Rajouri Garden, Rohini, Pitampura, Noida, Aerocity, Dwarka, Connaught Place, and Lajpat Nagar.",
+          question: "How long is a sandwich massage session?",
+          answer: "Spa Delhi offers 60 to 120 min sandwich massage sessions for deep relaxation. You can customize it as per your preferences. Our 2 well trained therapists provide you non stop therapy at top hotels or spas.",
           icon: <FaLeaf className="text-teal-600" />
         },
         {
-          question: "What is your first-visit special offer?",
-          answer: "Our first-visit special is ₹1999, offering a luxurious experience at an affordable price.",
+          question: "Are therapists specially trained for sandwich massage?",
+          answer: "Yes, Therapists are specially trained for sandwich massage. Not all therapists provide sandwich massage. We have a wide range of therapists who provide sandwich massage in Delhi.",
           icon: <FaHotTub className="text-teal-600" />
         },
         {
-          question: "Do you have therapists from different countries?",
-          answer: "Yes, we have skilled therapists from Russia, Thailand, Afghanistan, India, and other countries.",
+          question: "How do I book a sandwich massage in Delhi online?",
+          answer: "You can book sandwich massages in Delhi from our official site. Just call us or drop a whatsapp message. Our team is ready to help you in getting a sandwich massage by certified therapists.",
           icon: <FaLeaf className="text-teal-600" />
         },
         {
-          question: "Can I book a Couple Massage session?",
-          answer: "Yes, we offer Couple Massage sessions for a relaxing and intimate experience.",
+          question: "Are there first-time offers for sandwich massages?",
+          answer: "Yes, We offer a first visit discount on sandwich massage to our clients in Delhi. check the Services page or homepage offers for current discounts and terms before booking your initial session. ",
           icon: <FaSpa className="text-teal-600" />
         },
         {
