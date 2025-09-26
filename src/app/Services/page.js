@@ -394,7 +394,7 @@ const faqs = [
     <div className="absolute inset-0 border-4 border-white shadow-xl overflow-hidden">
       <div className="relative w-full h-full">
         <img
-          src="/images/improvebloodflow.webp" // ✅ Yahan apna image path daal
+          src="/images/fpkdl.com_750_1758779898_arafed-woman-laying-towel-with-candles-candles_900321-66547.jpg" // ✅ Yahan apna image path daal
           alt="Spa Environment"
           className="w-full h-full object-cover"
         />
@@ -998,7 +998,7 @@ const faqs = [
                                   {/* <div className="bg-gradient-to-tr from-amber-200 to-rose-100 w-full h-full animate-pulse"></div> */}
                                   <Image
                                    loading="lazy"
-                                    src="/images/Couple Massage.webp"
+                                    src="/images/fpkdl.com_750_1758779863_woman-having-massage-spa-salon_952135-8315.jpg"
                                     alt="Spa Interior"
                                     layout="fill"
                                     objectFit="cover"

@@ -85,7 +85,7 @@ const outlets = [
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
-    title: 'Hotel Spa in new friends colony (NFC)',
+    title: 'Hotel Spa in Defence Colony',
     description: 'Staying in a hotel in NFC and craving a massage? We provide B2B massage in delhi in hotels like The Suryaa and end all your days tiredness.',
     image: '/images/TheSuryaaNewDelhi(NFC).jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
@@ -109,19 +109,19 @@ const outlets = [
     number: '01',
     title: 'Choose a Massage Service',
     description: 'Choose the type of massage service that suits your massage needs and requirements that fits your budget.',
-    image: '/images/mmeeting.webp',
+    image: '/images/239469.jpg',
   },
   {
     number: '02',
     title: 'Appointment on Call or Telegram',
     description: 'Its easy to book and get quick confirmations via call or message us on Telegram with your massage needs.',
-    image: '/images/spa-treatments.jpg',
+    image: '/images/317.jpg',
   },
   {
     number: '03',
     title: 'Visit Us',
     description: 'At the time you choose, relax in one of our beautiful spa locations.',
-    image: '/images/finalizing.avif',
+    image: '/images/Sandwich Massage.jpg',
   },
 ];
 {/* End Our Process */}
@@ -1718,7 +1718,7 @@ const features2 = [
             className="order-1 md:order-2"
           >
             <Image
-              src="/images/b2.jpg"
+              src="/images/453.jpg"
               alt="Full Body Massage in Connaught Place"
               width={600}
               height={400}

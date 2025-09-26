@@ -38,34 +38,34 @@ import {
   const faqs = [
     
     {
-      question: "What types of massage therapies are offered at your spa?",
-      answer: "We offer a range of therapies, including Couple Massage, Sandwich Massage, Full Body Massage, B2B Therapy, and Female-to-Male Spa treatments to cater to all your relaxation needs.",
+      question: "What makes SpaDelhi different from other massage services in Delhi?",
+      answer: "The remarkable difference is that at spaDelhi, we have integrated luxury, professionalism and personalization. We provide our services in high-end hotels only, so the atmosphere is world-class with complete relaxation.",
       icon: <FaSpa className="text-teal-600" />
     },
     {
-      question: "Where are your spa locations in Delhi, Noida, and Gurgaon?",
-      answer: "We have over 24 outlets located in premium areas such as Rajouri Garden, Rohini, Pitampura, Noida, Aerocity, Connaught Place, and Lajpat Nagar, with top 5-star hotels like Andaz, JW Marriott, and Novotel.",
+      question: "Can I book a couple massage at my hotel room in Delhi?",
+      answer: "Absolutely! Spa Delhi offers a couple massages that are delivered right in your hotel room to produce the ideal marital and refreshing experience.",
       icon: <FaHandSparkles className="text-teal-600" />
     },
     
     {
-      question: "What makes your spa different from others in Delhi and Gurgaon?",
-      answer: "Our spa stands out by offering luxury experiences with a variety of massages, skilled therapists from around the world, and prime locations in major hotels, providing you with top-quality service at affordable prices.",
+      question: "Are your therapists certified and experienced?",
+      answer: "Yes, all our therapists are qualified practitioners with decades of experience in various massage therapies, ensuring they are both safe and effective.",
       icon: <FaLeaf className="text-teal-600" />
     },
     {
-      question: "Do you offer any special deals or discounts for first-time visitors?",
-      answer: "Yes, we offer an exclusive first-visit special at just ₹1999, allowing you to enjoy a premium spa experience at an affordable price",
+      question: "Do you offer late-night massage services in hotels in Delhi?",
+      answer: "Yes, Spa Delhi offers convenient opening and closing times, including late-night sessions, allowing travelers and guests can relax at unusual times.",
       icon: <FaSpa className="text-teal-600" />
     },
     {
-          question: "What types of therapists work at your spa?",
-          answer: "Our team consists of skilled Russian, Thai, Afghan, Indian, and foreign therapists, each trained in various massage techniques to ensure a personalized and effective treatment for every client.",
+          question: "How can I book my massage session?",
+          answer: "Reservation is easy, select your hotel, select a therapy and reserve. We have a rapid, smooth and safe booking system.",
           icon: <FaHotTub className="text-teal-600" />
         },
         {
-              question: "What are the benefits of getting a massage at your spa?",
-              answer: "Our massages help reduce stress, improve circulation, promote relaxation, and rejuvenate your body, mind, and soul, making it the perfect escape from your busy lifestyle.",
+              question: "Need Luxury massage in SpaDelhi? Book Today?",
+              answer: "We revisit the concept of relaxation at SpaDelhi by incorporating a luxurious, comfortable and professional approach. You are there to do business, have fun, or fall in love; our services will provide you with a memorable experience of wellness in Delhi. It is not too late and you can book your massage therapy and enjoy the reason why Spa Delhi is the No.1 Massage Brand in Delhi.",
               icon: <FaSpa className="text-teal-600" />
             },
   ];
@@ -144,21 +144,21 @@ const teamMembers = [
 
 const featuresData = [
   {
-    title: "Stress Relief",
+    title: "Wide Range of Luxurious Services",
     description:
-      "Whether it’s a Thai massage, Nuru massage, or couple massage, a visit to the spa can significantly reduce stress levels and promote relaxation.",
+      "SpaDelhi offers a wide range of massage treatments, carefully selected to suit each individual's mood, lifestyle, and requirements. Since a Full-Body Massage can be so invigorating, our B2B Massage and couples ' massages are designed to uplift your physical and emotional well-being. Every session is designed to offer the utmost relaxation, and each visit becomes a journey of comfort to remember.",
     image: "/images/HelpstoDe-Stress.webp",
   },
   {
-    title: "Improved Blood Circulation",
+    title: "Highly Skilled & Professional Therapists",
     description:
-      "Techniques like acupressure, deep tissue, and Swedish massage improve blood circulation, helping you feel more energized and revitalized.",
+      "In our opinion, the competence of therapists significantly influences the quality of a spa. We have a team of certified, trained and highly skilled therapists at SpaDelhi who know the art of healing touch. They are not only interested in relaxation but also in providing high-quality personalised care, which helps reduce stress and enhances the state of well-being by improving blood flow and circulation.",
     image: "/images/improvebloodflow.webp",
   },
   {
-    title: "Pain Relief",
+    title: " Luxurious Ambience & Top Hotels Partnership",
     description:
-      "If you’re dealing with muscle aches, joint pain, or stiffness, our therapeutic massages can help alleviate discomfort and promote better movement.",
+      "The difference that makes SpaDelhi special is that we provide our exclusive services in 5-star hotels in Delhi NCR only, in places like Connaught Place, Dwarka, Aerocity, Noida and Gurgaon. Through these alliances, we can offer massages in five-star hotel environments, with a blend of both luxury and peace. The calmness, modernity and professionalism have guaranteed you the best spa experience in Delhi.",
     image: "/images/SkinMoreRadiant.jpeg",
   },
 ];
@@ -317,7 +317,7 @@ export default function About({
           </h1>
           
           <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-            At LuxeSpa, we believe true wellness is an art. Our master therapists blend ancient wisdom with modern techniques to create transformative experiences that nurture mind, body, and spirit.
+            At SpaDelhi, we are not only a massage centre, but also your entire companion in relaxation, rejuvenation, and overall well-being. Premium services include spa therapies designed to restore your body, mind, and spirit, and are offered at the city's most prestigious hotels in Delhi.
           </p>
           
           <div className="pt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -348,7 +348,7 @@ export default function About({
   <div className="absolute inset-0 border-4 border-white shadow-xl overflow-hidden">
     <div className="relative w-full h-full">
       <img
-        src="/images/aboutusbanner.jpg" // ✅ Yahan apna image path daal
+        src="/images/aromatherapy-featured-jpg.webp" // ✅ Yahan apna image path daal
         alt="Spa Environment"
         className="w-full h-full object-cover"
       />
@@ -414,14 +414,19 @@ export default function About({
                           transition={{ delay: 0.3 }}
                           viewport={{ once: true }}
                         >
-                          We offer High-Quality, <span className="relative">
-                            <span className="text-amber-600 z-10 relative">Affordable Spa Services in Delhi</span>
+                          Who <span className="relative">
+                            <span className="text-amber-600 z-10 relative">We Are</span>
                             <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
                           </span>
                         </motion.h2>
             <p className="text-gray-700 text-lg">
-              At Luxury Body Spa, we are dedicated to creating a haven of peace, wellness, and rejuvenation in the heart of Delhi. With a blend of ancient healing traditions and modern techniques, our expert therapists restore balance and vitality.
-              From full-body massages to specialized therapies, each session is designed to relax the mind, soothe the body, and uplift the spirit.
+              Spa Delhi is not merely a massage and wellness spa; it is the place where luxury, relaxation, and holistic healing come together. We are extremely proud of re-engineering the notion of body wellness through a combination of ancient massage therapy and modern spa concepts. Spa Delhi, founded with the goal of providing a stress-free retreat destination for working professionals, couples, and travellers, has become one of the most reliable and highly sought-after wellness destinations in the Delhi NCR.
+            </p>
+            <p className="text-gray-700 text-lg">
+              With our highly trained therapists, world-class spa infrastructure, and great attention to hygiene and comfort, all our guests are guaranteed an unforgettable relaxation experience. In contrast to other spas, Spa Delhi is committed to creating an individualised therapy that best suits your body's needs, whether to relax after a hectic day, refresh yourself after a busy day, or create a spa experience with your loved one.
+            </p>
+            <p className="text-gray-700 text-lg">
+              We have established an image over the years not only of providing quality services but also of an environment that is safe, luxurious, and customer-centric. Spa Delhi is renowned today as the premier body massage service in Delhi, offering a diverse range of services that include full-body therapies, Ayurvedic treatments, couples' massages, and B2B massages.
             </p>
             
             {/* <p className="text-gray-700 text-lg">
@@ -501,7 +506,7 @@ export default function About({
             transition={{ duration: 0.6 }}
           >
             <Image
-              src="/images/80535.jpg"
+              src="/images/instamodels.jpg"
               alt="Luxury Spa in Delhi"
               width={600}
               height={400}
@@ -551,7 +556,7 @@ export default function About({
             className="order-1 md:order-2"
           >
             <Image
-              src="/images/b2.jpg"
+              src="/images/239544.jpg"
               alt="Full Body Massage in Connaught Place"
               width={600}
               height={400}
@@ -897,7 +902,7 @@ export default function About({
             </div>
             <h3 className="text-xl font-semibold text-amber-900 mb-2">Vision</h3>
             <p className="text-sm text-gray-600">
-              To be the trusted sanctuary for wellness in Delhi NCR — where every visit restores balance of body & mind.
+              To be the best massage centre in Delhi. All treatments are designed not only to restore your muscles but also to rejuvenate your energy, alleviate stress, and promote overall well-being. Ayurvedic massages, including aromatherapy, are among the methods we use in treatment to heal the body.
             </p>
           </article>
 
@@ -908,7 +913,7 @@ export default function About({
             </div>
             <h3 className="text-xl font-semibold text-amber-900 mb-2">Mission</h3>
             <p className="text-sm text-gray-600">
-              Deliver consistent, high-quality spa services in premium hotel environments using trained therapists and safe protocols.
+              We strive to offer a sense of wellness, relaxation, and rejuvenation to all individuals who enter our doors. Our mission is to provide an environment that combines luxury and affordability and where therapies that are designed to meet the lifestyle of each client are offered.
             </p>
           </article>
 
@@ -919,7 +924,7 @@ export default function About({
             </div>
             <h3 className="text-xl font-semibold text-amber-900 mb-2">Values</h3>
             <p className="text-sm text-gray-600">
-              Respect, Care & Professionalism — we prioritize client dignity, therapist growth, and hygiene at every step.
+              We are of the opinion that trust forms the basis of any wellness endeavour. This is the reason why Spa Delhi ensures the hygiene, privacy, as well as professionalism. All therapists receive specialized training and each session will be quality checked to maintain a safe, comfortable environment among all of our guests.
             </p>
           </article>
         </div>
@@ -1111,7 +1116,7 @@ export default function About({
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3, duration: 0.6 }}
                     >
-                      Benefits of <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Taking Massage from Us</span>
+                      Why SpaDelhi is the <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Best Choice for Premium Massage in Delhi</span>
                     </motion.h2>
                     
                     <motion.p
@@ -1120,7 +1125,7 @@ export default function About({
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.4, duration: 0.5 }}
                     >
-                      Visiting a spa offers more than just a moment of indulgence. Regular visits can have significant benefits for your mental, physical, and emotional well-being. Some of the key benefits include:
+                      We take pride in the fact that at SpaDelhi we are the first in luxury experience in massage and spa in Delhi. Much of our reputation is based on a flawless combination of professionalism, relaxation and high-quality hospitality. You are either in need of a deep-seated relaxation after a hard-working day or a luxurious weekend getaway, or you need a solution to your stress issues and body pains, SpaDelhi provides the best experience ever.
                     </motion.p>
                     
                     <motion.div
