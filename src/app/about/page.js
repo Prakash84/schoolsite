@@ -634,7 +634,7 @@ export default function About({
             <span className="inline-block px-3 py-1 rounded-full bg-amber-600 text-white text-sm font-semibold">Premium Care</span>
 
             <h2 className="mt-6 text-3xl md:text-4xl font-extrabold text-amber-900 leading-tight">
-              Our Presence <span className="text-amber-600">in the Top Hotels of Delhi NCR
+              5-Star Experience at<span className="text-amber-600"> Premium Hotel Spa in Aerocity
 
 </span>
             </h2>
@@ -911,7 +911,7 @@ export default function About({
         <div className="text-center mb-10">
           <p className="text-sm font-medium text-amber-600 uppercase">About Us — Quick Look</p>
           <h2 id="about-extra-heading" className="mt-3 text-3xl md:text-4xl font-extrabold text-amber-900">
-            Our Vision, Mission & Values
+            Our Vision, Mission & Values at Spa in Delhi 
           </h2>
           <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
             We combine luxury hospitality and evidence-based therapies to create a calm, restorative experience for every guest.
