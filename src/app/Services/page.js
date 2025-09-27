@@ -115,7 +115,7 @@ const teamMembers = [
       duration: "60 min"
     },
     {
-      title: "Erotic Massage",
+      title: "Female To Male Massage",
       image: "/images/potliMassage.jpg",
       description: "Our luxury spa in Delhi offers the ancient Indian technique known as Potli massage. This treatment uses herbal pouches, warmed up and filled with spices and herbs,.",
       duration: "60 min"
@@ -321,7 +321,7 @@ const faqs = [
             <h1 className="text-4xl md:text-5xl font-light text-gray-800">
               <span className="block font-serif text-5xl md:text-6xl mb-3 text-amber-800">Book Best</span>
             Massage service
-              <span className="block mt-2 font-medium">in Delhi by <span className="text-rose-600">International Therapists</span></span>
+              <span className="block mt-2 font-medium">in Delhi by <span className="text-rose-600"> Foreigner Therapists</span></span>
             </h1>
             
             <p className="text-gray-600 max-w-xl mx-auto lg:mx-0 leading-relaxed">
@@ -1358,7 +1358,7 @@ const faqs = [
                                                        transition={{ duration: 0.6 }}
                                                      >
                                                        <span className="text-lg font-medium text-amber-700 tracking-widest">OUR SIGNATURE OFFERINGS</span>
-                                                       <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-6">What We Offer in Female-to-Male Massage Services in Noida</h1>
+                                                       <h1 className="text-4xl md:text-5xl font-bold text-[#3a2e2a] mt-4 mb-6">Top Rated Body Spa Services in Delhi for Complete Relaxation</h1>
                                                        <div className="w-24 h-1 bg-amber-600 mx-auto rounded-full"></div>
                                                      </motion.div>
                            
@@ -1477,10 +1477,10 @@ const faqs = [
                                                            </p>
                                                            <div className="flex flex-wrap gap-4 mb-6">
                                                              {[
-                                                               {icon: '♻️', text: 'Zero-Waste Policy'},
-                                                               {icon: '🌱', text: 'Organic Linens'},
-                                                               {icon: '💧', text: 'Water Recycling'},
-                                                               {icon: '🌎', text: 'Carbon Offsetting'},
+                                                               {icon: '♻️', text: 'Thai Massage'},
+                                                               {icon: '🌱', text: 'B2B Massage'},
+                                                               {icon: '💧', text: 'Couple Massage'},
+                                                               {icon: '🌎', text: 'Female To Male Massage'},
                                                                // {icon: '🏺', text: 'Handcrafted Products'}
                                                              ].map((item, index) => (
                                                                <span key={index} className="bg-[#f0eae3] text-amber-800 px-4 py-2 rounded-full flex items-center">
