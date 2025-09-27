@@ -221,28 +221,28 @@ const specialFeatures = [
     name: "JW Marriott Hotel Aerocity",
     desc: "Luxury spa at the heart of downtown with panoramic city views",
     rating: 5,
-    tag: "Exclusive",
+    tag: "Hotel Spa",
     icon: <Sparkles className="w-6 h-6 text-amber-600" />
   },
   {
     name: "Lemon Tree Premier Aerocity",
     desc: "Beachfront sanctuary with ocean-inspired treatments",
     rating: 4.9,
-    tag: "Waterfront",
+    tag: "Hotel Spa",
     icon: <Hotel className="w-6 h-6 text-amber-600" />
   },
   {
     name: "Novotel New Delhi Aerocity",
     desc: "Rooftop wellness center with city skyline views",
     rating: 4.8,
-    tag: "Panoramic",
+    tag: "Hotel Spa",
     icon: <Building2 className="w-6 h-6 text-amber-600" />
   },
   {
     name: "The Grand New Delhi",
     desc: "Historic mansion transformed into a luxury spa retreat",
     rating: 5,
-    tag: "Heritage",
+    tag: "Hotel Spa",
     icon: <MapPin className="w-6 h-6 text-amber-600" />
   },
 ];
