@@ -631,7 +631,7 @@ export default function About({
 
           {/* RIGHT: Content */}
           <div className="order-1 lg:order-2">
-            <span className="inline-block px-3 py-1 rounded-full bg-amber-600 text-white text-sm font-semibold">Premium Care</span>
+            <span className="inline-block px-3 py-1 rounded-full bg-amber-600 text-white text-sm font-semibold">Spa Outlet</span>
 
             <h2 className="mt-6 text-3xl md:text-4xl font-extrabold text-amber-900 leading-tight">
               5-Star Experience at<span className="text-amber-600"> Premium Hotel Spa in Aerocity
@@ -1010,7 +1010,7 @@ export default function About({
             transition={{ delay: 0.2, duration: 0.5 }}
           >
             <div className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></div>
-            <span className="text-amber-700 font-medium tracking-wider">PREMIUM LOCATIONS</span>
+            <span className="text-amber-700 font-medium tracking-wider">Hotel Outlet</span>
           </motion.div>
           
           <motion.h2
@@ -1019,7 +1019,7 @@ export default function About({
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Our Spa Located  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">in Top Hotels of Delhi</span>
+            Spa Services  <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">at Top 5-Star Hotels in Delhi</span>
           </motion.h2>
           
           <motion.p
@@ -1401,7 +1401,7 @@ export default function About({
                                         >
                                           <div className="grid md:grid-cols-2 gap-8 items-center">
                                             <div>
-                                              <h3 className="text-2xl font-bold mb-4">Contact Us to Book Your Next Spa Experience</h3>
+                                              <h3 className="text-2xl font-bold mb-4">Special Offer: First Visit Full Body Massage Spa in Delhi @1999 </h3>
                                               <p className="mb-4 opacity-90">
                                                 Every visit begins with a confidential wellness consultation where our specialists listen to your concerns and goals. We consider your lifestyle, stress levels, and any physical discomfort to create a truly personalized treatment plan.
                                               </p>
