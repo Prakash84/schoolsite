@@ -476,7 +476,7 @@ export default function About({
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.3, duration: 0.6 }}
                   >
-                    Premium Spa Massage in <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Lajpat Nagar, Karol Bagh, and Mahipalpur</span>
+                     Top Rated <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Luxury Spa in Delhi Noida Gurgoan</span>
                   </motion.h2>
                   
                   <motion.p
@@ -559,8 +559,8 @@ export default function About({
                                       transition={{ delay: 0.3 }}
                                       viewport={{ once: true }}
                                     >
-                                      Step Into Serenity <span className="relative">
-                                        <span className="text-amber-600 z-10 relative">with the Best Massage Spa in Connaught Place</span>
+                                      Comfort & Wellness <span className="relative">
+                                        <span className="text-amber-600 z-10 relative">at Our Luxury Massage Spa in Connaught Place</span>
                                         <span className="absolute bottom-2 left-0 w-full h-3 bg-amber-200/60 z-0"></span>
                                       </span>
                                     </motion.h2>
@@ -1140,7 +1140,7 @@ export default function About({
                       whileInView={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.3, duration: 0.6 }}
                     >
-                      Why SpaDelhi is the <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Best Choice for Premium Massage in Delhi</span>
+                      Foreign Certified Staff <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">best for Thai spa & B2B Therapy  in Spa Delhi</span>
                     </motion.h2>
                     
                     <motion.p
