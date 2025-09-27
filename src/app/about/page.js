@@ -404,7 +404,7 @@ export default function About({
                           transition={{ delay: 0.2 }}
                           viewport={{ once: true }}
                         >
-                          <span className="mr-2">✦</span> About Our Luxury Spa
+                          <span className="mr-2">✦</span> About Our Spa Delhi
                         </motion.div>
             
                         <motion.h2
