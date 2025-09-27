@@ -79,26 +79,26 @@ const teamMembers = [
 const outlets = [
   {
     title: 'Hotel Spa in Aerocity',
-    description: 'We provide body massage service at 5-star hotels in Aerocity, like Lemon Tree, Andaz, IBIS and so on.',
+    description: 'Enjoy the best spa in Aerocity with relaxing body massage services at 5-star hotels like Lemon Tree, Andaz, IBIS and more for a truly peaceful experience.',
     image: '/images/NovotelNewDelhiAerocity.jpeg',
 
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'Hotel Spa in Defence Colony',
-    description: 'Staying in a hotel in NFC and craving a massage? We provide B2B massage in delhi in hotels like The Suryaa and end all your days tiredness.',
+    description: 'Relax at our spa in Defence Colony with expert body massage services to refresh your mind and body, serving hotel guests in NFC at places like The Suryaa for complete comfort and relaxation.',
     image: '/images/TheSuryaaNewDelhi(NFC).jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'Hotel Spa in Connaught Place',
-    description: 'Our team of massage therapists visits your hotel in CP and provide best spa in CP to hotels like Radisson Blu, The Lalit, The Park and so on.',
+    description: 'Enjoy a relaxing experience at our spa in Connaught Place with professional body massage services, serving top hotels like Radisson Blu, The Lalit, The Park and more for your complete comfort and relaxation.',
     image: '/images/TheParkConnaughtPlace.jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'Hotel Spa in Dwarka',
-    description: 'Our team of expert massage therapists will visit your hotel room in Dwarka and provide an on-demand hotel spa in Dwarka.',
+    description: 'Experience the comfort of our spa in Dwarka with expert massage therapists bringing relaxation straight to your hotel room, offering on-demand hotel spa services for a peaceful and refreshing stay.',
     image: '/images/TheGrandNewDelhi.jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
@@ -1377,7 +1377,7 @@ const features2 = [
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.5 }}
           >
-            Discover our unique, high-end spa locations in Delhi, each offering world-class treatment.
+            Our exclusive spa Delhi outlets offer world-class therapies In 5 Star Hotels Spa In Delhi
           </motion.p>
           
           <motion.div
