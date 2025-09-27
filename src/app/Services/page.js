@@ -1168,7 +1168,7 @@ const faqs = [
                     <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-amber-100">
                       <div className="relative h-96">
                         <Image 
-                          src="/images/447701.jpg"
+                          src="/images/fpkdl.com_960_1758981403_modern-house-bed-room-interior-design_1143383-1039.jpg"
                           alt="Premium spa oils"
                           layout="fill"
                           objectFit="cover"

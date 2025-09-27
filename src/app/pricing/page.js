@@ -117,25 +117,25 @@ export default function pricing() {
   {
     title: 'Aerocity',
     description: 'Experience comfort at Novotel Aerocity, just minutes from the airport, perfect for business stays and spa relaxation nearby.Experience comfort at Novotel Aerocity, just minutes from the airport, perfect for business stays and spa relaxation nearby.Experience comfort at Novotel Aerocity, just minutes from the airport, perfect for business stays and spa relaxation nearby.',
-    image: '/images/hotel1.jpeg',
+    image: '/images/RoseateHouse.jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'New Friends Colony (NFC)',
     description: 'Experience luxury at The Suryaa New Delhi (NFC), a serene escape offering premium spa and wellness services in style.Experience luxury at The Suryaa New Delhi (NFC), a serene escape offering premium spa and wellness services in style.Experience luxury at The Suryaa New Delhi (NFC), a serene escape offering premium spa and wellness services in style.',
-    image: '/images/hotel2.jpg',
+    image: '/images/fpkdl.com_960_1758981740_exterior-view-bellagio-caesars-palace-hotel-las-vegas-nevada-march-6-2024_943860-2321.jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'Connaught Place',
     description: 'Experience luxury at The Park New Delhi, Connaught Place. Relax, rejuvenate, and unwind with premium spa treatments in style.Experience luxury at The Park New Delhi, Connaught Place. Relax, rejuvenate, and unwind with premium spa treatments in style.Experience luxury at The Park New Delhi, Connaught Place. Relax, rejuvenate, and unwind with premium spa treatments in style.Experience luxury at The Park New Delhi, Connaught Place. Relax, rejuvenate, and unwind with premium spa treatments in style.',
-    image: '/images/hotel3.webp',
+    image: '/images/pexels-pavel-danilyuk-9119782.jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
   {
     title: 'Grand Vasant Kunj',
     description: 'Experience luxury at The Roseate Aerocity, and indulge in relaxing spa therapies with expert care and serene ambiance.Experience luxury at The Roseate Aerocity, and indulge in relaxing spa therapies with expert care and serene ambiance.Experience luxury at The Roseate Aerocity, and indulge in relaxing spa therapies with expert care and serene ambiance.Experience luxury at The Roseate Aerocity, and indulge in relaxing spa therapies with expert care and serene ambiance.',
-    image: '/images/hotel4.jpg',
+    image: '/images/lajpatnagar.jpg',
     link: 'https://api.whatsapp.com/send?phone=918826482370',
   },
 ];
@@ -1025,7 +1025,7 @@ const teamMembers = [
                           height={400}
                           className="w-full h-[300px] object-cover transform group-hover:scale-105 transition duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent z-10"></div>
+                        {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent z-10"></div> */}
                       </div>
             
                       <div className="p-6 text-center">
