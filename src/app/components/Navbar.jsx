@@ -95,7 +95,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="w-30 h-15 relative">
             <Image
-              src="/images/Bibinogs-logo-transparent-1-e1621840301443.png"
+              src="/images/MerLionBibiNogsLogo.png"
               alt="Delhi Body Spa Logo"
               fill
               className="object-contain"

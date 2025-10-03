@@ -314,7 +314,7 @@ const faqs = [
 
   const slides = [
   {
-    title: "Welcome to BibiNogs – A World of Fun Learning",
+    title: "Welcome to MerLion BibiNogs Siggapore – A World of Fun Learning",
     link: "/admissions",
     image: "/images/bibinogs-homepage-1-1.png" // बच्चों की classroom / play area वाली image
   },
@@ -379,7 +379,7 @@ const testimonials = [
     gradient: "from-red-400 to-red-500",
     rating: 5,
     content:
-      "BibiNogs has been wonderful for our son. The teachers are warm, the daily updates and photos make me feel connected, and he loves storytime!",
+      "MerLion BibiNogs Siggapore has been wonderful for our son. The teachers are warm, the daily updates and photos make me feel connected, and he loves storytime!",
     date: "Aug 12, 2025",
   },
   {
@@ -772,7 +772,7 @@ const socialBenefits = [
         viewport={{ once: true }}
       >
         <p className="text-gray-600 text-lg leading-relaxed">
-          At <strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam> </strong>, we blend playful learning with safety and loving care. Our curriculum focuses on early literacy, creative play, motor skills, and social development — all delivered by warm, qualified teachers in a bright, secure environment.
+          At <strong className="text-[#36948a] font-medium">MerLion </strong><strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam><spam className="text-[#36948a] font-medium"> Siggapore</spam></strong>, we blend playful learning with safety and loving care. Our curriculum focuses on early literacy, creative play, motor skills, and social development — all delivered by warm, qualified teachers in a bright, secure environment.
         </p>
         <p className="text-gray-600 text-lg leading-relaxed">
           Flexible timings, nutritious snacks, and small class sizes ensure every child gets attention while having lots of fun.
@@ -939,12 +939,12 @@ const socialBenefits = [
       >
         <p className="text-gray-600 text-lg leading-relaxed">
           Welcome to <strong className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-700 font-medium">
-            <strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam> </strong> Play School
+            <strong className="text-[#36948a] font-medium">MerLion </strong><strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam><spam className="text-[#36948a] font-medium"> Siggapore</spam></strong> Play School
           </strong>, where joyful learning meets safety and care. We offer play-based programs for children ages 2–6 that build communication, motor skills, creativity and emotional confidence.
         </p>
 
         <p className="text-gray-600 text-lg leading-relaxed">
-          Our experienced, certified teachers use stories, arts, music and structured routines to support each child's growth. Small groups, nutritious snacks and regular parent updates make <strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam> </strong> a trusted choice for families across Delhi NCR.
+          Our experienced, certified teachers use stories, arts, music and structured routines to support each child's growth. Small groups, nutritious snacks and regular parent updates make <strong className="text-[#36948a] font-medium">MerLion </strong><strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam><spam className="text-[#36948a] font-medium"> Siggapore</spam></strong> a trusted choice for families across Delhi NCR.
         </p>
       </motion.div>
 
@@ -1100,13 +1100,13 @@ const socialBenefits = [
     </div>
 
     <h2 className="text-4xl md:text-5xl font-bold text-red-500 mb-6 font-serif">
-      Why Choose <span className=" text-4xl md:text-5xl font-bold text-blue-800 mb-6 font-serif"><strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam> </strong> for</span> 
+      Why Choose <span className=" text-4xl md:text-5xl font-bold text-blue-800 mb-6 font-serif"><strong className="text-[#36948a] font-medium">MerLion </strong><strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam><spam className="text-[#36948a] font-medium"> Siggapore</spam></strong> for</span> 
       <span className="block text-xl md:inline ml-2 text-gray-700 font-medium">Fun, Safety & Early Learning</span>
     </h2>
 
     <div className="max-w-3xl mx-auto bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-md mb-8">
       <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
-        <strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam> </strong> provides a nurturing and joyful environment where children (ages 2–6) learn through play, songs, stories and hands-on activities.
+        <strong className="text-[#36948a] font-medium">MerLion </strong><strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam><spam className="text-[#36948a] font-medium"> Siggapore</spam></strong> provides a nurturing and joyful environment where children (ages 2–6) learn through play, songs, stories and hands-on activities.
         Our experienced teachers focus on social, emotional and cognitive development while ensuring a secure, clean space for each child to thrive.
       </p>
     </div>
@@ -1569,7 +1569,7 @@ const socialBenefits = [
         </motion.h2>
 
         <p className="text-gray-600 text-lg leading-relaxed">
-          <strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam> </strong> is a nurturing early-years centre where expert caregivers, playful learning and a safe environment come together to help each child flourish.
+          <strong className="text-[#36948a] font-medium">MerLion </strong><strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam><spam className="text-[#36948a] font-medium"> Siggapore</spam></strong> is a nurturing early-years centre where expert caregivers, playful learning and a safe environment come together to help each child flourish.
           Our curriculum combines storytime, creative arts, and motor-skill activities that build confidence and curiosity. With small class sizes and warm, certified teachers, every child receives individual attention and joyful learning experiences.
         </p>
       </motion.div>
@@ -1644,7 +1644,7 @@ const socialBenefits = [
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Find the nearest <strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam> </strong> centre for easy access to joyful early-years learning and safe, nurturing care.
+            Find the nearest <strong className="text-[#36948a] font-medium">MerLion </strong><strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam><spam className="text-[#36948a] font-medium"> Siggapore</spam></strong> centre for easy access to joyful early-years learning and safe, nurturing care.
           </motion.p>
         </div>
 
@@ -1719,7 +1719,7 @@ const socialBenefits = [
         >
           EARLY YEARS LEARNING
         </span>
-        <strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs—</spam> </strong>  Creative Play & Learning
+        <strong className="text-[#36948a] font-medium">MerLion </strong><strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam><spam className="text-[#36948a] font-medium"> Siggapore</spam></strong>—  Creative Play & Learning
       </h2>
       <div className="w-16 h-0.5 bg-red-600 mt-6" />
     </div>
@@ -1838,7 +1838,7 @@ const socialBenefits = [
               🌟
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 ml-4 font-serif">
-              <strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam> </strong> Play School — Safe, Joyful & Learning-first
+              <strong className="text-[#36948a] font-medium">MerLion </strong><strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam><spam className="text-[#36948a] font-medium"> Siggapore</spam></strong> Play School — Safe, Joyful & Learning-first
             </h2>
           </div>
 
@@ -1893,7 +1893,7 @@ const socialBenefits = [
               </p>
 
               <p className="text-gray-700">
-                Cleanliness, safety and gentle transition support are built into every day at <strong className="text-red-500 font-medium">Bibi<spam className="text-blue-800 font-medium">Nogs</spam> </strong> — from arrival routines to nap time and pick-up.
+                Cleanliness, safety and gentle transition support are built into every day at <strong className="text-red-500 font-medium"><spam className="text-#36948a font-medium">MerLion </spam>Bibi<spam className="text-blue-800 font-medium">Nogs</spam><spam className="text-#36948a font-medium"> Siggapore</spam></strong> — from arrival routines to nap time and pick-up.
               </p>
             </div>
           </div>
