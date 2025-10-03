@@ -112,7 +112,7 @@ export default function Footer() {
 
       {/* Bottom Section */}
       <div className="max-w-7xl mx-auto mt-12 pt-6 border-t border-gray-700 text-center text-gray-500">
-        <p>&copy; {new Date().getFullYear()} Little Stars Play School. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} BibiNogs Play School. All rights reserved.</p>
       </div>
     </footer>
   );

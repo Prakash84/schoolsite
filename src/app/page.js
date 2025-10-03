@@ -174,9 +174,9 @@ const [isVisible, setIsVisible] = useState(false);
 
 const faqs = [
   {
-    question: "What age groups do you accept at Little Stars?",
+    question: "What age groups do you accept at BibiNogs?",
     answer:
-      "Little Stars accepts children aged 2 to 6 years. We run age-appropriate groups (toddlers, preschool and pre-primary) so each child learns with peers at the same developmental stage.",
+      "BibiNogs accepts children aged 2 to 6 years. We run age-appropriate groups (toddlers, preschool and pre-primary) so each child learns with peers at the same developmental stage.",
     icon: <FaChild className="text-red-500" />
   },
   {
@@ -314,7 +314,7 @@ const faqs = [
 
   const slides = [
   {
-    title: "Welcome to Little Stars – A World of Fun Learning",
+    title: "Welcome to BibiNogs – A World of Fun Learning",
     link: "/admissions",
     image: "/images/bibinogs-homepage-1-1.png" // बच्चों की classroom / play area वाली image
   },
@@ -379,7 +379,7 @@ const testimonials = [
     gradient: "from-red-400 to-red-500",
     rating: 5,
     content:
-      "Little Stars has been wonderful for our son. The teachers are warm, the daily updates and photos make me feel connected, and he loves storytime!",
+      "BibiNogs has been wonderful for our son. The teachers are warm, the daily updates and photos make me feel connected, and he loves storytime!",
     date: "Aug 12, 2025",
   },
   {
@@ -748,7 +748,7 @@ const socialBenefits = [
         transition={{ delay: 0.2 }}
         viewport={{ once: true }}
       >
-        <span className="mr-2">✦</span> Welcome to Little Stars Play School
+        <span className="mr-2">✦</span> Welcome to BibiNogs Play School
       </motion.div>
 
       <motion.h2
@@ -772,7 +772,7 @@ const socialBenefits = [
         viewport={{ once: true }}
       >
         <p className="text-gray-600 text-lg leading-relaxed">
-          At <strong className="text-blue-600 font-medium">Little Stars</strong>, we blend playful learning with safety and loving care. Our curriculum focuses on early literacy, creative play, motor skills, and social development — all delivered by warm, qualified teachers in a bright, secure environment.
+          At <strong className="text-blue-600 font-medium">BibiNogs</strong>, we blend playful learning with safety and loving care. Our curriculum focuses on early literacy, creative play, motor skills, and social development — all delivered by warm, qualified teachers in a bright, secure environment.
         </p>
         <p className="text-gray-600 text-lg leading-relaxed">
           Flexible timings, nutritious snacks, and small class sizes ensure every child gets attention while having lots of fun.
@@ -939,12 +939,12 @@ const socialBenefits = [
       >
         <p className="text-gray-600 text-lg leading-relaxed">
           Welcome to <strong className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-700 font-medium">
-            Little Stars Play School
+            BibiNogs Play School
           </strong>, where joyful learning meets safety and care. We offer play-based programs for children ages 2–6 that build communication, motor skills, creativity and emotional confidence.
         </p>
 
         <p className="text-gray-600 text-lg leading-relaxed">
-          Our experienced, certified teachers use stories, arts, music and structured routines to support each child's growth. Small groups, nutritious snacks and regular parent updates make Little Stars a trusted choice for families across Delhi NCR.
+          Our experienced, certified teachers use stories, arts, music and structured routines to support each child's growth. Small groups, nutritious snacks and regular parent updates make BibiNogs a trusted choice for families across Delhi NCR.
         </p>
       </motion.div>
 
@@ -987,7 +987,7 @@ const socialBenefits = [
           <div className="rounded-md overflow-hidden border-1 border-white">
             <Image
               src="/images/girl1.jpg"
-              alt="Kids playing at Little Stars"
+              alt="Kids playing at BibiNogs"
               width={900}
               height={600}
               className="object-cover w-full h-64 sm:h-72 lg:h-[22rem]"
@@ -1006,7 +1006,7 @@ const socialBenefits = [
           <div className="rounded-md overflow-hidden border-1 border-white">
             <Image
               src="/images/girl2.jpg"
-              alt="Classroom activity at Little Stars"
+              alt="Classroom activity at BibiNogs"
               width={900}
               height={600}
               className="object-cover w-full h-64 sm:h-72 lg:h-[22rem]"
@@ -1100,13 +1100,13 @@ const socialBenefits = [
     </div>
 
     <h2 className="text-4xl md:text-5xl font-bold text-red-500 mb-6 font-serif">
-      Why Choose <span className=" text-4xl md:text-5xl font-bold text-blue-800 mb-6 font-serif">Little Stars for</span> 
+      Why Choose <span className=" text-4xl md:text-5xl font-bold text-blue-800 mb-6 font-serif">BibiNogs for</span> 
       <span className="block text-xl md:inline ml-2 text-gray-700 font-medium">Fun, Safety & Early Learning</span>
     </h2>
 
     <div className="max-w-3xl mx-auto bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-md mb-8">
       <p className="text-gray-700 text-lg md:text-xl leading-relaxed">
-        Little Stars provides a nurturing and joyful environment where children (ages 2–6) learn through play, songs, stories and hands-on activities.
+        BibiNogs provides a nurturing and joyful environment where children (ages 2–6) learn through play, songs, stories and hands-on activities.
         Our experienced teachers focus on social, emotional and cognitive development while ensuring a secure, clean space for each child to thrive.
       </p>
     </div>
@@ -1569,7 +1569,7 @@ const socialBenefits = [
         </motion.h2>
 
         <p className="text-gray-600 text-lg leading-relaxed">
-          Little Stars is a nurturing early-years centre where expert caregivers, playful learning and a safe environment come together to help each child flourish.
+          BibiNogs is a nurturing early-years centre where expert caregivers, playful learning and a safe environment come together to help each child flourish.
           Our curriculum combines storytime, creative arts, and motor-skill activities that build confidence and curiosity. With small class sizes and warm, certified teachers, every child receives individual attention and joyful learning experiences.
         </p>
       </motion.div>
@@ -1644,7 +1644,7 @@ const socialBenefits = [
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Find the nearest Little Stars centre for easy access to joyful early-years learning and safe, nurturing care.
+            Find the nearest BibiNogs centre for easy access to joyful early-years learning and safe, nurturing care.
           </motion.p>
         </div>
 
@@ -1719,7 +1719,7 @@ const socialBenefits = [
         >
           EARLY YEARS LEARNING
         </span>
-        Little Stars — Creative Play & Learning
+        BibiNogs — Creative Play & Learning
       </h2>
       <div className="w-16 h-0.5 bg-red-600 mt-6" />
     </div>
@@ -1838,7 +1838,7 @@ const socialBenefits = [
               🌟
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 ml-4 font-serif">
-              Little Stars Play School — Safe, Joyful & Learning-first
+              BibiNogs Play School — Safe, Joyful & Learning-first
             </h2>
           </div>
 
@@ -1893,7 +1893,7 @@ const socialBenefits = [
               </p>
 
               <p className="text-gray-700">
-                Cleanliness, safety and gentle transition support are built into every day at Little Stars — from arrival routines to nap time and pick-up.
+                Cleanliness, safety and gentle transition support are built into every day at BibiNogs — from arrival routines to nap time and pick-up.
               </p>
             </div>
           </div>
@@ -2229,7 +2229,7 @@ const socialBenefits = [
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            What Our Parents<span className="text-blue-800"> Say About Little Stars</span>
+            What Our Parents<span className="text-blue-800"> Say About BibiNogs</span>
           </motion.h2>
 
           <motion.p
@@ -2239,7 +2239,7 @@ const socialBenefits = [
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Read why families trust Little Stars for safe, playful and meaningful early learning experiences.
+            Read why families trust BibiNogs for safe, playful and meaningful early learning experiences.
           </motion.p>
         </div>
 
