@@ -39,7 +39,10 @@ export default function Footer() {
         {/* Brand & Socials */}
         <div>
           <h3 className="text-2xl font-bold mb-4 text-red-400">
-            Little <span className="text-yellow-400">Stars</span>
+            <span className="text-[#36948a]">MerLion </span>
+            <span className="text-Red-500">Bibi </span>
+            <span className="text-blue-800">Nogs </span>
+            <span className="text-[#36948a]">Singapore</span>
           </h3>
           <p className="text-gray-400 mb-6">
             A warm, playful space for ages 2–6 — learning through play, art & stories.

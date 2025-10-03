@@ -93,7 +93,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {/* Logo */}
-          <div className="w-30 h-15 relative">
+          <div className="w-38 h-17 relative">
             <Image
               src="/images/MerLionBibiNogsLogo.png"
               alt="Delhi Body Spa Logo"
