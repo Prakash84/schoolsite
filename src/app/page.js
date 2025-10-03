@@ -316,17 +316,17 @@ const faqs = [
   {
     title: "Welcome to Little Stars – A World of Fun Learning",
     link: "/admissions",
-    image: "/images/s8.png" // बच्चों की classroom / play area वाली image
+    image: "/images/s4.jpg" // बच्चों की classroom / play area वाली image
   },
   {
     title: "Creative Activities, Art & Music for Every Child",
     link: "/programs",
-    image: "/images/school-4527712.jpg" // kids painting / craft वाली image
+    image: "/images/s8.png" // kids painting / craft वाली image
   },
   {
     title: "Safe & Nurturing Environment for Ages 2–6",
     link: "/about",
-    image: "/images/s10.png" // kids playing safely outdoor वाली image
+    image: "/images/school-4527712.jpg" // kids playing safely outdoor वाली image
   }
 ];
 
@@ -624,7 +624,7 @@ const socialBenefits = [
                 {/* <div className="absolute inset-0 bg-black/50 md:bg-gradient-to-r md:from-black/70 md:via-black/40 md:to-transparent" /> */}
                 <div className="absolute inset-0 flex flex-col justify-center items-center md:items-start text-center md:text-left px-4 sm:px-8 md:px-24 z-10">
                   <motion.h2
-                    className="text-black text-2xl sm:text-4xl md:text-5xl font-extrabold max-w-2xl md:max-w-3xl leading-snug mb-4 font-serif"
+                    className="text-white text-2xl sm:text-4xl md:text-5xl font-extrabold max-w-2xl md:max-w-3xl leading-snug mb-4 font-serif"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8 }}
