@@ -307,7 +307,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="https://api.whatsapp.com/send?phone=919211059033"
+              href="https://api.whatsapp.com/send?phone=91921106757033"
               className="block text-center bg-pink-600 text-white px-6 py-2 rounded-full font-semibold text-sm hover:bg-pink-700 transition shadow-md"
             >
               Book Appointment

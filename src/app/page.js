@@ -651,7 +651,7 @@ const socialBenefits = [
                       Book a Spa Session Now
                     </a>  */}
                     <a href="#services" className="bg-white/20 hover:bg-white/30 backdrop-blur-lg text-white font-semibold py-2 sm:py-3 px-6 sm:px-8 rounded-full text-sm sm:text-base transition duration-300 border border-white">
-                      Explore Our Spa Services
+                      Explore Our Services
                     </a>
                     
                     
