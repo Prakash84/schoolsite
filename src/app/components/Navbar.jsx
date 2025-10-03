@@ -118,7 +118,7 @@ export default function Navbar() {
             </a>
 
             {/* Services Dropdown */}
-            <div
+            {/* <div
               className="relative"
               onMouseEnter={handleServicesEnter}
               onMouseLeave={handleServicesLeave}
@@ -139,7 +139,7 @@ export default function Navbar() {
                   ))}
                 </div>
               )}
-            </div>
+            </div> */}
 
             <a
               href="/pricing1"
@@ -149,7 +149,7 @@ export default function Navbar() {
             </a>
 
             {/* Outlet Dropdown */}
-            <div
+            {/* <div
               className="relative"
               onMouseEnter={handleOutletEnter}
               onMouseLeave={handleOutletLeave}
@@ -170,7 +170,7 @@ export default function Navbar() {
                   ))}
                 </div>
               )}
-            </div>
+            </div> */}
 
             <a
               href="/blog1"
@@ -227,7 +227,7 @@ export default function Navbar() {
             </a>
 
             {/* Mobile Services */}
-            <div className="flex justify-between items-center text-gray-800 font-semibold py-2">
+            {/* <div className="flex justify-between items-center text-gray-800 font-semibold py-2">
               <a href="/Services1" className="hover:text-red-600 w-full">
                 Services
               </a>
@@ -251,7 +251,7 @@ export default function Navbar() {
                   </a>
                 ))}
               </div>
-            )}
+            )} */}
 
             <a
               href="/pricing1"
@@ -261,7 +261,7 @@ export default function Navbar() {
             </a>
 
             {/* Mobile Outlet */}
-            <div className="flex justify-between items-center text-gray-800 font-semibold py-2">
+            {/* <div className="flex justify-between items-center text-gray-800 font-semibold py-2">
               <a href="/outlet1" className="hover:text-red-600 w-full">
                 Outlet
               </a>
@@ -285,7 +285,7 @@ export default function Navbar() {
                   </a>
                 ))}
               </div>
-            )}
+            )} */}
 
             <a
               href="/blog1"
